@@ -1,9 +1,9 @@
 ---
 title: 快速入门
-description: 这是快速入门文章。
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: 了解如何开始使用LLM Optimizer并完成载入流程。
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ### AEM Cloud客户
 
-AEM Cloud客户(Cloud Service/Managed Services/Edge Delivery服务)将看到用于通过[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡试用LLM Optimizer的选项。
+AEM Cloud客户(Cloud Service/Managed Services/Edge Delivery服务)将看到用于通过[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡试用LLM Optimizer的选项。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在品牌在线状态中。 AEM Cloud客户(Cloud Service、Managed Services/Edge Delivery服务)可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 请联系您的[帐户代表]以获取更多信息。

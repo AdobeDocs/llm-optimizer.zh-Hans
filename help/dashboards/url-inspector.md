@@ -1,9 +1,9 @@
 ---
 title: URL检查器
-description: 这是文章概述。
-source-git-commit: e35ddb9b055d2f974fd94b3a21e13e92d05c8799
+description: 了解如何使用URL检查器帮助分析域上的特定页面在AI搜索中的执行情况。
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ URL检查器可帮助您分析域上的特定页面在AI搜索中的执行情况
 * **平台** — 选择要分析的AI引擎。
 * **渠道** — 在渠道（如已获取、竞争对手和社交）之间进行筛选。
 * **区域** — 按地理位置筛选结果。 并非所有区域在启动时都可用。
-选择所需的筛选器后，单击&#x200B;**应用筛选器**&#x200B;以将所选内容应用到仪表板。
+选择所需的筛选器后，单击**应用筛选器**&#x200B;以将所选内容应用到仪表板。
 
 ## 概述量度
 
