@@ -1,20 +1,20 @@
 ---
 title: 协作
 description: 这是文章概述。
-source-git-commit: 57d086bbdb08200d832a1374ee356e5357a64d94
+source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 4%
+source-wordcount: '94'
+ht-degree: 1%
 
 ---
 
 
-# 概述
+# 协作
 
-通过Collaboration，您可以邀请团队成员加入贵组织的LLM Optimizer工作区，以便每个人都可以在一处访问见解和分析。 通过添加同事，您可以确保营销、SEO、PR和技术团队可以无缝地合作，以改进品牌知名度、共享调查结果并对机会采取协调一致的行动。
+通过Collaboration，您可以邀请团队成员加入贵组织的LLM Optimizer工作区，以便每个人都可以从一个位置访问见解和分析。 通过添加同事，您可以确保营销、SEO、PR和技术团队可以无缝地合作，以改进品牌知名度、共享调查结果并对机会采取协调一致的行动。
 
-**在此处添加图像**
+## 如何邀请团队成员
 
-## 过滤器
+您可以邀请团队成员，方法是将其电子邮件添加到&#x200B;**电子邮件地址**&#x200B;字段，然后单击&#x200B;**发送邀请**。 如果他们接受，他们将加入您组织的LLM Optimizer工作区。
 
-在功能板顶部，您可以通过以下方式优化视图：
+![Collaboration邀请](/help/dashboards/assets/collaboration.png)
