@@ -1,9 +1,9 @@
 ---
 title: Adobe LLM Optimizer
 description: 通过Adobe LLM Optimizer提升您的品牌知名度。 跟踪提及次数、揭示见解并主导人工智能驱动的搜索。 掌控您的可见性 — 立即开始优化！
-source-git-commit: 746a5d50d39a0681d5a3ff8c050bef0f010b4e55
+source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '232'
 ht-degree: 3%
 
 ---
@@ -22,12 +22,12 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
 * ./overview/quick-start.md
   {title= Quickstart guide}
   {description= Learn how to quickly get up and running with the LLM Optimizer.}
-  {image= ./assets/overview/agentic-traffic-card.png}
+  {image= /help/assets/overview/agentic-traffic-card.png}
   {target=_blank}
   {cta=Learn more}
 * ./dashboards/dashboards-overview.md
   {title= Dashboards overview}
-  {image= ./assets/overview/brand-presence-card.png}
+  {image= /help/assets/overview/brand-presence-card.png}
   {description= Learn how to get insights and get recommendations for your site with dashboards.}
   {target=_blank}
   {cta=Learn more}
@@ -39,7 +39,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./overview/quick-start.md" title="快速入门指南" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/agentic-traffic-card.png" alt="快速入门指南"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="快速入门指南"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./dashboards/dashboards-overview.md" title="功能板概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/brand-presence-card.png" alt="功能板概述"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="功能板概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -91,11 +91,11 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
 
 * ./tutorials/best-practices.md
   {title= Best practices for marketers and SEO analysts}
-  {image= ./assets/overview/best-practices-card.png}
+  {image= /help/assets/overview/best-practices-card.png}
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
 * https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
-  {image = ./assets/overview/business-adobe.png}
+  {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
   {cta=Learn more}
 
@@ -107,7 +107,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./tutorials/best-practices.md" title="面向营销人员和SEO分析人员的最佳实践" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/best-practices-card.png" alt="面向营销人员和SEO分析人员的最佳实践"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/best-practices-card.png" alt="面向营销人员和SEO分析人员的最佳实践"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://business.adobe.com/products/llm-optimizer.html" title="探索Adobe LLM Optimizer的功能" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/business-adobe.png" alt="探索Adobe LLM Optimizer的功能"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="探索Adobe LLM Optimizer的功能"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,3 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
-## 引用
-
-引用链接应转到此处。
