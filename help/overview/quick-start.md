@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ### AEM Cloud客户
 
-AEM Cloud客户(Cloud Service/Managed Services/Edge Delivery服务)将看到用于通过[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡试用LLM Optimizer的选项。
+AEM Cloud客户(Cloud Service/Managed Services/Edge Delivery服务)将看到用于通过[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡试用LLM Optimizer的选项。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在品牌在线状态中。 AEM Cloud客户(Cloud Service、Managed Services/Edge Delivery服务)可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 请联系您的[帐户代表]以获取更多信息。
