@@ -1,9 +1,9 @@
 ---
 title: 类别、主题和提示的最佳实践
 description: 通过配置类别、主题、提示和竞争者以量身定制的品牌监控和战略内容分析，优化LLM见解。
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 * 编辑者能否在5秒内从提示文本理解该主题？ 如果不能，请重命名/简化。
 * 是否会由其他团队负责不同主题的修复？ 如果是，则您会选择有用的主题。
-  <!-- Last bullet point does not make sense. Clarification needed.-->
+  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 一些其他有用的提示：
 
@@ -94,8 +94,8 @@ ht-degree: 0%
 >
 > * 将主题保持基于意图，而不是组织化。
 > * 请不要添加品牌/非品牌/地理位置的类别/过滤器，因为您可以在&#x200B;**[!UICONTROL 品牌]**&#x200B;选项卡中专门针对此内容进行过滤。
-> * 主题分布在多个类别中，您&#x200B;**不能**&#x200B;每个类别具有不同的主题。
-> * 单个提示可以存在于多个主题或类别中。
+> * 主题分布在多个类别中。 您&#x200B;**无法**&#x200B;为每个类别定义唯一的主题。
+> * 单个提示&#x200B;**可以**&#x200B;存在于多个主题或类别中。
 
 ## 提示的最佳实践
 
@@ -103,9 +103,15 @@ ht-degree: 0%
 
 请务必定期查看和更新提示，以确保它们符合客户需求和业务目标。
 
+提示的最佳实践：
+
+* 根据用户询问的内容将类似的提示组合在一起。
+* 关注对客户最重要的提示。
+* 检查您的品牌是否有很好的机会被提及某些提示。
+
 >[!TIP]
 >
->* 您可以使用带有正则表达式筛选器的Adobe LLM Optimizer和Google Search Console等工具来识别常见的问题结构（例如，“如何”、“什么”、“何时”、“何处”），并找出提示用户使用哪些内容访问您的网站。
+>* 您可以使用诸如Adobe LLM Optimizer和Google Search Console之类的具有正则表达式过滤器的工具来识别常见的问题结构（例如，“如何”、“什么”、“何时”、“何处”），并找出提示用户使用哪些内容访问您的网站。
 >* 要了解哪些提示与您的网站/品牌相关，您可以使用现场搜索数据、搜索引擎结果页面中的常见问题解答，甚至直接向LLM聊天机器人询问客户可能对您的品牌提出的疑问。
 
 ## 针对竞争对手的最佳实践
