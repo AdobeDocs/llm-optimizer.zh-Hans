@@ -1,7 +1,7 @@
 ---
-title: LLM Optimizer基础知识
+title: LLM Optimizer概述
 description: 了解Adobe LLM Optimizer如何在AI驱动的搜索中提升品牌知名度。 跟踪提及、引文和见解。 立即开始优化以实现更好的参与和影响。
-source-git-commit: b39a6acbcb86c91d23c3aab790266f37b579f651
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -32,9 +32,6 @@ Adobe LLM Optimizer提供了一套专为创成引擎优化而设计的工具：
 * 发现可操作的机会：确定内容和技术改进（如常见问题解答、摘要、模式、可爬网性），以提升提及次数和引用次数。
 * 跟踪流量影响：监控代理（AI助手）和将流量引荐到您拥有的资产，将可见性链接到参与。
 * 启用团队Collaboration：在营销、SEO和通信团队之间共享功能板、分配所有者并调整目标。
-
-
-<!-- I'm adding headings because LLMs like them and that way we'll rank better. Generally question format/question words in the the title is preferred. We can discuss. Or we can mirror what we did for Sites Optimizer and have this info on another page-->
 
 ## 为什么LLM优化对您的品牌很重要
 
