@@ -1,7 +1,7 @@
 ---
 title: Adobe LLM Optimizer
 description: 通过Adobe LLM Optimizer提升您的品牌知名度。 跟踪提及次数、揭示见解并主导人工智能驱动的搜索。 掌控您的可见性 — 立即开始优化！
-source-git-commit: 8debb7b04342f300a360c430768831c20c0d1015
+source-git-commit: 21af29c64d1d4b448e4ccc4bd7652b7cdb2e31a1
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 3%
@@ -10,8 +10,6 @@ ht-degree: 3%
 
 
 # Adobe LLM Optimizer
-
->[!SLIDE](llm-optimizer-overview)
 
 Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能优先应用程序，旨在帮助品牌公司在人工智能驱动的搜索环境中增强可见性、准确性和影响力。 它提供了在AI生成的答案中洞察品牌存在的信息，提供了规范性的内容建议，并自动化了优化修复。
 
