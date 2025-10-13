@@ -1,9 +1,9 @@
 ---
 title: 快速入门
 description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ### 购买之前请尝试
 
-AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选择使用“购买前尝试”选件。 它是LLM Optimizer的免费试用版，最多可提供200个免费提示。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。
+AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选择使用&#x200B;**在购买之前尝试**&#x200B;选件。 它是LLM Optimizer的免费试用版，最多可提供200个免费提示。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。
 
 有些产品功能在免费版本中不可用：
 
@@ -32,10 +32,10 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
->在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户(Cloud Service、Managed Services/Edge Delivery服务)可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
+>在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
 
 ![LLM Optimizer试用版](/help/overview/assets/llm-trial.png)
 
@@ -73,6 +73,10 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 >[!NOTE]
 >您询问LLM的确切提示不会公开提供，因为LLM不公开这些提示。
 
+>[!NOTE]
+>
+> 有关如何设置类别、主题、提示和竞争对手的更多详细信息，请参阅[配置类别、主题、提示和竞争对手的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
+
 ### 步骤3：自动预填充见解
 
 一旦您的域上线并提供了类别和主题，LLM Optimizer就会自动触发Brand Presence分析。
@@ -83,7 +87,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ![客户配置CDN](/help/overview/assets/cc-cdn.png)
 
-或者，如果事先未添加CDN提供商，则在首次访问代理和反向链接流量功能板时，系统会提示您添加CDN日志转发。 有关更多详细信息，请参阅：
+或者，如果事先没有添加与上述示例类似的CDN提供商，则在首次访问代理和反向链接流量功能板时，系统会提示您添加CDN日志转发。 有关更多详细信息，请参阅：
 
 * [代理流量](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [反向链接流量](/help/dashboards/referral-traffic.md#setup#setup)
@@ -97,4 +101,4 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 * 使用[机会](/help/dashboards/opportunities.md)确定内容和技术改进。
 * 导出数据并与团队协作，或邀请同事使用该产品。
 
-最后，为了充分了解LLM优化器的功能，请探索所有可用的[仪表板](/help/dashboards/dashboards-overview.md)。
+最后，要全面了解LLM Optimizer的功能，您应该探索所有可用的[功能板](/help/dashboards/dashboards-overview.md)。
