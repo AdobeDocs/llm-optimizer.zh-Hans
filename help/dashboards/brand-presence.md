@@ -1,7 +1,7 @@
 ---
 title: 品牌存在
 description: 了解如何使用Brand Presence功能板以了解如何在AI生成的响应级别感知您的品牌。
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Brand Presence功能板提供关于如何在AI生成的响应级别感知品牌的详细概述。 它显示提及您的品牌的位置、频率以及在何种上下文中提及。 您可以使用仪表板衡量可见性、跟踪引用和探索情绪趋势。 仪表板分为多个部分，每个部分提供不同的见解。 还有一些可自定义的过滤器，可帮助您优化显示的数据。
 
-![品牌存在](/help/dashboards/assets/brand-main1.png)
+![品牌存在](/help/dashboards/assets/brand-main.png)
 
 本页详细介绍以下内容：
 
@@ -60,7 +60,7 @@ Brand Presence功能板提供关于如何在AI生成的响应级别感知品牌�
 
 在“其他比较”部分中，最多可以选择5个其他品牌，并将它们的提及次数和引用次数与您的品牌进行比较。 这样，您就可以查看并设定您相对于其他品牌的表现。
 
-![其他比较](/help/dashboards/assets/competitor-comparison1.png)
+![其他比较](/help/dashboards/assets/other-comparison.png)
 
 从下拉列表中选择其他品牌，当您单击&#x200B;**应用筛选器**&#x200B;时，图表将更新。 图表并排显示每周提及次数和每周引用次数。 您还可以将鼠标悬停在图表上，查看数据在每周时间范围内的演变。
 

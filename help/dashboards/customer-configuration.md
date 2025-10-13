@@ -1,10 +1,10 @@
 ---
 title: 客户配置
 description: 使用客户配置定义将如何在LLM优化器平台中监控和分析您的品牌。
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 在&#x200B;**板载CDN提供程序**&#x200B;窗口中：
 
-1. 选择您的CDN提供商(例如，Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
+1. 选择您的CDN提供商。
 2. 单击&#x200B;**板载**&#x200B;以启用日志转发。
 
 如果您选择&#x200B;**其他**，则必须联系Adobe寻求帮助。
