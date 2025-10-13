@@ -1,7 +1,7 @@
 ---
 title: 反向链接流量
 description: 了解如何使用反向链接流量仪表板，以查看访客如何从外部平台、AI引用和反向链接到达您的网站。
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -78,10 +78,10 @@ The Top Referral URLs list surfaces your site’s most visited pages from referr
 
 “反向链接源详细信息”视图划分来自不同平台(如OpenAI、Microsoft、Google和Perplexity)的流量。 它显示访问次数、跳出率和渠道类型等关键量度，帮助您了解哪些AI和搜索来源为您的网站带来了最多参与流量。
 
-**Source** — 反向链接流量的来源。
-**访问次数** — 每个源的访问总数。
-**跳出率** — 来自反向链接源且没有参与事件的会话的百分比。
-**渠道** — 来源的渠道，可以免费获取，也可以付费获取，或者两者都有。
+* **Source** — 反向链接流量的来源。
+* **访问次数** — 每个源的访问总数。
+* **跳出率** — 来自反向链接源且没有参与事件的会话的百分比。
+* **渠道** — 来源的渠道，可以免费获取，也可以付费获取，或者两者都有。
 
 >[!TAB URL性能分析]
 

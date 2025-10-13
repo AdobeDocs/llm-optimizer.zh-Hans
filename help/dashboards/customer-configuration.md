@@ -1,9 +1,9 @@
 ---
 title: 客户配置
 description: 使用客户配置定义将如何在LLM优化器平台中监控和分析您的品牌。
-source-git-commit: 099d4387b6a5efd25e142db13e309a181fe67941
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 通过使用竞争者跟踪，您可以跨不同的类别和区域跟踪与您的品牌相关的竞争者提及情况。 监控它们在您细分市场中的存在和表现。 要自定义竞争对手跟踪，请执行以下操作：
 
-1. 要添加新竞争对手，请单击“添加”**&#x200B;**&#x200B;按钮。
+1. 要添加新竞争对手，请单击“添加”****&#x200B;按钮。
 2. 在新配置窗口中，选择&#x200B;**类别**。 此处将显示之前创建的类别。
 3. 添加竞争对手的名称。
 4. 根据需要自定义竞争对手的别名和域。
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 在列表中，您可以单击每个主题，此时将显示相关的提示。要删除主题及其相关的提示，请单击列表中的删除图标。
 
-## 代理CDN {#agentic-cdn}
+<!--## Agentic CDN {#agentic-cdn}
 
-不可用（是否可用于发布？）。
+Not available (will it be available for release?).-->
 
