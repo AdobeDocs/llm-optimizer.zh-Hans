@@ -37,7 +37,7 @@ ht-degree: 0%
 在此选项卡上，选择&#x200B;**板载CDN**。 将显示CDN提供程序窗口。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在**板载CDN提供程序**&#x200B;窗口中：
+在&#x200B;**板载CDN提供程序**&#x200B;窗口中：
 
 1. 选择您的CDN提供商(例如，Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
 2. 单击&#x200B;**板载**&#x200B;以启用日志转发。
