@@ -1,7 +1,7 @@
 ---
 title: URL检查器
 description: 了解如何使用URL检查器帮助分析域上的特定页面在AI搜索中的执行情况。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -65,7 +65,7 @@ URL检查器提供了多个概述量度，以便您能够快速评估页面在AI
 提供了以下量度：
 
 * **URL** — 分析的URL
-* **内容类型** — 内容的类型（拥有的、社交的、免费的、竞争者的）。
+* **内容类型** — 内容的类型（已拥有、社交、已获取、其他）。
 * **被引用次数** — 在AI生成的答案中引用URL的次数。
 * **在**&#x200B;中引用的提示数 — 引用URL的唯一AI提示数。
 * **类别** — 与URL关联的产品类别或主题。

@@ -1,9 +1,9 @@
 ---
 title: 快速入门
 description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
@@ -68,14 +68,14 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 * 输入要跟踪的&#x200B;**自定义主题**&#x200B;或子主题。 主题可以是与您的域关联的大量非品牌关键字关联的特定主题。
 * 创建&#x200B;**您的提示**&#x200B;以监视特定查询中的可见性。 提示是提供基线可见性的查询（标记和非标记）。 根据您提供的类别和主题，只会自动生成有限数量的提示。
 * 定义提及&#x200B;**别名**&#x200B;以确保捕获并记录品牌的所有提及。
-* 定义&#x200B;**竞争对手别名**&#x200B;以准确跟踪竞争对手。
+* 定义&#x200B;**其他别名**&#x200B;以准确跟踪其他品牌。
 
 >[!NOTE]
 >您询问LLM的确切提示不会公开提供，因为LLM不公开这些提示。
 
 >[!NOTE]
 >
-> 有关如何设置类别、主题、提示和竞争对手的更多详细信息，请参阅[配置类别、主题、提示和竞争对手的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
+> 有关如何设置类别、主题、提示的更多详细信息，请参阅[配置类别、主题、提示的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
 
 ### 步骤3：自动预填充见解
 
@@ -96,7 +96,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 提供CDN日志转发的信息后，您可以：
 
-* 查看[Brand Presence](/help/dashboards/brand-presence.md)仪表板，查看可见性得分并跟踪您相对于竞争对手的表现。
+* 查看[品牌存在](/help/dashboards/brand-presence.md)仪表板，查看可见性得分并跟踪您相对于其他品牌的表现。
 * 如果配置了CDN日志转发，请浏览[代理](/help/dashboards/agentic-traffic.md)和[引用流量](/help/dashboards/referral-traffic.md)仪表板。
 * 使用[机会](/help/dashboards/opportunities.md)确定内容和技术改进。
 * 导出数据并与团队协作，或邀请同事使用该产品。
