@@ -1,9 +1,9 @@
 ---
 title: LLM Optimizer最佳实践
 description: 探索LLM优化的最佳实践，以提高AI搜索中的品牌可见度。 有关基准设定和优化内容的见解。
-source-git-commit: a76d348a94495682d648ef0aad268e835e321017
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ LLM优化的其他注意事项：
 构建成功的LLM优化活动包括：
 
 * 根据客户意图确定高价值主题。 将即时意图与业务目标和客户需求对应起来。
-* 将竞争对手提及的次数抽出来，以找出差距和机会。 专注于引用竞争对手的提示，表明品牌包容的机会。
+* 将提及他人的内容定位到包括竞争对手在内的其他人，以找出差距和机会。 关注引用其他词的提示，表明品牌包容的机会。
 * 使用主题聚类按意图对提示进行分组：使用主题和搜索字段对相似的用户目标进行聚类，以实现基准的可见性。
 * 使用EEAT（经验、专业知识、权威性、可信度）和YMYL（您的资金或您的生活）标准评估品牌可信度。
 
@@ -109,7 +109,7 @@ LLM可见性完全取决于您的品牌在AI生成的答案中出现的频率和
 
    * 使用[机会仪表板](/help/dashboards/opportunities.md)识别建议并采取行动。
    * 跟踪可见性分数、情绪和引用频率。
-   * 根据竞争对手的活动和提示趋势进行调整。
+   * 根据其他人的活动（包括竞争对手）和即时趋势进行调整。
 
 ## 异地优化 — 扩展您的品牌占有率
 
@@ -158,11 +158,11 @@ LLM可见性完全取决于您的品牌在AI生成的答案中出现的频率和
 1. 设定您当前可见性的基准。
    * 识别您的品牌被提及和引用的频率和位置，以及Adobe LLM Optimizer中的情绪。 查看[Brand Presence](/help/dashboards/brand-presence.md)仪表板。
    * 分析品牌出现位置和不出现位置的提示。
-   * 比较竞争对手的可见性。
+   * 在&#x200B;**客户配置仪表板**&#x200B;中的[其他跟踪](/help/dashboards/customer-configuration.md)中，与包括竞争对手的其他人进行可见性比较。
    * 查看用户生成的平台（如Reddit、Quora和Wikipedia）的可见性。 按平台分段(ChatGPT、Google AI模式等)
    * 监控代理流量以了解LLM访问哪些页面。 代理流量通常&#x200B;**不会**&#x200B;转到主页，而是转到层次结构中较低的其他页面。 查看[代理流量](/help/assets/overview/agentic-traffic-card.png)仪表板。
 1. 监视随时间发生的变化。
-   * 使用时间筛选器来跟踪每周和每月班次
+   * 使用时间筛选器来跟踪每周和每月班次。
    * 留意可见度得分的峰值或下降。
    * 分析情绪趋势以了解品牌感知。
 1. 将可见性与流量、参与度和转化率相关联。
@@ -176,7 +176,7 @@ LLM可见性完全取决于您的品牌在AI生成的答案中出现的频率和
    * 确保您的内容易于LLM查找和阅读。 修复任何问题，例如阻止的页面或网站代码问题。
    * 确保对Wikipedia和Reddit等平台的贡献无偏见、非商业化并增加价值。
    * 使用Adobe LLM Optimizer跟踪您的可见性随时间的变化。
-   * 如果您注意到竞争对手被提及的次数增加，请调整您的策略以保持领先地位。
+   * 如果您注意到其他人（包括竞争对手）被频繁提及，请调整您的策略以保持领先地位。
    * 不断更新您的内容，以匹配用户正在搜索和询问的内容。
 1. 根据见解调整[异地](#offsite-optimization---expanding-your-brand-footprint)和[现场](#onsite-optimization---strengthening-your-owned-content)策略。
 
@@ -226,7 +226,7 @@ LLM可见性完全取决于您的品牌在AI生成的答案中出现的频率和
 * 通过查看robots.txt和CDN设置确保可爬网性。
 * 使用[URL检查器](/help/dashboards/url-inspector.md)分析URL性能。
 * 通过访问[代理流量仪表板](/help/dashboards/agentic-traffic.md)中的CDN日志跟踪机器人行为。
-* 细分流量以了解业务成果。 查看[有关类别、主题、提示和竞争对手的最佳实践](/help/overview/best-practices-topics-prompts.md)。
+* 细分流量以了解业务成果。 查看[类别、主题和提示的最佳实践](/help/overview/best-practices-topics-prompts.md)。
 
 以下是要监视的量度：
 

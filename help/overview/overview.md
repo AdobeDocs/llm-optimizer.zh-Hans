@@ -1,9 +1,9 @@
 ---
 title: LLM Optimizer概述
 description: 了解Adobe LLM Optimizer如何在AI驱动的搜索中提升品牌知名度。 跟踪提及、引文和见解。 立即开始优化以实现更好的参与和影响。
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe LLM Optimizer是人工智能优先的创新型引擎优化应用程序（�
 Adobe LLM Optimizer提供了一套专为创成引擎优化而设计的工具：
 
 * **衡量品牌可见性**：跟踪您的品牌出现在AI支持的搜索结果中的时间、位置和频率，并为基准设置明确的可见性分数。
-* **为竞争对手设定基准**：将您品牌在语音和展示方面的份额与创新型引擎中的竞争对手进行比较。
+* **为其他公司设定基准**：将您品牌的语音和展示份额与包括创新型引擎竞争对手在内的其他公司进行比较。
 * **发现可操作的机会**：确定内容和技术改进（如常见问题解答、摘要、架构、可爬网性）以提升提及次数和引用次数。
 * **跟踪流量影响**：监视代理（AI助手）和将流量引荐到您拥有的资产，将可见性链接到参与。
 * **启用团队Collaboration**：在营销、SEO和通信团队之间共享功能板、分配所有者并调整目标。
@@ -55,7 +55,7 @@ LLM优化变得越来越重要：
 借助Adobe LLM Optimizer，您可以：
 
 **衡量品牌可见性** — 跟踪在AI支持的搜索结果中何时提及您的品牌、在哪里提及您的品牌以及提及次数的频率。 通过明确的可见度分数，超越猜测的范畴，您可以设定一段时间内的基准值。 查看[Brand Presence仪表板](/help/dashboards/brand-presence.md)。
-**为竞争对手建立基准** — 了解您的品牌如何与创新型引擎中的竞争对手相抗衡。 找出语音差距并发现竞争优势。 查看[Brand Presence仪表板](/help/dashboards/brand-presence.md)。
+**为其他公司设定基准** — 了解您的品牌如何与包括创新型引擎中的竞争对手在内的其他公司相抗衡。 找出语音差距并发现竞争优势。 查看[Brand Presence仪表板](/help/dashboards/brand-presence.md)。
 **发现可操作的机会** — 查明直接增加提及次数和引文次数的内容机会（如常见问题解答、摘要、架构）和技术机会（可爬网、索引问题）。 查看[机会信息板](/help/dashboards/opportunities.md)。
 **跟踪来自AI的流量影响** — 监视代理流量（来自AI助理）和反向链接流量（来自引文的用户点击量）到您拥有的资产。 将GEO可见性与实际参与度联系起来。 查看[代理流量仪表板](/help/dashboards/agentic-traffic.md)和[引用流量仪表板](/help/dashboards/referral-traffic.md)。
 **启用团队Collaboration** — 共享功能板，为提示或类别分配所有者，并确保跨营销、搜索引擎优化(SEO)和通信功能跟踪可见性目标。 查看[Collaboration仪表板](/help/dashboards/collaboration.md)。
@@ -66,7 +66,7 @@ LLM优化变得越来越重要：
 
 * [快速入门](/help/overview/quick-start.md)让您快速启动并运行。
 * [功能板概述](/help/dashboards/dashboards-overview.md)介绍了LLM Optimizer中所有可用的功能板。
-* [配置类别、主题、提示和竞争对手的最佳实践](/help/overview/best-practices-topics-prompts.md)包含设置LLM Optimizer的基本信息。
+* [配置类别、主题、提示和其他的最佳实践](/help/overview/best-practices-topics-prompts.md)包含设置LLM Optimizer的基本信息。
 * [最佳实践](/help/tutorials/best-practices.md)可让您发现LLM优化的最佳实践，以提高您在AI搜索中的品牌可见度。
 
 
