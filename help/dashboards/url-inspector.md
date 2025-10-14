@@ -1,7 +1,8 @@
 ---
 title: URL检查器
 description: 了解如何使用URL检查器帮助分析域上的特定页面在AI搜索中的执行情况。
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+feature: URL Inspector
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%

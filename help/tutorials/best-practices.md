@@ -1,7 +1,8 @@
 ---
 title: LLM Optimizer最佳实践
 description: 探索LLM优化的最佳实践，以提高AI搜索中的品牌可见度。 有关基准设定和优化内容的见解。
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+feature: Best Practices, Agentic Traffic, Brand Presence
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 0%

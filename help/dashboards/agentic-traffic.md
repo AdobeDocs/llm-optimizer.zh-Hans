@@ -1,7 +1,8 @@
 ---
 title: 代理流量
 description: 了解如何使用代理流量仪表板，以查看AI代理如何与您的网站进行交互。
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Agentic Traffic
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -37,7 +38,7 @@ ht-degree: 0%
 在此选项卡上，选择&#x200B;**板载CDN**。 将显示CDN提供程序窗口。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在&#x200B;**板载CDN提供程序**&#x200B;窗口中：
+在**板载CDN提供程序**&#x200B;窗口中：
 
 1. 选择您的CDN提供商(例如，Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
 2. 单击&#x200B;**板载**&#x200B;以启用日志转发。

@@ -1,7 +1,8 @@
 ---
 title: 功能板概述
 description: 这是文章概述。
-source-git-commit: 1be26ad8f8e3abb87c5d897172c1ac5dcbf01f87
+feature: Onboarding
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 5%

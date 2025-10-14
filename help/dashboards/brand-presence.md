@@ -1,7 +1,8 @@
 ---
 title: 品牌存在
 description: 了解如何使用Brand Presence功能板以了解如何在AI生成的响应级别感知您的品牌。
-source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
+feature: Brand Presence
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%

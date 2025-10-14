@@ -1,7 +1,8 @@
 ---
 title: 优化机会
 description: 了解如何使用机会仪表板自动检测如何改进您的网站以提高品牌知名度。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+feature: Opportunities
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%

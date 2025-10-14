@@ -1,7 +1,8 @@
 ---
 title: 快速入门
 description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
-source-git-commit: 7a945ab37c7f45742cff093ef8f3133cf5971991
+feature: Quickstart, Onboarding
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 0%
@@ -32,7 +33,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。

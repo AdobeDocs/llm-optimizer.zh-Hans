@@ -1,7 +1,8 @@
 ---
 title: 协作
 description: 了解如何使用协作仪表板邀请团队成员加入您组织的LLM Optimizer工作区。
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+feature: Collaboration
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 1%
