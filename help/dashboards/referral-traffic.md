@@ -1,9 +1,9 @@
 ---
 title: 反向链接流量
 description: 了解如何使用反向链接流量仪表板，以查看访客如何从外部平台、AI引用和反向链接到达您的网站。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 反向链接流量
 
-反向链接流量显示访客如何从外部平台、AI引用和反向链接到达您的网站。 它跟踪和分析来自外部网站和平台的流量源、反向链接模式和转化量度。 这有助于您了解哪些源、地区和页面产生的参与度最高的流量。 数据源自CDN日志或[AEM操作遥测](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service)。 这两个来源均可以保护隐私，并且不会捕获个人用户数据。 还有一些可自定义的过滤器，可帮助您优化显示的数据。
+反向链接流量显示访客如何从外部平台、AI引用和反向链接到达您的网站。 它跟踪和分析来自外部网站和平台的流量源、反向链接模式和转化量度。 这有助于您了解哪些源、地区和页面产生的参与度最高的流量。 <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.-->还有可自定义的筛选器帮助您优化显示的数据。
 
 ![推荐页面](/help/dashboards/assets/referral-traffic.png)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 设置 {#setup}
 
-首次登录时，反向链接流量仪表板可能显示为空白。 要查看您的数据，您必须通过选择&#x200B;**转到配置**&#x200B;来配置反向链接流量提供程序。
+首次登录时，反向链接流量仪表板可能显示为空白。 要查看您的数据，您必须通过选择[转到配置](/help/dashboards/customer-configuration.md#cdn-configuration)来配置&#x200B;**CDN日志转发**。
 
 ![反向链接设置](/help/dashboards/assets/referral-setup1.png)
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-选择引荐流量提供商后，功能板将填充引荐流量量度。
+激活后，仪表板将填充引用流量量度。
 
 ## 过滤器 {#filters}
 

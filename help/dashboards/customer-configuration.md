@@ -1,10 +1,10 @@
 ---
 title: 客户配置
 description: 使用客户配置定义将如何在LLM优化器平台中监控和分析您的品牌。
-source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 1%
+source-wordcount: '802'
+ht-degree: 0%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ## CDN 配置 {#cdn-configuration}
 
-在此选项卡中，您可以配置CDN流，以使Adobe LLM Optimizer能够分析您的CDN数据。 此数据将用于为功能板（如代理流量）提供支持，提供关于流量模式、绩效指标和优化机会的洞察。 要载入CDN提供商，请单击&#x200B;**载入CDN**。
+在此选项卡中，您可以配置CDN流，以使Adobe LLM Optimizer能够分析您的CDN数据。 此数据将用于为功能板（如代理和反向链接流量）提供支持，提供关于流量模式、绩效指标和优化机会的洞察。 要载入CDN提供商，请单击&#x200B;**载入CDN**。
 
 ![客户配置CDN](/help/overview/assets/cc-cdn.png)
 
@@ -101,4 +101,4 @@ ht-degree: 1%
 1. 选择您的CDN提供商。
 2. 单击&#x200B;**板载**&#x200B;以启用日志转发。
 
-如果您选择&#x200B;**其他**，则必须联系Adobe寻求帮助。
+如果您选择&#x200B;**其他**，则必须联系llmo-now@adobe.com寻求帮助。

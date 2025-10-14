@@ -1,9 +1,9 @@
 ---
 title: 快速入门
 description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
@@ -83,11 +83,11 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### 步骤4：提供有关CDN日志转发的信息 {#step-4}
 
-要解锁代理流量和反向链接流量洞察，您需要为CDN日志转发提供信息。 通过导航到[CDN配置](/help/dashboards/customer-configuration.md)选项卡并单击&#x200B;**板载CDN**，可以从&#x200B;**客户配置仪表板**&#x200B;添加它。
+要解锁代理流量和反向链接流量洞察，您需要为CDN日志转发提供信息。 通过导航到[CDN配置](/help/dashboards/customer-configuration.md#cdn-configuration)选项卡并单击&#x200B;**板载CDN**，可以从&#x200B;**客户配置仪表板**&#x200B;添加它。
 
 ![客户配置CDN](/help/overview/assets/cc-cdn.png)
 
-或者，如果事先没有添加与上述示例类似的CDN提供商，则在首次访问代理和反向链接流量功能板时，系统会提示您添加CDN日志转发。 有关更多详细信息，请参阅：
+或者，如果事先未添加CDN提供商（如上所述），则在首次访问代理和反向链接流量功能板时，系统会提示您添加CDN日志转发。 有关更多详细信息，请参阅：
 
 * [代理流量](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [反向链接流量](/help/dashboards/referral-traffic.md#setup#setup)
