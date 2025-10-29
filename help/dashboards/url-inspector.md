@@ -2,9 +2,9 @@
 title: URL检查器
 description: 了解如何使用URL检查器帮助分析域上的特定页面在AI搜索中的执行情况。
 feature: URL Inspector
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ URL检查器提供了多个概述量度，以便您能够快速评估页面在AI
 * **唯一提示总数** — 唯一AI提示总数。
 * **唯一引用的URL** — 已引用的唯一拥有的URL数。
 * **被引用的总次数** — 拥有的URL在AI生成的答案中被引用的总次数。
-<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
-* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
+* **代理点击总数** — 来自AI代理对您URL的点击总数。
+* **来自LLM的引用点击** — 从AI生成的回答向您的URL定向的点击总数。
 
 每个概览量度的趋势指标显示这些值与上一时段相比如何随时间的变化。
 
 ## 您引用的URL
 
-引用的URL视图会列出在AI生成的答案中引用的您品牌中的所有URL以及支持量度。 数据表还具有一个搜索字段，用于快速访问特定URL。 此外，您还可以使用&#x200B;**导出**&#x200B;选项下载表.csv，并与团队共享分析或将该表包含在执行报表中。
+引用的URL视图会列出在AI生成的答案中引用的您品牌中的所有URL以及支持量度。 两个表都有一个用于快速访问主题的搜索字段，您可以通过单击&#x200B;**配置列**&#x200B;按钮来自定义显示哪些量度。 此外，您还可以使用&#x200B;**导出**&#x200B;选项下载表.csv，并与团队共享分析或将该表包含在执行报表中。
 
 ![个被引用的URL](/help/dashboards/assets/cited-urls.png)
 
@@ -74,6 +74,6 @@ URL检查器提供了多个概述量度，以便您能够快速评估页面在AI
 
 ### 详细信息窗口
 
-对于所引用的视图和趋势视图，当您将鼠标悬停在特定URL上时，这些URL都有一个&#x200B;**详细信息**&#x200B;按钮。 单击该按钮将显示一个单独的窗口，其中包含其他详细信息。 详细信息窗口显示URL被引用的频率、AI响应中被提及的情绪、其中出现的主题和提示，以及代理和反向链接流量随时间变化的趋势（适用于拥有的URL）。
+对于被引用视图和趋势视图，URL在每行的末尾都有一个&#x200B;**详细信息**&#x200B;按钮。 单击该按钮将显示一个单独的窗口，其中包含其他详细信息。 详细信息窗口显示URL被引用的频率、<!--the sentiment of AI responses where it is mentioned,-->其中出现的主题和提示，以及代理和反向链接流量随时间变化的趋势（适用于拥有的URL）。
 
 ![详细信息窗口](/help/dashboards/assets/details-url.png)

@@ -2,9 +2,9 @@
 title: 反向链接流量
 description: 了解如何使用反向链接流量仪表板，以查看访客如何从外部平台、AI引用和反向链接到达您的网站。
 feature: Referral Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,13 @@ ht-degree: 0%
 仪表板通过显示关键量度来突出显示总体反向链接性能，包括：
 
 * **反向链接流量总计** — 来自所有源的反向链接流量总计。
+* **来自LLM的引用流量** — 来自LLM的引用流量总计。
 * **同意率** — 接受同意提示的访客百分比。
 * **跳出率** — 来自没有参与事件的反向链接源的会话百分比。
 
 ![推荐页面](/help/dashboards/assets/referral-traffic.png)
 
-除了上述总体性能量度之外，**热门区域**&#x200B;面板还按地理位置划分流量。 同时，**热门反向链接源**&#x200B;面板会显示促成最多访问的平台。 量度的趋势指示器显示这些值与上一时段相比如何随时间的变化。
+除了上述总体绩效指标之外，还有三个其他面板显示了跨不同市场、反向链接源和页面意图类别的流量分布<!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
 <!--## Top Referral URLs {#top-referrals}
 
@@ -90,4 +91,4 @@ URL性能分析视图根据LLM和其他源的引用流量对性能最佳的页�
 
 >[!ENDTABS]
 
-在这两个表中，您可以使用&#x200B;**导出**&#x200B;选项来下载表.csv，并与团队共享见解，或者在执行报表中包含反向链接流量表。
+在这两个表中，您可以使用&#x200B;**导出**&#x200B;选项来下载表.csv，并与团队共享见解，或者在执行报表中包含这些表。 此外，对于这两个表，您可以通过单击&#x200B;**配置列**&#x200B;按钮来自定义显示哪些量度。
