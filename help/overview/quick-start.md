@@ -2,9 +2,9 @@
 title: 快速入门
 description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
 feature: Quickstart, Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
@@ -47,7 +47,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 >[!NOTE]
 >您提供的域将由贵组织的每个人使用，无法更改。
 
-要触发Brand Presence Analysis，您需要提供类别、主题和提示。
+在入门培训阶段将生成一小部分类别、主题和提示。 对于这些提示的品牌展示情况分析将在您的站点上线后不久提供。
 
 ![品牌状态分析](/help/overview/assets/bp-analysis.png)
 
@@ -59,7 +59,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### 第2步：自定义类别、主题和提示
 
-要触发Brand Presence分析并在功能板中填充有关您的品牌可见性的洞察，您需要自定义“类别”、“主题”和“提示”。 此配置在[客户配置仪表板](/help/dashboards/customer-configuration.md)上创建。
+您的网站上线后，您可以根据新用户引导阶段自动生成的少部分提示查看Brand Presence Analysis 。 接下来，您可以自定义品牌的类别、主题和提示。 此配置在[客户配置仪表板](/help/dashboards/customer-configuration.md)上创建。
 
 ![客户配置信息板](/help/overview/assets/prompt-creation.png)
 
@@ -78,9 +78,9 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 >
 > 有关如何设置类别、主题、提示的更多详细信息，请参阅[配置类别、主题、提示的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
 
-### 步骤3：自动预填充见解
+### 步骤3：品牌展示洞察
 
-一旦您的域上线并提供了类别和主题，LLM Optimizer就会自动触发Brand Presence分析。
+您的域上线后，您将根据上线期间自动生成的提示在Brand Presence视图中看到初始见解。 自定义自己的类别、主题和提示后，LLM Optimizer将根据您提供的提示自动触发Brand Presence分析，并且结果将在24小时内可用。
 
 ### 步骤4：提供有关CDN日志转发的信息 {#step-4}
 
