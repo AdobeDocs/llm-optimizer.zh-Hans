@@ -2,9 +2,9 @@
 title: 快速入门
 description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
 feature: Quickstart, Onboarding
-source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
+source-git-commit: 3068247d9d13d0c3cd22e2077daa06fd1680d6b3
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,17 @@ ht-degree: 0%
 ## 载入概述
 
 载入流程从载入您的域开始。 根据您是否是AEM Cloud客户，此过程会有所不同。 完成该过程后，您需要为CDN日志转发提供信息，并最终自定义类别、主题和提示。 此过程的每个部分详见下文，其中包含有关如何尽快开始使用LLM Optimizer的有用提示。
+
+### 允许Adobe LLM Optimizer访问公共页面
+
+为了提供准确的内容和技术建议，Adobe LLM Optimizer需要访问您的公开页面。 这可以通过安全的内部爬网程序（Spacecat/1.0用户代理）实现。
+
+配置要求：
+
+* 列入允许列表将Spacecat/1.0用户代理添加到您站点的robots.txt文件或bot-traffic管理规则中的
+* 确保在域或CDN级别不阻止页面。 阻止的页面无法编制索引，这意味着无法为其生成优化任务和见解。
+
+如果功能板中的内容可见性较低，请验证Crawler是否有权访问您的域。 访问受限是索引不完整的常见原因。
 
 ## 步骤1：载入域
 
@@ -33,7 +44,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
