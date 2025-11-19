@@ -2,9 +2,9 @@
 title: LLM Optimizer最佳实践
 description: 探索LLM优化的最佳实践，以提高AI搜索中的品牌可见度。 有关基准设定和优化内容的见解。
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ LLM可见性完全取决于您的品牌在AI生成的答案中出现的频率和
 
 >[!TIP]
 >
->LLM Optimizer在[Opportunities](/help/dashboards/opportunities.md)仪表板中为您建议了现场和异地优化机会。 这些机会特定于您的站点。 它通常可以将优化直接部署到您的网站。
+>LLM Optimizer在[Opportunities](/help/dashboards/opportunities.md)仪表板中为您建议了现场和异地优化机会。 这些机会特定于您的站点。 其中许多建议都可以使用LLM Optimizer直接部署到您的站点。
 
 以下是一些优化最佳实践：
 
@@ -118,7 +118,7 @@ LLM可见性完全取决于您的品牌在AI生成的答案中出现的频率和
 
 >[!TIP]
 >
->LLM Optimizer在[Opportunities](/help/dashboards/opportunities.md)仪表板中为您建议了现场和异地优化机会。 这些机会特定于您的站点。 它通常可以将优化直接部署到您的网站。
+>LLM Optimizer在[Opportunities](/help/dashboards/opportunities.md)仪表板中为您建议了现场和异地优化机会。 这些机会特定于您的站点。 其中许多建议都可以使用LLM Optimizer直接部署到您的站点。
 
 
 关键非现场渠道：
