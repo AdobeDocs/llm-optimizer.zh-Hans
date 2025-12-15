@@ -2,9 +2,9 @@
 title: 优化机会
 description: 了解如何使用机会仪表板自动检测如何改进您的网站以提高品牌知名度。
 feature: Opportunities
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ ht-degree: 0%
 | 检测受阻的代理流量 | 技术地理位置 | 分析来自已知AI代理（例如GPTBot、PerplexityBot）的已阻止请求的CDN日志。 报告受影响的URL和代理。 | 更新robots.txt或服务器配置，以便在适当时允许受支持的AI爬网程序进行访问。 |
 | 检测404/403/5xx问题 | 技术地理位置 | 监视CDN日志以获取错误响应。 报表频率、受影响的URL以及预计的点击丢失。 | 修复断开的链接、更新权限并解决服务器端问题，以便关键内容返回200响应。 |
 | 恢复内容可见性（提前访问） | 技术地理位置 | 标记对AI代理隐藏关键内容的页面。 显示受影响的URL和可恢复的预期内容。 | 预先呈现页面，以便人工智能代理无需执行JavaScript即可使用更多内容。 |
+
+## 自动优化 {#auto-optimization}
+
+自动优化功能允许通过单击部署推荐的优化方案，从而减少手动工作量和实现价值的时间。 优化可以在内容源或CDN边缘应用。 基于Edge的自动优化当前在提前访问中可用于所选机会。 有关更多详细信息，请参阅[在Edge中优化](/help/dashboards/optimize-at-edge.md)页面。
 
 ### 恢复内容可见性的机会 {#recover-contet}
 
