@@ -2,9 +2,9 @@
 title: 在Edge进行优化
 description: 了解如何在CDN边缘的LLM Optimizer中提供优化，而无需任何所需的创作更改。
 feature: Opportunities
-source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
+source-git-commit: 52984ea987ecacbd6d3bb08a6d04ff634fdf2779
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2206'
 ht-degree: 1%
 
 ---
@@ -74,18 +74,16 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
+路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
 
 * 决定要路由的域
 * 决定要路由的路径
 * 决定要路由的用户代理（推荐的正则表达式）
-* 从Adobe获取`edge.tokowaka.now`后端的api密钥
 
 要部署规则，您需要：
 
-* 创建[配置管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 创建[配置管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 提交存储库中的`cdn.yaml`配置文件
-* 将api密钥部署为[机密环境变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * 运行配置管道
 
 
@@ -113,8 +111,6 @@ data:
         action:
           type: selectOrigin
           originName: tokowaka-backend
-          headers:
-            x-tokowaka-api-key: "${{TOKOWAKA_API_KEY}}"
     origins:
       - name: tokowaka-backend
         domain: "edge.tokowaka.now"
@@ -506,6 +502,8 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 ## 在Edge中自动优化
 
 对于每个opportunity ，您可以在边缘预览、编辑、部署、查看实时优化和回退优化。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
