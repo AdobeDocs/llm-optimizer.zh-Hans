@@ -2,9 +2,9 @@
 title: 优化机会
 description: 了解如何使用机会仪表板自动检测如何改进您的网站以提高品牌知名度。
 feature: Opportunities
-source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
+source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ ht-degree: 0%
 
 自动优化功能允许通过单击部署推荐的优化方案，从而减少手动工作量和实现价值的时间。 优化可以在内容源或CDN边缘应用。 基于Edge的自动优化当前在提前访问中可用于所选机会。 有关更多详细信息，请参阅[在Edge中优化](/help/dashboards/optimize-at-edge.md)页面。
 
-### 恢复内容可见性的机会 {#recover-contet}
+<!--### Recover Content Visibility Opportunity {#recover-contet}
 
-如上所述，内容可见性机会标记因客户端渲染而为AI代理丢失关键内容的页面。 对于每个标识的页面，它都会准确地显示AI代理视图中缺少哪些内容，从而帮助您查明可见性差距。 它还受基于边缘的预呈现功能支持，该功能可以为代理流量提供更多HTML内容，而无需更改内容管理系统(CMS)。 此功能当前处于抢先访问状态，需要LLM Optimizer团队进行设置。 请联系`llmo-at-edge@adobe.com`以激活内容可见性机会。
+As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.-->
 
 ### 其他工具
 

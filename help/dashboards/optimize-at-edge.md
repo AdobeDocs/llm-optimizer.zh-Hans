@@ -2,9 +2,9 @@
 title: 在Edge进行优化
 description: 了解如何在CDN边缘的LLM Optimizer中提供优化，而无需任何所需的创作更改。
 feature: Opportunities
-source-git-commit: 522abddcabaf02ce86fb4d7978ef7fa4d6eb0358
+source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2224'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Edge中的优化是LLM Optimizer中一项基于边缘的部署功能，可为LLM用户代理提供对人工智能友好的更改。 在当前上下文中，“Edge”意味着在CDN层应用优化。 由于它在CDN层提供了优化，因此不需要在内容管理系统(CMS)中进行创作更改，因此您的原始CMS保持不变。 此分离允许您在不更改现有发布工作流程的情况下提高LLM可见性。 它仅针对代理流量，不影响人类用户或SEO机器人。 当LLM Optimizer检测到优化页面的机会时，用户可以直接在CDN边缘部署修补程序。
 
-在Edge中优化是对需要复杂工程工作的传统修复的更快、更精简的替代方法。 如前所述，完成一次性设置后，无需更改平台或较长的开发周期即可应用更改。 您可以在几分钟内发布改进，而无需开发人员参与。 这是一种低风险、无代码的方式，可为AI代理优化您的网站。
+在Edge中优化是对需要复杂工程工作的传统修复的更快、更精简的替代方法。 如前所述，完成一次性设置后，无需更改平台或较长的开发周期即可应用更改。 您可以在几分钟内发布改进，而无需开发人员参与。 这是一种为AI代理优化网站的无代码方法。
 
 Edge中的优化专为营销、SEO、内容和数字战略团队中的企业用户而设计。 它可以让商业用户完成LLM Optimizer的整个历程：识别机会、了解建议并轻松部署修复。 利用Edge中的优化，用户可以预览更改，在CDN边缘快速部署这些更改，并验证优化是否已生效。 可以在LLM Optimizer生态系统中跟踪性能。
 
@@ -29,7 +29,7 @@ Edge中的优化专为营销、SEO、内容和数字战略团队中的企业用�
 
 * **仅用于AI的投放：**&#x200B;仅向AI代理提供优化的HTML，对人类访客或SEO机器人没有影响。
 * **更快的周期：**&#x200B;在几分钟内发布更改，而不是几周。 无需更改平台或延长工程周期。
-* **低风险且可逆：**&#x200B;支持一键式回滚功能，可在几分钟内还原页面。
+* **可逆：**&#x200B;支持一键式回滚功能，可在几分钟内还原页面。
 * **无性能影响：**&#x200B;基于Edge的优化和缓存不影响网站延迟。
 * **CDN和CMS无关：**&#x200B;可与任何CDN配置和前端设置配合使用，而不管内容管理系统如何。
 
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
+路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
 
 * 决定要路由的域
 * 决定要路由的路径
@@ -83,9 +83,9 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 要部署规则，您需要：
 
-* 创建[配置管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 创建[配置管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 提交存储库中的`cdn.yaml`配置文件
-* 将api密钥部署为[机密环境变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+* 将api密钥部署为[机密环境变量](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * 运行配置管道
 
 
@@ -482,10 +482,10 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 ### 恢复内容可见性
 
 此机会标记因客户端渲染而为AI代理隐藏关键内容的页面。 对于每个标识的页面，它都会精确显示AI代理视图中缺少哪些内容，突出显示可见性差距，并允许您直接应用更改以恢复隐藏的内容。 当您使用Edge中的优化来部署此机会时，为LLM用户代理提供预呈现的、AI优化的页面版本，以便他们无需执行Javascript即可访问整个上下文。
-这可确保首先该页面对AI代理完全可见。 在该预呈现的HTML之上应用了其他增强功能。
+这可确保该页面首先对AI代理完全可见。 在该预呈现的HTML之上应用了其他增强功能。
 
 >[!IMPORTANT]
->在Edge中使用优化进行部署时，此预呈现功能会自动应用于下面显示的所有机会。
+>在Edge上使用优化部署时，此预呈现功能自动应用于下面显示的所有机会，以确保AI代理完全看到该页面。
 
 ### 优化LLM的标题
 
@@ -505,7 +505,7 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 
 ## 在Edge中自动优化
 
-对于每个机会，您都可以预览、编辑、部署、实时预览和回滚边缘位置处的优化情况。
+对于每个opportunity ，您可以在边缘预览、编辑、部署、查看实时优化和回退优化。
 
 ### 预览
 
@@ -566,4 +566,3 @@ The CDN is where the optimized version of the page is assembled and delivered to
 问：在Edge上优化预渲染与传统的服务器端渲染(SSR)有何不同？
 
 两者都可以解决不同的问题，并且可以协同工作。 传统SSR渲染服务器端内容，但不包括稍后在浏览器中加载的内容。 在Edge中优化预呈现会在JavaScript和客户端数据加载后捕获页面，并在CDN边缘生成完整汇编版本。 SSR侧重于改善人工体验，而Edge中的优化可改善LLM的Web体验。
-
