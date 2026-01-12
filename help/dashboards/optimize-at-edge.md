@@ -2,9 +2,9 @@
 title: 在Edge进行优化
 description: 了解如何在CDN边缘的LLM Optimizer中提供优化，而无需任何所需的创作更改。
 feature: Opportunities
-source-git-commit: 24585a5743a3291d2440c98f91495416bbbe1760
+source-git-commit: 3986fec2dcb9537f5b8f94ce9c72558845aba376
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 此页面详细概述了如何在CDN边缘交付优化而不进行任何创作更改。 它涵盖了载入流程、可用的优化机会以及如何在Edge自动优化。
 
 >[!NOTE]
->此功能当前处于抢先访问状态。 您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)了解有关提前访问程序的更多信息。
+>此功能当前处于抢先访问状态。 您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)了解有关提前访问程序的更多信息。
 
 ## Edge中的优化功能是什么？
 
@@ -28,7 +28,7 @@ Edge中的优化专为营销、SEO、内容和数字战略团队中的企业用�
 ### 主要优势
 
 * **仅用于AI的投放：**&#x200B;仅向AI代理提供优化的HTML，对人类访客或SEO机器人没有影响。
-* **更快的周期：**&#x200B;在几分钟内发布更改，而不是几周。 无需更改平台或延长工程周期。
+* **更快的周期：**&#x200B;在几分钟而不是几周内发布更改。 无需更改平台或延长工程周期。
 * **可逆：**&#x200B;支持一键式回滚功能，可在几分钟内还原页面。
 * **无性能影响：**&#x200B;基于Edge的优化和缓存不影响网站延迟。
 * **CDN和CMS无关：**&#x200B;可与任何CDN配置和前端设置配合使用，而不管内容管理系统如何。
@@ -39,7 +39,7 @@ Edge中的优化功能支持改善代理Web体验的机会。 在[Opportunities 
 
 ## 加入
 
-您应该联系Adobe客户团队或FDE团队以开始入门培训流程。 您的IT或CDN团队还需要完成先决条件和设置过程。 此外，您还可以通过`llmo-at-edge@adobe.com`联系我们的团队以获取进一步的入门协助。
+您应该联系Adobe客户团队或FDE团队以开始载入流程。 您的IT或CDN团队还需要完成先决条件和设置过程。 此外，您还可以联系`llmo-at-edge@adobe.com`以获取进一步的入门帮助。
 
 在Edge中优化的前提条件：
 
@@ -55,7 +55,7 @@ IT/CDN团队的要求：
 * 确保`robots.txt`不会阻止任何要定位的用户代理。
 * 在LLM Optimizer界面中，确认在Edge上优化路由。
 
-为指导设置过程，下面显示了许多CDN设置的配置示例。 这些示例应该根据您的实际实时配置进行调整。 我们建议先在较低层环境中应用更改。
+为指导设置过程，下面显示了许多CDN设置的配置示例。 请记住，这些示例应该根据您的实际实时配置进行调整。 我们建议先在较低层环境中应用更改。
 
 >[!NOTE]
 >在以下代码示例中，您可能会看到对“tokowaka”的引用，这是Edge中优化的工作项目名称。 出于兼容性目的，这些标识符将保留在代码中，并引用本文档中描述的相同功能。
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
+路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
 
 * 决定要路由的域
 * 决定要路由的路径
@@ -82,7 +82,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 要部署规则，您需要：
 
-* 创建[配置管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 创建[配置管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 提交存储库中的`cdn.yaml`配置文件
 * 运行配置管道
 
@@ -503,7 +503,7 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 
 对于每个opportunity ，您可以在边缘预览、编辑、部署、查看实时优化和回退优化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
