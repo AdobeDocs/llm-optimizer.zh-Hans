@@ -2,9 +2,9 @@
 title: 类别、主题、提示和其他的最佳实践
 description: 通过配置类别、主题、提示和其他品牌进行跟踪（包括定制品牌监控和战略内容分析的竞争对手），优化LLM见解。
 feature: Best Practices, Customer Configuration
-source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
+source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,12 @@ ht-degree: 0%
 
 要使用行业提示库，请执行以下操作：
 
-1. 导航到&#x200B;**客户配置**&#x200B;仪表板，从LLM Optimizer下载提示库文件。
-2. 在各自的选项卡上查看您品牌所在行业的建议&#x200B;**主题**&#x200B;和&#x200B;**提示**，并选择最相关的选项。
-3. 查看&#x200B;**客户历程阶段列**&#x200B;以查看客户生命周期中的提示选项（例如，发现到转换为保留）。 funnel提示的早期阶段/顶部是高优先级，但还需要考虑后期选项以提高保留率、启用客户支持等。
-4. 在上传到Adobe LLM Optimizer之前，根据需要修改主题或提示以最好地支持您的目标和目的（例如，添加您的品牌/产品名称，添加品牌术语）。 可以使用提供的&#x200B;*.csv*&#x200B;模板手动或批量上传提示以添加到LLMO。
+1. 导航到&#x200B;**客户配置**&#x200B;仪表板。
+1. 选择&#x200B;**下载提示库**可从LLM Optimizer下载库文件。
+   ![行业提示库下载](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. 在各自的选项卡上查看您品牌所在行业的建议&#x200B;**主题**&#x200B;和&#x200B;**提示**，并选择最相关的选项。
+1. 查看&#x200B;**客户历程阶段列**&#x200B;以查看客户生命周期中的提示选项（例如，发现到转换为保留）。 funnel提示的早期阶段/顶部是高优先级，但还需要考虑后期选项以提高保留率、启用客户支持等。
+1. 在向Adobe LLM Optimizer上传主题和提示之前，根据需要修改主题或提示以最好地支持您的目标和目的（例如，添加您的品牌/产品名称，添加品牌术语）。 可以使用提供的&#x200B;*.csv*&#x200B;模板手动或批量上传将提示添加到LLM Optimizer。
 
 >[!TIP]
 >
