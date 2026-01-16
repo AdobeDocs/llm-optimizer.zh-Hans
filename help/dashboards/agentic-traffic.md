@@ -2,9 +2,9 @@
 title: 代理流量
 description: 了解如何使用代理流量仪表板，以查看AI代理如何与您的网站进行交互。
 feature: Agentic Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 2993f840c7451adeccf4f11a0132b91a9bc81803
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 在此选项卡上，选择&#x200B;**板载CDN**。 将显示CDN提供程序窗口。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在&#x200B;**板载CDN提供程序**&#x200B;窗口中：
+在**板载CDN提供程序**&#x200B;窗口中：
 
 1. 选择您的CDN提供商(例如，Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
 2. 单击&#x200B;**板载**&#x200B;以启用日志转发。
@@ -46,6 +46,18 @@ ht-degree: 0%
 如果您选择&#x200B;**其他**，则必须联系llmo-now@adobe.com寻求帮助。
 
 激活后，将摄取日志，并在功能板中填充量度，例如代理交互总数、成功率、按市场划分的点击数、用户代理分析和URL级别的性能。
+
+LLM Optimizer仅从CDN日志摄取和处理字段子集。 尽管原始日志字段名称因CDN提供商而异，但它们经过标准化并呈现为：
+
+* URL（仅限路径）
+* user_agent
+* 状态
+* referer
+* 主机
+* Ttfb（到第一个字节的时间）
+* cdn_provider
+
+这些规范化字段通过代理视图公开。 在[反向链接流量](/help/dashboards/referral-traffic.md)仪表板上，CDN日志用于显示页面点击量度。 在CDN日志摄取或后续数据处理的任何阶段中，不会处理或存储任何个人身份信息(PII)。
 
 ## 过滤器 {#filters}
 
