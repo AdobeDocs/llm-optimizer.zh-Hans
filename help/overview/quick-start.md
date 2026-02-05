@@ -20,14 +20,14 @@ ht-degree: 0%
 
 ### 允许Adobe LLM Optimizer访问公共页面
 
-为了提供准确的内容和技术建议，Adobe LLM Optimizer需要访问您的公开页面。 这可以通过安全的内部爬网程序（Spacecat/1.0用户代理）实现。
+为了提供准确的内容和技术建议，Adobe LLM Optimizer需要访问您的公开页面。 这可以通过安全内部爬虫（Spacecat/1.0用户代理）实现。
 
 配置要求：
 
 * 列入允许列表将Spacecat/1.0用户代理添加到您站点的robots.txt文件或bot-traffic管理规则中的
 * 确保在域或CDN级别不阻止页面。 阻止的页面无法编制索引，这意味着无法为其生成优化任务和见解。
 
-如果功能板中的内容可见性较低，请验证Crawler是否有权访问您的域。 访问受限是索引不完整的常见原因。
+如果功能板中的内容可见度较低，请验证爬虫是否有权访问您的域。 访问受限是索引不完整的常见原因。
 
 ## 步骤1：载入域
 
@@ -44,10 +44,10 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
->在处理完成之前，新添加的提示将不会显示在[Brand Presence功能板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
+>在处理完成之前，新添加的提示将不会显示在[品牌存在感仪表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
 
 ![LLM Optimizer试用版](/help/overview/assets/llm-trial.png)
 
@@ -58,11 +58,11 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 >[!NOTE]
 >您提供的域将由贵组织的每个人使用，无法更改。
 
-在入门培训阶段将生成一小部分类别、主题和提示。 对于这些提示的品牌展示情况分析将在您的站点上线后不久提供。
+在入门培训阶段将生成一小部分类别、主题和提示。 对于这些提示的品牌存在感分析将在您的站点上线后不久提供。
 
 <!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
-此外，您还需要配置[CDN日志转发](#step-4)以进行流量分析。 LLM Optimizer需要从代理和反向链接流量获得Brand Presence数据和见解，以识别机会并提供规范性建议，从而提高AI可见性。
+此外，您还需要配置[CDN日志转发](#step-4)以进行流量分析。 LLM Optimizer需要来自代理和引荐流量的品牌存在感数据和见解，以识别机会并提供规范性建议，从而提高AI可见性。
 
 ### 非AEM Cloud客户
 
@@ -70,7 +70,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 ### 第2步：自定义类别、主题和提示
 
-您的网站上线后，您可以根据新用户引导阶段自动生成的少部分提示查看Brand Presence Analysis 。 接下来，您可以自定义品牌的类别、主题和提示。 此配置在[客户配置仪表板](/help/dashboards/customer-configuration.md)上创建。
+在您的网站入门培训后，您可以根据在入门培训阶段自动生成的少部分提示查看品牌存在感分析。 接下来，您可以自定义品牌的类别、主题和提示。 此配置在[客户配置仪表板](/help/dashboards/customer-configuration.md)上创建。
 
 ![客户配置信息板](/help/overview/assets/prompt-creation.png)
 
@@ -89,27 +89,27 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 >
 > 有关如何设置类别、主题、提示的更多详细信息，请参阅[配置类别、主题、提示的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
 
-### 步骤3：品牌展示洞察
+### 步骤3：品牌存在感分析
 
-您的域上线后，您将根据上线期间自动生成的提示在Brand Presence视图中看到初始见解。 自定义自己的类别、主题和提示后，LLM Optimizer将根据您提供的提示自动触发Brand Presence分析，并且结果将在24小时内可用。
+您的域入门后，您将根据入门培训期间自动生成的提示在品牌存在感视图中看到初始见解。 自定义自己的类别、主题和提示后，LLM Optimizer将根据您提供的提示自动触发品牌存在感分析，结果将在24小时内可用。
 
 ### 步骤4：提供有关CDN日志转发的信息 {#step-4}
 
-要解锁代理流量和反向链接流量洞察，您需要为CDN日志转发提供信息。 通过导航到[CDN配置](/help/dashboards/customer-configuration.md#cdn-configuration)选项卡并单击&#x200B;**板载CDN**，可以从&#x200B;**客户配置仪表板**&#x200B;添加它。
+要解锁代理流量和引荐流量分析，您需要提供用于CDN日志转发的信息。 通过导航到[CDN配置](/help/dashboards/customer-configuration.md#cdn-configuration)选项卡并单击&#x200B;**板载CDN**，可以从&#x200B;**客户配置仪表板**&#x200B;添加它。
 
 ![客户配置CDN](/help/overview/assets/cc-cdn.png)
 
-或者，如果事先未添加CDN提供商（如上所述），则在首次访问代理和反向链接流量功能板时，系统会提示您添加CDN日志转发。 有关更多详细信息，请参阅：
+或者，如果事先未添加CDN提供商（如上所述），则在首次访问代理和引荐流量功能板时，系统会提示您添加CDN日志转发。 有关更多详细信息，请参阅：
 
-* [代理流量](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [反向链接流量](/help/dashboards/referral-traffic.md#setup#setup)
+* [代理式流量](/help/dashboards/agentic-traffic.md#cdn-setup)
+* [引荐流量](/help/dashboards/referral-traffic.md#setup#setup)
 
 ### 步骤5：浏览功能板并采取行动
 
 提供CDN日志转发的信息后，您可以：
 
-* 查看[品牌存在](/help/dashboards/brand-presence.md)仪表板，查看可见性得分并跟踪您相对于其他品牌的表现。
-* 如果配置了CDN日志转发，请浏览[代理](/help/dashboards/agentic-traffic.md)和[引用流量](/help/dashboards/referral-traffic.md)仪表板。
+* 查看[品牌存在感](/help/dashboards/brand-presence.md)仪表板，查看您的可见度分数并跟踪您相对于其他品牌的表现。
+* 如果配置了CDN日志转发，请浏览[代理](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。
 * 使用[机会](/help/dashboards/opportunities.md)确定内容和技术改进。
 * 导出数据并与团队协作，或邀请同事使用该产品。
 

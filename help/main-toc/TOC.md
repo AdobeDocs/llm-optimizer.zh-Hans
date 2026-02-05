@@ -1,11 +1,11 @@
 ---
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
-user-guide-description: 通过Adobe LLM Optimizer提升您的品牌知名度。 跟踪提及次数、揭示见解并主导人工智能驱动的搜索。 掌控您的可见性 — 立即开始优化！
+user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。追踪品牌提及、挖掘洞察，并掌控 AI 驱动的搜索结果。立即行动，开启您的优化之旅！
 source-git-commit: 8f914fb60036058870b63addae690c945127f349
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 11%
+ht-degree: 58%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 11%
    + [要跟踪的类别、主题、提示和其他的最佳实践](/help/overview/best-practices-topics-prompts.md)
 + 仪表板{#dashboards}
    + [功能板概述](/help/dashboards/dashboards-overview.md)
-   + [品牌存在](/help/dashboards/brand-presence.md)
-   + [代理流量](/help/dashboards/agentic-traffic.md)
-   + [反向链接流量](/help/dashboards/referral-traffic.md)
-   + [URL检查器](/help/dashboards/url-inspector.md)
+   + [品牌呈现](/help/dashboards/brand-presence.md)
+   + [代理式流量](/help/dashboards/agentic-traffic.md)
+   + [引荐流量](/help/dashboards/referral-traffic.md)
+   + [URL 检查器](/help/dashboards/url-inspector.md)
    + [机会](/help/dashboards/opportunities.md)
    + [客户配置](/help/dashboards/customer-configuration.md)
    + [协作](/help/dashboards/collaboration.md)

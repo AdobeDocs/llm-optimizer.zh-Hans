@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # 功能板概述
 
-欢迎访问功能板概述。 LLM-Optimizer中的功能板可帮助营销人员跨AI搜索平台跟踪品牌可见性和情绪，识别优化机会，并实施规范性更改以提高引用率和性能。
+欢迎访问功能板概述。 LLM-Optimizer中的功能板可帮助营销人员跨AI 搜索平台跟踪品牌可见度和情绪，识别优化机会，并实施规范性更改以提高引用次数和性能。
 
-关键视图包括Brand Presence 、 Agentic和Referral流量、 URL Inspector 、 Opportunity Identification 、 Collaboration和Customer Configuration。
+关键视图包括品牌存在感、代理和引荐流量、 URL Inspector 、 Opportunity Identification 、 Collaboration和Customer Configuration。
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="品牌展示功能板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="品牌展示功能板"
+                    <a href="./brand-presence.md" title="品牌存在感仪表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="品牌存在感仪表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,9 +77,9 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="品牌展示功能板">品牌状态仪表板</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="品牌存在感仪表板">品牌存在感仪表板</a>
                     </p>
-                    <p class="is-size-6">跟踪您的品牌在LLM搜索平台中的显示方式，包括情绪分析和为其他品牌设定基准。</p>
+                    <p class="is-size-6">跟踪您的品牌在LLM搜索平台中的显示方式，包括情绪分析和基准测试其他品牌。</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
@@ -114,8 +114,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="反向链接流量仪表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="反向链接流量仪表板"
+                    <a href="./referral-traffic.md" title="引荐流量仪表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="引荐流量仪表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,7 +123,7 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="反向链接流量仪表板">引用流量仪表板</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="引荐流量仪表板">引荐流量仪表板</a>
                     </p>
                     <p class="is-size-6">衡量源自AI生成引用（可让您发现实际的AI用户参与）的人类访问</p>
                 </div>
@@ -171,7 +171,7 @@ ht-degree: 5%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="机会信息板">机会信息板</a>
                     </p>
-                    <p class="is-size-6">在AI支持的搜索平台中，显示可操作的见解并确定其优先级，这些见解可提高品牌可见性和引用性能</p>
+                    <p class="is-size-6">在AI支持的搜索平台中，显示可提高品牌可见度和引用性能的可操作见解并确定其优先级</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>

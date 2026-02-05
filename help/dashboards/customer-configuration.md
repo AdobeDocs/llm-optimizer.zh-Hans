@@ -5,7 +5,7 @@ feature: Customer Configuration
 source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -16,23 +16,23 @@ ht-degree: 0%
 
 ![客户配置信息板](/help/dashboards/assets/customer-config.png)
 
-要配置LLM Optimizer如何跨不同市场和竞争环境监控和分析您的品牌影响力，您可以访问以下选项卡：
+要配置LLM Optimizer如何跨不同市场和竞争环境监控和分析品牌存在感，您可以访问以下选项卡：
 
-* [提示](#prompts-brand)
+* [提示词](#prompts-brand)
 * [类别](#categories)
 * [其他品牌](#other-brands)
 * [品牌别名](#brand-aliases)
-* [CDN 配置](#agentic-cdn)
+* [内容传递网络配置](#agentic-cdn)
 
 >[!IMPORTANT]
 >
 > 有关如何设置类别、主题、提示的更多详细信息，请参阅[配置类别、主题、提示的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
 
-## 提示 {#prompts-brand}
+## 提示词 {#prompts-brand}
 
-在此选项卡中，您可以查看、管理和自定义提示。 您可以上传[Brand Presence分析](/help/dashboards/brand-presence.md) .csv，该列表中将填充该分析中的提示和主题，或者[下载Adobe创建的提示库](/help/overview/best-practices-topics-prompts.md)。 您还可以根据需要删除、修改和添加主题及其关联的提示。
+在此选项卡中，您可以查看、管理和自定义提示。 您可以上传[品牌存在感分析](/help/dashboards/brand-presence.md) .csv，该列表中将填充该分析中的提示和主题，或者[下载Adobe创建的提示库](/help/overview/best-practices-topics-prompts.md)。 您还可以根据需要删除、修改和添加主题及其关联的提示。
 
-要导入数据分析.csv文件，您首先需要从Brand Presence仪表板导出文件。 请参阅[数据分析](/help/dashboards/brand-presence.md#data-insights)部分以了解如何执行此操作。 一旦您拥有文件：
+要导入数据分析.csv文件，您首先需要从品牌存在感功能板导出文件。 请参阅[数据分析](/help/dashboards/brand-presence.md#data-insights)部分以了解如何执行此操作。 一旦您拥有文件：
 
 1. 在仪表板上，单击&#x200B;**上传CSV**。
 2. 在导入数据分析窗口中，拖放或手动选择文件。
@@ -52,7 +52,7 @@ ht-degree: 0%
 6. 单击&#x200B;**添加提示**，带有提示的主题将显示在列表中。
 
 >[!NOTE]
->在处理完成之前，新添加的提示将不会显示在品牌在线状态中。
+>在完成处理之前，新添加的提示词不显示在品牌呈现中。
 
 在列表中，您可以单击每个主题，此时将显示相关的提示。要删除主题及其相关的提示，请单击列表中的删除图标。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 品牌别名 {#brand-aliases}
 
-通过使用品牌别名，您可以配置应跨不同类别和区域跟踪的品牌替代名称和变体。 这可确保全面监控所有品牌提及。 要添加品牌别名，请执行以下操作：
+通过使用品牌别名，您可以配置应跨不同类别和区域跟踪的品牌替代名称和变体。 这可确保对所有品牌提及的全面监控。 要添加品牌别名，请执行以下操作：
 
 1. 单击&#x200B;**添加**&#x200B;按钮。
 2. 在新配置窗口中，选择&#x200B;**类别**。 此处将显示之前创建的类别。
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 要删除品牌别名，请单击别名列表中的删除图标。
 
-## CDN 配置 {#cdn-configuration}
+## 内容传递网络配置 {#cdn-configuration}
 
 在此选项卡中，您可以配置CDN流，以使Adobe LLM Optimizer能够分析您的CDN数据。 此数据将用于为功能板（如代理流量）提供支持，提供关于流量模式、绩效指标和优化机会的洞察。 要载入CDN提供商，请单击&#x200B;**载入CDN**。
 

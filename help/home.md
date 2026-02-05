@@ -1,17 +1,17 @@
 ---
 title: Adobe LLM Optimizer
-description: 通过Adobe LLM Optimizer提升您的品牌知名度。 跟踪提及次数、揭示见解并主导人工智能驱动的搜索。 掌控您的可见性 — 立即开始优化！
+description: 使用 Adobe LLM Optimizer 提升品牌影响力。追踪品牌提及、挖掘洞察，并掌控 AI 驱动的搜索结果。立即行动，开启您的优化之旅！
 source-git-commit: 0714b6c83e384ff21ddceafa941e3fe8c7305467
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 3%
+ht-degree: 12%
 
 ---
 
 
 # Adobe LLM Optimizer
 
-Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能优先应用程序，旨在帮助品牌公司在人工智能驱动的搜索环境中增强可见性、准确性和影响力。 它提供了在AI生成的答案中洞察品牌存在的信息，提供了规范性的内容建议，并自动化了优化修复。
+Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能优先应用程序，旨在帮助品牌公司在人工智能驱动的搜索环境中增强可见性、准确性和影响力。 它提供了对人工智能生成答案中品牌存在感的洞察，提供了规范性的内容建议，并自动化了优化修复。
 
 ## LLM Optimizer入门
 
@@ -53,7 +53,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer概述">LLM Optimizer概述</a>
                     </p>
-                    <p class="is-size-6">了解Adobe LLM Optimizer如何在AI驱动的搜索中提升品牌知名度。</p>
+                    <p class="is-size-6">了解Adobe LLM Optimizer如何提高AI驱动型搜索的品牌可见度。</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
@@ -126,7 +126,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/cn/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -173,7 +173,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
                     <p class="headline is-size-6 has-text-weight-bold">
                         使用Adobe LLM Optimizer进行LLM优化的<a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="使用Adobe LLM Optimizer优化LLM的最佳实践">最佳实践</a>
                     </p>
-                    <p class="is-size-6">了解LLM Optimizer如何帮助您在AI搜索和发现中提升品牌权威性。</p>
+                    <p class="is-size-6">了解LLM Optimizer如何帮助您在AI 搜索和探索中提升品牌权威性。</p>
                 </div>
                 <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
@@ -185,7 +185,7 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://business.adobe.com/cn/products/llm-optimizer.html" title="探索Adobe LLM Optimizer的功能" target="_blank" rel="referrer">
+                    <a href="https://business.adobe.com/products/llm-optimizer.html" title="探索Adobe LLM Optimizer的功能" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="探索Adobe LLM Optimizer的功能"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -194,11 +194,11 @@ Adobe LLM Optimizer是一个用于创新型引擎优化的创新型人工智能�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://business.adobe.com/cn/products/llm-optimizer.html" target="_blank" rel="referrer" title="探索Adobe LLM Optimizer的功能">探索Adobe LLM Optimizer的功能</a>
+                        <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" title="探索Adobe LLM Optimizer的功能">探索Adobe LLM Optimizer的功能</a>
                     </p>
-                    <p class="is-size-6">使用Adobe LLM Optimizer塑造您的品牌在AI搜索结果中的显示状态。 获得地域洞察，提高所有LLM的可见性，并推动可衡量的流量增长。</p>
+                    <p class="is-size-6">使用Adobe LLM Optimizer塑造您的品牌在AI 搜索结果中的形象。 获得地域洞察，提高所有LLM的可见性，并推动可衡量的流量增长。</p>
                 </div>
-                <a href="https://business.adobe.com/cn/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>

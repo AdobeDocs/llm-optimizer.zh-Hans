@@ -2,16 +2,16 @@
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 36%
+ht-degree: 0%
 
 ---
 # 投稿文章
 
-我们欢迎来自社区以及文档团队以外 Adobe 员工的投稿。
+我们欢迎社区成员以及文档团队以外的Adobe员工踊跃参与。
 
-## Adobe 开源项目行为准则
+## Adobe Open Source行为准则
 
-本项目已采用 [Adobe 开源行为准则](code-of-conduct.md)或 [.NET Foundation 行为准则](https://dotnetfoundation.org/code-of-conduct)。有关更多信息，请参阅[贡献](contributing.md)文章。
+该项目采用了[Adobe Open Source行为准则](code-of-conduct.md)或[.NET Foundation行为准则](https://dotnetfoundation.org/code-of-conduct)。 有关详细信息，请参阅[参与](contributing.md)一文。
 
 ## 如何向Adobe内容投稿
 
@@ -21,7 +21,7 @@ ht-degree: 36%
 
 ## 外部参与者
 
-### 小幅度更改
+### 次要更改
 
 如果您要投稿小幅度更新：
 
@@ -29,9 +29,9 @@ ht-degree: 36%
 1. 在“此内容是否有帮助？”中 浏览器窗口底部显示的横幅单击&#x200B;**详细的反馈选项**。
 1. 单击&#x200B;**建议编辑**，并在GitHub UI中提交包含所做更改的拉取请求(PR)。
 
-   有关更多信息，请参阅一般 [Adobe 文档投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+   有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-您为此存储库中的文档和代码示例提交的小幅度校正或说明受 Adobe 使用条款的约束。
+您为此存储库中的文档和代码示例提交的小幅度更正或说明受Adobe使用条款的约束。
 
 ### 社区中的重大更改或新主题
 
@@ -41,9 +41,9 @@ ht-degree: 36%
 
 ### 工具
 
-社区投稿人可以使用 GitHub UI 进行基本编辑或者分叉存储库以进行重大投稿。
+社区参与者可以使用GitHub UI进行基本编辑或创建存储库分支以进行重大更改。
 
-有关详细信息，请参阅 [Adobe 文档投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 内部参与者
 
@@ -54,11 +54,11 @@ ht-degree: 36%
 此存储库中的所有文章都使用GitHub风格的Markdown。 如果您不熟悉Markdown，请参阅：
 
 * [标记基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [可打印标记备忘单](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [可打印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 标签
 
-在公共存储库中，自动标签将分配到所有提取请求以帮助我们管理提取请求工作流，并有助于您了解您的提取请求发生了什么：
+在公共存储库中，自动标签将分配给拉取请求，以帮助我们管理拉取请求工作流，并帮助您了解拉取请求的进展情况：
 
-* **更改发送到作者**：作者将收到待处理提取请求的通知。
-* **准备合并**：准备好由我们的提取请求审核团队审核。
+* **发送给作者的更改**：已通知作者拉取请求处于待处理状态。
+* **准备合并**：准备由我们的拉取请求审核工作组进行审核。
