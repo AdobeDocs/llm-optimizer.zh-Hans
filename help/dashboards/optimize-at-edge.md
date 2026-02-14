@@ -247,7 +247,7 @@ curl -svo page.html https://www.example.com/page.html --header "user-agent: chat
 
 [Adobe LLM Optimizer：您的网页是否可编辑？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome扩展显示LLM可以访问多少网页内容以及哪些内容保持隐藏。 它设计为免费、独立的诊断工具，无需产品许可证或设置。
 
-通过单击鼠标，您可以评估任何站点的计算机可读性。 您可以查看人工智能代理所看到的内容与人类用户所看到的内容的并排比较，并估计使用LLM Optimizer可以恢复的内容量。 查看[AI是否可以读取您的网站？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension)页以了解更多信息。
+通过单击鼠标，您可以评估任何站点的计算机可读性。 您可以查看人工智能代理所看到的内容与人类用户所看到的内容的并排比较，并估计使用LLM Optimizer可以恢复的内容量。 查看[AI是否可以读取您的网站？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension)页以了解更多信息。
 
 ## 机会详细信息
 
