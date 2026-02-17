@@ -2,9 +2,9 @@
 title: 功能板概述
 description: 这是文章概述。
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '262'
 ht-degree: 5%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 欢迎访问功能板概述。 LLM-Optimizer中的功能板可帮助营销人员跨AI 搜索平台跟踪品牌可见度和情绪，识别优化机会，并实施规范性更改以提高引用次数和性能。
 
-关键视图包括品牌存在感、代理和引荐流量、 URL Inspector 、 Opportunity Identification 、 Collaboration和Customer Configuration。
+关键视图包括“概述”、“品牌存在感”、“代理和引荐流量”、“URL检查器”、“机会”、“Collaboration”和“客户配置”。
 
 <!-- CARDS
 

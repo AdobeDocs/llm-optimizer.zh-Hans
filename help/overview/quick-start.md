@@ -2,9 +2,9 @@
 title: 快速入门
 description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
 feature: Quickstart, Onboarding
-source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
+source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,13 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 有些产品功能在免费版本中不可用：
 
 * 试用仅限于一个域。 完成设置后，您将无法更改提供的域。
-* 对部署优化的支持将不可用。
+* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions)。
 
 有关如何激活免费试用版和加入域的详细信息，请参阅以下部分。
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在[品牌存在感仪表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
@@ -68,7 +68,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 
 业务协议完成后，您将加入LLM Optimizer中要加入的域。 完成此载入后，您将能够通过[https://llmo.now](https://llmo.now)登录到LLM Optimizer。
 
-### 第2步：自定义类别、主题和提示
+## 第2步：自定义类别、主题和提示
 
 在您的网站入门培训后，您可以根据在入门培训阶段自动生成的少部分提示查看品牌存在感分析。 接下来，您可以自定义品牌的类别、主题和提示。 此配置在[客户配置仪表板](/help/dashboards/customer-configuration.md)上创建。
 
@@ -89,13 +89,13 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 >
 > 有关如何设置类别、主题、提示的更多详细信息，请参阅[配置类别、主题、提示的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
 
-### 步骤3：品牌存在感分析
+## 步骤3：品牌存在感分析
 
 您的域入门后，您将根据入门培训期间自动生成的提示在品牌存在感视图中看到初始见解。 自定义自己的类别、主题和提示后，LLM Optimizer将根据您提供的提示自动触发品牌存在感分析，结果将在24小时内可用。
 
-### 步骤4：提供有关CDN日志转发的信息 {#step-4}
+## 步骤4：提供有关CDN日志转发的信息 {#step-4}
 
-要解锁代理流量和引荐流量分析，您需要提供用于CDN日志转发的信息。 通过导航到[CDN配置](/help/dashboards/customer-configuration.md#cdn-configuration)选项卡并单击&#x200B;**板载CDN**，可以从&#x200B;**客户配置仪表板**&#x200B;添加它。
+要解锁代理流量和引荐流量分析，您需要提供用于CDN日志转发的信息。 通过导航到&#x200B;**CDN配置**&#x200B;选项卡并单击&#x200B;**板载CDN**，可以从[客户配置仪表板](/help/dashboards/customer-configuration.md#cdn-configuration)添加它。
 
 ![客户配置CDN](/help/overview/assets/cc-cdn.png)
 
@@ -104,7 +104,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 * [代理式流量](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [引荐流量](/help/dashboards/referral-traffic.md#setup#setup)
 
-### 步骤5：浏览功能板并采取行动
+## 步骤5：浏览功能板并采取行动
 
 提供CDN日志转发的信息后，您可以：
 
