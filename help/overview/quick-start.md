@@ -38,13 +38,13 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 有些产品功能在免费版本中不可用：
 
 * 试用仅限于一个域。 完成设置后，您将无法更改提供的域。
-* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions)。
+* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions)。
 
 有关如何激活免费试用版和加入域的详细信息，请参阅以下部分。
 
 ### AEM Cloud客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
+如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
 
 >[!NOTE]
 >在处理完成之前，新添加的提示将不会显示在[品牌存在感仪表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
