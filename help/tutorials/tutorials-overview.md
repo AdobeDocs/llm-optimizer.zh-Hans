@@ -1,62 +1,62 @@
 ---
-title: LLM Optimizer概述
-description: 了解Adobe LLM Optimizer如何提高AI驱动型搜索的品牌可见度。 跟踪提及、引文和见解。 立即开始优化以实现更好的参与和影响。
+title: LLM Optimizer 概述
+description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜索中的可见度。跟踪品牌提及、引用及洞察。立即开始优化，提升参与度与品牌影响力。
 source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
-workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '499'
+ht-degree: 100%
 
 ---
 
 
-# LLM Optimizer概述
+# LLM Optimizer 概述
 
-本页详细介绍以下内容：
+本页面包含以下内容：
 
-* [什么是Adobe LLM Optimizer](#what-is-adobe-llm-optimizer)
-* [LLM Optimizer具备哪些功能](#what-are-llm-optimizer-capabilities)
-* [为什么LLM优化对您的品牌很重要](#why-llm-optimization-matters-for-your-brand)
-* [哪些人应该使用Adobe LLM Optimizer](#who-should-use-adobe-llm-optimizer)
-* [我能用Adobe LLM Optimizer做什么](#what-can-i-do-with-adobe-llm-optimizer)
+* [什么是 Adobe LLM Optimizer](#what-is-adobe-llm-optimizer)
+* [LLM Optimizer 提供哪些功能](#what-are-llm-optimizer-capabilities)
+* [为什么 LLM 优化对您的品牌至关重要](#why-llm-optimization-matters-for-your-brand)
+* [哪些角色适合使用 Adobe LLM Optimizer](#who-should-use-adobe-llm-optimizer)
+* [使用 Adobe LLM Optimizer 可以实现哪些目标](#what-can-i-do-with-adobe-llm-optimizer)
 
-## 什么是Adobe LLM Optimizer？
+## 什么是 Adobe LLM Optimizer？
 
-Adobe LLM Optimizer是人工智能优先的创新型引擎优化应用程序（也称为应答引擎优化），旨在帮助品牌在人工智能驱动的搜索环境中增强可见性、准确性和影响力。 它提供了对人工智能生成答案中品牌存在感的洞察，提供了规范性的内容建议，并自动化了优化修复。
+Adobe LLM Optimizer 是一款以生成式 AI 为核心的生成式引擎优化（亦称“答案引擎优化”）应用，旨在帮助品牌在 AI 驱动的搜索环境中提升可见度、准确性与影响力。该产品提供品牌在 AI 生成回答中的存在感洞察，给出可执行的内容优化建议，并自动实施优化修复。
 
-## LLM Optimizer有哪些功能？
+## LLM Optimizer 提供哪些功能？
 
-Adobe LLM Optimizer提供了一套专为创成引擎优化而设计的工具：
+Adobe LLM Optimizer 提供一整套面向生成式引擎优化的工具：
 
-* 测量品牌可见度：跟踪您的品牌出现在AI支持的搜索结果中的时间、位置和频率，并提供用于设定基准的明确可见度分数。
-* 设定竞争对手的基准：将品牌的声音份额和地位与采用创新型引擎的竞争对手进行比较。
-* 发现可操作的机会：确定内容和技术改进(如常见问题解答、摘要、模式、可抓取性)，以增加提及次数和引用次数。
-* 跟踪流量影响：同时监控代理（AI助手）和引荐流量到您拥有的资产，将可见性链接到参与。
-* 启用团队Collaboration：在营销、SEO和通信团队之间共享功能板、分配所有者并调整目标。
+* 衡量品牌可见度：跟踪品牌在 AI 搜索结果中的出现时间、位置和频率，并通过清晰的可见度分数进行基准对比。
+* 对标竞争对手：在生成式引擎中比较品牌的声音份额和存在感。
+* 发现可执行优化机会：识别内容与技术层面的改进点（如 FAQ、摘要、架构、可抓取性），以提升品牌提及与引用。
+* 跟踪流量影响：监测代理式流量（来自 AI 助手）和引荐流量，了解流量对自有网站的影响，将可见度与用户参与度关联起来。
+* 支持团队协作：共享仪表板、分配负责人，并在营销、SEO 与传播团队之间对齐目标。
 
-## 为什么LLM优化对您的品牌很重要
+## 为什么 LLM 优化对您的品牌至关重要
 
-* 人工智能产生的答案正在重塑消费者发现。
-* LLM Optimizer可确保您的品牌在这些环境中可见、准确且具有影响力。
-* 它将AI可见性与实际业务成果（如参与度和收入）联系起来。
-* 在零点击历程的世界中，此工具对于保持竞争力至关重要。
+* AI 生成的回答正在重塑消费者的信息获取方式。
+* LLM Optimizer 帮助您的品牌在这些环境中保持清晰呈现、信息准确并具备影响力。
+* 该产品将 AI 可见度与真实业务成果（如用户参与度和收入）建立关联。
+* 在“零点击”路径日益普遍的环境中，该工具有助于保持竞争力。
 
-## 谁应该使用Adobe LLM Optimizer？
+## 哪些角色适合使用 Adobe LLM Optimizer？
 
-生成式引擎优化本质上是一个跨功能的。 LLM Optimizer使用此镜头为下面列出的不同角色设计：
+生成式引擎优化本质上属于跨职能工作。LLM Optimizer 围绕这一特性，为以下角色提供支持：
 
-* **营销经理**&#x200B;衡量AI 搜索中的品牌可见度和促销活动有效性。
-* **SEO分析人员**&#x200B;跟踪品牌提及、引用次数和其他见解以制定内容策略。
-* **PR &amp; Communications Managers**&#x200B;跟踪第三方平台在LLM中的品牌认知并解决错误信息、管理情绪和保护品牌信任。
+* **营销经理**&#x200B;可衡量品牌在 AI 搜索中的可见度与营销活动效果。
+* **SEO 分析师**&#x200B;可跟踪品牌提及、引用及其他洞察，以指导内容策略制定。
+* **公关与传播经理**&#x200B;可跟踪品牌在第三方平台 LLM 中的呈现情况，及时应对错误信息、管理情绪倾向并维护品牌信任。
 
-## 我可以用Adobe LLM Optimizer做什么？
+## 使用 Adobe LLM Optimizer 可以实现哪些目标？
 
-借助Adobe LLM Optimizer，您可以：
+借助 Adobe LLM Optimizer，您可以：
 
-**衡量品牌可见度** — 跟踪在AI支持的搜索结果中何时提及您的品牌、在何处提及您的品牌以及提及的频率。 通过清晰的可见度分数超越猜测，您可以设定一段时间内的基准。
-**为竞争对手建立基准** — 了解您的品牌如何与创新型引擎中的竞争对手相抗衡。 发现声音份额差距并发现竞争优势。
-**发现可操作的机会** — 查明直接增加提及次数和引文次数的内容机会（如常见问题解答、摘要、架构）和技术机会(可抓取性、索引问题)。
-**跟踪来自AI的流量影响** — 监控代理流量（来自AI助理）和引荐流量（来自引文的用户点击量）到您拥有的资产。 将GEO可见性与实际参与度联系起来。
-**启用团队Collaboration** — 共享功能板，为提示或类别分配所有者，并确保跨营销、SEO和通信功能跟踪可见性目标。
+**衡量品牌可见度**：跟踪品牌在 AI 搜索结果中的出现时间、位置和频率。通过清晰的可见度分数进行长期对比分析，减少主观判断。
+**对标竞争对手**：查看您的品牌在生成式引擎中与竞争对手的表现对比。识别声音份额差距，发现竞争优势所在。
+**发现可执行优化机会**：精准识别内容层面（如 FAQ、摘要、架构）和技术层面（如可抓取性、索引问题）的优化点，直接提升品牌提及与引用次数。
+**跟踪来自 AI 的流量影响**：监测代理式流量（来自 AI 助手）以及引荐流量（用户通过引用点击访问），了解流量对自有网站的影响。将 GEO 可见度与实际用户参与度建立关联。
+**支持团队协作**：共享仪表板、为提示或类别指定负责人，并确保在市场、SEO 和传播团队之间持续跟踪可见性目标。
 
 
 

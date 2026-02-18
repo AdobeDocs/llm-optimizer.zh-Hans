@@ -1,21 +1,21 @@
 ---
 title: 协作
-description: 了解如何使用协作仪表板邀请团队成员加入您组织的LLM Optimizer工作区。
+description: 了解如何使用协作仪表板，邀请团队成员加入您组织的 LLM Optimizer 工作区。
 feature: Collaboration
 source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
-workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '108'
+ht-degree: 100%
 
 ---
 
 
 # 协作
 
-通过Collaboration，您可以邀请团队成员加入贵组织的LLM Optimizer工作区，以便每个人都可以从一个位置访问见解和分析。 通过添加同事，您可以确保营销、SEO、PR和技术团队能够无缝地合作，共同改进品牌可见度、共享调查结果并对机会采取协调一致的行动。
+协作功能允许您邀请团队成员加入组织的 LLM Optimizer 工作区，使所有成员能够在同一平台访问洞察与分析数据。通过添加同事，您可以确保市场、SEO、公关及技术团队无缝协作，共同提升品牌可见度、共享发现，并协同行动把握优化机会。
 
 ## 如何邀请团队成员
 
-您可以邀请团队成员，方法是将其电子邮件添加到&#x200B;**电子邮件地址**&#x200B;字段，然后单击&#x200B;**发送邀请**。 如果他们接受，他们将加入您组织的LLM Optimizer工作区。
+您可以在&#x200B;**电子邮件地址**&#x200B;字段中输入团队成员的邮箱地址，然后点击&#x200B;**发送邀请**。对方接受邀请后，即可加入您组织的 LLM Optimizer 工作区。
 
-![Collaboration邀请](/help/dashboards/assets/collaboration.png)
+![协作邀请](/help/dashboards/assets/collaboration.png)
