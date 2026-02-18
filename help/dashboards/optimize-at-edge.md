@@ -2,9 +2,9 @@
 title: 在Edge进行优化
 description: 了解如何在CDN边缘的LLM Optimizer中提供优化，而无需任何所需的创作更改。
 feature: Opportunities
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4708'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 此页面详细概述了如何在CDN边缘交付优化而不进行任何创作更改。 它涵盖了载入流程、可用的优化机会以及如何在Edge自动优化。
 
 >[!NOTE]
->此功能当前处于抢先访问状态。 您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)了解有关提前访问程序的更多信息。
+>此功能当前处于抢先访问状态。 您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)了解有关提前访问程序的更多信息。
 
 ## Edge中的优化功能是什么？
 
@@ -84,7 +84,7 @@ IT/CDN团队的要求：
 
 **通过Cloud Manager Pipeline的自助路由**
 
-如果您希望通过Cloud Manager Pipeline自行配置路由，请执行以下步骤。 路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
+如果您希望通过Cloud Manager Pipeline自行配置路由，请执行以下步骤。 路由配置是使用[originSelector CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成的。 先决条件如下所示：
 
 * 决定要路由的域。
 * 决定要路由的路径。
@@ -92,7 +92,7 @@ IT/CDN团队的要求：
 
 要部署规则，您需要：
 
-* 创建[配置管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/config-pipeline)。
+* 创建[配置管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)。
 * 在存储库中提交`cdn.yaml`配置文件。
 * 运行配置管道。
 
@@ -800,7 +800,6 @@ const FAILOVER_ON_5XX = false;
 | 机会 | 类型 | 自动识别 | 自动建议 | 自动优化 |
 |---------|----------|----------|----------|----------|
 | 恢复内容可见度 | 技术性 GEO | 检测对AI代理隐藏关键内容的页面。 显示受影响的URL和可恢复的预期内容。 | 突出显示可供AI代理使用的内容，并建议启用这些页面的预呈现。 | 向会恢复先前隐藏内容的代理流量提供完全呈现的、对人工智能友好的HTML快照。 |
-| 优化LLM的标题 | 内容优化 | 扫描标题以检测空的、重复的、缺失的或模棱两可的标题，这会降低计算机可读性。 | 建议更简洁的标题层次结构和改进的标签，并显示每个页面的更新结构的预览。 | 注入AI代理的改进标题结构，保留可视设计，同时使LLM的页面更易读取。 |
 | 添加LLM友好的摘要 | 内容优化 | 标识缺少页面或部分级别简洁摘要的长页面或复杂页面，这会使AI更难快速扫描和理解这些页面。 | 建议在页面和节级别使用人工智能生成的简短摘要，用于捕获关键内容。 | 将摘要插入相关的HTML部分，以改进模型解释和描述页面内容的方式。 |
 | 添加相关常见问题解答 | 内容优化 | 检测现有页面内容中可能受益于常见问题的意图差距。 | 根据用户意图和现有主题建议AI生成的常见问题解答内容。 | 将常见问题解答内容注入HTML，使页面在AI驱动的答案中更易于发现且更相关。 |
 | 简化复杂内容 | 内容优化 | 标记包含复杂文本的页面，这些文本可能阻碍AI理解。 | 提供AI生成的复杂文本的简化版本，同时保留原始含义。 | 重写页面中的复杂部分，提高AI可读性。 |
@@ -809,7 +808,7 @@ const FAILOVER_ON_5XX = false;
 
 [Adobe LLM Optimizer：您的网页是否可编辑？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome扩展显示LLM可以访问多少网页内容以及哪些内容保持隐藏状态。 它设计为免费、独立的诊断工具，无需产品许可证或设置。
 
-通过单击鼠标，您可以评估任何站点的计算机可读性。 您可以查看人工智能代理所看到的内容与人类用户所看到的内容的并排比较，并估计使用LLM Optimizer可以恢复的内容量。 查看[AI是否可以读取您的网站？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+通过单击鼠标，您可以评估任何站点的计算机可读性。 您可以查看人工智能代理所看到的内容与人类用户所看到的内容的并排比较，并估计使用LLM Optimizer可以恢复的内容量。 查看[AI是否可以读取您的网站？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 机会详细信息
 
@@ -822,10 +821,6 @@ const FAILOVER_ON_5XX = false;
 
 >[!IMPORTANT]
 >在Edge上使用优化部署时，此预呈现功能自动应用于下面显示的所有机会，以确保AI代理完全看到该页面。
-
-### 优化LLM的标题
-
-此机会检测标题结构导致AI代理由于标题为空、重复、缺失或模糊难以理解的页面。 对于每个受影响的页面，机会会显示次优标题并建议更清晰的层次结构。 在Edge中使用Optimize进行部署时，改进的标题会在HTML中应用于代理流量。 这有助于机器可读性，同时保持面向人的布局不变。
 
 ### 添加LLM友好的摘要
 
@@ -843,7 +838,7 @@ const FAILOVER_ON_5XX = false;
 
 对于每个opportunity ，您可以在边缘预览、编辑、部署、查看实时优化和回退优化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
@@ -895,7 +890,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：在源中更新内容时会发生什么情况？
 
-只要基础源页面未发生更改，我们就会从缓存中提供页面的优化版本。 但是，当&#x200B;**恢复内容可见度**&#x200B;的源发生更改时，我们的系统会自动刷新，以便AI代理始终接收最新的内容。 这是因为我们使用低缓存生存时间(TTL)设置（以分钟为单位），因此您网站上的任何内容更新都会触发该窗口内的新优化。 对于诸如&#x200B;**添加LLM友好型摘要**&#x200B;之类的内容机会，LLM Optimizer会监控源页面是否有更改。 如果检测到更改，我们会暂停优化并将其标记为人工审核，以防止代理可见页面和人类可见页面之间的内容漂移。
+只要基础源页面未发生更改，我们就会从缓存中提供页面的优化版本。 但是，当&#x200B;**恢复内容可见度**&#x200B;的源发生更改时，我们的系统会自动刷新，以便AI代理始终接收最新的内容。 这是因为我们使用低缓存生存时间(TTL)设置（以分钟为单位），因此您网站上的任何内容更新都会触发该窗口内的新优化。 对于诸如&#x200B;**添加LLM友好型摘要**之类的内容机会，LLM Optimizer会监控源页面是否有更改。 如果检测到更改，我们会暂停优化并将其标记为人工审核，以防止代理可见页面和人类可见页面之间的内容漂移。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Edge是否仅为使用Adobe Edge Delivery Service (EDS)的站点进行优化？

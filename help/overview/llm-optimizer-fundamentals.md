@@ -1,9 +1,9 @@
 ---
 title: LLM Optimizer基础知识
 description: 了解Adobe LLM Optimizer如何提高AI驱动型搜索的品牌可见度。 跟踪提及、引文和见解。 立即开始优化以实现更好的参与和影响。
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,9 @@ Adobe LLM Optimizer提供了一套专为创成引擎优化而设计的工具：
 借助Adobe LLM Optimizer，您可以：
 
 **衡量品牌可见度** — 跟踪在AI支持的搜索结果中何时提及您的品牌、在何处提及您的品牌以及提及的频率。 通过清晰的可见度分数超越猜测，您可以设定一段时间内的基准。
-**为其他人设定基准** — 了解您的品牌如何与创新型引擎中的其他人进行栈叠。 发现声音份额差距并发现竞争优势。
-**发现可操作的机会** — 查明直接增加提及次数和引文次数的内容机会（如常见问题解答、摘要、架构）和技术机会(可抓取性、索引问题)。
-**跟踪来自AI的流量影响** — 监控代理流量（来自AI助理）和引荐流量（来自引文的用户点击量）到您拥有的资产。 将GEO可见性与实际参与度联系起来。
+**设定其他人的基准** — 了解您的品牌如何与创新型引擎中的其他人进行栈叠。 发现声音份额差距并发现竞争优势。
+**发现可操作的机会** — 查明直接增加提及次数和引文量的内容机会（如常见问题解答、摘要、架构）和技术机会(可抓取性、索引问题)。
+**跟踪来自AI**的流量影响 — 监控代理流量（来自AI助手）和引荐流量（来自引文的用户点击量）到您拥有的资产。 将GEO可见性与实际参与度联系起来。
 **启用团队Collaboration** — 共享功能板，为提示或类别分配所有者，并确保跨营销、SEO和通信功能跟踪可见性目标。
 
 
@@ -112,7 +112,7 @@ Use these as guidelines for creating tutorials - some may be covered already in 
 
 ## Identifying Optimization Opportunities
 
-* Content Fixes (Headings, FAQs, Canonicals)
+* Content Fixes (FAQs, Canonicals)
 * Technical Fixes (Blocked Agents, Errors)
 * Third-Party Influence Strategies
 
