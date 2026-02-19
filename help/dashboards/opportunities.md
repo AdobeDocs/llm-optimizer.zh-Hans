@@ -2,10 +2,10 @@
 title: 优化机会
 description: 了解如何使用“机会”仪表板，自动检测您的网站可改进之处，以提升品牌可见度。
 feature: Opportunities
-source-git-commit: 33196139fef1cebd47b15aa964df2bac366ea12a
+source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 100%
+source-wordcount: '544'
+ht-degree: 97%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 100%
 | 推荐结构化内容（FAQ） | 内容（站内） | 检测高热度提示但缺少对应 FAQ 条目的情况。 显示相关提示、类别及受影响的 URL。 | 添加包含简明回答的 FAQ 架构模块，以匹配常见问题。 |
 | 检测被阻止的代理式流量 | 技术性 GEO | 分析内容传递网络日志，识别来自已知 AI 代理（例如 GPTBot、PerplexityBot）的遭到阻止的请求。 报告受影响的 URL 和相关代理。 | 在适当情况下更新 robots.txt 或服务器配置，以允许受支持的 AI 爬虫访问。 |
 | 检测 404 / 403 / 5xx 错误问题 | 技术性 GEO | 监控内容传递网络日志中的错误响应。 报告错误发生频率、受影响的 URL 以及预计丢失的访问次数。 | 修复失效链接、更新访问权限，并解决服务器端问题，使关键内容返回 200 状态代码。 |
+| 简化复杂内容 | 内容（站内） | 标识超出可读性阈值的复杂长段落，这会降低AI理解。 | 对页面进行预渲染，使 AI 代理在无需执行 JavaScript 的情况下即可获取更多内容。 |
 | 恢复内容可见度（抢先体验） | 技术性 GEO | 标记对 AI 代理隐藏关键内容的页面。 显示受影响的 URL 以及可恢复的预期内容。 | 对页面进行预渲染，使 AI 代理在无需执行 JavaScript 的情况下即可获取更多内容。 |
 
 ## 自动优化 {#auto-optimization}
