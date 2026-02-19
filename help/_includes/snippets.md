@@ -1,99 +1,11 @@
 ---
-source-git-commit: beae935e7a34f5bccbe21578fa9a928912958710
+source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 2%
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 # 代码片段
-
-## 验证设置 — Adobe托管的CDN {#verify-setup-adobe-aem-cs-cdn}
-
-**验证设置**
-
-完成设置后，验证是否正在将机器人流量路由到Edge Optimize，以及人流量是否不受影响。
-
-**1. 测试机器人流量（应优化）**
-
-使用代理用户代理模拟AI机器人请求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-成功的响应包括`x-edgeoptimize-request-id`标头，用于确认请求是通过Edge优化路由的：
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. 测试人员流量（不应受影响）**
-
-模拟常规的人类浏览器请求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-响应应&#x200B;**不**&#x200B;包含`x-edgeoptimize-request-id`标头。 在Edge中启用优化之前，页面内容和响应时间应保持相同。
-
-**3. 如何区分这两种方案**
-
-| 页眉 | 机器人流量（已优化） | 人流（未受影响） |
-|---|---|---|
-| `x-edgeoptimize-request-id` | 存在 — 包含唯一的请求ID | 不存在 |
-| `x-edgeoptimize-fo` | 仅在发生故障转移时存在（值： `1`） | 不存在 |
-
-也可以在LLM Optimizer UI中查看流量路由的状态。 导航到&#x200B;**客户配置**&#x200B;并选择&#x200B;**CDN配置**&#x200B;选项卡。
-
-![启用了路由的AI流量路由状态](/help/assets/optimize-at-edge/adobe-CDN-traffic-routed-tick.png)
-
-## 验证设置 — BYOCDN {#verify-setup-byocdn}
-
-**验证设置**
-
-完成设置后，验证是否正在将机器人流量路由到Edge Optimize，以及人流量是否不受影响。
-
-**1. 测试机器人流量（应优化）**
-
-使用代理用户代理模拟AI机器人请求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-成功的响应包括`x-edgeoptimize-request-id`标头，用于确认请求是通过Edge优化路由的：
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. 测试人员流量（不应受影响）**
-
-模拟常规的人类浏览器请求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-响应应&#x200B;**不**&#x200B;包含`x-edgeoptimize-request-id`标头。 在Edge中启用优化之前，页面内容和响应时间应保持相同。
-
-**3. 如何区分这两种方案**
-
-| 页眉 | 机器人流量（已优化） | 人流（未受影响） |
-|---|---|---|
-| `x-edgeoptimize-request-id` | 存在 — 包含唯一的请求ID | 不存在 |
-| `x-edgeoptimize-fo` | 仅在发生故障转移时存在（值： `1`） | 不存在 |
-
-也可以在LLM Optimizer UI中查看流量路由的状态。 导航到&#x200B;**客户配置**&#x200B;并选择&#x200B;**CDN配置**&#x200B;选项卡。
-
-![启用了路由的AI流量路由状态](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 ## API密钥检索步骤 {#retrieve-byocdn-api-key}
 
@@ -118,4 +30,4 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 ## 返回概述 {#return-to-overview}
 
-要进一步了解Edge优化，包括可用的机会、自动优化工作流和常见问题，请返回[Edge优化概述](/help/dashboards/optimize-at-edge.md)。
+要进一步了解Edge优化，包括可用的机会、自动优化工作流和常见问题，请返回[Edge优化概述](/help/dashboards/optimize-at-edge/overview.md)。

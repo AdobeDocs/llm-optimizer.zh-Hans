@@ -1,116 +1,116 @@
 ---
 title: 快速入门
-description: 开始使用Adobe LLM Optimizer — 加入您的品牌，解锁AI可见性洞察，并探索功能板以提高搜索性能。
+description: 开始使用 Adobe LLM Optimizer —— 加入您的品牌，解锁 AI 可见性洞察，并探索仪表板以提升搜索表现。
 feature: Quickstart, Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 0%
+source-wordcount: '1152'
+ht-degree: 93%
 
 ---
 
 
 # 快速入门
 
-要开始使用LLM Optimizer，您需要完成载入流程，如以下步骤所述。 完成该过程后，您将拥有[LLM Optimizer功能板](/help/dashboards/dashboards-overview.md)和其他功能的完全访问权限。
+要开始使用LLM Optimizer，您需要完成载入流程，如以下步骤所述。 完成该流程后，您将获得对 [LLM Optimizer 的仪表板](/help/dashboards/dashboards-overview.md)及其他功能的完整访问权限。
 
-## 载入概述
+## 加入概述
 
-载入流程从载入您的域开始。 根据您是否是AEM Cloud客户，此过程会有所不同。 完成该过程后，您需要为CDN日志转发提供信息，并最终自定义类别、主题和提示。 此过程的每个部分详见下文，其中包含有关如何尽快开始使用LLM Optimizer的有用提示。
+加入流程从加入您的域名开始。 根据您是否为 AEM Cloud 客户，流程会有所不同。 完成该流程后，您需要提供内容传递网络日志转发信息，并最终自定义类别、主题和提示词。 以下将详细介绍流程的每个部分，并提供帮助您尽快开始使用 LLM Optimizer 的实用建议。
 
-### 允许Adobe LLM Optimizer访问公共页面
+### 允许 Adobe LLM Optimizer 访问公开页面
 
-为了提供准确的内容和技术建议，Adobe LLM Optimizer需要访问您的公开页面。 这可以通过安全内部爬虫（Spacecat/1.0用户代理）实现。
+为了提供准确的内容和技术建议，Adobe LLM Optimizer 需要访问您的公开页面。 该访问通过一个安全的内部爬虫（Spacecat/1.0 用户代理）实现。
 
 配置要求：
 
-* 列入允许列表将Spacecat/1.0用户代理添加到您站点的robots.txt文件或bot-traffic管理规则中的
-* 确保在域或CDN级别不阻止页面。 阻止的页面无法编制索引，这意味着无法为其生成优化任务和见解。
+* 将 Spacecat/1.0 用户代理添加到您网站的 robots.txt 文件或机器人流量管理规则中的允许列表。
+* 确保页面在域名或内容传递网络层级未设置访问限制。 遭到阻止的页面无法索引，这意味着无法为其生成优化任务和相关洞察。
 
-如果功能板中的内容可见度较低，请验证爬虫是否有权访问您的域。 访问受限是索引不完整的常见原因。
+如果仪表板中显示内容可见度较低，请确认爬虫是否可以访问您的域名。 访问受限是导致索引不完整的常见原因。
 
-## 步骤1：载入域
+## 步骤 1：加入您的域名
 
-### 购买之前请尝试
+### 先试用后购买
 
-AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选择使用&#x200B;**在购买之前尝试**&#x200B;选件。 它是LLM Optimizer的免费试用版，最多可提供200个免费提示。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。
+AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选择使用&#x200B;**在购买之前尝试**&#x200B;选件。 该方案为 LLM Optimizer 的免费试用版本，最多包含 200 个免费提示词。 使用超过 200 个提示词需要单独签署许可协议。 该访问权限以“按现状”和“按可用性”方式提供，Adobe 可随时对其进行修改、限制或取消。
 
-有些产品功能在免费版本中不可用：
+免费版本中有部分产品功能不可用：
 
-* 试用仅限于一个域。 完成设置后，您将无法更改提供的域。
-* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions)。
+* 试用仅限一个域名。 完成设置后，您将无法更改所提供的域名。
+* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
 
-有关如何激活免费试用版和加入域的详细信息，请参阅以下部分。
+有关如何激活免费试用版本并加入域名的详细信息，请参阅下方内容。
 
-### AEM Cloud客户
+### AEM Cloud 客户
 
-如果您是AEM Cloud客户，则可以选择使用[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的产品公告卡来尝试LLM Optimizer。
-
->[!NOTE]
->在处理完成之前，新添加的提示将不会显示在[品牌存在感仪表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客户可以使用LLM Optimizer的免费试用版。 使用200多个提示需要单独的许可协议。 访问是按“原样”和“可用”提供的，并可由Adobe随时修改、限制或删除。 有关更多信息，请联系您的客户代表。
-
-![LLM Optimizer试用版](/help/overview/assets/llm-trial.png)
-
-单击&#x200B;**尝试LLM Optimizer**&#x200B;按钮后，您将被重定向到[https://llmo.now](https://llmo.now)。 然后，您将需要通过IMS登录。 登录后，您将通过提供域和品牌名称开始载入流程。
-
-![LLM Optimizer域](/help/overview/assets/domain.png)
+如果您是 AEM Cloud 客户，可以通过 [Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) 中的“产品公告”卡片试用 LLM Optimizer。
 
 >[!NOTE]
->您提供的域将由贵组织的每个人使用，无法更改。
+>新添加的提示词在处理完成之前不会显示在[品牌存在感仪表板](/help/dashboards/brand-presence.md)中。 AEM Cloud 客户可以使用 LLM Optimizer 的免费试用版本。 使用超过 200 个提示词需要单独签署许可协议。 该访问权限以“按现状”和“按可用性”方式提供，Adobe 可随时对其进行修改、限制或取消。 如需更多信息，请联系您的客户代表。
 
-在入门培训阶段将生成一小部分类别、主题和提示。 对于这些提示的品牌存在感分析将在您的站点上线后不久提供。
+![LLM Optimizer 试用版](/help/overview/assets/llm-trial.png)
+
+单击&#x200B;**试用 LLM Optimizer** 按钮后，系统会将您重定向至 [https://llmo.now](https://llmo.now)。 随后，您需要通过 IMS 登录。 登录后，您将通过提供域名和品牌名称来启动加入流程。
+
+![LLM Optimizer 域名](/help/overview/assets/domain.png)
+
+>[!NOTE]
+>您提供的域名将供组织内所有成员使用，且无法更改。
+
+在加入阶段，将自动生成一小组类别、主题和提示词。 在网站完成加入后不久，即可查看基于这些提示词生成的品牌存在感分析。
 
 <!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
-此外，您还需要配置[CDN日志转发](#step-4)以进行流量分析。 LLM Optimizer需要来自代理和引荐流量的品牌存在感数据和见解，以识别机会并提供规范性建议，从而提高AI可见性。
+此外，您还需要配置[内容传递网络日志转发](#step-4)以进行流量分析。 LLM Optimizer 需要品牌存在感数据以及来自代理式和引荐流量的洞察，以识别机会并提供可执行的优化建议，从而提升 AI 可见性。
 
-### 非AEM Cloud客户
+### 非 AEM Cloud 客户
 
-业务协议完成后，您将加入LLM Optimizer中要加入的域。 完成此载入后，您将能够通过[https://llmo.now](https://llmo.now)登录到LLM Optimizer。
+在完成商业协议后，您将使用希望加入 LLM Optimizer 的域名进行加入。 完成加入后，您将可以通过 [https://llmo.now](https://llmo.now) 登录 LLM Optimizer。
 
-## 第2步：自定义类别、主题和提示
+## 步骤 2：自定义类别、主题和提示词
 
-在您的网站入门培训后，您可以根据在入门培训阶段自动生成的少部分提示查看品牌存在感分析。 接下来，您可以自定义品牌的类别、主题和提示。 此配置在[客户配置仪表板](/help/dashboards/customer-configuration.md)上创建。
+在您的网站完成加入后，您可以基于加入阶段自动生成的一小组提示词查看品牌存在感分析。 接下来，您可以为您的品牌自定义类别、主题和提示词。 此配置在[客户配置仪表板](/help/dashboards/customer-configuration.md)中创建。
 
-![客户配置信息板](/help/overview/assets/prompt-creation.png)
+![客户配置仪表板](/help/overview/assets/prompt-creation.png)
 
-从该功能板，您可以：
+在此仪表板中，您可以：
 
-* 添加与您的业务优先级一致的&#x200B;**新类别**。 类别可以是与域相关的广泛内容领域。
-* 输入要跟踪的&#x200B;**自定义主题**&#x200B;或子主题。 主题可以是与您的域关联的大量非品牌关键字关联的特定主题。
-* 创建&#x200B;**您的提示**&#x200B;以监视特定查询中的可见性。 提示是提供基线可见性的查询（标记和非标记）。 根据您提供的类别和主题，只会自动生成有限数量的提示。
-* 定义提及&#x200B;**别名**&#x200B;以确保捕获并记录品牌的所有提及。
-* 定义&#x200B;**其他别名**&#x200B;以准确跟踪其他品牌。
+* 添加与您的业务重点相匹配的&#x200B;**新类别**。 类别可以是与您的域名相关的广泛内容领域。
+* 输入您希望跟踪的&#x200B;**自定义主题**&#x200B;或子主题。 主题可以是与您的域名相关的高搜索量非品牌关键词所对应的具体主题。
+* 创建&#x200B;**您的提示词**，以监测特定查询中的可见度。 提示词是用于提供基准可见度的查询（包括品牌和非品牌）。 系统仅会根据您提供的类别和主题自动生成数量有限的提示词。
+* 定义提及&#x200B;**别名**，以确保捕获并统计品牌的所有不同提及形式。
+* 定义&#x200B;**其他别名**，以准确跟踪其他品牌。
 
 >[!NOTE]
->您询问LLM的确切提示不会公开提供，因为LLM不公开这些提示。
+>您向 LLM 提出的具体提示词不会公开，因为 LLM 不会披露这些内容。
 
 >[!NOTE]
 >
-> 有关如何设置类别、主题、提示的更多详细信息，请参阅[配置类别、主题、提示的最佳实践](/help/overview/best-practices-topics-prompts.md)页面。
+> 有关如何设置类别、主题和提示词的更多信息，请参阅[配置类别、主题和提示词的最佳做法](/help/overview/best-practices-topics-prompts.md)页面。
 
-## 步骤3：品牌存在感分析
+## 步骤 3：品牌存在感洞察
 
-您的域入门后，您将根据入门培训期间自动生成的提示在品牌存在感视图中看到初始见解。 自定义自己的类别、主题和提示后，LLM Optimizer将根据您提供的提示自动触发品牌存在感分析，结果将在24小时内可用。
+在您的域名完成加入后，您将在品牌存在感视图中看到基于加入阶段自动生成提示词的初始洞察。 当您自定义类别、主题和提示词后，LLM Optimizer 将自动对您提供的提示词触发品牌存在感分析，并在 24 小时内提供结果。
 
-## 步骤4：提供有关CDN日志转发的信息 {#step-4}
+## 步骤 4：提供内容传递网络日志转发信息 {#step-4}
 
-要解锁代理流量和引荐流量分析，您需要提供用于CDN日志转发的信息。 通过导航到&#x200B;**CDN配置**&#x200B;选项卡并单击&#x200B;**板载CDN**，可以从[客户配置仪表板](/help/dashboards/customer-configuration.md#cdn-configuration)添加它。
+要解锁代理式流量和引荐流量洞察，您需要提供内容传递网络日志转发信息。 您可以在[客户配置仪表板](/help/dashboards/customer-configuration.md#cdn-configuration)中，通过导航至&#x200B;**内容传递网络配置**&#x200B;选项卡并单击&#x200B;**引入内容传递网络**&#x200B;来添加该信息。
 
-![客户配置CDN](/help/overview/assets/cc-cdn.png)
+![客户配置内容传递网络](/help/overview/assets/cc-cdn.png)
 
-或者，如果事先未添加CDN提供商（如上所述），则在首次访问代理和引荐流量功能板时，系统会提示您添加CDN日志转发。 有关更多详细信息，请参阅：
+或者，如果此前尚未添加内容传递网络提供商（如上所述），则在首次访问代理式和引荐流量仪表板时，系统会提示您添加内容传递网络日志转发。 有关更多详细信息，请参阅：
 
 * [代理式流量](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [引荐流量](/help/dashboards/referral-traffic.md#setup#setup)
 
-## 步骤5：浏览功能板并采取行动
+## 步骤 5：探索仪表板并采取行动
 
-提供CDN日志转发的信息后，您可以：
+在您提供内容传递网络日志转发信息后，您可以：
 
-* 查看[品牌存在感](/help/dashboards/brand-presence.md)仪表板，查看您的可见度分数并跟踪您相对于其他品牌的表现。
-* 如果配置了CDN日志转发，请浏览[代理](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。
-* 使用[机会](/help/dashboards/opportunities.md)确定内容和技术改进。
-* 导出数据并与团队协作，或邀请同事使用该产品。
+* 查看[品牌存在感](/help/dashboards/brand-presence.md)仪表板，查看您的可见度分数，并跟踪您相对于其他品牌的表现。
+* 如果已配置内容传递网络日志转发，请探索[代理式](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。
+* 使用[机会](/help/dashboards/opportunities.md)识别内容和技术优化改进点。
+* 导出数据，与您的团队协作，或邀请同事使用该产品。
 
-最后，要全面了解LLM Optimizer的功能，您应该探索所有可用的[功能板](/help/dashboards/dashboards-overview.md)。
+最后，为了全面了解 LLM Optimizer 的功能，您应探索所有可用的[仪表板](/help/dashboards/dashboards-overview.md)。
