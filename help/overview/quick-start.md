@@ -38,7 +38,7 @@ AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选
 免费版本中有部分产品功能不可用：
 
 * 试用仅限一个域名。 完成设置后，您将无法更改所提供的域名。
-* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
+* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
 
 有关如何激活免费试用版本并加入域名的详细信息，请参阅下方内容。
 
