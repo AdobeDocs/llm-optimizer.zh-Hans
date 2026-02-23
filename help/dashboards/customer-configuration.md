@@ -194,7 +194,7 @@ Adobe LLM Optimizer允许您集成Google Search Console帐户，将真正的搜�
 1. 在Google Search Console选项卡上，查看源自Search Console的主题和提示列表。
    ![提示列表](/help/dashboards/assets/prompts-list.png)
 1. 单击所需的主题/提示类别以展开列表。
-1. 使用&#x200B;**添加**&#x200B;按钮从列表中添加提示。 您还可以使用&#x200B;**全部添加**批量添加提示和类别。
+1. 使用&#x200B;**添加**&#x200B;按钮从列表中添加提示。 您还可以使用&#x200B;**全部添加**&#x200B;批量添加提示和类别。
    ![添加提示](/help/dashboards/assets/add-prompts.png)
 1. 选择满意后，单击通知消息上的&#x200B;**保存**。
 
