@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
 workflow-type: tm+mt
 source-wordcount: '2181'
-ht-degree: 84%
+ht-degree: 99%
 
 ---
 
@@ -47,27 +47,27 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 * 完成内容传递网络日志的转发流程。
 
 对您的 IT/内容传递网络团队的要求：
-* 列入允许列表将`*AdobeEdgeOptimize/1.0*`用户代理添加到您站点的robots.txt文件或bot-traffic管理规则中的。
+* 将 `*AdobeEdgeOptimize/1.0*` 用户代理添加到您网站的 robots.txt 文件或机器人流量管理规则中的允许列表。
 * 确保页面在域名或内容传递网络层级未设置访问限制。
 * 在内容传递网络中添加 Optimize at Edge 路由规则。
 * 在 LLM Optimizer 界面中确认 Optimize at Edge 路由已生效。
 
-要指导设置过程，请在下面选择您的CDN提供商，然后遵循相应的配置指南。 请注意，这些示例需根据您的实际生产环境配置进行调整。 建议您先在低级环境中应用更改。
+要指导这个设置过程，请在下面选择您的内容传递网络提供商，然后按照相应的配置指南操作。 请注意，这些示例需根据您的实际生产环境配置进行调整。 建议您先在低级环境中应用更改。
 
-### CDN配置指南
+### 内容传递网络配置指南
 
 | 内容传递网络提供者 | 类型 | 指南 |
 |---|---|---|
-| AEM Cloud Service托管的CDN (Fastly) | 由 Adobe 管理 | [查看安装指南](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
-| Fastly (BYOCDN) | 自带CDN | [查看安装指南](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
-| Akamai (BYOCDN) | 自带CDN | [查看安装指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
-| Cloudflare (BYOCDN) | 自带CDN | [查看安装指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
-| CloudFront (BYOCDN) | 自带CDN | [查看安装指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
+| AEM 云服务托管的内容传递网络 (Fastly) | 由 Adobe 管理 | [查看设置指南](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
+| Fastly (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
+| Akamai (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
+| Cloudflare (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
->如果您的CDN提供商未在上面列出，或者您在LLM Optimizer UI中未找到您的域或电子邮件，请联系`llmo-at-edge@adobe.com`以获取载入帮助。 完成设置配置后，您即可在 LLM Optimizer 中部署 Optimize at Edge 相关优化建议。
+>如果上面未列出您的内容传递网络提供商，或者您在 LLM Optimizer UI 中未找到您的域或电子邮件，请联系 `llmo-at-edge@adobe.com` 获取加入帮助。 完成设置配置后，您即可在 LLM Optimizer 中部署 Optimize at Edge 相关优化建议。
 
-上述每个CDN设置指南在结尾都包含详细的验证步骤，以确认代理流量是否正确路由，以及人工流量是否不受影响。
+上述每个内容传递网络设置指南的最后都包含详细的验证步骤，以确认代理式流量被正确路由以及人工流量不受影响。
 
 ## 机会
 
@@ -84,7 +84,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 [Adobe LLM Optimizer：您的网页是否可引用？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) 该 Chrome 扩展程序可显示 LLM 能访问您网页内容的比例，以及哪些内容仍处于隐藏状态。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
 
-只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 优化机会详解
 
@@ -114,7 +114,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 针对每个优化机会，您可以在边缘层进行预览、编辑、部署、实时查看和回滚操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
@@ -166,7 +166,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要基础源页面未发生更改，我们就会从缓存中提供页面的优化版本。 但是，当&#x200B;**恢复内容可见度**&#x200B;的源发生更改时，我们的系统会自动刷新，以便AI代理始终接收最新的内容。 这是因为我们使用低缓存生存时间(TTL)设置（以分钟为单位），因此您网站上的任何内容更新都会触发该窗口内的新优化。 对于诸如&#x200B;**添加LLM友好型摘要**&#x200B;之类的内容机会，LLM Optimizer会监控源页面是否有更改。 如果检测到更改，我们会暂停优化并将其标记为人工审核，以防止代理可见页面和人类可见页面之间的内容漂移。
+只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见度**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如果检测到变化，我们会暂停优化，并将其标记为需要人工审阅，以防止代理可见页面和人类可见页面之间发生内容漂移。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？
@@ -177,6 +177,6 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 两者解决的问题不同，且可协同使用。 传统 SSR 渲染服务器端内容，但不包含随后在浏览器中加载的内容。 Optimize at Edge 预渲染会在 JavaScript 和客户端数据加载完成后捕获页面，在 CDN 边缘层生成完整组装版本。 SSR 侧重于提升真人用户体验，而 Optimize at Edge 则专注于提升面向 LLM 的 Web 体验。
 
-问：如果我为域中的某些URL（而非所有URL）部署了优化功能，会发生什么情况？
+问：如果我为域中的某些 URL，而不是所有 URL 部署优化功能，会怎样？
 
-只修改您明确优化的URL。 对于具有已部署机会的URL，AI代理将接收优化版本。 对于没有部署机会的URL，我们的服务只是按原样代理原始页面，而不应用更改或将其存储在我们的优化缓存层中。 这可确保您能够有选择地部署优化，而不会影响网站的其余部分。
+只有您明确进行优化的 URL 才会更改。 对于已经部署了机会的 URL，AI 代理会获得优化过的版本。 对于未部署机会的 URL，我们的服务会按原样代理原始页面，不会应用更改，也不会将其存储在我们的优化缓存层中。 这样可以确保您能够选择性地部署优化，而不影响网站的其余部分。
