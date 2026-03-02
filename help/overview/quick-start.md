@@ -3,16 +3,16 @@ title: 快速入门
 description: 开始使用 Adobe LLM Optimizer —— 加入您的品牌，解锁 AI 可见性洞察，并探索仪表板以提升搜索表现。
 feature: Quickstart, Onboarding
 source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # 快速入门
 
-要开始使用LLM Optimizer，您需要完成载入流程，如以下步骤所述。 完成该流程后，您将获得对 [LLM Optimizer 的仪表板](/help/dashboards/dashboards-overview.md)及其他功能的完整访问权限。
+要开始使用 LLM Optimizer，您需要按照以下步骤完成加入过程。完成该流程后，您将获得对 [LLM Optimizer 的仪表板](/help/dashboards/dashboards-overview.md)及其他功能的完整访问权限。
 
 ## 加入概述
 
@@ -33,12 +33,12 @@ ht-degree: 93%
 
 ### 先试用后购买
 
-AEM Cloud(Cloud Service、Managed Services、Edge Delivery服务)客户可以选择使用&#x200B;**在购买之前尝试**&#x200B;选件。 该方案为 LLM Optimizer 的免费试用版本，最多包含 200 个免费提示词。 使用超过 200 个提示词需要单独签署许可协议。 该访问权限以“按现状”和“按可用性”方式提供，Adobe 可随时对其进行修改、限制或取消。
+AEM Cloud（Cloud Service、Managed Services、Edge Delivery Service）客户可以选择使用&#x200B;**先试用后购买**&#x200B;方案。该方案为 LLM Optimizer 的免费试用版本，最多包含 200 个免费提示词。 使用超过 200 个提示词需要单独签署许可协议。 该访问权限以“按现状”和“按可用性”方式提供，Adobe 可随时对其进行修改、限制或取消。
 
 免费版本中有部分产品功能不可用：
 
 * 试用仅限一个域名。 完成设置后，您将无法更改所提供的域名。
-* 部署优化的功能可在早期访问中获得。 若要了解详情，请访问[在Edge中优化常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
+* 早期访问计划提供部署优化的功能。了解详情，请访问 [Optimize at Edge 常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
 
 有关如何激活免费试用版本并加入域名的详细信息，请参阅下方内容。
 
