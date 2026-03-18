@@ -38,7 +38,7 @@ ht-degree: 98%
 在该选项卡中，选择&#x200B;**加入内容传递网络**。 随后会显示内容传递网络提供商窗口。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在**加入内容传递网络提供商**&#x200B;窗口中：
+在&#x200B;**加入内容传递网络提供商**&#x200B;窗口中：
 
 1. 选择您的内容传递网络提供商（例如 Akamai、Adobe 管理的 Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare 或“其他”）。
 2. 单击&#x200B;**加入**&#x200B;以启用日志转发。
