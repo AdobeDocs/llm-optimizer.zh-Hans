@@ -3,9 +3,9 @@ title: 快速入门
 description: 开始使用 Adobe LLM Optimizer —— 加入您的品牌，解锁 AI 可见性洞察，并探索仪表板以提升搜索表现。
 feature: Quickstart, Onboarding
 source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ AEM Cloud（Cloud Service、Managed Services、Edge Delivery Service）客户可
 * [引荐流量](/help/dashboards/referral-traffic.md#setup#setup)
 
 >[!NOTE]
->有关使用客户管理的CDN (BYOCDN)时日志转发的详细信息，请参阅[BYOCDN日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
+>有关使用客户自管内容传递网络（BYOCDN）进行日志转发的详细信息，请参阅 [BYOCDN 日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 ## 步骤 5：探索仪表板并采取行动
 

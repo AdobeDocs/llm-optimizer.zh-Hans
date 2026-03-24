@@ -3,9 +3,9 @@ user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追踪品牌提及、挖掘洞察，并掌控 AI 驱动的搜索结果。 立即行动，开启您的优化之旅！
 source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '98'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 91%
    + [机会](/help/dashboards/opportunities.md)
    + [客户配置](/help/dashboards/customer-configuration.md)
    + [协作](/help/dashboards/collaboration.md)
-+ BYOCDN日志转发{#log-forwarding}
++ BYOCDN 日志转发{#log-forwarding}
    + [概述](/help/overview/log-forwarding/log-forwarding-overview.md)
    + [Akamai](/help/overview/log-forwarding/akamai.md)
    + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
    + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
-   + [快速地](/help/overview/log-forwarding/fastly.md)
-   + [因佩尔瓦](/help/overview/log-forwarding/imperva.md)
+   + [Fastly](/help/overview/log-forwarding/fastly.md)
+   + [Imperva](/help/overview/log-forwarding/imperva.md)
    + [其他（手动上传）](/help/overview/log-forwarding/other.md)
 + 其他资源{#resources}
    + Optimize at Edge{#optimize-at-edge}

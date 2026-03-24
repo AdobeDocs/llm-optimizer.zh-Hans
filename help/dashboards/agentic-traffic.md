@@ -3,9 +3,9 @@ title: 代理式流量
 description: 了解如何使用“代理式流量”仪表板，以查看 AI 代理如何与您的站点交互。
 feature: Agentic Traffic
 source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 98%
 在该选项卡中，选择&#x200B;**加入内容传递网络**。 随后会显示内容传递网络提供商窗口。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在&#x200B;**加入内容传递网络提供商**&#x200B;窗口中：
+在**加入内容传递网络提供商**&#x200B;窗口中：
 
 1. 选择您的内容传递网络提供商（例如 Akamai、Adobe 管理的 Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare 或“其他”）。
 2. 单击&#x200B;**加入**&#x200B;以启用日志转发。
@@ -46,7 +46,7 @@ ht-degree: 98%
 如果您选择&#x200B;**其他**，则需要联系 llmo-now@adobe.com 以获取支持。
 
 >[!NOTE]
->有关使用客户管理的CDN (BYOCDN)时日志转发的详细信息，请参阅[BYOCDN日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
+>有关使用客户自管内容传递网络（BYOCDN）进行日志转发的详细信息，请参阅 [BYOCDN 日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 启用后，系统会开始摄取日志，仪表板将显示总代理交互次数、成功率、按市场划分的点击数、用户代理分析以及 URL 级别性能等量度。
 

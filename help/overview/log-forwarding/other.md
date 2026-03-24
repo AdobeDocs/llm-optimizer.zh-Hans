@@ -1,76 +1,76 @@
 ---
-title: 日志转发 — 其他（手动上传）
-description: 了解在使用不受支持的CDN提供商时，如何在LLM Optimizer中手动将CDN日志上传到Adobe的S3存储段，以收集代理流量数据。
+title: 日志转发 - 其他（手动上传）
+description: 了解在使用不受支持的内容传递网络提供商时，如何手动将内容传递网络日志上传到 Adobe 的 S3 存储桶，以便在 LLM Optimizer 中收集代理式流量数据。
 feature: Agentic Traffic
 source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # 日志转发：其他（手动上传） {#log-forwarding-other}
 
-**其他BYOCDN**&#x200B;配置方法是一个通用选项，适用于希望在以下情况下向LLM Optimizer提供CDN日志的客户：
+**其他 BYOCDN** 配置方式是一种通用选项，适用于以下场景中希望向 LLM Optimizer 提供内容传递网络日志的客户：
 
-- **首选手动上传** — 例如，运营团队导出日志并定期上传。
-- **使用了临时自动化进程** — 一次性脚本、计划导出、无服务器作业。
-- 客户使用的&#x200B;**CDN不受内置日志转发集成的原生支持**。
+- 优先采用&#x200B;**手动上传** — 例如，运维团队定期导出日志并上传。
+- **使用临时自动化流程** — 如一次性脚本、计划导出或无服务器任务。
+- 客户使用的是内置日志转发集成&#x200B;**尚不支持的内容传递网络**。
 
-此方法模拟“连续转发”模型：生成日志并将其上传到预期的S3位置，最后由摄取管道自动处理。
+该方法模拟“持续转发”模式：日志生成后上传至指定的 S3 位置，并最终由数据接入管道自动处理。
 
-## 步骤1：在LLM Optimizer中载入 {#step-1}
+## 第 1 步：在 LLM Optimizer 中完成加入 {#step-1}
 
-在[LLM Optimizer](https://llmo.now/)：
+在 [LLM Optimizer](https://llmo.now/) 上：
 
 1. 转到&#x200B;**配置**。
 
    ![“配置”按钮](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. 单击&#x200B;**CDN配置**&#x200B;选项卡。
+1. 单击&#x200B;**内容传递网络配置**&#x200B;选项卡。
 
-   ![CDN配置选项卡](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![内容传递网络配置选项卡](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. 单击&#x200B;**开始**。
+1. 单击&#x200B;**开始使用**。
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
 
-1. 在&#x200B;**激活AI流量分析**&#x200B;旁边，单击&#x200B;**配置**。
+1. 在&#x200B;**激活 AI 流量洞察**&#x200B;旁边，单击&#x200B;**配置**。
 
    ![配置](/help/overview/assets/log-forwarding/common/configure.png)
 
 1. 选择&#x200B;**其他**。
 
-   ![选择其他](/help/overview/assets/log-forwarding/other/other-select.png)
+   ![选择其他](/help/overview/assets/log-forwarding/other/other-select.png)。
 
-1. 单击&#x200B;**板载**。
+1. 单击&#x200B;**加入**。
 
 <!--   ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## 步骤2：准备和上传日志 {#step-2}
+## 第 2 步：准备并上传日志 {#step-2}
 
-### 必需的日志格式（JSON行） {#log-format}
+### 所需日志格式（JSON Lines） {#log-format}
 
-日志必须以换行符分隔的JSON形式上传（每行&#x200B;**一个JSON对象**）。 每个日志行必须包括以下拼写完全低于&#x200B;**的字段**。
+日志必须以换行分隔的 JSON 格式上传（**每行一个 JSON 对象**）。每一行日志必须包含以下字段，且字段名称必须&#x200B;**与下方完全一致**。
 
-#### 逐字段架构 {#schema}
+#### 字段逐项说明 {#schema}
 
 | 字段 | 类型 | 描述 | 示例 |
 |---|---|---|---|
-| **timestamp** | 字符串 | 请求的时间戳遵循&#x200B;**ISO 8601**&#x200B;格式。 | `"2025-02-01T23:00:05Z"` |
-| **host** | 字符串 | 客户端请求的Web域。 | `"www.example.com"` |
-| **url** | 字符串 | 需要&#x200B;**path**&#x200B;和&#x200B;**查询参数**，而域应该&#x200B;**不包括**。 | `"/home?utm_source=google"` |
-| **request_method** | 字符串 | HTTP请求方法，有时称为HTTP谓词。 | `"GET"` |
-| **request_user_agent** | 字符串 | HTTP User-Agent请求标头。 | `"Mozilla/5.0 (compatible; GPTBot/1.0"` |
-| **request_referer** | 字符串 | HTTP Referer请求标头（不能为空）。 | `"https://chatgpt.com"` |
-| **response_status** | 整数 | HTTP响应状态代码。 | `200` |
-| **response_content_type** | 字符串 | HTTP内容类型响应标头。 | `"text/html; charset=utf-8"` |
-| **time_to_first_byte** | 整数 | 从创建到服务器的连接到下载网页内容之间的时间，以&#x200B;**毫秒为单位**。 如果未知或不可用，则设置为零。 | `42` |
+| **时间戳** | 字符串 | 请求的时间戳，需符合 **ISO 8601** 格式。 | `"2025-02-01T23:00:05Z"` |
+| **主机** | 字符串 | 客户端请求的 Web 域名。 | `"www.example.com"` |
+| **url** | 字符串 | 必须包含&#x200B;**路径**&#x200B;和&#x200B;**查询参数**，但&#x200B;**不**&#x200B;应包含域名。 | `"/home?utm_source=google"` |
+| **request_method** | 字符串 | HTTP 请求方法，也称为 HTTP 动词。 | `"GET"` |
+| **request_user_agent** | 字符串 | HTTP 请求标头中的 User-Agent 字段。 | `"Mozilla/5.0 (compatible; GPTBot/1.0"` |
+| **request_referer** | 字符串 | HTTP 请求标头中的反向链接字段（可为空）。 | `"https://chatgpt.com"` |
+| **response_status** | 整数 | HTTP 响应状态代码。 | `200` |
+| **response_content_type** | 字符串 | HTTP 响应标头中的 Content-Type 字段。 | `"text/html; charset=utf-8"` |
+| **time_to_first_byte** | 整数 | 从建立与服务器连接到开始下载网页内容之间的时间，单位为&#x200B;**毫秒**。如果未知或不可用，请设置为 0。 | `42` |
 
 #### 示例日志行 {#example}
 
-以下示例显示了三个日志行：
+以下示例展示三条日志记录：
 
 ```json
 {"timestamp":"2025-02-01T23:06:14Z","host":"www.example.com","url":"/products/llm-optimizer?utm_source=google","request_method":"GET","request_user_agent":"Mozilla/5.0 (compatible; GPTBot/1.0; +https://openai.com/gptbot)","response_status":200,"request_referer":"","response_content_type":"text/html; charset=utf-8","time_to_first_byte":198}
@@ -78,55 +78,55 @@ ht-degree: 2%
 {"timestamp":"2025-02-01T23:44:05Z","host":"www.example.com","url":"/products/pricing/enterprise?utm_medium=social","request_method":"GET","request_user_agent":"ClaudeBot/1.0 (+https://www.anthropic.com)","response_status":200,"request_referer":"","response_content_type":"application/pdf","time_to_first_byte":312}
 ```
 
-### 关键免责声明（拼写和类型） {#disclaimer}
+### 重要说明（字段拼写与类型） {#disclaimer}
 
-引入和聚合管道对&#x200B;**字段名和数据类型**&#x200B;有严格要求。
+数据接入与聚合管道对&#x200B;**字段名称和数据类型**&#x200B;要求非常严格。
 
-- 字段名称必须与&#x200B;**完全匹配**（大小写和拼写）。
-- 数据类型应正确，如下所示：
-   - **timestamp**&#x200B;必须是格式为&#x200B;**ISO 8601**&#x200B;的字符串。 类似UNIX的时间戳可能不起作用。
-   - **response_status**&#x200B;必须为整数。
-   - **time_to_first_byte**&#x200B;必须为整数并使用毫秒。
-   - 字符串必须是有效的JSON字符串。
-- JSON格式错误或字段/字段缺失或错误可能会导致日志被跳过或无法解析，从而导致报表中缺少数据。
+- 字段名称必须&#x200B;**完全**&#x200B;匹配（包括大小写和拼写）。
+- 数据类型必须正确，具体如下：
+   - **时间戳**&#x200B;必须为符合 **ISO 8601** 格式的字符串。类 UNIX 时间戳可能无法正常解析。
+   - **response_status** 必须为整数。
+   - **time_to_first_byte** 必须为整数，单位为毫秒。
+   - 字符串必须为有效的 JSON 字符串。
+- 格式错误的 JSON 或缺失/错误字段可能导致日志被跳过或解析失败，从而造成报告数据缺失。
 
-### 上传位置和处理节奏 {#upload-location}
+### 上传位置与处理周期 {#upload-location}
 
 #### 路径规则 {#path-rule}
 
-使用以下格式上载相应文件夹路径下的日志： **`yyyy/mm/dd/`**（带斜杠）。
+请按照以下格式将日志上传到对应的文件夹路径：**`yyyy/mm/dd/`**（使用斜杠分隔）。
 
-2025年2月1日UTC的示例日志： `ABC123AdobeOrg/raw/byocdn-other/2025/02/01/`
+示例（2025 年 2 月 1 日 UTC 的日志路径）：`ABC123AdobeOrg/raw/byocdn-other/2025/02/01/`
 
 #### 处理规则 {#processing-rule}
 
-- 在给定&#x200B;**UTC日期**&#x200B;期间上载的日志将在该UTC日期&#x200B;**接近结束时由管道**&#x200B;处理（每日运行）。
-- 上载到&#x200B;**前几天文件夹** （回填）的日志在24小时内被&#x200B;**检测并处理**。
+- 在某一 **UTC 日期**&#x200B;内上传的日志，会在&#x200B;**该 UTC 日期接近结束时**&#x200B;由处理管道进行处理（每日运行）。
+- 上传到&#x200B;**历史日期文件夹中**&#x200B;的日志（补录数据）将在 24 小时内&#x200B;**检测并处理**。
 
-## 方案 {#scenarios}
+## 使用场景 {#scenarios}
 
-### 场景1：Splunk/Elasticsearch中的日志 — 导出并上传到S3 {#scenario-splunk}
+### 场景 1：日志存储在 Splunk / Elasticsearch —— 导出并上传至 S3 {#scenario-splunk}
 
-**目标**：从现有可观察性平台检索日志，并将日志交付到S3位置。
+**目标**：从现有观测平台获取日志，并将其传递到 S3 指定位置。
 
-- 从Splunk/Elastic搜索事件中提取必填字段。
-- 按照上述架构（JSON线）将每个事件转换为一个JSON对象。
-- 将结果文件上传到指定的S3存储段和&#x200B;**当前UTC时间**&#x200B;路径： `…/byocdn-other/yyyy/mm/dd/`
-- 日志将在UTC时间结束时自动处理。
+- 状态代码
+- 将每条事件转换为符合上述架构的 JSON 对象（JSON Lines 格式）。
+- 将生成的文件上传到指定的 S3 存储桶及&#x200B;**当前 UTC 日期**&#x200B;路径：`…/byocdn-other/yyyy/mm/dd/`
+- 日志将在该 UTC 日期结束前自动处理。
 
-### 场景2：Lambda/Azure函数 — 设置格式并上传到S3 {#scenario-serverless}
+### 场景 2：使用 Lambda / Azure Function —— 格式化并上传至 S3 {#scenario-serverless}
 
-**目标**：使用无服务器计算获取/接收CDN日志，对其进行标准化并将其交付到S3位置。
+**目标**：使用无服务器计算获取或接收内容传递网络日志，对其进行标准化处理，并传递到 S3 指定位置。
 
-- 函数从客户的源（日志存储、队列、Blob存储等）检索日志。
-- 函数将字段映射到预期的架构并发出&#x200B;**JSON行**。
-- 函数将输出上传到： `…/byocdn-other/yyyy/mm/dd/`
-- 日志将在UTC时间结束时自动处理。
+- 该函数从客户的数据源（日志存储、消息队列、Blob 存储等）获取日志。
+- 函数将字段映射为指定结构，并输出为 **JSON Lines** 格式。
+- 函数将输出上传至：`…/byocdn-other/yyyy/mm/dd/`
+- 日志将在该 UTC 日期结束前自动处理。
 
-## 快速核对清单 {#checklist}
+## 快速检查清单 {#checklist}
 
-- 每行&#x200B;**一个JSON对象** （JSON行）
-- **指定的字段拼写**&#x200B;完全相同
-- 正确的数据类型
-- **time_to_first_byte**（以毫秒为单位，整数）
-- 上载到相应的UTC文件夹： **byocdn-other**&#x200B;下的&#x200B;**yyyy/mm/dd/**
+- **每行一个 JSON 对象**（JSON Lines）
+- **字段拼写必须完全一致**
+- 数据类型必须正确
+- **time_to_first_byte** 必须为毫秒单位的整数
+- 上传至正确的 UTC 文件夹：**byocdn-other** 下的 **yyyy/mm/dd/**
