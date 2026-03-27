@@ -3,7 +3,7 @@ title: 引荐流量
 description: 了解如何使用“引荐流量”仪表板，查看访客通过外部平台、AI 引用和引荐链接访问您站点的情况。
 feature: Referral Traffic
 source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '605'
 ht-degree: 100%
 

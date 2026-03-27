@@ -2,7 +2,7 @@
 title: LLM Optimizer 基础介绍
 description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜索中的可见度。 跟踪品牌提及、引用情况及相关洞察。 立即开始优化，提升参与度与品牌影响力。
 source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 

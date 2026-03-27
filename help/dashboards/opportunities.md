@@ -3,7 +3,7 @@ title: 优化机会
 description: 了解如何使用“机会”仪表板，自动检测您的网站可改进之处，以提升品牌可见度。
 feature: Opportunities
 source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '544'
 ht-degree: 100%
 
