@@ -2,8 +2,8 @@
 title: 仪表板概述
 description: 这是本文概述。
 feature: Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
-workflow-type: ht
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
+workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 
 关键视图包括：概述、品牌存在感、代理式流量和引荐流量、URL 检查器、机会、协作以及客户配置。
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./brand-presence.md
   {title= Brand presence dashboard}

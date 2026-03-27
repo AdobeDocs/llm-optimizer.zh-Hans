@@ -5,12 +5,12 @@ type: Documentation
 description: LLM Optimizer文档。
 mini-toc-levels: 2
 feature-set: LLM Optimizer
-git-repo: https://github.com/AdobeDocs/llm-optimizer.zh-Hans
-index: y
+git-repo: https://github.com/AdobeDocs/llm-optimizer.en
+index: true
 recommendations: noDisplay
-source-git-commit: 43372ded8691adbbbbcfd859b4d2176c17115ba8
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---

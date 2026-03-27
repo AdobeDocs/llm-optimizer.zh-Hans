@@ -2,8 +2,8 @@
 title: 优化机会
 description: 了解如何使用“机会”仪表板，自动检测您的网站可改进之处，以提升品牌可见度。
 feature: Opportunities
-source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
-workflow-type: ht
+source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
+workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 100%
 
@@ -41,13 +41,17 @@ ht-degree: 100%
 
 自动优化支持一键部署推荐的优化项，从而减少人工操作并缩短实现价值的时间。 优化可应用于内容源端或内容传递网络边缘。 基于边缘的自动优化目前处于抢先体验阶段，仅支持部分优化机会。 有关更多详细信息，请参阅 [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md) 页面。
 
-<!--### Recover Content Visibility Opportunity {#recover-contet}
+<!--
+### Recover Content Visibility Opportunity {#recover-contet}
 
-As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.-->
+As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.
+-->
 
 ### 其他工具
 
 [LLM 可见度检查器](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc)是一款 Chrome 扩展，可帮助您准确了解网页内容中有多少可由 LLM 访问，以及哪些内容仍处于隐藏状态。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。 只需单击一次，用户即可评估任意网站的机器可读性，并查看 AI 代理与人类用户所见内容的并排对比。 同时评估通过使用 LLM Optimizer 可恢复的内容比例。
 
-<!--| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
-| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |-->
+<!--
+| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
+| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |
+-->

@@ -2,8 +2,8 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '2181'
 ht-degree: 100%
 
@@ -15,6 +15,7 @@ ht-degree: 100%
 本页面详细介绍了如何在无需进行内容创作更改的情况下，在内容传递网络边缘交付优化。 内容涵盖加入流程、可用的优化机会，以及如何在边缘实现自动优化。
 
 >[!NOTE]
+>
 >此功能目前处于抢先体验阶段。 您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)了解有关抢先体验计划的更多信息。
 
 ## 什么是 Optimize at Edge？
@@ -47,6 +48,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 * 完成内容传递网络日志的转发流程。
 
 对您的 IT/内容传递网络团队的要求：
+
 * 将 `*AdobeEdgeOptimize/1.0*` 用户代理添加到您网站的 robots.txt 文件或机器人流量管理规则中的允许列表。
 * 确保页面在域名或内容传递网络层级未设置访问限制。
 * 在内容传递网络中添加 Optimize at Edge 路由规则。
@@ -65,6 +67,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 | CloudFront (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
+>
 >如果上面未列出您的内容传递网络提供商，或者您在 LLM Optimizer UI 中未找到您的域或电子邮件，请联系 `llmo-at-edge@adobe.com` 获取加入帮助。 完成设置配置后，您即可在 LLM Optimizer 中部署 Optimize at Edge 相关优化建议。
 
 上述每个内容传递网络设置指南的最后都包含详细的验证步骤，以确认代理式流量被正确路由以及人工流量不受影响。
@@ -84,7 +87,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 [Adobe LLM Optimizer：您的网页是否可引用？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) 该 Chrome 扩展程序可显示 LLM 能访问您网页内容的比例，以及哪些内容仍处于隐藏状态。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
 
-只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 优化机会详解
 
@@ -114,7 +117,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 针对每个优化机会，您可以在边缘层进行预览、编辑、部署、实时查看和回滚操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
@@ -152,13 +155,15 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 目标用户代理列表由您在加入流程中自行定义。
 
-<!--Q. What does "Edge" in Optimize at Edge mean?
+<!--
+Q. What does "Edge" in Optimize at Edge mean?
 
 In our context, "Edge" means that the optimization is applied at the CDN layer and not inside your CMS.
 
 Q. Why does this optimization require a CDN?
 
-The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.-->
+The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.
+-->
 
 问：如果我尚未完成 Optimize at Edge 加入，会发生什么？
 
