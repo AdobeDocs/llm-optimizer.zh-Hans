@@ -2,17 +2,17 @@
 title: Optimize at Edge - Akamai (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Akamai BYOCDN。
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
-workflow-type: ht
-source-wordcount: '587'
-ht-degree: 100%
+source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 78%
 
 ---
 
 
 # Akamai (BYOCDN)
 
-此配置将代理式流量（来自 AI 机器人和 LLM 用户代理的请求）路由到 Edge Optimize 后端服务（`live.edgeoptimize.net`）。人类访客和 SEO 机器人仍将照常从您的源站获得响应。完成设置后，可在响应中查找头部 `x-edgeoptimize-request-id` 以测试配置是否成功。
+此配置将代理式流量（来自 AI 机器人和 LLM 用户代理的请求）路由到 Edge Optimize 后端服务（`live.edgeoptimize.net`）。 人类访客和 SEO 机器人仍将照常从您的源站获得响应。 完成设置后，可在响应中查找头部 `x-edgeoptimize-request-id` 以测试配置是否成功。
 
 **先决条件**
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 **配置**
 
-以下 Akamai 属性管理器规则可将 LLM 用户代理路由至 Edge Optimize。该配置包括以下步骤：
+以下 Akamai 属性管理器规则可将 LLM 用户代理路由至 Edge Optimize。 该配置包括以下步骤：
 
 **1. 设置路由条件（用户-代理匹配）**
 
@@ -47,6 +47,10 @@ ht-degree: 100%
 **2. 设置源站和 SSL 行为**
 
 将源站设置为 `live.edgeoptimize.net`，将 SAN 与 `*.edgeoptimize.net` 匹配
+
+>[!NOTE]
+>
+>如果添加“在Edge中优化”规则后属性激活失败，请检查该规则是否使用与默认规则不同的源服务器SSL验证模式。 如果是这样，请更新在Edge中优化规则以匹配默认规则。 例如，如果默认规则使用&#x200B;**平台设置**，则在此处也使用&#x200B;**平台设置**。 如果您无法使用所需的设置，请联系Akamai支持部门。
 
 ![设置源站和 SSL 行为](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -91,6 +95,10 @@ ht-degree: 100%
 
 在主路由规则中，按如下方式配置网站故障转移行为和高级 XML 代码片段：
 
+>[!IMPORTANT]
+>
+>此步骤中的XML代码片段需要&#x200B;**高级**&#x200B;行为。 在某些Akamai环境中，此行为不可用于自助编辑。 如果您看不到&#x200B;**高级**&#x200B;选项，请联系您的Akamai帐户团队或Akamai支持人员以启用所需的配置。
+
 ![网站故障转移](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
 通过高级 XML 添加值为 `fo` 的请求头 `x-edgeoptimize-request`：
@@ -111,7 +119,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->将 **EdgeOptimize 故障转移测试头**&#x200B;规则作为路由规则的&#x200B;**同级**（在同一级别）创建——**而不是**&#x200B;嵌套在路由规则中。在 Akamai 属性管理器规则树中，层级结构应如下所示：
+>将 **EdgeOptimize 故障转移测试头**&#x200B;规则作为路由规则的&#x200B;**同级**（在同一级别）创建——**而不是**&#x200B;嵌套在路由规则中。 在 Akamai 属性管理器规则树中，层级结构应如下所示：
 >
 >```
 >▼ Parent Rule
@@ -120,6 +128,8 @@ ht-degree: 100%
 >```
 >
 >这可确保故障转移测试头规则会评估&#x200B;**所有**&#x200B;路由规则，而不仅仅评估一个。
+>
+>此外，请确保不会将任何后来匹配的规则覆盖&#x200B;**在Edge路由中优化**&#x200B;规则，这些规则会更改相同请求的来源、缓存行为或缓存ID。 如果其他匹配规则重置这些行为，则“在Edge中优化”路由或缓存可能无法按预期工作。
 
 如果请求头的 `x-edgeoptimize-request` 值为 `fo`，传出响应头 `x-edgeoptimize-fo` 就应设置为 `true`。
 
@@ -161,7 +171,7 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-响应&#x200B;**不**&#x200B;应包含 `x-edgeoptimize-request-id` 头部。页面内容和响应时间应保持与启用 Optimize at Edge 之前时完全相同。
+响应&#x200B;**不**&#x200B;应包含 `x-edgeoptimize-request-id` 头部。 页面内容和响应时间应保持与启用 Optimize at Edge 之前时完全相同。
 
 **3. 如何区分这两种场景**
 
@@ -170,7 +180,7 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在——包含唯一的请求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`1`） | 不存在 |
 
-也可以在 LLM Optimizer UI 中查看流量路由的状态。导航至&#x200B;**客户配置**，然后选择&#x200B;**内容传递网络配置**&#x200B;选项卡。
+也可以在 LLM Optimizer UI 中查看流量路由的状态。 导航至&#x200B;**客户配置**，然后选择&#x200B;**内容传递网络配置**&#x200B;选项卡。
 
 ![启用了路由情况下的 AI 流量路由状态](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
