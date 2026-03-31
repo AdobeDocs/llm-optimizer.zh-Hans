@@ -1,22 +1,22 @@
 ---
 title: 快速入门
-description: 开始使用 Adobe LLM Optimizer —— 加入您的品牌，解锁 AI 可见性洞察，并探索仪表板以提升搜索表现。
+description: 了解如何载入您的品牌名称和域、从Experience Hub或Experience Cloud激活您的试用版，以及完成Adobe LLM Optimizer的设置。
 feature: Quickstart, Onboarding
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
-workflow-type: ht
-source-wordcount: '1169'
-ht-degree: 100%
+source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
+workflow-type: tm+mt
+source-wordcount: '1208'
+ht-degree: 50%
 
 ---
 
 
 # 快速入门
 
-要开始使用 LLM Optimizer，您需要按照以下步骤完成加入过程。 完成该流程后，您将获得对 [LLM Optimizer 的仪表板](/help/dashboards/dashboards-overview.md)及其他功能的完整访问权限。
+要开始使用LLM Optimizer，您需要完成载入流程。 完成新用户引导后，您将能够自定义类别、主题、提示并配置日志转发，以便获得更准确的见解并完全访问[LLM Optimizer的功能板](/help/dashboards/dashboards-overview.md)和其他功能。
 
 ## 加入概述
 
-加入流程从加入您的域名开始。 根据您是否为 AEM Cloud 客户，流程会有所不同。 完成该流程后，您需要提供内容传递网络日志转发信息，并最终自定义类别、主题和提示词。 以下将详细介绍流程的每个部分，并提供帮助您尽快开始使用 LLM Optimizer 的实用建议。
+载入流程从载入您的域和品牌名称开始。 下面详细描述了入门培训历程的每个部分，以及有关如何尽快开始使用LLM Optimizer的有用提示。
 
 ### 允许 Adobe LLM Optimizer 访问公开页面
 
@@ -24,49 +24,78 @@ ht-degree: 100%
 
 配置要求：
 
-* 将 Spacecat/1.0 用户代理添加到您网站的 robots.txt 文件或机器人流量管理规则中的允许列表。
-* 确保页面在域名或内容传递网络层级未设置访问限制。 遭到阻止的页面无法索引，这意味着无法为其生成优化任务和相关洞察。
+* 将Spacecat/1.0用户代理添加到您站点的robots.txt文件或bot-traffic管理规则中的。
+* 确保在域或CDN级别上均不会阻止页面。 遭到阻止的页面无法索引，这意味着无法为其生成优化任务和相关洞察。
 
 如果仪表板中显示内容可见度较低，请确认爬虫是否可以访问您的域名。 访问受限是导致索引不完整的常见原因。
 
-## 步骤 1：加入您的域名
+## 步骤1：载入您的品牌名称和域 {#step-1-onboard-your-domain}
 
-### 先试用后购买
+要开始使用LLM Optimizer，请首先激活您的试用版（如果适用），然后加入您的品牌名称和域。
 
-AEM Cloud（Cloud Service、Managed Services、Edge Delivery Service）客户可以选择使用&#x200B;**先试用后购买**&#x200B;方案。 该方案为 LLM Optimizer 的免费试用版本，最多包含 200 个免费提示词。 使用超过 200 个提示词需要单独签署许可协议。 该访问权限以“按现状”和“按可用性”方式提供，Adobe 可随时对其进行修改、限制或取消。
+### 激活您的试用版
 
-免费版本中有部分产品功能不可用：
+激活流程因您的Adobe产品而异。
 
-* 试用仅限一个域名。 完成设置后，您将无法更改所提供的域名。
-* 早期访问计划提供部署优化的功能。 了解详情，请访问 [Optimize at Edge 常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
+#### AEM Cloud客户
 
-有关如何激活免费试用版本并加入域名的详细信息，请参阅下方内容。
+要激活试用版，作为AEM Cloud客户，您可以：
 
-### AEM Cloud 客户
-
-如果您是 AEM Cloud 客户，可以通过 [Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) 中的“产品公告”卡片试用 LLM Optimizer。
-
->[!NOTE]
->新添加的提示词在处理完成之前不会显示在[品牌存在感仪表板](/help/dashboards/brand-presence.md)中。 AEM Cloud 客户可以使用 LLM Optimizer 的免费试用版本。 使用超过 200 个提示词需要单独签署许可协议。 该访问权限以“按现状”和“按可用性”方式提供，Adobe 可随时对其进行修改、限制或取消。 如需更多信息，请联系您的客户代表。
+* 导航到[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)并使用产品公告卡激活LLM Optimizer。 选择&#x200B;**尝试LLM Optimizer**&#x200B;后，您将被重定向到[https://llmo.now](https://llmo.now)。 通过IMS登录，然后输入域和品牌名称以开始载入流程。
+* 或直接转到[https://llmo.now](https://llmo.now)并登录。
 
 ![LLM Optimizer 试用版](/help/overview/assets/llm-trial.png)
 
-单击&#x200B;**试用 LLM Optimizer** 按钮后，系统会将您重定向至 [https://llmo.now](https://llmo.now)。 随后，您需要通过 IMS 登录。 登录后，您将通过提供域名和品牌名称来启动加入流程。
+#### Adobe Analytics客户
+
+如果您是Adobe Analytics客户，则会在Experience Cloud主页上看到一条横幅。
+
+![Experience Cloud主页上的“开始Adobe LLM Optimizer试用”横幅](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+
+您可以通过以下方式之一激活试用版：
+
+* 在横幅中选择&#x200B;**开始您的Adobe LLM Optimizer试用版**。
+* 直接转到[https://llmo.now](https://llmo.now)并登录。
+
+一旦试用版生效，请继续载入您的品牌名称和域。
+
+>[!NOTE]
+>
+> * **免费试用版：** AEM Cloud和Adobe Analytics客户可以使用LLM Optimizer的免费试用版。
+> * **在2026年4月1日或之后激活试用版的客户**&#x200B;最多可以使用100个提示、一个域，并且可以为单个机会类型跨最多10个URL部署优化。
+> * **在2026年4月1日之前激活该试用版的客户**&#x200B;按照其现有条款，可继续访问最多200个提示。
+>
+>超出所包括的限制的使用需要单独的许可协议。 访问是按“原样”和“可用”提供的，可随时修改、限制或删除。 有关更多信息，请与您的客户代表联系。
+
+#### 载入您的品牌名称和域
+
+载入您的品牌名称和域以开始使用LLM Optimizer。
+
+1. 输入您的品牌名称和关联的域。
+
+   * 这应该是您要分析和优化内容的主域。
+
+1. 完成入门。
+
+   * 提交后，LLM Optimizer将开始分析您的域并生成见解。
 
 ![LLM Optimizer 域名](/help/overview/assets/domain.png)
+
+>[!NOTE]
+>新添加的提示词在处理完成之前不会显示在[品牌存在感仪表板](/help/dashboards/brand-presence.md)中。
 
 >[!NOTE]
 >您提供的域名将供组织内所有成员使用，且无法更改。
 
 在加入阶段，将自动生成一小组类别、主题和提示词。 在网站完成加入后不久，即可查看基于这些提示词生成的品牌存在感分析。
 
-<!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
+还提供了在Edge部署优化的功能。 请参阅[在Edge中优化 — 常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)以了解详情。
 
-此外，您还需要配置[内容传递网络日志转发](#step-4)以进行流量分析。 LLM Optimizer 需要品牌存在感数据以及来自代理式和引荐流量的洞察，以识别机会并提供可执行的优化建议，从而提升 AI 可见性。
+此外，配置[CDN日志转发](#step-4)以进行流量分析。 LLM Optimizer需要来自代理和引荐流量的品牌存在感数据和见解，以识别机会并提供提高AI可见性的规范性建议。
 
-### 非 AEM Cloud 客户
+### 非AEM云客户
 
-在完成商业协议后，您将使用希望加入 LLM Optimizer 的域名进行加入。 完成加入后，您将可以通过 [https://llmo.now](https://llmo.now) 登录 LLM Optimizer。
+在您的组织最终确定业务协议后，您将登记到您组织所选的域的LLM Optimizer。 完成载入时，登录到[https://llmo.now](https://llmo.now)。
 
 ## 步骤 2：自定义类别、主题和提示词
 
@@ -95,14 +124,14 @@ AEM Cloud（Cloud Service、Managed Services、Edge Delivery Service）客户可
 
 ## 步骤 4：提供内容传递网络日志转发信息 {#step-4}
 
-要解锁代理式流量和引荐流量洞察，您需要提供内容传递网络日志转发信息。 您可以在[客户配置仪表板](/help/dashboards/customer-configuration.md#cdn-configuration)中，通过导航至&#x200B;**内容传递网络配置**&#x200B;选项卡并单击&#x200B;**引入内容传递网络**&#x200B;来添加该信息。
+若要解锁代理流量和引荐流量分析，请从[客户配置仪表板](/help/dashboards/customer-configuration.md#cdn-configuration)添加CDN日志转发信息。 打开&#x200B;**CDN配置**&#x200B;选项卡并选择&#x200B;**板载CDN**。
 
 ![客户配置内容传递网络](/help/overview/assets/cc-cdn.png)
 
 或者，如果此前尚未添加内容传递网络提供商（如上所述），则在首次访问代理式和引荐流量仪表板时，系统会提示您添加内容传递网络日志转发。 有关更多详细信息，请参阅：
 
 * [代理式流量](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [引荐流量](/help/dashboards/referral-traffic.md#setup#setup)
+* [引荐流量](/help/dashboards/referral-traffic.md#setup)
 
 >[!NOTE]
 >有关使用客户自管内容传递网络（BYOCDN）进行日志转发的详细信息，请参阅 [BYOCDN 日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
@@ -112,7 +141,7 @@ AEM Cloud（Cloud Service、Managed Services、Edge Delivery Service）客户可
 在您提供内容传递网络日志转发信息后，您可以：
 
 * 查看[品牌存在感](/help/dashboards/brand-presence.md)仪表板，查看您的可见度分数，并跟踪您相对于其他品牌的表现。
-* 如果已配置内容传递网络日志转发，请探索[代理式](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。
+* 如果配置了CDN日志转发，请浏览[代理](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。
 * 使用[机会](/help/dashboards/opportunities.md)识别内容和技术优化改进点。
 * 导出数据，与您的团队协作，或邀请同事使用该产品。
 
