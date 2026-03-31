@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: ht
-source-wordcount: '2181'
-ht-degree: 100%
+source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+workflow-type: tm+mt
+source-wordcount: '2240'
+ht-degree: 92%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 100%
 # Optimize at Edge
 
 本页面详细介绍了如何在无需进行内容创作更改的情况下，在内容传递网络边缘交付优化。 内容涵盖加入流程、可用的优化机会，以及如何在边缘实现自动优化。
-
->[!NOTE]
->
->此功能目前处于抢先体验阶段。 您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)了解有关抢先体验计划的更多信息。
 
 ## 什么是 Optimize at Edge？
 
@@ -40,7 +36,17 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 ## 加入
 
-如需启动加入流程，请联系您的 Adobe 客户团队或 FDE 团队。 同时，您的 IT 或内容传递网络团队需完成相关前提条件和设置流程。 此外，您也可发送邮件至 `llmo-at-edge@adobe.com` 获取进一步的加入支持。
+<!--You should reach out to either your Adobe account team or the FDE team to start the onboarding process. Your IT or CDN team is also required to complete the pre-requisites and setup process. Additionally, you can also contact `llmo-at-edge@adobe.com` for further onboarding assistance.-->
+
+在您的LLM Optimizer帐户中开始载入流程：
+
+1. 在&#x200B;**客户配置** n仪表板上，选择&#x200B;**CDN配置**&#x200B;选项卡。
+1. 单击&#x200B;**板载CDN**。
+   ![内容传递网络配置选项卡](/help/overview/assets/cc-cdn.png)
+1. 对于AEM Fastly客户，Adobe可以协助完成载入流程。 对于使用其他CDN提供商的客户，您的IT/CDN团队需要完成所需的设置和先决条件。 您还可以参阅下面提供的CDN指南示例以获取其他指南。
+
+>[!NOTE]
+>请参阅下面的分步指南，其中包含完整的入门流程。 对于指南未解决的问题，您可以联系`llmo-at-edge@adobe.com`。
 
 加入 Optimize at Edge 的前提条件：
 
@@ -85,9 +91,9 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 ### 其他工具
 
-[Adobe LLM Optimizer：您的网页是否可引用？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) 该 Chrome 扩展程序可显示 LLM 能访问您网页内容的比例，以及哪些内容仍处于隐藏状态。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
+[AI内容可见度检查器](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)浏览器扩展显示LLM可以访问多少网页内容以及哪些内容保持隐藏。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
 
-只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 优化机会详解
 
@@ -117,7 +123,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 针对每个优化机会，您可以在边缘层进行预览、编辑、部署、实时查看和回滚操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
@@ -150,6 +156,10 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 ![回滚](/help/assets/optimize-at-edge/rollback.png)
 
 ## 常见问题解答
+
+问：试用客户能否在Edge中试用优化？
+
+是的，试用客户可以访问一个优化机会，并最多部署10页。 默认情况下，机会是恢复内容可见度，它使AI代理能够访问页面内容的完整版本。
 
 问：Optimize at Edge 针对哪些类型的 LLM？
 
