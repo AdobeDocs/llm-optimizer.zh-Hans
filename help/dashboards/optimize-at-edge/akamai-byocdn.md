@@ -3,9 +3,9 @@ title: Optimize at Edge - Akamai (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Akamai BYOCDN。
 feature: Opportunities
 source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->如果添加“在Edge中优化”规则后属性激活失败，请检查该规则是否使用与默认规则不同的源服务器SSL验证模式。 如果是这样，请更新在Edge中优化规则以匹配默认规则。 例如，如果默认规则使用&#x200B;**平台设置**，则在此处也使用&#x200B;**平台设置**。 如果您无法使用所需的设置，请联系Akamai支持部门。
+>如果添加 Optimize at Edge 规则后属性激活失败，请检查该规则是否使用了与默认规则不同的源服务器 SSL 验证模式。如果是这样，请更新 Optimize at Edge 规则，以匹配默认规则。例如，如果默认规则使用&#x200B;**平台设置**，那么这个规则中也应使用&#x200B;**平台设置**。如果您无法使用所需的设置，请联系 Akamai 支持部门。
 
 ![设置源站和 SSL 行为](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -97,7 +97,7 @@ ht-degree: 78%
 
 >[!IMPORTANT]
 >
->此步骤中的XML代码片段需要&#x200B;**高级**&#x200B;行为。 在某些Akamai环境中，此行为不可用于自助编辑。 如果您看不到&#x200B;**高级**&#x200B;选项，请联系您的Akamai帐户团队或Akamai支持人员以启用所需的配置。
+>此步骤中的 XML 代码片段需要&#x200B;**高级**&#x200B;行为。在某些 Akamai 环境中，此行为不可用于自助编辑。如果您看不到&#x200B;**高级**&#x200B;选项，请联系您的 Akamai 帐户团队或 Akamai 支持部门，以启用所需的配置。
 
 ![网站故障转移](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -129,7 +129,7 @@ ht-degree: 78%
 >
 >这可确保故障转移测试头规则会评估&#x200B;**所有**&#x200B;路由规则，而不仅仅评估一个。
 >
->此外，请确保不会将任何后来匹配的规则覆盖&#x200B;**在Edge路由中优化**&#x200B;规则，这些规则会更改相同请求的来源、缓存行为或缓存ID。 如果其他匹配规则重置这些行为，则“在Edge中优化”路由或缓存可能无法按预期工作。
+>此外，应确保 **Optimize at Edge 路由**&#x200B;规则不会被任何后来匹配的，会更改源站、缓存行为或相同请求的缓存 ID 的规则所覆盖。如果其他匹配规则重置了这些行为，Optimize at Edge 路由或缓存可能就无法按预期工作。
 
 如果请求头的 `x-edgeoptimize-request` 值为 `fo`，传出响应头 `x-edgeoptimize-fo` 就应设置为 `true`。
 
