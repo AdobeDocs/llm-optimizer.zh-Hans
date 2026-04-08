@@ -2,10 +2,10 @@
 title: Optimize at Edge - Akamai (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Akamai BYOCDN。
 feature: Opportunities
-source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
-workflow-type: ht
-source-wordcount: '745'
-ht-degree: 100%
+source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 79%
 
 ---
 
@@ -22,25 +22,32 @@ ht-degree: 100%
 * 完成了 LLM Optimizer 的加入过程。
 * 已将内容传递网络日志转发到 LLM Optimizer。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。
+* （可选）如果首先在暂存主机名上测试路由，则使用暂存Edge优化API密钥。
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **配置**
 
-以下 Akamai 属性管理器规则可将 LLM 用户代理路由至 Edge Optimize。 该配置包括以下步骤：
+以下Akamai属性管理器规则将代理HTML页面流量路由到Edge Optimize。 该配置包括以下步骤：
 
-**1. 设置路由条件（用户-代理匹配）**
+**1. 设置路由条件（User-Agent和HTML流量匹配）**
 
-为以下用户代理:image.png 设置路由
+为以下用户代理设置路由：
 
 ```
- *AdobeEdgeOptimize-AI*,
- *ChatGPT-User*,
- *GPTBot*,
- *OAI-SearchBot*,
- *PerplexityBot*,
+ *AdobeEdgeOptimize-AI*
+ *ChatGPT-User*
+ *GPTBot*
+ *OAI-SearchBot*
+ *PerplexityBot*
  *Perplexity-User*
 ```
+
+>[!NOTE]
+>
+>将在Edge中优化路由规则仅适用于无代理的HTML页面流量。 常见的设置是使用请求端条件（如&#x200B;**文件扩展名**）来匹配无扩展名页面URL的`html`和`EMPTY_STRING`。 如果您的网站从其他URL模式提供HTML，或包含无扩展的非页面路由（如API端点），请用其他基于路径的标准来优化规则。
 
 ![设置路由条件](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -50,7 +57,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如果添加 Optimize at Edge 规则后属性激活失败，请检查该规则是否使用了与默认规则不同的源服务器 SSL 验证模式。如果是这样，请更新 Optimize at Edge 规则，以匹配默认规则。例如，如果默认规则使用&#x200B;**平台设置**，那么这个规则中也应使用&#x200B;**平台设置**。如果您无法使用所需的设置，请联系 Akamai 支持部门。
+>如果添加 Optimize at Edge 规则后属性激活失败，请检查该规则是否使用了与默认规则不同的源服务器 SSL 验证模式。 如果是这样，请更新 Optimize at Edge 规则，以匹配默认规则。 例如，如果默认规则使用&#x200B;**平台设置**，那么这个规则中也应使用&#x200B;**平台设置**。 如果您无法使用所需的设置，请联系 Akamai 支持部门。
 
 ![设置源站和 SSL 行为](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -66,10 +73,10 @@ ht-degree: 100%
 
 **5. 修改传入请求标头**
 
-将以下传入请求头：
-`x-edgeoptimize-api-key` 设置为从 LLMO 检索到的 API 密钥
-`x-edgeoptimize-config` 设置为 `LLMCLIENT=TRUE;`
-`x-edgeoptimize-url` 设置为 `{{builtin.AK_URL}}`
+设置以下传入请求标头：
+`x-edgeoptimize-api-key`到从LLMO检索到的API密钥
+`x-edgeoptimize-config` 更改至 `LLMCLIENT=TRUE;`
+`x-edgeoptimize-url`到`{{builtin.AK_URL}}`
 
 ![修改传入请求标头](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
@@ -97,7 +104,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->此步骤中的 XML 代码片段需要&#x200B;**高级**&#x200B;行为。在某些 Akamai 环境中，此行为不可用于自助编辑。如果您看不到&#x200B;**高级**&#x200B;选项，请联系您的 Akamai 帐户团队或 Akamai 支持部门，以启用所需的配置。
+>此步骤中的 XML 代码片段需要&#x200B;**高级**&#x200B;行为。 在某些 Akamai 环境中，此行为不可用于自助编辑。 如果您看不到&#x200B;**高级**&#x200B;选项，请联系您的 Akamai 帐户团队或 Akamai 支持部门，以启用所需的配置。
 
 ![网站故障转移](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -129,7 +136,7 @@ ht-degree: 100%
 >
 >这可确保故障转移测试头规则会评估&#x200B;**所有**&#x200B;路由规则，而不仅仅评估一个。
 >
->此外，应确保 **Optimize at Edge 路由**&#x200B;规则不会被任何后来匹配的，会更改源站、缓存行为或相同请求的缓存 ID 的规则所覆盖。如果其他匹配规则重置了这些行为，Optimize at Edge 路由或缓存可能就无法按预期工作。
+>此外，应确保 **Optimize at Edge 路由**&#x200B;规则不会被任何后来匹配的，会更改源站、缓存行为或相同请求的缓存 ID 的规则所覆盖。 如果其他匹配规则重置了这些行为，Optimize at Edge 路由或缓存可能就无法按预期工作。
 
 如果请求头的 `x-edgeoptimize-request` 值为 `fo`，传出响应头 `x-edgeoptimize-fo` 就应设置为 `true`。
 
@@ -180,8 +187,17 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在——包含唯一的请求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`1`） | 不存在 |
 
-也可以在 LLM Optimizer UI 中查看流量路由的状态。 导航至&#x200B;**客户配置**，然后选择&#x200B;**内容传递网络配置**&#x200B;选项卡。
+**4. 暂存域（可选）**
 
-![启用了路由情况下的 AI 流量路由状态](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+如果您使用LLM Optimizer中的暂存主机名和暂存API密钥，请在规则中使用&#x200B;**staging**&#x200B;密钥在&#x200B;**staging** Akamai资产上部署相同的路由模式。 然后，验证暂存主机上的机器人流量：
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+将`https://staging.example.com/page.html`替换为您的实际暂存URL和路径。 成功的响应包括`x-edgeoptimize-request-id`标头。
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

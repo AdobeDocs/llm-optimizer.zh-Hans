@@ -2,17 +2,17 @@
 title: Optimize at Edge - Cloudflare (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudflare BYOCDN。
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
-workflow-type: ht
-source-wordcount: '1402'
-ht-degree: 100%
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 95%
 
 ---
 
 
 # Cloudflare (BYOCDN)
 
-此配置将代理式流量（来自 AI 机器人和 LLM 用户代理的请求）路由到 Edge Optimize 后端服务（`live.edgeoptimize.net`）。人类访客和 SEO 机器人仍将照常从您的源站获得响应。完成设置后，可在响应中查找头部 `x-edgeoptimize-request-id` 以测试配置是否成功。
+此配置将代理式流量（来自 AI 机器人和 LLM 用户代理的请求）路由到 Edge Optimize 后端服务（`live.edgeoptimize.net`）。 人类访客和 SEO 机器人仍将照常从您的源站获得响应。 完成设置后，可在响应中查找头部 `x-edgeoptimize-request-id` 以测试配置是否成功。
 
 **先决条件**
 
@@ -23,12 +23,15 @@ ht-degree: 100%
 * 完成了 LLM Optimizer 的加入过程。
 * 已将内容传递网络日志转发到 LLM Optimizer。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。
+* （可选）如果首先在暂存主机名上测试路由，则使用暂存Edge优化API密钥。
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **如何进行路由**
 
-正确配置后，Cloudflare Worker 会截获代理式用户代理对您的域（例如 `www.example.com/page.html`）的请求，并将其路由到 Edge Optimize 后端。后端请求包含必需的头部。
+正确配置后，Cloudflare Worker 会截获代理式用户代理对您的域（例如 `www.example.com/page.html`）的请求，并将其路由到 Edge Optimize 后端。 后端请求包含必需的头部。
 
 **测试后端请求**
 
@@ -48,7 +51,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 | 页眉 | 描述 | 示例 |
 |--------|-------------|---------|
-| `x-forwarded-host` | 请求的原始主机。用于识别网站域。 | `www.example.com` |
+| `x-forwarded-host` | 请求的原始主机。 用于识别网站域。 | `www.example.com` |
 | `x-edgeoptimize-url` | 请求的原始 URL 路径和查询字符串。 | `/page.html` 或 `/products?id=123` |
 | `x-edgeoptimize-api-key` | Adobe 为您的域提供的 API 密钥。 | `your-api-key-here` |
 | `x-edgeoptimize-config` | 用于区分缓存键的配置字符串。 | `LLMCLIENT=TRUE;` |
@@ -247,7 +250,7 @@ async function failoverToOrigin(request, env, url) {
    | 变量名称 | 描述 | 必需 |
    |---------------|-------------|----------|
    | `EDGE_OPTIMIZE_API_KEY` | Adobe 提供的 Edge Optimize API 密钥。 | 是 |
-   | `EDGE_OPTIMIZE_TARGET_HOST` | Edge Optimize 请求的目标主机（作为 `x-forwarded-host` 头部发送）和故障转移的源域。域名不能包含协议头（例如 `www.example.com`，不能是 `https://www.example.com`）。 | 是 |
+   | `EDGE_OPTIMIZE_TARGET_HOST` | Edge Optimize 请求的目标主机（作为 `x-forwarded-host` 头部发送）和故障转移的源域。 域名不能包含协议头（例如 `www.example.com`，不能是 `https://www.example.com`）。 | 是 |
 
 4. 对于 API 密钥，点击&#x200B;**加密**，以安全存储。
 5. 点击&#x200B;**保存并部署**。
@@ -274,7 +277,7 @@ async function failoverToOrigin(request, env, url) {
 
 **验证故障转移行为**
 
-如果 Edge Optimize 不可用或返回错误，Worker 就会自动将故障转移到您的源站。故障转移响应包含 `x-edgeoptimize-fo` 头部：
+如果 Edge Optimize 不可用或返回错误，Worker 就会自动将故障转移到您的源站。 故障转移响应包含 `x-edgeoptimize-fo` 头部：
 
 ```
 < HTTP/2 200
@@ -289,9 +292,9 @@ Cloudflare Worker 会实施以下逻辑：
 
 1. **用户代理检测：**&#x200B;检查传入请求的用户代理是否与任何已定义的代理式机器人匹配（不区分大小写）。
 
-2. **路径目标：**&#x200B;可选择根据目标路径筛选请求。默认情况下，会将所有 HTML 页面（以 `/`、无扩展名或以 `.html` 结尾的URL）路由。您可以使用 `TARGETED_PATHS` 数组指定特定路径。
+2. **路径目标：**&#x200B;可选择根据目标路径筛选请求。 默认情况下，会将所有 HTML 页面（以 `/`、无扩展名或以 `.html` 结尾的URL）路由。 您可以使用 `TARGETED_PATHS` 数组指定特定路径。
 
-3. **循环保护：** `x-edgeoptimize-request` 头部可阻止无限循环。如果 Edge Optimize 将请求送回到您的源站，这个头部设置为 `"1"`，并且 Worker 传递请求时未将其路由回到 Edge Optimize。
+3. **循环保护：** `x-edgeoptimize-request` 头部可阻止无限循环。 如果 Edge Optimize 将请求送回到您的源站，这个头部设置为 `"1"`，并且 Worker 传递请求时未将其路由回到 Edge Optimize。
 
 4. **头部安全性：**&#x200B;在设置 Edge Optimize 头部之前，Worker 会从传入请求中移除任何现有的 `x-edgeoptimize-*` 头部，以防止头部注入攻击。
 
@@ -301,7 +304,7 @@ Cloudflare Worker 会实施以下逻辑：
    * `x-edgeoptimize-api-key`——通过 Edge Optimize 对请求进行身份验证。
    * `x-edgeoptimize-config`——提供缓存键配置。
 
-6. **故障转移逻辑：**&#x200B;如果 Edge Optimize 返回任何错误状态代码（4XX 客户端错误或 5XX 服务器错误），或者由于网络出错而请求失败，Worker 就会使用 `EDGE_OPTIMIZE_TARGET_HOST` 自动将故障转移到您的源站。故障转移响应包含 `x-edgeoptimize-fo: 1` 头部，表示已进行了故障转移。
+6. **故障转移逻辑：**&#x200B;如果 Edge Optimize 返回任何错误状态代码（4XX 客户端错误或 5XX 服务器错误），或者由于网络出错而请求失败，Worker 就会使用 `EDGE_OPTIMIZE_TARGET_HOST` 自动将故障转移到您的源站。 故障转移响应包含 `x-edgeoptimize-fo: 1` 头部，表示已进行了故障转移。
 
 7. **重定向处理：**`redirect: "manual"` 选项可确保来自 Edge Optimize 的重定向响应被传递到客户端，而无需 Worker 跟随这些响应。
 
@@ -329,7 +332,7 @@ const AGENTIC_BOTS = [
 
 **目标路径**
 
-默认情况下，所有 HTML 页面都会被路由到 Edge Optimize。要将路由限制到特定路径，请更改 `TARGETED_PATHS` 数组：
+默认情况下，所有 HTML 页面都会被路由到 Edge Optimize。 要将路由限制到特定路径，请更改 `TARGETED_PATHS` 数组：
 
 ```javascript
 // Route all HTML pages (default)
@@ -341,7 +344,7 @@ const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 
 **故障转移配置**
 
-默认情况下，如果 Edge Optimize 返回任何 4XX 或 5XX 错误，Worker 都会触发故障转移。自定义这个行为：
+默认情况下，如果 Edge Optimize 返回任何 4XX 或 5XX 错误，Worker 都会触发故障转移。 自定义这个行为：
 
 ```javascript
 // Default: failover on any 4XX or 5XX error
@@ -359,30 +362,30 @@ const FAILOVER_ON_5XX = false;
 
 **重要注意事项**
 
-* **故障转移行为：**&#x200B;如果 Edge Optimize 返回任何错误（4XX 或 5XX 状态代码），或者由于网络出错而请求失败，Worker 就会自动将故障转移到您的源站。故障转移使用 `EDGE_OPTIMIZE_TARGET_HOST` 作为源域（类似于 Fastly 的 `F_Default_Origin` 或 CloudFront 的 `Default_Origin`）。故障转移响应包含 `x-edgeoptimize-fo: 1` 头部，可用于监控和调试。
+* **故障转移行为：**&#x200B;如果 Edge Optimize 返回任何错误（4XX 或 5XX 状态代码），或者由于网络出错而请求失败，Worker 就会自动将故障转移到您的源站。 故障转移使用 `EDGE_OPTIMIZE_TARGET_HOST` 作为源域（类似于 Fastly 的 `F_Default_Origin` 或 CloudFront 的 `Default_Origin`）。 故障转移响应包含 `x-edgeoptimize-fo: 1` 头部，可用于监控和调试。
 
-* **缓存：**&#x200B;默认情况下，Cloudflare 会根据 URL 缓存响应。由于代理式流量获得的内容与人工流量不同，因此请确保您的缓存配置考虑到这一点。请考虑使用缓存 API 或缓存头来区分缓存的内容。`x-edgeoptimize-config` 头部应包含在您的缓存键中。
+* **缓存：**&#x200B;默认情况下，Cloudflare 会根据 URL 缓存响应。 由于代理式流量获得的内容与人工流量不同，因此请确保您的缓存配置考虑到这一点。 请考虑使用缓存 API 或缓存头来区分缓存的内容。 `x-edgeoptimize-config` 头部应包含在您的缓存键中。
 
 * **速率限制：**&#x200B;监控您的 Edge Optimize 使用情况，需要时考虑为代理式流量实施速率限制。
 
-* **测试：**&#x200B;将配置部署到生产环境之前，始终在暂存环境中进行测试。验证代理式流量和人类流量都按预期运行。通过模拟 Edge Optimize 错误来测试故障转移行为。
+* **测试：**&#x200B;将配置部署到生产环境之前，始终在暂存环境中进行测试。 验证代理式流量和人类流量都按预期运行。 通过模拟 Edge Optimize 错误来测试故障转移行为。
 
-* **日志记录：**&#x200B;启用 Cloudflare Workers 日志记录，以监控请求，解决问题。导航到 **Workers** > **您的 Worker** > **日志**，查看实时日志。Worker 会记录故障转移事件，用于进行调试。
+* **日志记录：**&#x200B;启用 Cloudflare Workers 日志记录，以监控请求，解决问题。 导航到 **Workers** > **您的 Worker** > **日志**，查看实时日志。 Worker 会记录故障转移事件，用于进行调试。
 
 **疑难解答**
 
 | 问题 | 可能的原因 | 解决方案 |
 |-------|----------------|----------|
-| 响应中没有 `x-edgeoptimize-request-id` 头部 | Worker 路由不匹配，或用户代理不在代理式机器人列表中。 | 验证您的路由模式是否与请求 URL 匹配。检查用户代理是否在 `AGENTIC_BOTS` 数组中。 |
-| 来自 Edge Optimize 的 401 或 403 错误 | API 密钥无效或缺失。 | 验证是否在环境变量中正确设置了 `EDGE_OPTIMIZE_API_KEY`。请联系 Adobe 确认您的 API 密钥为活跃状态。 |
+| 响应中没有 `x-edgeoptimize-request-id` 头部 | Worker 路由不匹配，或用户代理不在代理式机器人列表中。 | 验证您的路由模式是否与请求 URL 匹配。 检查用户代理是否在 `AGENTIC_BOTS` 数组中。 |
+| 来自 Edge Optimize 的 401 或 403 错误 | API 密钥无效或缺失。 | 验证是否在环境变量中正确设置了 `EDGE_OPTIMIZE_API_KEY`。 请联系 Adobe 确认您的 API 密钥为活跃状态。 |
 | 无限重定向或循环 | 循环保护头未经过正确设置或检查。 | 确保已设置了 `x-edgeoptimize-request` 头部检查。 |
-| 人类流量受到影响 | Worker 路由逻辑过于宽泛。 | 验证用户代理匹配逻辑正确且不区分大小写。检查 `TARGETED_PATHS` 已正确配置。 |
+| 人类流量受到影响 | Worker 路由逻辑过于宽泛。 | 验证用户代理匹配逻辑正确且不区分大小写。 检查 `TARGETED_PATHS` 已正确配置。 |
 | 响应时间慢 | Edge Optimize 后端的网络延迟。 | 第一个请求会发生这个现象；后续请求会缓存在 Edge Optimize 中。 |
-| 响应中的 `x-edgeoptimize-fo: 1` 头部 | Edge Optimize 返回了错误，故障转移到了源站。 | 查看 Cloudflare Workers 日志，了解特定的错误代码。通过 Adobe 验证 Edge Optimize 服务状态。 |
-| 故障转移不起作用 | 故障转移标志已禁用，或故障转移逻辑中出错。 | 验证 `FAILOVER_ON_4XX` 和 `FAILOVER_ON_5XX` 都已设置为 `true`。检查 Worker 日志中的错误消息。 |
+| 响应中的 `x-edgeoptimize-fo: 1` 头部 | Edge Optimize 返回了错误，故障转移到了源站。 | 查看 Cloudflare Workers 日志，了解特定的错误代码。 通过 Adobe 验证 Edge Optimize 服务状态。 |
+| 故障转移不起作用 | 故障转移标志已禁用，或故障转移逻辑中出错。 | 验证 `FAILOVER_ON_4XX` 和 `FAILOVER_ON_5XX` 都已设置为 `true`。 检查 Worker 日志中的错误消息。 |
 | 某些路径未优化 | 路径与目标路径或 HTML 页面模式不匹配。 | 验证路径位于 `TARGETED_PATHS`（如果已指定）并与 HTML 页面正则表达式模式匹配。 |
 | 因主机无效，请求失败 | `EDGE_OPTIMIZE_TARGET_HOST` 包含协议（例如 `https://`）。 | 仅使用不带协议的域名（例如 `example.com`，而不是 `https://example.com`）。 |
-| 故障转移过程中出现 530 错误 | Cloudflare 无法连接到源站，或者故障转移请求的头部无效。 | 确保故障转移功能会移除 Edge Optimize 头部。验证您的源站可访问并且 DNS 配置正确。 |
+| 故障转移过程中出现 530 错误 | Cloudflare 无法连接到源站，或者故障转移请求的头部无效。 | 确保故障转移功能会移除 Edge Optimize 头部。 验证您的源站可访问并且 DNS 配置正确。 |
 
 **验证设置**
 
@@ -413,7 +416,7 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-响应&#x200B;**不**&#x200B;应包含 `x-edgeoptimize-request-id` 头部。页面内容和响应时间应保持与启用 Optimize at Edge 之前时完全相同。
+响应&#x200B;**不**&#x200B;应包含 `x-edgeoptimize-request-id` 头部。 页面内容和响应时间应保持与启用 Optimize at Edge 之前时完全相同。
 
 **3. 如何区分这两种场景**
 
@@ -422,8 +425,17 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在——包含唯一的请求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`1`） | 不存在 |
 
-也可以在 LLM Optimizer UI 中查看流量路由的状态。导航至&#x200B;**客户配置**，然后选择&#x200B;**内容传递网络配置**&#x200B;选项卡。
+**4. 暂存域（可选）**
 
-![启用了路由情况下的 AI 流量路由状态](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+如果您使用LLM Optimizer中的暂存主机名和暂存API密钥，请使用&#x200B;**暂存** API密钥在&#x200B;**暂存**&#x200B;区域上部署相同的Worker逻辑。 然后，验证暂存主机上的机器人流量：
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+将`https://staging.example.com/page.html`替换为您的实际暂存URL和路径。 成功的响应包括`x-edgeoptimize-request-id`标头。
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
