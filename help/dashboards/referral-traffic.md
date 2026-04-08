@@ -3,9 +3,9 @@ title: 引荐流量
 description: 了解如何使用“引荐流量”仪表板，查看访客通过外部平台、AI 引用和引荐链接访问您站点的情况。
 feature: Referral Traffic
 source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 “引荐流量”展示访客通过外部平台、AI 引用和引荐链接访问您网站的路径。 该仪表板跟踪并分析来自外部网站和平台的流量来源、引荐模式及转化量度。 通过这些数据，您可以了解哪些来源、区域和页面带来更高参与度的流量。<!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。
 
 >[!NOTE]
->默认情况下，该仪表板会根据&#x200B;**CDN日志**&#x200B;生成流量分析。 如果贵组织使用付费选件，则可以连接&#x200B;**Adobe Analytics**&#x200B;以添加用于测量AI驱动的发现和网站参与的数据。 此数据在&#x200B;**业务影响**&#x200B;选项卡中可用。 如果不与Adobe Analytics集成，则不会填充选项卡。 有关详细信息，请参阅[Adobe Analytics集成](/help/dashboards/adobe-analytics-integration.md)。
+>默认情况下，此仪表板基于&#x200B;**内容传递网络日志**&#x200B;构建流量洞察。如果您的组织使用付费版本，您可以连接 **Adobe Analytics**，以补充用于衡量 AI 驱动发现和网站参与度的数据。这些数据将在&#x200B;**业务影响**&#x200B;选项卡中显示。如果未集成 Adobe Analytics，该选项卡将不会显示数据。更多信息请参阅 [Adobe Analytics 集成](/help/dashboards/adobe-analytics-integration.md)。
 
 ![引荐页面](/help/dashboards/assets/referral-traffic.png)
 
