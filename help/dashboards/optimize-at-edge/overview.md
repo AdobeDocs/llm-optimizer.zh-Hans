@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 92%
+source-wordcount: '2348'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 在您的LLM Optimizer帐户中开始载入流程：
 
-1. 在&#x200B;**客户配置** n仪表板上，选择&#x200B;**CDN配置**&#x200B;选项卡。
+1. 在&#x200B;**客户配置**&#x200B;仪表板上，选择&#x200B;**CDN配置**&#x200B;选项卡。
 1. 单击&#x200B;**板载CDN**。
    ![内容传递网络配置选项卡](/help/overview/assets/cc-cdn.png)
 1. 对于AEM Fastly客户，Adobe可以协助完成载入流程。 对于使用其他CDN提供商的客户，您的IT/CDN团队需要完成所需的设置和先决条件。 您还可以参阅下面提供的CDN指南示例以获取其他指南。
@@ -60,7 +60,14 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 * 在内容传递网络中添加 Optimize at Edge 路由规则。
 * 在 LLM Optimizer 界面中确认 Optimize at Edge 路由已生效。
 
+>[!IMPORTANT]
+>必须在外部CDN（距离客户端最近的CDN）配置路由。 如果您有多个CDN，则只能在外部CDN上完成路由。
+
 要指导这个设置过程，请在下面选择您的内容传递网络提供商，然后按照相应的配置指南操作。 请注意，这些示例需根据您的实际生产环境配置进行调整。 建议您先在低级环境中应用更改。
+
+### 暂存域API密钥（可选）
+
+如果您在生产之前对暂存主机名进行测试，请使用LLM Optimizer注册&#x200B;**one**&#x200B;暂存域并复制其&#x200B;**暂存** Edge优化API密钥从&#x200B;**客户配置** → **CDN配置** → **将优化部署到AI代理** → **添加暂存域**（或&#x200B;**暂存域**）。 暂存主机名必须与生产站点共享同一可注册域。 **自带CDN**&#x200B;指南包括检索暂存密钥和验证暂存URL上的路由的完整步骤。
 
 ### 内容传递网络配置指南
 
@@ -93,7 +100,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 [AI内容可见度检查器](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)浏览器扩展显示LLM可以访问多少网页内容以及哪些内容保持隐藏。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
 
-只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 优化机会详解
 
@@ -123,7 +130,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 针对每个优化机会，您可以在边缘层进行预览、编辑、部署、实时查看和回滚操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
@@ -181,7 +188,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见度**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**&#x200B;这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如果检测到变化，我们会暂停优化，并将其标记为需要人工审阅，以防止代理可见页面和人类可见页面之间发生内容漂移。
+只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见度**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如果检测到更改，我们会暂停优化并将其标记为人工审核，以防止代理可见页面和人类可见页面之间的内容漂移。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？
