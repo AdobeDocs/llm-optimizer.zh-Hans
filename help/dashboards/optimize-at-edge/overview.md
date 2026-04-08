@@ -100,7 +100,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 [AI 内容可见度检查器](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)扩展会显示 LLM 可以访问多少网页内容以及哪些内容仍然隐藏。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
 
-只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 优化机会详解
 
