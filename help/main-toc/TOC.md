@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追踪品牌提及、挖掘洞察，并掌控 AI 驱动的搜索结果。 立即行动，开启您的优化之旅！
-source-git-commit: 2170a6a0d2e693401269be998108300cbc8878fa
-workflow-type: ht
-source-wordcount: '101'
-ht-degree: 100%
+source-git-commit: b6e74e8706c4074a47cc355cb5f3a69a817f8a49
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 100%
    + [Akamai](/help/overview/log-forwarding/akamai.md)
    + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
    + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
+   + [CloudFront (AWS CLI)](/help/overview/log-forwarding/cloudfront-cli.md)
    + [Fastly](/help/overview/log-forwarding/fastly.md)
    + [Imperva](/help/overview/log-forwarding/imperva.md)
    + [其他（手动上传）](/help/overview/log-forwarding/other.md)
