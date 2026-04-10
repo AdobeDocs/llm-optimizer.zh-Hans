@@ -1,7 +1,7 @@
 ---
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 1. 在“此内容是否有帮助？”中 浏览器窗口底部显示的横幅单击&#x200B;**详细的反馈选项**。
 1. 单击&#x200B;**建议编辑**，并在GitHub UI中提交包含所做更改的拉取请求(PR)。
 
-   有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+   有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您为此存储库中的文档和代码示例提交的小幅度更正或说明受Adobe使用条款的约束。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 社区参与者可以使用GitHub UI进行基本编辑或创建存储库分支以进行重大更改。
 
-有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 内部参与者
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 此存储库中的所有文章都使用GitHub风格的Markdown。 如果您不熟悉Markdown，请参阅：
 
-* [标记基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Markdown基础](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [可打印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 标签
