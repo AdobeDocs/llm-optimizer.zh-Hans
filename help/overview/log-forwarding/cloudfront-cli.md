@@ -2,10 +2,10 @@
 title: 日志转发 — CloudFront (AWS CLI)
 description: 使用AWS CLI将CloudFront CDN日志转发到Adobe的S3存储段，以进行投放设置和操作。
 feature: Agentic Traffic
-source-git-commit: 0d51bbde954c399dc6595522fa70b576461f458a
+source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 20%
+source-wordcount: '379'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 20%
 
 1. 输入您的 **AWS 帐户** ID。
 
-   ![AWS 帐户 ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+<!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
 1. 选择 **CloudFront (BYOCDN)**。
 
@@ -48,7 +48,7 @@ ht-degree: 20%
 
 1. 单击&#x200B;**加入**。
 
-   ![“加入”按钮](/help/overview/assets/log-forwarding/common/onboard-button.png)
+<!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
 ## 步骤2：使用AWS CLI设置CDN日志转发 {#step-2-cli}
 
