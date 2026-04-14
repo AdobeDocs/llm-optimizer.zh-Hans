@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 14dbee36f39b0d993d448edccb63fb8a519704a1
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 69%
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 69%
 * 完成了 LLM Optimizer 的加入过程。
 * 已将内容传递网络日志转发到 LLM Optimizer。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。
-* （可选）如果首先在暂存主机名上测试路由，则使用暂存Edge优化API密钥。
+* （可选）如果首先在暂存主机名上测试路由，请提供一个暂存 Edge Optimize API 密钥。
 
 {{retrieve-byocdn-api-key}}
 
@@ -474,14 +474,14 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 **4. 暂存域（可选）**
 
-如果您使用LLM Optimizer中的暂存主机名和暂存API密钥，请使用&#x200B;**暂存** API密钥在&#x200B;**暂存**&#x200B;区域上部署相同的Worker逻辑。 然后，验证暂存主机上的机器人流量：
+如果您使用来自 LLM Optimizer 的暂存主机名和暂存 API 密钥，请使用&#x200B;**暂存** API 密钥在&#x200B;**暂存**&#x200B;区域中部署相同的 Worker 逻辑。 然后，验证暂存主机上的机器人流量：
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-将`https://staging.example.com/page.html`替换为您的实际暂存URL和路径。 成功的响应包括`x-edgeoptimize-request-id`标头。
+将 `https://staging.example.com/page.html` 替换为您的实际暂存 URL 和路径。 成功的响应包括 `x-edgeoptimize-request-id` 标头。
 
 {{verify-routing-status-in-ui}}
 
