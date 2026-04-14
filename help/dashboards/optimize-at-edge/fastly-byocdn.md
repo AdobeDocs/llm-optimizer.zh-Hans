@@ -3,16 +3,16 @@ title: Optimize at Edge - Fastly (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Fastly BYOCDN。
 feature: Opportunities
 source-git-commit: da789100d814004687de2f46e18a295671dec4b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # Fastly (BYOCDN)
 
-此配置将代理式流量（来自 AI 机器人和 LLM 用户代理的请求）路由到 Edge Optimize 后端服务（`live.edgeoptimize.net`）。 人类访客和 SEO 机器人仍将照常从您的源站获得响应。 完成设置后，可在响应中查找头部 `x-edgeoptimize-request-id` 以测试配置是否成功。
+此配置将代理式流量（来自 AI 机器人和 LLM 用户代理的请求）路由到 Edge Optimize 后端服务（`live.edgeoptimize.net`）。人类访客和 SEO 机器人仍将照常从您的源站获得响应。完成设置后，可在响应中查找头部 `x-edgeoptimize-request-id` 以测试配置是否成功。
 
 **先决条件**
 
@@ -22,7 +22,7 @@ ht-degree: 83%
 * 完成了 LLM Optimizer 的加入过程。
 * 已将内容传递网络日志转发到 LLM Optimizer。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。
-* （可选）如果首先在暂存主机名上测试路由，则使用暂存Edge优化API密钥。
+* （可选）如果首先在暂存主机名上测试路由，请提供一个暂存 Edge Optimize API 密钥。
 
 {{retrieve-byocdn-api-key}}
 
@@ -30,7 +30,7 @@ ht-degree: 83%
 
 **配置**
 
-将以下三个 VCL 代码片段添加到您的 Fastly 服务。 这些代码片段用于处理将代理式请求路由到 Edge Optimize、缓存键分离以及故障转移到您的默认源站。
+将以下三个 VCL 代码片段添加到您的 Fastly 服务。这些代码片段用于处理将代理式请求路由到 Edge Optimize、缓存键分离以及故障转移到您的默认源站。
 
 ![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -78,7 +78,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 
 **故障转移**
 
-`vcl_deliver` 代码片段会自动处理故障转移。 如果 Edge Optimize 返回 `4XX` 或 `5XX` 错误，请求就会重新启动并路由回到您的默认源站，以确保最终用户仍能收到响应。 故障转移响应包含 `x-edgeoptimize-fo: 1` 头部。
+`vcl_deliver` 代码片段会自动处理故障转移。如果 Edge Optimize 返回 `4XX` 或 `5XX` 错误，请求就会重新启动并路由回到您的默认源站，以确保最终用户仍能收到响应。故障转移响应包含 `x-edgeoptimize-fo: 1` 头部。
 
 | 场景 | 行为 |
 | --- | --- |
@@ -115,7 +115,7 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-响应&#x200B;**不**&#x200B;应包含 `x-edgeoptimize-request-id` 头部。 页面内容和响应时间应保持与启用 Optimize at Edge 之前时完全相同。
+响应&#x200B;**不**&#x200B;应包含 `x-edgeoptimize-request-id` 头部。页面内容和响应时间应保持与启用 Optimize at Edge 之前时完全相同。
 
 **3. 如何区分这两种场景**
 
@@ -126,14 +126,14 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 **4. 暂存域（可选）**
 
-如果您使用LLM Optimizer中的暂存主机名和暂存API密钥，请使用&#x200B;**暂存** API密钥将相同的VCL代码段添加到&#x200B;**暂存** Fastly服务中。 然后，验证暂存主机上的机器人流量：
+如果您使用来自 LLM Optimizer 的暂存主机名和暂存 API 密钥，请使用&#x200B;**暂存** API 密钥将相同的 VCL 代码片段添加到&#x200B;**暂存** Fastly 服务中。然后，验证暂存主机上的机器人流量：
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-将`https://staging.example.com/page.html`替换为您的实际暂存URL和路径。 成功的响应包括`x-edgeoptimize-request-id`标头。
+将 `https://staging.example.com/page.html` 替换为您的实际暂存 URL 和路径。成功的响应包括 `x-edgeoptimize-request-id` 标头。
 
 {{verify-routing-status-in-ui}}
 
