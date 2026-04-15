@@ -2,10 +2,10 @@
 title: Optimize at Edge - Cloudflare (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudflare BYOCDN。
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 71%
+source-wordcount: '1922'
+ht-degree: 69%
 
 ---
 
@@ -59,7 +59,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 有两种方法可以为Edge优化设置Cloudflare Worker ：
 
 * [**选项1：部署到Cloudflare（推荐）**](#option-1-deploy-to-cloudflare) — 自动创建新的工作进程并提示您输入所需的环境变量和密钥。 如果您没有此域的现有Cloud Flare Worker，请使用此选项。
-* [**选项2：手动设置**](#option-2-manual-setup) — 关于自行创建和配置辅助进程的分步说明。 如果您已经拥有要扩展的现有Cloudflare Worker，或者希望完全控制部署，请使用此选项。
+* [**选项2：手动设置**](#option-2-manual-setup) — 关于自行创建和配置辅助进程的分步说明。 如果您已在域上配置了现有Cloudflare工作程序，则使用此选项 — 您需要将Edge优化代码合并到现有工作程序中（请参阅[步骤2：添加工作程序代码](#option-2-manual-setup)），或者如果您希望完全控制部署。
 
 无论您选择哪个选项，都必须手动将辅助进程链接到您的域 — 请参阅[步骤：向您的域添加路由](#add-a-route-to-your-domain)。
 
@@ -113,7 +113,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 **步骤 2：添加 Worker 代码**
 
-创建 Worker 后，点击&#x200B;**编辑代码**，将默认代码替换为以下内容：
+创建辅助进程后，单击&#x200B;**编辑代码**&#x200B;并将默认代码替换为以下内容。 如果您已经拥有现有的Cloudflare Worker，请将下面的代码与现有工作程序代码合并，而不是完全替换它。
 
 ```javascript
 /**
