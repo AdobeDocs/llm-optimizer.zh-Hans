@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
+source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 98%
+source-wordcount: '2323'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 1. 在&#x200B;**客户配置**&#x200B;仪表板中，选择&#x200B;**内容传递网络配置**&#x200B;选项卡。
 1. 单击&#x200B;**加入内容传递网络**。
    ![内容传递网络配置选项卡](/help/overview/assets/cc-cdn.png)
-1. 对于 AEM Fastly 客户，Adobe 可协助完成加入流程。 对于使用其他内容传递网络提供商的客户，需由您的 IT/内容传递网络团队完成相关设置和前置条件配置。 您也可以参考下方提供的内容传递网络示例指南以获取更多指导。
+1. 对于AEM Cloud Service托管的Fastly客户，路由设置是自助式的，可以直接在LLM Optimizer UI中完成。 对于使用其他内容传递网络提供商的客户，需由您的 IT/内容传递网络团队完成相关设置和前置条件配置。 您也可以参考下方提供的内容传递网络示例指南以获取更多指导。
 
 >[!NOTE]
 >请参阅下方逐步指南，了解完整的加入流程。 如遇指南未覆盖的问题，可联系 `llmo-at-edge@adobe.com`。
