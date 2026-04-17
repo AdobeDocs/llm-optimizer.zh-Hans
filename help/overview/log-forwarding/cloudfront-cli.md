@@ -1,22 +1,22 @@
 ---
-title: 日志转发 — CloudFront (AWS CLI)
-description: 使用AWS CLI将CloudFront CDN日志转发到Adobe的S3存储段，以进行投放设置和操作。
+title: 日志转发 - CloudFront (AWS CLI)
+description: 使用 AWS CLI 将 CloudFront 内容传递网络日志转发到 Adobe 的 S3 存储桶，以进行传递设置和操作。
 feature: Agentic Traffic
 source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
 # 日志转发：CloudFront (AWS CLI) {#log-forwarding-cloudfront-cli}
 
-本页详细介绍如何将CDN日志从CloudFront转发到Adobe的S3存储段以进行代理流量数据收集。 您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。 完成载入流程后，请按照本页面上提供的步骤操作，在[步骤2](#step-2-cli)中使用[AWS命令行界面](https://aws.amazon.com/cli/)配置日志转发。
+本页详细说明了如何将 CloudFront 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以收集代理式流量数据。您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。 完成加入过程后，请按照此页面上提供的步骤，使用[步骤 2](#step-2-cli) 中的 [AWS 命令&#x200B;&#x200B;行界面](https://aws.amazon.com/cli/)配置日志转发。
 
 >[!NOTE]
 >
-> 本指南介绍如何使用[AWS命令行界面](https://aws.amazon.com/cli/)配置日志转发。 如果要使用&#x200B;**CloudFront UI**&#x200B;配置日志转发，请参阅[日志转发： CloudFront](/help/overview/log-forwarding/cloudfront.md)。
+> 本指南介绍了如何使用 [AWS 命令行界面](https://aws.amazon.com/cli/)配置日志转发。如果要使用 **CloudFront UI** 配置日志转发，请参阅[日志转发：CloudFront](/help/overview/log-forwarding/cloudfront.md)。
 
 ## 第 1 步：在 LLM Optimizer 中完成加入 {#step-1}
 
@@ -50,13 +50,13 @@ ht-degree: 19%
 
 <!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## 步骤2：使用AWS CLI设置CDN日志转发 {#step-2-cli}
+## 步骤 2：通过 AWS CLI 设置内容传递网络日志转发 {#step-2-cli}
 
-使用AWS CLI设置CDN日志转发，如下所示：
+按照下述方法通过 AWS CLI 设置内容传递网络日志转发：
 
-### 配置AWS CLI凭据
+### 配置 AWS CLI 凭据
 
-设置AWS CLI凭据MAC。 打开~/.aws/credentials并输入以下变量的值：
+设置 AWS CLI 凭据 MAC。打开 ~/.aws/credentials，然后输入以下变量的值：
 
 ```text
 [LLMO]
@@ -67,13 +67,13 @@ aws_session_token=<ONLY_IF_USING_SECURITY_TOKEN_SERVICE> ## Optional
 
 ### 测试连接
 
-运行以下命令以测试连接：
+运行以下命令，测试连接：
 
 ```bash
 aws sts get-caller-identity --profile LLMO
 ```
 
-成功输出的示例：
+成功输出示例：
 
 ```bash
 aws sts get-caller-identity --profile LLMO
@@ -86,13 +86,13 @@ aws sts get-caller-identity --profile LLMO
 
 ### 初始化变量
 
-将`REPLACEME123@AdobeOrg`替换为您的组织Adobe IMS组织ID并运行以下命令。 此命令的输出ID将被称为`TRANSFORM_IMS_ID`。
+将 `REPLACEME123@AdobeOrg` 替换为您组织的 Adobe IMS 组织 ID，然后执行以下命令。此命令的输出 ID 将被称为 `TRANSFORM_IMS_ID`。
 
 ```bash
 echo "REPLACEME123@AdobeOrg" | sed 's/@AdobeOrg$//' | tr '[:upper:]' '[:lower:]'
 ```
 
-按照以下准则输入`CUSTOMER`、`CDN_ID`、`ACCT1`和`TRANSFORM_IMS_ID`的值，然后从终端运行命令。
+按照下述说明输入 `CUSTOMER`、`CDN_ID`、`ACCT1` 和 `TRANSFORM_IMS_ID` 的值，然后在您的终端上执行命令。
 
 ```bash
 export PROFILE1=LLMO
@@ -105,9 +105,9 @@ export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destinatio
 
 <!--Use the **Delivery destination ARN** and org values from the LLM Optimizer CDN configuration page if they differ from the pattern above.-->
 
-### 创建投放源
+### 创建传递来源
 
-在执行步骤3的同一终端上，运行以下命令：
+在执行步骤 3 的同一个终端上，运行以下命令：
 
 ```bash
 aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
@@ -118,18 +118,18 @@ aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
 
 >[!IMPORTANT]
 >
->如果收到以下错误，请搜索现有的投放源： *调用PutDeliverySource操作时出现错误(ConflictException)：此ResourceId已在此帐户中的另一个Delivery Source中使用。*
+>如果收到以下错误，请搜索现有的传递来源：*调用 PutDeliverySource 操作时出现错误 (ConflictException)：这个资源 Id 已在此帐户中的另一个传递来源中使用。*
 >
->要搜索现有的投放源，请运行此命令：
+>要搜索现有的传递来源，执行此命令：
 >
 >```bash
 >aws logs describe-delivery-sources --region us-east-1 \
 >--query "deliverySources[?contains(resourceArns[0], '<CDN DistributionID>')]"
 >```
 >
->在下一个命令中，使用上述命令结果中的投放源名称。
+>在下一个命令中，使用上述命令执行结果中的传递来源名称。
 
-### 创建投放配置
+### 创建传递配置
 
 ```bash
 aws logs create-delivery \
@@ -140,4 +140,4 @@ aws logs create-delivery \
   --record-fields 'date' 'time' 'x-edge-location' 'cs-method' 'cs(Host)' 'cs-uri-stem' 'sc-status' 'cs(Referer)' 'cs(User-Agent)' 'time-to-first-byte' 'sc-content-type' 'x-host-header'
 ```
 
-&lt;！ — 如果文档或产品值发生更改，请将`--record-fields`和`--s3-delivery-configuration`与LLM Optimizer CDN配置页面上显示的字段列表和路径后缀对齐。—>
+&lt;!--如果文档或产品值发生变化，请将 `--record-fields` 和 `--s3-delivery-configuration` 符合 LLM Optimizer 内容传递网络配置页面上显示的字段列表和路径后缀。-->

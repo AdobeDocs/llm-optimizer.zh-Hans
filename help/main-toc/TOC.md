@@ -3,9 +3,9 @@ user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追踪品牌提及、挖掘洞察，并掌控 AI 驱动的搜索结果。 立即行动，开启您的优化之旅！
 source-git-commit: b6e74e8706c4074a47cc355cb5f3a69a817f8a49
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
