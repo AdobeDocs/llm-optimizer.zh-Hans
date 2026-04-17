@@ -3,9 +3,9 @@ title: BYOCDN 日志转发概述
 description: 了解如何将您所使用的内容传递网络提供商日志转发到 Adobe 的 S3 存储桶，以便在 LLM Optimizer 中收集代理式流量数据。
 feature: Agentic Traffic
 source-git-commit: b6e74e8706c4074a47cc355cb5f3a69a817f8a49
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '215'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 以下指南均遵循相同的两阶段流程：
 
 1. **在 LLM Optimizer 中完成加入** — 在[内容传递网络配置](/help/dashboards/customer-configuration.md)页面注册您的内容传递网络，以生成所需的 S3 凭据和路径信息。
-2. **配置您的内容传递网络** — 使用这些信息在内容传递网络提供商控制台中创建日志转发任务（或手动上传日志）。 对于CloudFront，您只能通过&#x200B;**AWS CLI**&#x200B;使用控制台或完成投放设置；请参阅[CloudFront (AWS CLI)](/help/overview/log-forwarding/cloudfront-cli.md)。
+2. **配置您的内容传递网络** — 使用这些信息在内容传递网络提供商控制台中创建日志转发任务（或手动上传日志）。 对于 CloudFront，您只能使用控制台或通过 **AWS CLI** 完成传递设置；请参阅 [CloudFront (AWS CLI)](/help/overview/log-forwarding/cloudfront-cli.md)。
 
 ## 内容传递网络提供商 {#cdn-providers}
 
