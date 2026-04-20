@@ -106,7 +106,7 @@ Adobe LLM Optimizer支持基于用户角色的基本访问控制。 此功能仅
 1. 使用对您的组织具有管理权限的帐户登录到[Adobe Admin Console](https://adminconsole.adobe.com/)。
 1. 将Adobe LLM Optimizer产品配置文件（或您组织的等效产品权利）分配给应接收产品分配权能的用户或组。
 
-有关详细步骤，请参阅[在Admin Console中管理产品](https://helpx.adobe.com/enterprise/using/manage-products.html)和[管理用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html)。
+有关详细步骤，请参阅[在Admin Console中管理产品](https://helpx.adobe.com/cn/enterprise/using/manage-products.html)和[管理用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html)。
 
 >[!NOTE]
 >
