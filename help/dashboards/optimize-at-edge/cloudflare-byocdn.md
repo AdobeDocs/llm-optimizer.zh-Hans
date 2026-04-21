@@ -2,9 +2,9 @@
 title: Optimize at Edge - Cloudflare (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudflare BYOCDN。
 feature: Opportunities
-source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1906'
 ht-degree: 94%
 
 ---
@@ -20,12 +20,8 @@ ht-degree: 94%
 
 * 具有 Cloudflare 帐户，并且在您的域中启用了 Workers。
 * 可以在 Cloudflare 中访问您的域的 DNS 设置。
-* 完成了 LLM Optimizer 的加入过程。
-* 已将内容传递网络日志转发到 LLM Optimizer。
-* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。
-* （可选）要测试暂存路由，请参阅此页末尾的&#x200B;**可选：测试暂存主机名上的路由**。
-
-{{retrieve-byocdn-api-key}}
+* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
+* （可选）要测试暂存路由，请参阅[暂存API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
 **如何进行路由**
 
@@ -478,12 +474,5 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`1`） | 不存在 |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}

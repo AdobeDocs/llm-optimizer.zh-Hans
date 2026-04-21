@@ -2,9 +2,9 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
+source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2283'
 ht-degree: 97%
 
 ---
@@ -48,11 +48,6 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 >[!NOTE]
 >请参阅下方逐步指南，了解完整的加入流程。 如遇指南未覆盖的问题，可联系 `llmo-at-edge@adobe.com`。
 
-加入 Optimize at Edge 的前提条件：
-
-* 完成 LLM Optimizer 的加入流程。
-* 完成内容传递网络日志的转发流程。
-
 对您的 IT/内容传递网络团队的要求：
 
 * 将 `*AdobeEdgeOptimize/1.0*` 用户代理添加到您网站的 robots.txt 文件或机器人流量管理规则中的允许列表。
@@ -64,7 +59,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 >[!IMPORTANT]
 >路由必须在外部内容传递网络（即离客户端最近的内容传递网络）上进行配置。 如果您拥有多个内容传递网络，路由只能在外部内容传递网络上进行。
 
-要指导这个设置过程，请在下面选择您的内容传递网络提供商，然后按照相应的配置指南操作。 请注意，这些示例需根据您的实际生产环境配置进行调整。 建议您先在低级环境中应用更改。 **自带CDN**&#x200B;指南在每个页面末尾都包含可选的暂存主机名测试。
+要指导这个设置过程，请在下面选择您的内容传递网络提供商，然后按照相应的配置指南操作。 请注意，这些示例需根据您的实际生产环境配置进行调整。 建议您先在低级环境中应用更改。
 
 ### 内容传递网络配置指南
 

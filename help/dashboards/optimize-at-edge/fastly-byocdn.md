@@ -2,10 +2,10 @@
 title: Optimize at Edge - Fastly (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Fastly BYOCDN。
 feature: Opportunities
-source-git-commit: 412500d2a95d66a5c9bf6fa88efc62c6244834c8
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 92%
+source-wordcount: '348'
+ht-degree: 93%
 
 ---
 
@@ -19,12 +19,8 @@ ht-degree: 92%
 设置 Fastly VCL 规则之前，请确保您：
 
 * 可以为您的域访问 Fastly。
-* 完成了 LLM Optimizer 的加入过程。
-* 已将内容传递网络日志转发到 LLM Optimizer。
-* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。
-* （可选）要测试暂存路由，请参阅此页末尾的&#x200B;**可选：测试暂存主机名上的路由**。
-
-{{retrieve-byocdn-api-key}}
+* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
+* （可选）要测试暂存路由，请参阅[暂存API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
 **配置**
 
@@ -129,12 +125,5 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`1`） | 不存在 |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
