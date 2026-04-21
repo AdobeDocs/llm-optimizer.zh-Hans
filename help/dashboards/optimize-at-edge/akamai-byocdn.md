@@ -2,9 +2,9 @@
 title: Optimize at Edge - Akamai (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Akamai BYOCDN。
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '809'
 ht-degree: 94%
 
 ---
@@ -19,12 +19,8 @@ ht-degree: 94%
 在设置 Akamai 属性管理器规则之前，请确保您：
 
 * 可以为您的域访问 Akamai 属性管理器。
-* 完成了 LLM Optimizer 的加入过程。
-* 已将内容传递网络日志转发到 LLM Optimizer。
-* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。
-* （可选）要测试暂存路由，请参阅此页末尾的&#x200B;**可选：测试暂存主机名上的路由**。
-
-{{retrieve-byocdn-api-key}}
+* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
+* （可选）要测试暂存路由，请参阅[暂存API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
 **配置**
 
@@ -196,12 +192,5 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`1`） | 不存在 |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
