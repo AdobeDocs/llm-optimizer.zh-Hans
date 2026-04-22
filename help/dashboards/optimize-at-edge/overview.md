@@ -2,9 +2,9 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2301'
 ht-degree: 97%
 
 ---
@@ -55,6 +55,10 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 * 在内容传递网络中添加 Optimize at Edge 路由规则。
 * 如果您的CDN具有WAF或机器人管理器规则，请允许列表`*AdobeEdgeOptimize/1.0*`用户代理。 如果需要其他验证，请配置`x-edgeoptimize-fetcher-key`标头。 下面的每个BYOCDN指南都包含这些步骤。
 * 在 LLM Optimizer 界面中确认 Optimize at Edge 路由已生效。
+
+下图说明了请求如何通过Edge中的优化功能进行BYOCDN设置：
+
+![BYOCDN请求流](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
 >路由必须在外部内容传递网络（即离客户端最近的内容传递网络）上进行配置。 如果您拥有多个内容传递网络，路由只能在外部内容传递网络上进行。
