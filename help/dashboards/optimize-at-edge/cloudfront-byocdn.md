@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '2207'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -255,7 +255,7 @@ ht-degree: 98%
 
 4. 点击&#x200B;**保存更改**。
 
-**允许通过防火墙规则在Edge中优化（可选）**
+**允许 Optimize at Edge 通过防火墙规则（可选）**
 
 {{waf-allowlist-setup}}
 

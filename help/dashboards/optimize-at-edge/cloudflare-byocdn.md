@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 有两种方法可以为 Edge Optimize 设置 Cloudflare Worker：
 
 * [**选项 1：部署到 Cloudflare（推荐）**](#option-1-deploy-to-cloudflare)——自动创建新的 Worker，并提示您输入必需的环境变量和密码。 如果您当前没有此域的 Cloudflare Worker，请使用此选项。
-* [**选项 2：手动设置**](#option-2-manual-setup)——分步说明了如何自行创建和配置 Worker。 如果您已在域上配置了现有Cloudflare工作程序，则使用此选项 — 您需要将Edge优化代码合并到现有工作程序中（请参阅[步骤2：添加工作程序代码](#option-2-manual-setup)），或者如果您希望完全控制部署。
+* [**选项 2：手动设置**](#option-2-manual-setup)——分步说明了如何自行创建和配置 Worker。 如果您的域当前已配置了一个 Cloudflare Worker，您需要将 Edge Optimize 代码合并到您现有的 Worker 中（请参阅[步骤 2：添加 Worker 代码](#option-2-manual-setup)），或者如果您希望完全控制部署过程，请使用此选项。
 
 无论您选择哪个选项，都必须手动将 Worker 关联到您的域——请参阅[步骤：给您的域添加路由](#add-a-route-to-your-domain)。
 
@@ -109,7 +109,7 @@ Worker 部署完成后，继续[添加指向您的域名的路由](#add-a-route-
 
 **步骤 2：添加 Worker 代码**
 
-创建辅助进程后，单击&#x200B;**编辑代码**&#x200B;并将默认代码替换为以下内容。 如果您已经拥有现有的Cloudflare Worker，请将下面的代码与现有工作程序代码合并，而不是完全替换它。
+创建 Worker 后，点击&#x200B;**编辑代码**，将默认代码替换为以下内容。 如果您当前已经有一个 Cloudflare Worker，请将下面的代码与您现有的 Worker 代码合并，而不是将其完全替换。
 
 ```javascript
 /**
@@ -431,7 +431,7 @@ const FAILOVER_ON_5XX = false;
 | 因主机无效，请求失败 | `EDGE_OPTIMIZE_TARGET_HOST` 包含协议（例如 `https://`）。 | 仅使用不带协议的域名（例如 `example.com`，而不是 `https://example.com`）。 |
 | 故障转移过程中出现 530 错误 | Cloudflare 无法连接到源站，或者故障转移请求的头部无效。 | 确保故障转移功能会移除 Edge Optimize 头部。 验证您的源站可访问并且 DNS 配置正确。 |
 
-**允许通过防火墙规则在Edge中优化（可选）**
+**允许 Optimize at Edge 通过防火墙规则（可选）**
 
 {{waf-allowlist-setup}}
 
