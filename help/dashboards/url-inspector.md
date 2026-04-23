@@ -2,7 +2,7 @@
 title: URL 检查器
 description: 了解如何使用 URL 检查器，以分析您域名下特定页面在 AI 搜索中的表现。
 feature: URL Inspector
-source-git-commit: 7ba417a568d21c1e56de218e023df243b73f6357
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 95%
@@ -16,7 +16,7 @@ URL 检查器可帮助您分析域名下特定页面在 AI 搜索中的表现。
 
 ![URL 检查器](/help/dashboards/assets/url-insp.png)
 
-如果您使用以品牌为中心的体验，请导航到&#x200B;**URL检查器**，然后选择要查看其见解的网站。
+如果您在[以品牌为中心的体验](/help/overview/quick-start.md#brand-centric-experience)上，请导航到&#x200B;**URL检查器**，然后选择要查看其见解的网站。
 
 ![URL检查器 — 站点选择器（以品牌为中心的体验）](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
