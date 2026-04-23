@@ -2,9 +2,9 @@
 title: 引荐流量
 description: 了解如何使用“引荐流量”仪表板，查看访客通过外部平台、AI 引用和引荐链接访问您站点的情况。
 feature: Referral Traffic
-source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '740'
 ht-degree: 87%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 87%
 * [热门引荐 URL](#top-referrals)
 * [引荐流量详细信息](#traffic-details)
 
-如果您使用以品牌为中心的体验，请导航到&#x200B;**引荐流量**，然后选择要查看其LLM引荐流量分析的站点。
+如果您在[以品牌为中心的体验](/help/overview/quick-start.md#brand-centric-experience)，请导航到&#x200B;**引荐流量**，然后选择要查看其LLM引荐流量分析的站点。
 
 ![引荐流量 — 站点选择器（以品牌为中心的体验）](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
@@ -35,7 +35,7 @@ ht-degree: 87%
 
 首次登录时，“引荐流量”仪表板可能显示为空。 要查看您的数据，必须配置CDN日志转发。
 
-对于具有品牌中心体验的客户，可通过以下方式添加CDN日志转发信息。 导航到&#x200B;**品牌管理**，然后单击&#x200B;**CDN**&#x200B;标签。 另请参阅[代理流量 — CDN设置](/help/dashboards/agentic-traffic.md#cdn-setup)。
+对于使用[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)的客户，您可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**CDN**&#x200B;标签来添加CDN日志转发信息。 另请参阅[代理流量 — CDN设置](/help/dashboards/agentic-traffic.md#cdn-setup)。
 
 **客户配置（经典体验）：**&#x200B;通过选择&#x200B;**转到配置**&#x200B;来配置[CDN日志转发](/help/dashboards/customer-configuration.md#cdn-configuration)。
 

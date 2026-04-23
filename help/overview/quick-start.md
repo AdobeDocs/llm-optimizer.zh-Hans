@@ -2,21 +2,23 @@
 title: 快速入门
 description: 了解如何完成品牌名称和域名的加入，从 Experience Hub 或 Experience Cloud 激活试用，并完成 Adobe LLM Optimizer 的设置。
 feature: Quickstart, Onboarding
-source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 77%
+source-wordcount: '1459'
+ht-degree: 76%
 
 ---
 
 
 # 快速入门
 
-要开始使用LLM Optimizer，请完成入门。 然后，自定义类别、主题和提示，配置CDN日志转发，并打开[功能板](/help/dashboards/dashboards-overview.md)以获得更全面的见解。
-
-**以品牌为中心的体验：**&#x200B;默认情况下，新客户从具有载入驱动设置的有重点、品牌优先的界面开始。 在此新界面中，每个组织从一个活跃品牌和其他建议品牌开始，以供选择。 LLM Optimizer的现有客户将逐渐转向这种以品牌为中心的体验。
+要开始使用LLM Optimizer，请完成载入流程。 然后，自定义类别、主题和提示，配置CDN日志转发并打开[功能板](/help/dashboards/dashboards-overview.md)以获得更全面的见解。
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
+
+## 以品牌为中心的体验 {#brand-centric-experience}
+
+默认情况下，新客户最初进入一个有重点、品牌优先的界面，采用载入驱动的设置。 在此新界面中，每个组织从一个活跃品牌和其他建议品牌开始，以供选择。 LLM Optimizer的现有客户将逐渐转向这种以品牌为中心的体验。
 
 ## 加入概述
 
@@ -128,7 +130,7 @@ ht-degree: 77%
 
 ### 以品牌为中心的体验
 
-对于以品牌为中心的体验，您可以按如下方式添加类别、主题和提示：
+对于采用以品牌为中心的体验的客户，您可以按如下方式添加类别、主题和提示：
 
 * **类别** — 导航到&#x200B;**品牌管理**，然后单击&#x200B;**类别**。 类别是在全局级别定义的，适用于品牌管理下的所有品牌。
 
@@ -144,7 +146,7 @@ ht-degree: 77%
 
 >[!NOTE]
 >
-> 对于以品牌为中心的客户，请导航到&#x200B;**品牌存在感**，然后使用品牌下拉列表选择要查看其品牌存在感的品牌。 您还可以通过此体验在&#x200B;**所有品牌**&#x200B;级别查看品牌可见度。
+> 对于以品牌为中心的体验，导航到&#x200B;**品牌存在感**，然后选择要查看使用品牌的品牌存在感的品牌下拉列表。 您还可以通过此体验在&#x200B;**所有品牌**&#x200B;级别查看品牌可见度。
 
 ## 步骤 4：提供内容传递网络日志转发信息 {#step-4}
 
@@ -164,7 +166,7 @@ ht-degree: 77%
 >[!NOTE]
 >有关使用客户自管内容传递网络（BYOCDN）进行日志转发的详细信息，请参阅 [BYOCDN 日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### 以品牌为中心的体验
+### 以品牌为中心的体验CDN日志转发
 
 对于使用以品牌为中心的体验的客户，您可以从&#x200B;**品牌管理**&#x200B;添加CDN日志转发信息，如下所示：打开&#x200B;**品牌管理**，然后单击&#x200B;**CDN**&#x200B;标签。
 

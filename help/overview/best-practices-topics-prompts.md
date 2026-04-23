@@ -2,7 +2,7 @@
 title: 类别、主题、提示及其他品牌的最佳做法
 description: 通过配置类别、主题、提示以及需跟踪的其他品牌（包括竞争对手），优化 LLM 洞察能力，从而实现定制化的品牌监测和战略性内容分析。
 feature: Best Practices, Customer Configuration
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 93%
@@ -26,7 +26,7 @@ ht-degree: 93%
 
 默认情况下，新客户最初进入一个有重点、品牌优先的界面，采用载入驱动的设置。 在此新界面中，每个组织从一个活跃品牌和其他建议品牌开始，以供选择。 LLM Optimizer的现有客户将逐渐转向这种以品牌为中心的体验。
 
-如果您使用以品牌为中心的体验，**品牌管理**&#x200B;是您定义如何监视和分析品牌的地方。
+如果您使用以品牌为中心的体验，则可以在&#x200B;**品牌管理**&#x200B;中定义如何监视和分析您的品牌。
 
 ![品牌管理 — 应用程序导航（以品牌为中心的体验）](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
