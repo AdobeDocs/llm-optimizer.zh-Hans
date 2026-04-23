@@ -2,10 +2,10 @@
 title: 引荐流量
 description: 了解如何使用“引荐流量”仪表板，查看访客通过外部平台、AI 引用和引荐链接访问您站点的情况。
 feature: Referral Traffic
-source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
-workflow-type: ht
-source-wordcount: '665'
-ht-degree: 100%
+source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 “引荐流量”展示访客通过外部平台、AI 引用和引荐链接访问您网站的路径。 该仪表板跟踪并分析来自外部网站和平台的流量来源、引荐模式及转化量度。 通过这些数据，您可以了解哪些来源、区域和页面带来更高参与度的流量。<!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。
 
 >[!NOTE]
->默认情况下，此仪表板基于&#x200B;**内容传递网络日志**&#x200B;构建流量洞察。如果您的组织使用付费版本，您可以连接 **Adobe Analytics**，以补充用于衡量 AI 驱动发现和网站参与度的数据。这些数据将在&#x200B;**业务影响**&#x200B;选项卡中显示。如果未集成 Adobe Analytics，该选项卡将不会显示数据。更多信息请参阅 [Adobe Analytics 集成](/help/dashboards/adobe-analytics-integration.md)。
+>默认情况下，此仪表板基于&#x200B;**内容传递网络日志**&#x200B;构建流量洞察。 如果您的组织使用付费版本，您可以连接 **Adobe Analytics**，以补充用于衡量 AI 驱动发现和网站参与度的数据。 这些数据将在&#x200B;**业务影响**&#x200B;选项卡中显示。 如果未集成 Adobe Analytics，该选项卡将不会显示数据。 更多信息请参阅 [Adobe Analytics 集成](/help/dashboards/adobe-analytics-integration.md)。
 
 ![引荐页面](/help/dashboards/assets/referral-traffic.png)
 
@@ -27,9 +27,17 @@ ht-degree: 100%
 * [热门引荐 URL](#top-referrals)
 * [引荐流量详细信息](#traffic-details)
 
+如果您使用以品牌为中心的体验，请导航到&#x200B;**引荐流量**，然后选择要查看其LLM引荐流量分析的站点。
+
+![引荐流量 — 站点选择器（以品牌为中心的体验）](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
 ## 设置 {#setup}
 
-首次登录时，“引荐流量”仪表板可能显示为空。 要查看数据，请选择&#x200B;**前往配置**&#x200B;并完成 [内容传递网络日志转发](/help/dashboards/customer-configuration.md#cdn-configuration)设置。
+首次登录时，“引荐流量”仪表板可能显示为空。 要查看您的数据，必须配置CDN日志转发。
+
+对于具有品牌中心体验的客户，可通过以下方式添加CDN日志转发信息。 导航到&#x200B;**品牌管理**，然后单击&#x200B;**CDN**&#x200B;标签。 另请参阅[代理流量 — CDN设置](/help/dashboards/agentic-traffic.md#cdn-setup)。
+
+**客户配置（经典体验）：**&#x200B;通过选择&#x200B;**转到配置**&#x200B;来配置[CDN日志转发](/help/dashboards/customer-configuration.md#cdn-configuration)。
 
 ![引荐设置](/help/dashboards/assets/referral-setup1.png)
 
