@@ -2,9 +2,9 @@
 title: 快速入门
 description: 了解如何完成品牌名称和域名的加入，从 Experience Hub 或 Experience Cloud 激活试用，并完成 Adobe LLM Optimizer 的设置。
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 76%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 76%
 >
 > 有关如何设置类别、主题和提示词的更多信息，请参阅[配置类别、主题和提示词的最佳做法](/help/overview/best-practices-topics-prompts.md)页面。
 
-### 以品牌为中心的体验
+### 以品牌为中心的体验类别、主题和提示
 
 对于采用以品牌为中心的体验的客户，您可以按如下方式添加类别、主题和提示：
 
