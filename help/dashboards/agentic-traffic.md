@@ -2,7 +2,7 @@
 title: 代理式流量
 description: 了解如何使用“代理式流量”仪表板，以查看 AI 代理如何与您的站点交互。
 feature: Agentic Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 91%
@@ -33,7 +33,7 @@ ht-degree: 91%
 
 未配置&#x200B;**内容传递网络日志转发**&#x200B;时，“代理式流量”仪表板不会显示任何内容。 要查看代理交互数据，您需要配置&#x200B;**内容传递网络日志转发**。
 
-### 客户配置（经典导航）：
+### 客户配置（经典导航）
 
 首次登录时，您会看到如下图所示的提示信息。
 
@@ -46,7 +46,7 @@ ht-degree: 91%
 在该选项卡中，选择&#x200B;**加入内容传递网络**。 随后会显示内容传递网络提供商窗口。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在&#x200B;**加入内容传递网络提供商**&#x200B;窗口中：
+在**加入内容传递网络提供商**&#x200B;窗口中：
 
 1. 选择您的内容传递网络提供商（例如 Akamai、Adobe 管理的 Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare 或“其他”）。
 2. 单击&#x200B;**加入**&#x200B;以启用日志转发。

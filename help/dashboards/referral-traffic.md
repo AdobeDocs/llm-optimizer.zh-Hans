@@ -2,10 +2,10 @@
 title: 引荐流量
 description: 了解如何使用“引荐流量”仪表板，查看访客通过外部平台、AI 引用和引荐链接访问您站点的情况。
 feature: Referral Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 87%
+source-wordcount: '734'
+ht-degree: 88%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 87%
 
 首次登录时，“引荐流量”仪表板可能显示为空。 要查看您的数据，必须配置CDN日志转发。
 
-对于使用[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)的客户，您可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**CDN**&#x200B;标签来添加CDN日志转发信息。 另请参阅[代理流量 — CDN设置](/help/dashboards/agentic-traffic.md#cdn-setup)。
+对于使用[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)的客户，您可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**CDN**&#x200B;标签来添加CDN日志转发信息。
 
 **客户配置（经典体验）：**&#x200B;通过选择&#x200B;**转到配置**&#x200B;来配置[CDN日志转发](/help/dashboards/customer-configuration.md#cdn-configuration)。
 
