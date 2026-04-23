@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -82,7 +82,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 | Edge Optimize 返回 `4XX` 或 `5XX` | 请求会重新启动，并从默认源站提供响应。 |
 | 故障转移响应 | 包含头部 `x-edgeoptimize-fo: 1`。 |
 
-**允许通过防火墙规则在Edge中优化（可选）**
+**允许 Optimize at Edge 通过防火墙规则（可选）**
 
 {{waf-allowlist-setup}}
 

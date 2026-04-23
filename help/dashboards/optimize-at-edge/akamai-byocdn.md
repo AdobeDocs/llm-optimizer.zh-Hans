@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -74,15 +74,15 @@ ht-degree: 94%
 
 ![修改传入请求标头](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**允许通过防火墙规则在Edge中优化（可选）**
+**允许 Optimize at Edge 通过防火墙规则（可选）**
 
 {{waf-allowlist-setup}}
 
-![在属性管理器中设置x-edgeoptimize-fetcher-key标头](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
+![在属性管理器中设置 x-edgeoptimize-fetcher-key 标头](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
 
 >[!NOTE]
 >
->另外，在Akamai Bot Manager中允许列表`*AdobeEdgeOptimize/1.0*`用户代理和`x-edgeoptimize-fetcher-key`标头。
+>另外，在 Akamai Bot Manager 中将`*AdobeEdgeOptimize/1.0*`用户代理和 `x-edgeoptimize-fetcher-key` 标头列入允许列表。
 
 **6. 修改传入响应标头**
 
