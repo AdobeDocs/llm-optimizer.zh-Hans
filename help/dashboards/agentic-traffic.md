@@ -2,10 +2,10 @@
 title: 代理式流量
 description: 了解如何使用“代理式流量”仪表板，以查看 AI 代理如何与您的站点交互。
 feature: Agentic Traffic
-source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 96%
+source-wordcount: '1404'
+ht-degree: 90%
 
 ---
 
@@ -25,9 +25,19 @@ ht-degree: 96%
 * [涨跌幅最大页面](#top-bottom-movers)
 * [用户代理与 URL 性能分析](#user-url-performance)
 
+如果您使用以品牌为中心的体验，请导航到&#x200B;**代理流量**，然后选择要查看代理流量洞察的站点。
+
+![代理流量 — 站点选择器（以品牌为中心的体验）](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
 ## 内容传递网络日志转发 {#cdn-setup}
 
-未配置&#x200B;**内容传递网络日志转发**&#x200B;时，“代理式流量”仪表板不会显示任何内容。 要查看代理交互数据，您需要配置&#x200B;**内容传递网络日志转发**。  首次登录时，您会看到如下图所示的提示信息。
+未配置&#x200B;**内容传递网络日志转发**&#x200B;时，“代理式流量”仪表板不会显示任何内容。 要查看代理交互数据，您需要配置&#x200B;**内容传递网络日志转发**。
+
+如果您使用以品牌为中心的体验，则可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**CDN**&#x200B;标签来添加CDN日志转发信息。
+
+![品牌管理 — CDN日志转发](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+**客户配置（经典导航）：**&#x200B;首次登录时，您将看到如下图所示的消息。
 
 ![内容传递网络设置](/help/dashboards/assets/ag-log-forward1.png)
 
