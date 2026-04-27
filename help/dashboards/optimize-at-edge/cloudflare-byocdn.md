@@ -3,9 +3,9 @@ title: Optimize at Edge - Cloudflare (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudflare BYOCDN。
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1906'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 99%
 
 * 具有 Cloudflare 帐户，并且在您的域中启用了 Workers。
 * 可以在 Cloudflare 中访问您的域的 DNS 设置。
-* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
-* （可选）要测试暂存路由，请参阅[暂存API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
+* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
+* （可选）要测试暂存路由，请参阅[暂存 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
 **如何进行路由**
 

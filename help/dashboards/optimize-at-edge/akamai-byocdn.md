@@ -3,9 +3,9 @@ title: Optimize at Edge - Akamai (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Akamai BYOCDN。
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 98%
 在设置 Akamai 属性管理器规则之前，请确保您：
 
 * 可以为您的域访问 Akamai 属性管理器。
-* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
-* （可选）要测试暂存路由，请参阅[暂存API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
+* 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
+* （可选）要测试暂存路由，请参阅[暂存 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
 **配置**
 
