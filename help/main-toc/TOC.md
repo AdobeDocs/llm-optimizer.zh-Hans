@@ -5,7 +5,7 @@ user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追�
 source-git-commit: 5e033e9cef05efaf96a6c71ebeae71c533ddd605
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 92%
 + 其他资源{#resources}
    + Optimize at Edge{#optimize-at-edge}
       + [在Edge中优化概述](/help/dashboards/optimize-at-edge/overview.md)
-      + [检索API密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
+      + [检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
       + [AEM 云服务托管的内容传递网络 (Fastly)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
       + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)
       + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge/akamai-byocdn.md)
