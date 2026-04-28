@@ -2,10 +2,10 @@
 title: 仪表板概述
 description: 这是本文概述。
 feature: Onboarding
-source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
-workflow-type: ht
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -43,7 +43,7 @@ CARDS
   {description= Lets you enable cross-functional teamwork by allowing you to invite colleagues into a shared workspace.}
   {target=_blank}
   {cta=Learn more}
-* ./opportunities.md
+* ./opportunities-overview.md
   {title= Opportunities dashboard}
   {image= /help/assets/overview/opportunities-card.png}
   {description= Surfaces and prioritizes actionable insights that improve brand visibility and citation performance across AI-powered search platforms}
@@ -83,7 +83,7 @@ CARDS
                     <p class="is-size-6">跟踪您的品牌在各类 LLM 搜索平台中的呈现方式，包括情绪分析以及与其他品牌的对标。</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -106,7 +106,7 @@ CARDS
                     <p class="is-size-6">呈现传统分析工具可能遗漏的来自 LLM 的流量，帮助您将 AI 辅助发现与互动和收入关联起来。</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -129,7 +129,7 @@ CARDS
                     <p class="is-size-6">衡量源自 AI 生成引用的人类访问量，帮助您发现真实的 AI 用户互动情况。</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -152,7 +152,7 @@ CARDS
                     <p class="is-size-6">通过邀请同事加入共享工作区，支持跨职能团队协作。</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -161,7 +161,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./opportunities.md" title="机会仪表板" target="_blank" rel="referrer">
+                    <a href="./opportunities-overview.md" title="机会仪表板" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/opportunities-card.png" alt="机会仪表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -170,12 +170,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./opportunities.md" target="_blank" rel="referrer" title="机会仪表板">机会仪表板</a>
+                        <a href="./opportunities-overview.md" target="_blank" rel="referrer" title="机会仪表板">机会仪表板</a>
                     </p>
                     <p class="is-size-6">呈现并优先排序可执行的洞察，提升品牌在 AI 驱动搜索平台中的可见度和引用表现。</p>
                 </div>
-                <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                <a href="./opportunities-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -198,7 +198,7 @@ CARDS
                     <p class="is-size-6">让您了解自有 URL 在 AI 驱动搜索环境中的表现情况。</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -221,7 +221,7 @@ CARDS
                     <p class="is-size-6">支持组织根据自身需求控制 Adobe LLM Optimizer 的运行方式。</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
