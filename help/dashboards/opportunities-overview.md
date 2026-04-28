@@ -2,10 +2,10 @@
 title: 优化机会
 description: 了解如何使用“机会”仪表板，自动检测您的网站可改进之处，以提升品牌可见度。
 feature: Opportunities
-source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
-workflow-type: ht
-source-wordcount: '544'
-ht-degree: 100%
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+workflow-type: tm+mt
+source-wordcount: '780'
+ht-degree: 59%
 
 ---
 
@@ -31,11 +31,15 @@ ht-degree: 100%
 | 机会 | 类型 | 已识别问题 | 修复建议 |
 |---------|----------|----------|----------|
 | 长段落摘要优化 | 内容（站内） | 检测超过建议长度阈值的段落。 显示受影响的 URL 及超长文本片段。 | 创建摘要，或将长文本拆分为更短、便于快速浏览的段落。 |
-| 推荐结构化内容（FAQ） | 内容（站内） | 检测高热度提示但缺少对应 FAQ 条目的情况。 显示相关提示、类别及受影响的 URL。 | 添加包含简明回答的 FAQ 架构模块，以匹配常见问题。 |
-| 检测被阻止的代理式流量 | 技术性 GEO | 分析内容传递网络日志，识别来自已知 AI 代理（例如 GPTBot、PerplexityBot）的遭到阻止的请求。 报告受影响的 URL 和相关代理。 | 在适当情况下更新 robots.txt 或服务器配置，以允许受支持的 AI 爬虫访问。 |
-| 检测 404 / 403 / 5xx 错误问题 | 技术性 GEO | 监控内容传递网络日志中的错误响应。 报告错误发生频率、受影响的 URL 以及预计丢失的访问次数。 | 修复失效链接、更新访问权限，并解决服务器端问题，使关键内容返回 200 状态代码。 |
+| 推荐结构化内容 | 内容（站内） | 检测高热度提示但缺少对应 FAQ 条目的情况。 显示相关提示、类别及受影响的 URL。 | 添加包含简明回答的 FAQ 架构模块，以匹配常见问题。 |
+| [被robots.txt阻止的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md) | 技术性 GEO | 分析您的robots.txt文件，查找有选择地阻止AI代理访问其他可公开访问内容的规则。 报告受影响的URL和受阻的代理。 | 更新您的robots.txt文件，以便在适当时允许访问支持的AI爬虫。 |
+| [代理流量错误](/help/dashboards/opportunities/agentic-traffic-errors.md) | 技术性 GEO | 监视返回给AI代理的404、403和5xx错误响应的CDN日志。 报表会影响URL和总点击量。 | 修复失效链接、更新访问权限，并解决服务器端问题，使关键内容返回 200 状态代码。 |
 | 简化复杂内容 | 内容（站内） | 标识超出可读性阈值的复杂长段落，这类段落会降低 AI 理解。 | 对页面进行预渲染，使 AI 代理在无需执行 JavaScript 的情况下即可获取更多内容。 |
-| 恢复内容可见度（抢先体验） | 技术性 GEO | 标记对 AI 代理隐藏关键内容的页面。 显示受影响的 URL 以及可恢复的预期内容。 | 对页面进行预渲染，使 AI 代理在无需执行 JavaScript 的情况下即可获取更多内容。 |
+| [恢复内容可见度](/help/dashboards/opportunities/recover-content-visibility.md) | 技术性 GEO | 标记对 AI 代理隐藏关键内容的页面。 显示受影响的 URL 以及可恢复的预期内容。 | 使用Edge中的优化在CDN层预呈现页面，以便人工智能代理无需执行JavaScript即可使用更多内容。 |
+| [维基百科分析](/help/dashboards/opportunities/wikipedia-analysis.md) | 非现场 | 跨引用、部分、内容长度、图像和信息框完整性分析您公司的Wikipedia页面与行业竞争对手的对比。 确定页面低于行业基准的特定差距。 | 审查AI生成的战略建议以提高您的维基百科存在，包括添加引用、丰富您的信息框、扩展部分以及提高文章质量。 |
+| [情绪分析(Beta)](/help/dashboards/opportunities/youtube-sentiment-analysis.md) | 异地、社交和社区 | 分析为您的品牌存在感提示集引用的YouTube视频，其中包含品牌提及、情绪、声音份额和重复出现的主题。 仅当检测到YouTube视频作为提示集的引文时才会显示。 | 审查优先推荐，以提高YouTube内容中的品牌认知度，包括建议的操作以及负责实施这些操作的团队。 |
+| [Reddit情绪分析(Beta)](/help/dashboards/opportunities/reddit-sentiment-analysis.md) | 异地、社交和社区 | 分析针对您的品牌存在感提示集引用的Reddit线程，这些提示集包含品牌提及、情绪、声音份额和循环主题。 仅当检测到Reddit线程作为提示集的引用时才会显示。 | 审查优先推荐，以提高Reddit内容中的品牌认知度，包括建议的操作以及负责实施这些操作的团队。 |
+| [已引用的情绪分析(Beta)](/help/dashboards/opportunities/cited-sentiment-analysis.md) | 异地、社交和社区 | 分析在品牌提及、情绪、声音份额和重复主题的品牌存在感提示集中检测到的热门引用URL。 | 在响应有关您的品牌提示时，查看人工智能系统最常引用的优先级建议，以改善整个页面的品牌感知。 |
 
 ## 自动优化 {#auto-optimization}
 

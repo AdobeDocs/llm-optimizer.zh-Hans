@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追踪品牌提及、挖掘洞察，并掌控 AI 驱动的搜索结果。 立即行动，开启您的优化之旅！
-source-git-commit: 5e033e9cef05efaf96a6c71ebeae71c533ddd605
+source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 96%
+source-wordcount: '136'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +24,15 @@ ht-degree: 96%
    + [代理式流量](/help/dashboards/agentic-traffic.md)
    + [引荐流量](/help/dashboards/referral-traffic.md)
    + [URL 检查器](/help/dashboards/url-inspector.md)
-   + [机会](/help/dashboards/opportunities.md)
+   + 机会{#opportunities}
+      + [机会概述](/help/dashboards/opportunities-overview.md)
+      + [代理流量错误](/help/dashboards/opportunities/agentic-traffic-errors.md)
+      + [robots.txt阻止的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
+      + [恢复内容可见性](/help/dashboards/opportunities/recover-content-visibility.md)
+      + [维基百科分析](/help/dashboards/opportunities/wikipedia-analysis.md)
+      + [情绪分析](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
+      + [Reddit情绪分析](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
+      + [引用情绪分析](/help/dashboards/opportunities/cited-sentiment-analysis.md)
    + [客户配置](/help/dashboards/customer-configuration.md)
    + [协作](/help/dashboards/collaboration.md)
 + BYOCDN 日志转发{#log-forwarding}

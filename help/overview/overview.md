@@ -1,11 +1,11 @@
 ---
 title: LLM Optimizer 概述
-description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜索中的可见度。跟踪品牌提及、引用情况及相关洞察。立即开始优化，提升参与度与品牌影响力。
+description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜索中的可见度。 跟踪品牌提及、引用情况及相关洞察。 立即开始优化，提升参与度与品牌影响力。
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
-workflow-type: ht
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 什么是 Adobe LLM Optimizer？
 
-Adobe LLM Optimizer 是一款以生成式 AI 为核心的生成式引擎优化（亦称“答案引擎优化”）应用，旨在帮助品牌在 AI 驱动的搜索环境中提升可见度、准确性与影响力。该产品提供品牌在 AI 生成回答中的存在感洞察，给出可执行的内容优化建议，并自动实施优化修复。
+Adobe LLM Optimizer 是一款以生成式 AI 为核心的生成式引擎优化（亦称“答案引擎优化”）应用，旨在帮助品牌在 AI 驱动的搜索环境中提升可见度、准确性与影响力。 该产品提供品牌在 AI 生成的回答中的存在感洞察，给出可执行的内容优化建议，并自动实施优化修复。
 
 ## LLM Optimizer 提供哪些功能？
 
@@ -47,7 +47,7 @@ LLM 优化的重要性日益提升：
 
 ## 哪些角色适合使用 Adobe LLM Optimizer？
 
-生成式引擎优化本质上属于跨职能工作。LLM Optimizer 围绕这一特性，为以下角色提供支持：
+生成式引擎优化本质上属于跨职能工作。。 LLM Optimizer 围绕这一特性，为以下角色提供支持：
 
 * **营销经理**&#x200B;可衡量品牌在 AI 搜索中的可见度与营销活动效果。
 * **SEO 分析师**&#x200B;可跟踪品牌提及、引用情况及其他洞察，以指导内容策略制定。
@@ -57,11 +57,11 @@ LLM 优化的重要性日益提升：
 
 借助 Adobe LLM Optimizer，您可以：
 
-**衡量品牌可见度**：跟踪品牌在 AI 搜索结果中的出现时间、位置和频率。通过清晰的可见度分数进行长期对比分析，减少主观判断。请参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
-**对标其他品牌**：查看您的品牌在生成式引擎中的表现，并与其他品牌（包括竞争对手）进行比较。识别声音份额差距，发现竞争优势所在。请参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
-**发现可执行优化机会**：精准识别内容层面（如 FAQ、摘要、架构）和技术层面（如可抓取性、索引问题）的优化点，直接提升品牌提及与引用次数。请参阅[机会仪表板](/help/dashboards/opportunities.md)。
-**跟踪来自 AI 的流量影响**：监测代理式流量（来自 AI 助手）以及引荐流量（用户通过引用点击访问），了解流量对自有网站的影响。将 GEO 可见度与实际用户参与度建立关联。查看[代理式流量仪表板](/help/dashboards/agentic-traffic.md)和[引荐流量仪表板](/help/dashboards/referral-traffic.md)。
-**支持团队协作**：共享仪表板，为提示词或类别指定负责人，并确保在市场营销、搜索引擎优化（SEO）和传播职能之间持续跟踪可见性目标。请参阅[协作仪表板](/help/dashboards/collaboration.md)。
+**衡量品牌可见度**：跟踪品牌在 AI 搜索结果中的出现时间、位置和频率。 通过清晰的可见度分数进行长期对比分析，减少主观判断。 参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
+**Benchmark Others** - See how your brand stacks up against others including competitors in generative engines. 识别声音份额差距，发现竞争优势所在。 参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
+**Discover Actionable Opportunities** - Pinpoint content opportunities (e.g., FAQs, abstracts, schema) and technical opportunities (crawlability, indexing issues) that directly increase mentions and citations. See [Opportunities dashboard](/help/dashboards/opportunities-overview.md).
+**Track Traffic Impact from AI** - Monitor agentic traffic (from AI assistants) and referral traffic (user clicks from citations) to your owned properties. 将 GEO 可见度与实际用户参与度建立关联。 See [Agentic Traffic dashboard](/help/dashboards/agentic-traffic.md) and [Referral Traffic dashboard](/help/dashboards/referral-traffic.md).
+**Enable Team Collaboration** - Share dashboards, assign owners for prompts or categories, and ensure visibility goals are tracked across marketing, search engine optimization (SEO), and communications functions. 请参阅[协作仪表板](/help/dashboards/collaboration.md)。
 
 ## 了解详细信息
 

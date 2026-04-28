@@ -2,8 +2,8 @@
 title: LLM Optimizer 最佳做法
 description: 了解用于优化 LLM 的最佳做法，以提升品牌在 AI 搜索中的可见度。 提供用于对标和优化内容的洞察。
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: ht
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ LLM 可见度主要体现在您的品牌在 AI 生成的回答中出现的频率
 
 >[!TIP]
 >
->LLM Optimizer 会在[机会](/help/dashboards/opportunities.md)仪表板中为您推荐站内和站外优化机会。 这些优化机会均针对您的网站。 其中许多建议可通过 LLM Optimizer 直接部署到您的网站。
+>LLM Optimizer 会在[机会](/help/dashboards/opportunities-overview.md)仪表板中为您推荐站内和站外优化机会。 这些优化机会均针对您的网站。 其中许多建议可通过 LLM Optimizer 直接部署到您的网站。
 
 以下是一些优化最佳做法：
 
@@ -108,7 +108,7 @@ LLM 可见度主要体现在您的品牌在 AI 生成的回答中出现的频率
 
 4. 监测与迭代
 
-   * 使用[机会仪表板](/help/dashboards/opportunities.md)识别并执行推荐的优化措施。
+   * 使用[机会仪表板](/help/dashboards/opportunities-overview.md)识别并执行推荐的优化措施。
    * 跟踪可见度分数、情绪和引用频率。
    * 根据其他品牌（包括竞争对手）的动态和提示趋势进行调整。
 
@@ -118,7 +118,7 @@ LLM 可见度主要体现在您的品牌在 AI 生成的回答中出现的频率
 
 >[!TIP]
 >
->LLM Optimizer 会在[机会](/help/dashboards/opportunities.md)仪表板中为您推荐站内和站外优化机会。 这些优化机会均针对您的网站。 其中许多建议可通过 LLM Optimizer 直接部署到您的网站。
+>LLM Optimizer 会在[机会](/help/dashboards/opportunities-overview.md)仪表板中为您推荐站内和站外优化机会。 这些优化机会均针对您的网站。 其中许多建议可通过 LLM Optimizer 直接部署到您的网站。
 
 
 主要站外渠道：
@@ -170,7 +170,7 @@ LLM 可见度主要体现在您的品牌在 AI 生成的回答中出现的频率
    * 使用归因功能，将可见度提升与流量、互动和转化建立关联。 Adobe LLM Optimizer 中的归因功能可帮助您将可见度量度（提及、引用、情绪）的提升与实际业务成果（如网站流量、用户互动和转化）建立联系。 这有助于验证优化工作的投资回报率（ROI）。
    * 跟踪代理式流量和引荐流量的变化，以验证优化的 ROI。
 1. 优化您的内容
-   * 使用 LLM Optimizer 的[机会](/help/dashboards/opportunities.md)仪表板，识别并实施针对您网站的具体、即时优化建议。 请参阅[机会](/help/dashboards/opportunities.md)（然后衡量优化结果）。 定期审查“机会”板块，并根据提供的建议采取行动。
+   * 使用 LLM Optimizer 的[机会](/help/dashboards/opportunities-overview.md)仪表板，识别并实施针对您网站的具体、即时优化建议。 请参阅[机会](/help/dashboards/opportunities-overview.md)（然后衡量优化结果）。 定期审查“机会”板块，并根据提供的建议采取行动。
    * 优先处理可见度下降的页面。
    * 更新网站及其他内容，使其更符合您希望覆盖的提示。
    * 在页面中添加 FAQ，回答用户可能提出的常见问题。

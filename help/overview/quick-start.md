@@ -2,7 +2,7 @@
 title: 快速入门
 description: 了解如何完成品牌名称和域名的加入，从 Experience Hub 或 Experience Cloud 激活试用，并完成 Adobe LLM Optimizer 的设置。
 feature: Quickstart, Onboarding
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 76%
@@ -178,7 +178,7 @@ ht-degree: 76%
 
 * 查看[品牌存在感](/help/dashboards/brand-presence.md)仪表板，查看您的可见度分数，并跟踪您相对于其他品牌的表现。
 * 完成内容传递网络日志转发配置后，您可以查看[代理式流量](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。
-* 使用[机会](/help/dashboards/opportunities.md)识别内容和技术优化改进点。
+* 使用[机会](/help/dashboards/opportunities-overview.md)识别内容和技术优化改进点。
 * 导出数据，与您的团队协作，或邀请同事使用该产品。
 
 >[!NOTE]

@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
-workflow-type: ht
-source-wordcount: '2301'
-ht-degree: 100%
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+workflow-type: tm+mt
+source-wordcount: '2315'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 ### Optimize at Edge 支持哪些优化机会？
 
-所有可提升代理式 Web 体验的优化机会均可通过 Optimize at Edge 功能实现。 您可在[机会仪表板](/help/dashboards/opportunities.md)页面和当前页面的机会部分中详细了解每个机会。
+所有可提升代理式 Web 体验的优化机会均可通过 Optimize at Edge 功能实现。 您可在[机会仪表板](/help/dashboards/opportunities-overview.md)页面和当前页面的机会部分中详细了解每个机会。
 
 ## 加入
 
@@ -56,7 +56,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 * 如果您的内容传递网络有 WAF 或 Bot Manager 规则，请将 `*AdobeEdgeOptimize/1.0*` 用户代理列入允许列表。 如果需要其他验证，请配置 `x-edgeoptimize-fetcher-key` 标头。 下面的每个 BYOCDN 指南都包含了这些步骤。
 * 在 LLM Optimizer 界面中确认 Optimize at Edge 路由已生效。
 
-下图展示了在使用 Optimize at Edge 的 BYOCDN 设置中，请求是如何流转的：
+下图说明了请求如何通过 Optimize at Edge 流过 BYOCDN 设置：
 
 ![BYOCDN 请求流](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
@@ -87,7 +87,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 | 机会 | 类型 | 自动识别 | 自动建议 | 自动优化 |
 |---------|----------|----------|----------|----------|
-| 恢复内容可见性 | 技术性 GEO | 检测关键内容对 AI 代理不可见的页面。 显示受影响的 URL 以及可恢复的预期内容。 | 突出显示可向 AI 代理开放的内容，并建议为这些页面启用预渲染。 | 向代理式流量提供完全渲染的、对 AI 友好的 HTML 快照，从而恢复此前隐藏的内容。 |
+| [恢复内容可见度](/help/dashboards/opportunities/recover-content-visibility.md) | 技术性 GEO | 检测关键内容对 AI 代理不可见的页面。 显示受影响的 URL 以及可恢复的预期内容。 | 突出显示可向 AI 代理开放的内容，并建议为这些页面启用预渲染。 | 向代理式流量提供完全渲染的、对 AI 友好的 HTML 快照，从而恢复此前隐藏的内容。 |
 | 添加对 LLM 友好的摘要 | 内容优化 | 识别缺少页面级或章节级简要摘要的长篇或复杂页面，这类页面通常不利于 AI 快速扫描和理解。 | 推荐在页面级或章节级添加简短的 AI 生成摘要，以概括关键信息。 | 将摘要插入至相关 HTML 区块，提升模型对页面内容的理解与描述能力。 |
 | 添加相关常见问题（FAQ） | 内容优化 | 检测现有页面内容中的意图空白，这些空白可通过添加 FAQ 得到补充。 | 建议与用户意图及现有主题相匹配的 AI 生成的 FAQ 内容。 | 将 FAQ 内容注入 HTML，使页面在 AI 驱动的答案中更易被发现且更具相关性。 |
 | 简化复杂内容 | 内容优化 | 标记包含复杂文本、可能影响 AI 理解的页面。 | 在保留原始含义的前提下，提供 AI 生成的简化版本文本。 | 重写页面中的复杂内容区块，提升 AI 可读性。 |
@@ -109,6 +109,8 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 >[!IMPORTANT]
 >当通过 Optimize at Edge 部署下述所有优化机会时，预渲染功能将自动生效，以确保页面对 AI 代理完全可见。
+
+See [Recover Content Visibility](/help/dashboards/opportunities/recover-content-visibility.md) for a dashboard walkthrough, deployment steps, and frequently asked questions.
 
 ### 添加对 LLM 友好的摘要
 
@@ -184,7 +186,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见性**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如检测到变更，系统会暂停优化并标记为需人工审核，以防止代理可见页面与用户可见页面之间出现内容偏差。
+只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见性**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**&#x200B;这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如检测到变更，系统会暂停优化并标记为需人工审核，以防止代理可见页面与用户可见页面之间出现内容偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？
