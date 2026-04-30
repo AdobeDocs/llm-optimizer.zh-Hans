@@ -2,10 +2,10 @@
 title: Optimize at Edge - CloudFront (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 CloudFront BYOCDN。
 feature: Opportunities
-source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
-workflow-type: ht
-source-wordcount: '2207'
-ht-degree: 100%
+source-git-commit: 6cf66563c0ea043ab7f67e44be29b1e8d29d83d9
+workflow-type: tm+mt
+source-wordcount: '2217'
+ht-degree: 99%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 100%
    |--------|-------|
    | `x-edgeoptimize-api-key` | 您的 API 密钥 |
    | `x-forwarded-host` | `www.example.com` |
+   | `x-edgeoptimize-fetcher-key` | 您的提取器密钥（仅在列入允许列表时才需要） |
 
    将 `www.example.com` 替换为您真实的网站域，将 `Your API key` 替换为您的 Adobe 代表提供的 Edge Optimize API 密钥。
 
