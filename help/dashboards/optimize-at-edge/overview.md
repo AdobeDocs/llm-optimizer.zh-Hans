@@ -2,10 +2,15 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e9001ce2-5245-4a8e-8601-dd958009072f
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+subfeature_v2:
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
 autotag-review: '2026-04-30T18:15:36.189Z'
 source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
@@ -222,7 +227,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见性**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如检测到变更，系统会暂停优化并标记为需人工审核，以防止代理可见页面与用户可见页面之间出现内容偏差。
+只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见性**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**&#x200B;这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如检测到变更，系统会暂停优化并标记为需人工审核，以防止代理可见页面与用户可见页面之间出现内容偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？
