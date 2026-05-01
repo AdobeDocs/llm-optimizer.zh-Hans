@@ -2,10 +2,15 @@
 title: Optimize at Edge
 description: 了解如何在无需进行任何内容创作更改的情况下，通过内容传递网络边缘在 LLM Optimizer 中交付优化。
 feature: Opportunities
-source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e9001ce2-5245-4a8e-8601-dd958009072f
+autotag-review: '2026-04-30T18:15:36.189Z'
+source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 99%
+source-wordcount: 3108
+ht-degree: 66%
 
 ---
 
@@ -88,15 +93,18 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 | 机会 | 类型 | 自动识别 | 自动建议 | 自动优化 |
 |---------|----------|----------|----------|----------|
 | [恢复内容可见度](/help/dashboards/opportunities/recover-content-visibility.md) | 技术性 GEO | 检测关键内容对 AI 代理不可见的页面。 显示受影响的 URL 以及可恢复的预期内容。 | 突出显示可向 AI 代理开放的内容，并建议为这些页面启用预渲染。 | 向代理式流量提供完全渲染的、对 AI 友好的 HTML 快照，从而恢复此前隐藏的内容。 |
-| 添加对 LLM 友好的摘要 | 内容优化 | 识别缺少页面级或章节级简要摘要的长篇或复杂页面，这类页面通常不利于 AI 快速扫描和理解。 | 推荐在页面级或章节级添加简短的 AI 生成摘要，以概括关键信息。 | 将摘要插入至相关 HTML 区块，提升模型对页面内容的理解与描述能力。 |
-| 添加相关常见问题（FAQ） | 内容优化 | 检测现有页面内容中的意图空白，这些空白可通过添加 FAQ 得到补充。 | 建议与用户意图及现有主题相匹配的 AI 生成的 FAQ 内容。 | 将 FAQ 内容注入 HTML，使页面在 AI 驱动的答案中更易被发现且更具相关性。 |
-| 简化复杂内容 | 内容优化 | 标记包含复杂文本、可能影响 AI 理解的页面。 | 在保留原始含义的前提下，提供 AI 生成的简化版本文本。 | 重写页面中的复杂内容区块，提升 AI 可读性。 |
+| [丰富产品详细信息页面](/help/dashboards/opportunities/enrich-product-detail-pages.md) | 技术性 GEO | 对于Adobe Commerce店面，比较完整目录数据与AI代理在每个产品详细信息页面上可以访问的内容；显示PDP，其中代理可见的HTML中缺少变体、规范、属性和相关目录字段，并按代理流量划分优先级。 | 突出显示代理视图中缺少的可恢复目录信息，以及它对LLM驱动的产品发现重要的原因。 | 向CDN边缘的代理流量提供完全预呈现、对人工智能友好的HTML快照，以便代理无需更改CMS或目录即可从目录中接收丰富的产品上下文。 |
+| [添加LLM友好的摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | 内容优化 | 识别在页面或区域级别缺乏简洁摘要和结构化关键点的高流量页面，使AI代理更难扫描和解读。 | 建议基于现有内容编写由AI生成的简短摘要和关键点。 | 将摘要和关键点插入相关的HTML部分，这改进了模型解释和描述页面内容的方式。 |
+| [添加相关常见问题解答](/help/dashboards/opportunities/add-relevant-faqs.md) | 内容优化 | 识别缺少与您的提示集对齐的结构化问答内容的高流量页面，使AI代理更难将用户问题与您的页面进行匹配。 | 根据用户意图和现有页面主题建议AI生成的常见问题解答内容。 | 将 FAQ 内容注入 HTML，使页面在 AI 驱动的答案中更易被发现且更具相关性。 |
+| [简化复杂内容](/help/dashboards/opportunities/simplify-complex-content.md) | 内容优化 | 标记包含复杂文本、可能影响 AI 理解的页面。 | 在保留原始含义的前提下，提供 AI 生成的简化版本文本。 | 重写页面中的复杂内容区块，提升 AI 可读性。 |
+| [添加目录](/help/dashboards/opportunities/add-table-of-contents.md) | 技术性 GEO | 检测缺少清晰的结构化组织或导航标题的页面，这会使AI代理难以解析内容并将其映射到用户查询。 | 建议使用带锚点链接标题的结构化目录，以反映页面的主要部分。 | 将目录注入HTML，改进页面结构，以便AI模型可以更轻松地提取、映射和引用相关部分。 |
+| [添加多媒体成绩单摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | 内容优化 | 标识关键信息嵌入到视频或其他媒体中的页面，这些页面没有机器可读的转录或摘要，这使得人工智能代理难以使用该内容。 显示受影响的URL和推荐的文本。 | 建议以媒体和页面为基础，使用AI生成的转录摘要。 | 将成绩单摘要插入到HTML中，以便智能流量接收机器可读的文本（例如，在相关视频附近）。 |
 
 ### 其他工具
 
 [AI 内容可见度检查器](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)扩展会显示 LLM 可以访问多少网页内容以及哪些内容仍然隐藏。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
 
-只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 优化机会详解
 
@@ -110,25 +118,49 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 >[!IMPORTANT]
 >当通过 Optimize at Edge 部署下述所有优化机会时，预渲染功能将自动生效，以确保页面对 AI 代理完全可见。
 
-See [Recover Content Visibility](/help/dashboards/opportunities/recover-content-visibility.md) for a dashboard walkthrough, deployment steps, and frequently asked questions.
+有关仪表板演练、内容可见度步骤和常见问题，请参阅[恢复部署](/help/dashboards/opportunities/recover-content-visibility.md)。
+
+### 丰富产品详细信息页面
+
+此机会定位到Adobe Commerce产品详细信息页面，购物者通过交互式店面体验查看完整产品上下文，但AI代理仅接收简略的HTML快照。 目录代理将您的权威Commerce目录与代理可见的PDP进行比较，列出每个有意义的间隙（例如，从不出现在静态HTML中的变体或规范），并允许您部署仅机器人边缘响应，该响应在不更改目录记录或人工UI的情况下恢复LLM爬虫的奇偶校验。
+
+有关仪表板演练、部署步骤和常见问题，请参阅[丰富产品详细信息页面](/help/dashboards/opportunities/enrich-product-detail-pages.md)。
 
 ### 添加对 LLM 友好的摘要
 
-此优化机会会识别适合添加简要摘要的页面，以帮助 LLM 快速理解页面内容的核心主题。 对于每个页面，该功能会识别最需要添加摘要的位置，并在页面级或章节级生成 AI 摘要。 通过 Optimize at Edge 部署后，这些摘要将插入至 AI 代理获取的 HTML 中，从而提升内容被更准确描述的可能性。
+此机会可确定高流量页面，这些页面可从简洁的摘要和结构化的关键点中获益，以便LLM能够快速理解页面上的声明。 对于每个页面，它会检测最需要摘要的位置，并根据现有内容在页面或区域级别提出AI生成的摘要（以及相关的关键点）。 当您在Edge中使用优化进行部署时，该内容会插入AI代理检索的HTML中，从而提高AI答案中品牌展示的准确性。
+
+有关此机会的更多详细信息，请参阅[添加LLM友好的摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md)。
 
 ### 添加相关常见问题（FAQ）
 
-此优化机会会标记可通过补充问答内容更好匹配用户意图和 AI 驱动发现提示的页面。 对于每个页面，该功能会生成与用户意图及页面内容相关的 AI FAQ 模块建议。 通过 Optimize at Edge，这些 FAQ 将被注入至 HTML，使页面更符合 AI 使用需求，并提高 AI 答案直接反映您内容指导的可能性。
+此机会标记高流量页面，在这些页面中，其他问答内容可以更好地匹配人工智能驱动发现中的用户意图和提示。 对于每个页面，它会提出与页面上的提示集和内容绑定的AI生成的常见问题解答块。 通过使用Edge优化，这些常见问题解答将注入HTML，以使您的页面更易于使用AI，并增加AI回答直接反映您指导的可能性。
+
+请参阅[添加相关常见问题解答](/help/dashboards/opportunities/add-relevant-faqs.md)，以了解仪表板演练、部署步骤和常见问题。
 
 ### 简化复杂内容
 
 此优化机会会识别包含长篇复杂段落、可能降低 AI 理解能力的页面。 对于超出可读性阈值的页面，该功能会生成更简洁、便于快速浏览的 AI 内容版本，同时保留原始含义。 在边缘层部署后，提供给代理式流量的简化内容将有助于 LLM 更准确地理解和概括您的内容。
 
+有关仪表板演练、部署步骤和常见问题，请参阅[简化复杂内容](/help/dashboards/opportunities/simplify-complex-content.md)。
+
+### 添加目录
+
+此机会可检测AI代理由于标题和部分结构不明确或缺失而难以导航的页面。 对于每个受影响的页面，它会建议一个结构化目录，其中锚点链接条目与主要部分对齐。 在Edge中使用优化进行部署时，该目录将插入到HTML中，以便模型可以更可靠地将用户查询映射到页面的右侧部分并引用它们。
+
+请参阅[添加目录](/help/dashboards/opportunities/add-table-of-contents.md)以了解仪表板演练、部署步骤和早期访问指南。
+
+### 添加多媒体成绩单摘要
+
+此机会定位重要信息仅存在于视频播放中的页面，没有人工智能代理可读取的转录或文本摘要。 对于每个页面，它建议使用人工智能生成的文字记录以及来自媒体的关键点的简短摘要。 借助Edge中的优化，这些摘要将作为机器可读文本添加到HTML中，以便代理可以使用人类访客通过观看视频获得的相同物质。
+
+有关仪表板演练、部署步骤和常见问题，请参阅[添加多媒体成绩单摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)。
+
 ## 在边缘层自动优化
 
 针对每个优化机会，您可以在边缘层进行预览、编辑、部署、实时查看和回滚操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
@@ -160,6 +192,10 @@ See [Recover Content Visibility](/help/dashboards/opportunities/recover-content-
 
 ![回滚](/help/assets/optimize-at-edge/rollback.png)
 
+## 其他资源
+
+有关Edge优化功能的更多详细信息，请参阅以下播放列表[LLM Optimizer — 在Edge上优化](https://www.youtube.com/playlist?list=PLzbVcr6JHocVSMWBCaCw4xxjQ_VFVvFh0)。
+
 ## 常见问题解答
 
 问：试用用户是否可以使用 Optimize at Edge？
@@ -186,7 +222,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见性**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**&#x200B;这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如检测到变更，系统会暂停优化并标记为需人工审核，以防止代理可见页面与用户可见页面之间出现内容偏差。
+只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见性**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如检测到变更，系统会暂停优化并标记为需人工审核，以防止代理可见页面与用户可见页面之间出现内容偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？
@@ -196,6 +232,14 @@ The CDN is where the optimized version of the page is assembled and delivered to
 问：Optimize at Edge 的预渲染与传统服务器端渲染（SSR）有何不同？
 
 两者解决的问题不同，且可协同使用。 传统 SSR 渲染服务器端内容，但不包含随后在浏览器中加载的内容。 Optimize at Edge 预渲染会在 JavaScript 和客户端数据加载完成后捕获页面，在内容传递网络边缘层生成完整组装版本。 SSR 侧重于提升真人用户体验，而 Optimize at Edge 则专注于提升面向 LLM 的 Web 体验。
+
+问：恢复内容可见度（即预渲染）是否会隐身？ 听起来，该页面的另一个版本正在向AI代理提供。
+
+不。 预渲染可确保AI代理能够查看人类访客和SEO机器人已查看的相同内容。 许多网站使用JavaScript加载有意义的内容，典型AI代理不执行，因此代理可能会错过页面的很大部分。 预渲染会生成一个捕获全文的静态快照，以便代理接收与人类和搜索引擎相同的信息。 它&#x200B;**恢复LLM的**&#x200B;内容奇偶校验；它不会添加或更改实际内容。
+
+问：对于其他内容销售机会，例如添加LLM友好型摘要（提供给座席的页面上会显示新副本），该怎么办？ 那是遮羞布吗？
+
+不。 在Edge中优化不会引入人工用户和SEO爬虫无法访问的信息。 该服务将重新组织或总结页面上已有的内容，以便AI代理可以更轻松地对其进行解释。 当有人跟踪您网站的人工智能答案中的链接时，他们仍可以在实时页面上找到相同的基础信息。
 
 问：如果我为域中的某些 URL，而不是所有 URL 部署优化功能，会怎样？
 
