@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追踪品牌提及、挖掘洞察，并掌控 AI 驱动的搜索结果。 立即行动，开启您的优化之旅！
-source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
+source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 83%
+source-wordcount: '161'
+ht-degree: 77%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 83%
    + [LLM Optimizer 概述](/help/overview/overview.md)
    + [快速入门](/help/overview/quick-start.md)
    + [最佳做法](/help/tutorials/best-practices.md)
-   + [分类、主题、提示及其他跟踪对象的最佳做法](/help/overview/best-practices-topics-prompts.md)
+   + [类别、主题、提示词及其他跟踪对象的最佳做法](/help/overview/best-practices-topics-prompts.md)
 + 仪表板{#dashboards}
    + [仪表板概述](/help/dashboards/dashboards-overview.md)
    + [品牌存在感](/help/dashboards/brand-presence.md)
@@ -29,10 +29,17 @@ ht-degree: 83%
       + [代理流量错误](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [robots.txt阻止的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [恢复内容可见性](/help/dashboards/opportunities/recover-content-visibility.md)
+      + [添加LLM友好的摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
+      + [添加相关常见问题（FAQ）](/help/dashboards/opportunities/add-relevant-faqs.md)
+      + [添加多媒体成绩单摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
+      + [添加目录](/help/dashboards/opportunities/add-table-of-contents.md)
+      + [简化复杂内容](/help/dashboards/opportunities/simplify-complex-content.md)
       + [维基百科分析](/help/dashboards/opportunities/wikipedia-analysis.md)
       + [情绪分析](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
       + [Reddit情绪分析](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
       + [引用情绪分析](/help/dashboards/opportunities/cited-sentiment-analysis.md)
+      + [丰富产品目录](/help/dashboards/opportunities/enrich-product-catalog.md)
+      + [丰富产品详细信息页面](/help/dashboards/opportunities/enrich-product-detail-pages.md)
    + [客户配置](/help/dashboards/customer-configuration.md)
    + [协作](/help/dashboards/collaboration.md)
 + BYOCDN 日志转发{#log-forwarding}
@@ -46,7 +53,7 @@ ht-degree: 83%
    + [其他（手动上传）](/help/overview/log-forwarding/other.md)
 + 其他资源{#resources}
    + Optimize at Edge{#optimize-at-edge}
-      + [在Edge中优化概述](/help/dashboards/optimize-at-edge/overview.md)
+      + [在边缘层优化概述](/help/dashboards/optimize-at-edge/overview.md)
       + [检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
       + [AEM 云服务托管的内容传递网络 (Fastly)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
       + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)

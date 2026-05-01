@@ -2,13 +2,18 @@
 title: 类别、主题、提示及其他品牌的最佳做法
 description: 通过配置类别、主题、提示以及需跟踪的其他品牌（包括竞争对手），优化 LLM 洞察能力，从而实现定制化的品牌监测和战略性内容分析。
 feature: Best Practices, Customer Configuration
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+TQID: https://experienceleague.adobe.com/-nss61v0gCCKDKx4TaT5L-ImXVGQx-lyc9ha7u556d8
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: addf009e-030a-4310-8534-776a3e62ed48id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+autotag-review: '2026-04-30T17:25:43.100Z'
+source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 93%
+source-wordcount: 1530
+ht-degree: 100%
 
 ---
-
 
 # 配置类别、主题、提示及其他品牌跟踪的最佳做法
 
@@ -22,19 +27,19 @@ ht-degree: 93%
 
 在[!UICONTROL 客户配置]仪表板中，您可以自定义类别（例如业务单元或产品线）、跟踪其他品牌，并添加品牌提及别名，以捕获提示中品牌名称的所有变体。 此设置可确保平台根据您的业务情境定制洞察，从而实现对可见度、流量和机会的准确分析。
 
-## 以品牌为中心的体验
+## 品牌中心体验
 
-默认情况下，新客户最初进入一个有重点、品牌优先的界面，采用载入驱动的设置。 在此新界面中，每个组织从一个活跃品牌和其他建议品牌开始，以供选择。 LLM Optimizer的现有客户将逐渐转向这种以品牌为中心的体验。
+默认情况下，新客户会先进入一个有重点、品牌优先的界面，并进行加入引导式设置。 在此新界面中，每个组织初始将有一个活跃品牌，并提供其他建议品牌供选择。 现有 LLM Optimizer 客户将逐步过渡到此品牌中心体验。
 
-如果您使用以品牌为中心的体验，则可以在&#x200B;**品牌管理**&#x200B;中定义如何监视和分析您的品牌。
+如果您使用的是品牌中心体验，则可以在&#x200B;**品牌管理**&#x200B;中定义品牌的监控和分析方式。
 
-![品牌管理 — 应用程序导航（以品牌为中心的体验）](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![品牌管理——应用程序导航（品牌中心体验）](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![品牌管理 — 配置概述](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![品牌管理——配置概述](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-要设置特定品牌的主题和提示，请使用&#x200B;**提示管理**。
+要设置特定品牌的主题和提示词，请使用&#x200B;**提示词管理**。
 
-![提示管理](/help/assets/brand-centric-experience/prompts-management.png)
+![提示词管理](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## 行业提示库
 
@@ -104,7 +109,7 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 > * 选择一种方法并坚持使用。
-> * 每个账户/品牌只能使用&#x200B;**一种**&#x200B;类别模型。 不要同时混用&#x200B;**SBU**&#x200B;和&#x200B;**URL_DIR**。
+> * 每个账户/品牌只能使用&#x200B;**一种**&#x200B;类别模型。 请勿同时混用 **SBU** 和 **URL_DIR** 方法。
 <!--Can you mix Product/Service with these?-->
 
 示例：
