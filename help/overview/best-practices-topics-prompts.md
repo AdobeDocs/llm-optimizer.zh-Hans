@@ -3,10 +3,22 @@ title: 类别、主题、提示及其他品牌的最佳做法
 description: 通过配置类别、主题、提示以及需跟踪的其他品牌（包括竞争对手），优化 LLM 洞察能力，从而实现定制化的品牌监测和战略性内容分析。
 feature: Best Practices, Customer Configuration
 TQID: https://experienceleague.adobe.com/-nss61v0gCCKDKx4TaT5L-ImXVGQx-lyc9ha7u556d8
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: addf009e-030a-4310-8534-776a3e62ed48id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: c898dfb2-0885-42fb-b2af-b2d756752646
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: addf009e-030a-4310-8534-776a3e62ed48
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
 autotag-review: '2026-04-30T17:25:43.100Z'
 source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
 workflow-type: tm+mt
