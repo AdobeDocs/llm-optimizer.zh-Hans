@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 它如何修复问题
 
-使用Edge](/help/dashboards/optimize-at-edge/overview.md)中的[优化来应用修复，其中：
+使用Edge[&#128279;](/help/dashboards/optimize-at-edge/overview.md)中的优化来应用修复，其中：
 
 - 向AI代理提供预渲染的HTML快照。
 - 更新代理可见页面，以便用&#x200B;**已改进文本**&#x200B;替换或增加复杂段落，使其与实时页面对齐。

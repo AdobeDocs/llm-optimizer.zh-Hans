@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 它如何修复问题
 
-使用Edge](/help/dashboards/optimize-at-edge/overview.md)中的[优化来应用修复，其中：
+使用Edge[&#128279;](/help/dashboards/optimize-at-edge/overview.md)中的优化来应用修复，其中：
 
 - 向AI代理提供预渲染的HTML快照。
 - 在HTML中用转录摘要文本丰富页面（例如，在相关的内联视频附近）。
