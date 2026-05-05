@@ -2,10 +2,10 @@
 title: Optimize at Edge - Fastly (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Fastly BYOCDN。
 feature: Opportunities
-source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+source-git-commit: 0c5ab87db0856dcce4be4ab34b9725b9bef788dd
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 将以下三个 VCL 代码片段添加到您的 Fastly 服务。 这些代码片段用于处理将代理式请求路由到 Edge Optimize、缓存键分离以及故障转移到您的默认源站。
 
-![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
+![Fastly后端配置](/help/assets/optimize-at-edge/fastly-backend-config.png)
 
 ![添加 VCL 代码片段](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
@@ -46,6 +46,7 @@ if (!req.http.x-edgeoptimize-request
   set req.http.x-edgeoptimize-api-key = "<YOUR API KEY>"; # required for identifying the client
   set req.http.x-edgeoptimize-fetcher-key = "<YOUR FETCHER KEY>"; # Optional (required only in case of WAF)
   set req.backend = F_EDGE_OPTIMIZE;
+  return(lookup);
 }
 ```
 
@@ -63,8 +64,11 @@ if (req.http.x-edgeoptimize-config) {
 ```
 if (req.http.x-edgeoptimize-config && resp.status >= 400) {
   set req.http.x-edgeoptimize-request = "failover";
-  set req.backend = F_Default_Origin;
   restart;
+}
+
+if (req.http.x-edgeoptimize-config) {
+  return(deliver);
 }
 
 if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failover") {
