@@ -12,10 +12,10 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:12:24.085Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 9c8e5750410f0746d1777d2637d84561d15a7a64
 workflow-type: tm+mt
-source-wordcount: 1463
-ht-degree: 100%
+source-wordcount: 1472
+ht-degree: 96%
 
 ---
 
@@ -62,9 +62,9 @@ ht-degree: 100%
 
 ![LLM Optimizer 试用版](/help/overview/assets/llm-trial.png)
 
-#### Adobe Analytics 客户
+#### Adobe Analytics和Adobe Customer Journey Analytics
 
-如果您是 Adobe Analytics 客户，您将在 Experience Cloud 主页看到横幅提示。
+对于Adobe Analytics和Adobe Customer Journey Analytics客户，您将在Experience Cloud主页上看到一条横幅。
 
 ![Experience Cloud 主页显示“开始试用 Adobe LLM Optimizer”横幅](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> * **免费试用：** AEM Cloud 和 Adobe Analytics 客户可使用 LLM Optimizer 的免费试用版本。
+> * **免费试用版：** AEM Cloud和Adobe Analytics/Customer Journey Analytics客户可以使用LLM Optimizer的免费试用版。
 > * **在 2026 年 4 月 1 日及之后激活试用版的客户**，最多可使用 100 个提示、1 个域，并可针对单一机会类型在最多 10 个 URL 上部署优化。
 > * **在 2026 年 4 月 1 日之前激活试用版的客户**，可根据现有条款继续使用最多 200 个提示。
 >
