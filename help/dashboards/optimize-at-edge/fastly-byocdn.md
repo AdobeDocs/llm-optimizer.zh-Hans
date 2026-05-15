@@ -2,9 +2,14 @@
 title: Optimize at Edge - Fastly (BYOCDN)
 description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Fastly BYOCDN。
 feature: Opportunities
-source-git-commit: 0c5ab87db0856dcce4be4ab34b9725b9bef788dd
+autotag-review: '2026-05-15T17:51:24.924Z'
+TQID: 'https://experienceleague.adobe.com/qXp1pbmZrxahHFOUzIuo-WEawdgNWIIQKDyy0yL2MLA'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: 349
 ht-degree: 99%
 
 ---

@@ -2,9 +2,15 @@
 title: 日志转发 - Cloudflare
 description: 了解如何将 Cloudflare 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便在 LLM Optimizer 中收集代理式流量数据。
 feature: Agentic Traffic
-source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: ht
-source-wordcount: '381'
+autotag-review: '2026-05-15T17:41:23.688Z'
+TQID: 'https://experienceleague.adobe.com/AfhcMa7tZ3L-4qCbNKiblInALmHaKxWLtL-O-Hkvc-U'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+workflow-type: tm+mt
+source-wordcount: 381
 ht-degree: 100%
 
 ---
@@ -12,7 +18,7 @@ ht-degree: 100%
 
 # 日志转发：Cloudflare {#log-forwarding-cloudflare}
 
-本页详细说明如何将 Cloudflare 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便收集代理式流量数据。您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。完成加入流程后，请按照本页提供的步骤，在 Cloudflare 仪表板控制台中配置日志转发。
+本页详细说明如何将 Cloudflare 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便收集代理式流量数据。 您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。 完成加入流程后，请按照本页提供的步骤，在 Cloudflare 仪表板控制台中配置日志转发。
 
 ## 第 1 步：在 LLM Optimizer 中完成加入 {#step-1}
 
@@ -51,11 +57,11 @@ ht-degree: 100%
 1. 在&#x200B;**选择目标**&#x200B;中，选择 **Amazon S3**。
 1. 输入以下目标信息：
 
-   - **存储桶** — S3 存储桶名称。从 LLM Optimizer 内容传递网络配置页面复制该值。
+   - **存储桶** — S3 存储桶名称。 从 LLM Optimizer 内容传递网络配置页面复制该值。
 
      ![存储桶名称](/help/overview/assets/log-forwarding/common/bucket-name.png)
 
-   - **路径** — 存储桶中的路径位置。从 LLM Optimizer 内容传递网络配置页面复制该值。
+   - **路径** — 存储桶中的路径位置。 从 LLM Optimizer 内容传递网络配置页面复制该值。
 
      ![Cloudflare 路径](/help/overview/assets/log-forwarding/cloudflare/cloudflare-path.png)
 
@@ -71,7 +77,7 @@ ht-degree: 100%
 
    完成以上步骤后，选择&#x200B;**继续**。
 
-1. 为验证所有权，Cloudflare 会向指定目标发送一个文件。要获取令牌，请在所有权验证文件的&#x200B;**概述**&#x200B;选项卡中点击&#x200B;**打开**&#x200B;按钮。从 LLM Optimizer 内容传递网络配置页面复制所有权令牌，并粘贴到 Cloudflare 仪表板中，以验证您对该存储桶的访问权限。输入所有权令牌，然后选择&#x200B;**继续**。
+1. 为验证所有权，Cloudflare 会向指定目标发送一个文件。 要获取令牌，请在所有权验证文件的&#x200B;**概述**&#x200B;选项卡中点击&#x200B;**打开**&#x200B;按钮。 从 LLM Optimizer 内容传递网络配置页面复制所有权令牌，并粘贴到 Cloudflare 仪表板中，以验证您对该存储桶的访问权限。 输入所有权令牌，然后选择&#x200B;**继续**。
 
    <!--![Ownership token](/help/overview/assets/log-forwarding/cloudflare/cloudflare-ownership-token.png)-->
 
