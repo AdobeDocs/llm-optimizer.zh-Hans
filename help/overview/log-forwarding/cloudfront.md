@@ -2,9 +2,21 @@
 title: 日志转发 - CloudFront
 description: 了解如何将 CloudFront 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便在 LLM Optimizer 中收集代理式流量数据。
 feature: Agentic Traffic
-source-git-commit: d1f98770b39f550c36d93ece9b89933c0e90f189
-workflow-type: ht
-source-wordcount: '466'
+autotag-review: '2026-05-15T17:43:07.178Z'
+TQID: 'https://experienceleague.adobe.com/TXnY-eK1SUuKrlVoGWd2hZO5bjUqEspvyFmcyOuei3Q'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+workflow-type: tm+mt
+source-wordcount: 466
 ht-degree: 100%
 
 ---
@@ -12,7 +24,7 @@ ht-degree: 100%
 
 # 日志转发：CloudFront {#log-forwarding-cloudfront}
 
-本页介绍如何将 CloudFront 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便收集代理式流量数据。您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。完成加入流程后，请按照本页提供的步骤，在 CloudFront 仪表板控制台中配置日志转发。
+本页介绍如何将 CloudFront 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便收集代理式流量数据。 您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。 完成加入流程后，请按照本页提供的步骤，在 CloudFront 仪表板控制台中配置日志转发。
 
 ## 第 1 步：在 LLM Optimizer 中完成加入 {#step-1}
 
@@ -56,13 +68,13 @@ ht-degree: 100%
 
 1. 选择&#x200B;**添加**，然后选择接收日志的服务，此处选择 **Amazon S3**。
 
-1. 在&#x200B;**目标**&#x200B;中，选择或创建资源。输入&#x200B;**存储桶名称**，您可以从 LLM Optimizer 的内容传递网络配置页面复制该值。
+1. 在&#x200B;**目标**&#x200B;中，选择或创建资源。 输入&#x200B;**存储桶名称**，您可以从 LLM Optimizer 的内容传递网络配置页面复制该值。
 
    ![CloudFront 存储桶名称](/help/overview/assets/log-forwarding/cloudfront/cloudfront-bucket-name.png)
 
 1. 配置&#x200B;**其他设置**：
 
-   - **字段选择** — 选择日志文件字段。所需字段可在 LLM Optimizer 的内容传递网络配置页面查看。
+   - **字段选择** — 选择日志文件字段。 所需字段可在 LLM Optimizer 的内容传递网络配置页面查看。
 
      ![CloudFront 字段选择](/help/overview/assets/log-forwarding/cloudfront/cloudfront-field-selection.png)
 
@@ -80,9 +92,9 @@ ht-degree: 100%
 
 ## 启用跨帐户传递的标准日志记录 {#cross-account}
 
-**源帐户**（包含 CloudFront 分配）会将访问日志发送到&#x200B;**目标帐户**（即 LLM Optimizer 内容传递网络配置页面中显示的 S3 存储桶）。两个帐户都必须具备相应权限。
+**源帐户**（包含 CloudFront 分配）会将访问日志发送到&#x200B;**目标帐户**（即 LLM Optimizer 内容传递网络配置页面中显示的 S3 存储桶）。 两个帐户都必须具备相应权限。
 
-例如：源帐户 `111111111111` 将日志发送到目标帐户 `222222222222` 中的 S3 存储桶。您可以使用 [AWS 命令行界面](https://aws.amazon.com/cli/)。
+例如：源帐户 `111111111111` 将日志发送到目标帐户 `222222222222` 中的 S3 存储桶。 您可以使用 [AWS 命令行界面](https://aws.amazon.com/cli/)。
 
 >[!NOTE]
 >
@@ -111,5 +123,5 @@ ht-degree: 100%
 
 1. **验证：**
 
-   - 在&#x200B;**源**&#x200B;帐户中：CloudFront 控制台 > 您的分配 > **记录**&#x200B;选项卡。在&#x200B;**类型**&#x200B;下，您应看到 S3 跨帐户日志传递。
-   - 在&#x200B;**目标**&#x200B;帐户中：S3 控制台 > 存储桶。您应能看到前缀（例如 `MyLogPrefix`）以及该文件夹中的日志。
+   - 在&#x200B;**源**&#x200B;帐户中：CloudFront 控制台 > 您的分配 > **记录**&#x200B;选项卡。 在&#x200B;**类型**&#x200B;下，您应看到 S3 跨帐户日志传递。
+   - 在&#x200B;**目标**&#x200B;帐户中：S3 控制台 > 存储桶。 您应能看到前缀（例如 `MyLogPrefix`）以及该文件夹中的日志。

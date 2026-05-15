@@ -2,9 +2,20 @@
 title: BYOCDN 日志转发概述
 description: 了解如何将您所使用的内容传递网络提供商日志转发到 Adobe 的 S3 存储桶，以便在 LLM Optimizer 中收集代理式流量数据。
 feature: Agentic Traffic
-source-git-commit: b6e74e8706c4074a47cc355cb5f3a69a817f8a49
-workflow-type: ht
-source-wordcount: '215'
+autotag-review: '2026-05-15T17:53:26.846Z'
+TQID: 'https://experienceleague.adobe.com/EPQ6GBjNXpIwYTuzj1xDKkIzuFLOWFPmu0lqSGUAX3I'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 564171851fdccee43afd233da143d66182464889
+workflow-type: tm+mt
+source-wordcount: 215
 ht-degree: 100%
 
 ---

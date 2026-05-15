@@ -2,6 +2,8 @@
 title: LLM Optimizer 概述
 description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜索中的可见度。 跟踪品牌提及、引用情况及相关洞察。 立即开始优化，提升参与度与品牌影响力。
 feature: Onboarding
+autotag-review: '2026-05-15T17:54:37.542Z'
+TQID: 'https://experienceleague.adobe.com/5qyk6PCTaT93tz-UUnYRYznylOh4lXHuH1yN98g3wIE'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
@@ -11,8 +13,7 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-autotag-review: '2026-04-30T18:13:19.543Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 618
 ht-degree: 84%

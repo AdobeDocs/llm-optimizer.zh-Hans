@@ -2,17 +2,28 @@
 title: 日志转发 - Fastly
 description: 了解如何将 Fastly 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便在 LLM Optimizer 中收集代理式流量数据。
 feature: Agentic Traffic
-source-git-commit: d1f98770b39f550c36d93ece9b89933c0e90f189
-workflow-type: ht
-source-wordcount: '381'
-ht-degree: 100%
+autotag-review: '2026-05-15T17:51:51.808Z'
+TQID: 'https://experienceleague.adobe.com/9SH1I6ajHKLFeEWXy-NpvPm-Ylk2xBKhQro3qobVEX8'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
+workflow-type: tm+mt
+source-wordcount: 381
+ht-degree: 88%
 
 ---
 
 
 # 日志转发：Fastly {#log-forwarding-fastly}
 
-本页介绍如何将 Fastly 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便收集代理式流量数据。您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。完成加入流程后，请按照本页提供的步骤，在 Fastly web 控制台中配置日志转发。
+本页介绍如何将 Fastly 的内容传递网络日志转发到 Adobe 的 S3 存储桶，以便收集代理式流量数据。 您将使用 LLM Optimizer 的内容传递网络配置页面完成加入。 完成加入流程后，请按照本页提供的步骤，在 Fastly web 控制台中配置日志转发。
 
 ## 第 1 步：在 LLM Optimizer 中完成加入 {#step-1}
 
@@ -49,10 +60,10 @@ ht-degree: 100%
 | **位置** | 默认 |
 | **日志格式** | 使用下方&#x200B;**日志格式字符串**&#x200B;部分提供的格式。 |
 | **时间戳格式** | `%Y-%m-%dT%H:%M:%S.000` |
-| **存储桶名称** | 从 LLM Optimizer 配置页面复制&#x200B;**存储桶名称**。![存储桶名称](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **域** | 从 LLM Optimizer 配置页面复制&#x200B;**域名**。![域名](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **存储桶名称** | 从LLM Optimizer配置页面复制&#x200B;**存储段名称**。 ![存储桶名称](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **域** | 从LLM Optimizer配置页面复制&#x200B;**域名**。 ![域名](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **访问方法** | **用户凭据** |
-| **用户凭据** | 从 LLM Optimizer 配置页面复制&#x200B;**访问密钥**&#x200B;和&#x200B;**秘密密钥**。![访问密钥](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **用户凭据** | 从LLM Optimizer配置页面复制&#x200B;**访问密钥**&#x200B;和&#x200B;**密钥**。 ![访问密钥](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **句点** | `300` |
 
 **日志格式字符串：**
@@ -63,13 +74,13 @@ ht-degree: 100%
 
 >[!WARNING]
 >
->密码管理工具可能会自动将您的 Fastly 密码填入&#x200B;**秘密密钥**&#x200B;字段。如果 AWS 集成失败，请手动输入秘密密钥。
+>密码管理工具可能会自动将您的 Fastly 密码填入&#x200B;**秘密密钥**&#x200B;字段。 如果 AWS 集成失败，请手动输入秘密密钥。
 
 完成上述步骤后，单击&#x200B;**高级选项**&#x200B;并进行以下设置：
 
 | 字段 | 描述 |
 | --- | --- |
-| **路径** | 从 LLM Optimizer 配置页面复制&#x200B;**路径**。![路径](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
+| **路径** | 从LLM Optimizer配置页面复制&#x200B;**路径**。 ![路径](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
 | **选择日志行格式** | 空白 |
 | **压缩** | Gzip |
 | **冗余级别** | 标准 |

@@ -2,9 +2,19 @@
 title: 日志转发 - 其他（手动上传）
 description: 了解在使用不受支持的内容传递网络提供商时，如何手动将内容传递网络日志上传到 Adobe 的 S3 存储桶，以便在 LLM Optimizer 中收集代理式流量数据。
 feature: Agentic Traffic
-source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: ht
-source-wordcount: '670'
+autotag-review: '2026-05-15T17:54:15.685Z'
+TQID: 'https://experienceleague.adobe.com/YBfhS4oM0qYRkFvS3zPzzcFAeLNBucRH5QmMBUH8h4E'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 564171851fdccee43afd233da143d66182464889
+workflow-type: tm+mt
+source-wordcount: 670
 ht-degree: 100%
 
 ---
@@ -52,7 +62,7 @@ ht-degree: 100%
 
 ### 所需日志格式（JSON Lines） {#log-format}
 
-日志必须以换行分隔的 JSON 格式上传（**每行一个 JSON 对象**）。每一行日志必须包含以下字段，且字段名称必须&#x200B;**与下方完全一致**。
+日志必须以换行分隔的 JSON 格式上传（**每行一个 JSON 对象**）。 每一行日志必须包含以下字段，且字段名称必须&#x200B;**与下方完全一致**。
 
 #### 字段逐项说明 {#schema}
 
@@ -66,7 +76,7 @@ ht-degree: 100%
 | **request_referer** | 字符串 | HTTP 请求标头中的反向链接字段（可为空）。 | `"https://chatgpt.com"` |
 | **response_status** | 整数 | HTTP 响应状态代码。 | `200` |
 | **response_content_type** | 字符串 | HTTP 响应标头中的 Content-Type 字段。 | `"text/html; charset=utf-8"` |
-| **time_to_first_byte** | 整数 | 从建立与服务器连接到开始下载网页内容之间的时间，单位为&#x200B;**毫秒**。如果未知或不可用，请设置为 0。 | `42` |
+| **time_to_first_byte** | 整数 | 从建立与服务器连接到开始下载网页内容之间的时间，单位为&#x200B;**毫秒**。 如果未知或不可用，请设置为 0。 | `42` |
 
 #### 示例日志行 {#example}
 
@@ -84,7 +94,7 @@ ht-degree: 100%
 
 - 字段名称必须&#x200B;**完全**&#x200B;匹配（包括大小写和拼写）。
 - 数据类型必须正确，具体如下：
-   - **时间戳**&#x200B;必须为符合 **ISO 8601** 格式的字符串。类 UNIX 时间戳可能无法正常解析。
+   - **时间戳**&#x200B;必须为符合 **ISO 8601** 格式的字符串。 类 UNIX 时间戳可能无法正常解析。
    - **response_status** 必须为整数。
    - **time_to_first_byte** 必须为整数，单位为毫秒。
    - 字符串必须为有效的 JSON 字符串。

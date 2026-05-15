@@ -2,9 +2,19 @@
 title: 访问控制
 description: 了解 Adobe LLM Optimizer 中产品分配的用户和组织用户的区别、只读用户在 UI 中能看到什么以及管理员如何在 Adobe Admin Console 中分配访问权限。
 feature: Customer Configuration
-source-git-commit: 3b792a8ca7efd4b6d6764d2e83f9b0c103a56558
-workflow-type: ht
-source-wordcount: '618'
+autotag-review: '2026-05-15T17:26:43.837Z'
+TQID: 'https://experienceleague.adobe.com/hJpQQpuHBRMdKT5oKA9z0Y8H3d3p6To-n2hWKrXgZsQ'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: b704f6a0-b2fb-4df0-9177-9753751004f5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+workflow-type: tm+mt
+source-wordcount: 618
 ht-degree: 100%
 
 ---
@@ -12,7 +22,7 @@ ht-degree: 100%
 
 # 访问控制
 
-Adobe LLM Optimizer 支持基于用户画像的基本访问控制。此功能仅提供给&#x200B;**付费客户**，可根据请求启用。不提供给试用版客户。
+Adobe LLM Optimizer 支持基于用户画像的基本访问控制。 此功能仅提供给&#x200B;**付费客户**，可根据请求启用。 不提供给试用版客户。
 
 >[!IMPORTANT]
 >
@@ -30,7 +40,7 @@ Adobe LLM Optimizer 支持基于用户画像的基本访问控制。此功能仅
 
 ## 组织用户 {#organizational-users}
 
-组织用户是&#x200B;**未**&#x200B;分配给产品的标准用户。如果您是组织用户，您就具有对 [LLM Optimizer 仪表板](/help/dashboards/dashboards-overview.md)和相关视图的&#x200B;**只读**&#x200B;访问权限。以下限制适用。
+组织用户是&#x200B;**未**&#x200B;分配给产品的标准用户。 如果您是组织用户，您就具有对 [LLM Optimizer 仪表板](/help/dashboards/dashboards-overview.md)和相关视图的&#x200B;**只读**&#x200B;访问权限。 以下限制适用。
 
 ### 客户配置 {#customer-configuration-restrictions}
 
@@ -79,7 +89,7 @@ Adobe LLM Optimizer 支持基于用户画像的基本访问控制。此功能仅
 对于这些页面：
 
 * 如果用户没有部署访问权限，**部署优化**&#x200B;就会隐藏。
-* 一条内嵌警报说明必须具有部署访问权限。消息类似于：*需要部署访问权限。您没有部署优化或管理建议的权限。请联系您的管理员，请求访问权限。*
+* 一条内嵌警报说明必须具有部署访问权限。 消息类似于：*需要部署访问权限。您没有部署优化或管理建议的权限。 请联系您的管理员，请求访问权限。*
 * 包含部署操作的固定底边栏已隐藏。
 
   ![需要部署访问权限情况下的内嵌警报](/help/dashboards/assets/access-control-deploy-alert.png)
@@ -110,4 +120,4 @@ Adobe LLM Optimizer 支持基于用户画像的基本访问控制。此功能仅
 
 >[!NOTE]
 >
->不同发行版本的 Adobe Admin Console 中的屏幕流可能会不一样。如果上述选项与您的控制台不匹配，请使用 Adobe Admin Console 中的产品内帮助链接，或者联系您的 Adobe 帐户团队。
+>不同发行版本的 Adobe Admin Console 中的屏幕流可能会不一样。 如果上述选项与您的控制台不匹配，请使用 Adobe Admin Console 中的产品内帮助链接，或者联系您的 Adobe 帐户团队。
