@@ -5,7 +5,7 @@ user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追�
 source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 75%
+ht-degree: 98%
 
 ---
 
@@ -26,20 +26,20 @@ ht-degree: 75%
    + [URL 检查器](/help/dashboards/url-inspector.md)
    + 机会{#opportunities}
       + [机会概述](/help/dashboards/opportunities-overview.md)
-      + [代理流量错误](/help/dashboards/opportunities/agentic-traffic-errors.md)
-      + [robots.txt阻止的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
+      + [代理式流量错误](/help/dashboards/opportunities/agentic-traffic-errors.md)
+      + [robots.txt 阻止流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [恢复内容可见性](/help/dashboards/opportunities/recover-content-visibility.md)
-      + [添加LLM友好的摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
+      + [添加 LLM 友好的摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
       + [添加相关常见问题（FAQ）](/help/dashboards/opportunities/add-relevant-faqs.md)
-      + [添加多媒体成绩单摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
+      + [添加多媒体文字记录摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
       + [添加目录](/help/dashboards/opportunities/add-table-of-contents.md)
       + [简化复杂内容](/help/dashboards/opportunities/simplify-complex-content.md)
       + [维基百科分析](/help/dashboards/opportunities/wikipedia-analysis.md)
-      + [情绪分析](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
-      + [Reddit情绪分析](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
+      + [YouTube 情绪分析](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
+      + [Reddit 情绪分析](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
       + [引用情绪分析](/help/dashboards/opportunities/cited-sentiment-analysis.md)
-      + [丰富产品目录](/help/dashboards/opportunities/enrich-product-catalog.md)
-      + [丰富产品详细信息页面](/help/dashboards/opportunities/enrich-product-detail-pages.md)
+      + [扩充产品目录](/help/dashboards/opportunities/enrich-product-catalog.md)
+      + [扩充产品详细信息页面](/help/dashboards/opportunities/enrich-product-detail-pages.md)
    + [客户配置](/help/dashboards/customer-configuration.md)
    + [协作](/help/dashboards/collaboration.md)
 + BYOCDN 日志转发{#log-forwarding}

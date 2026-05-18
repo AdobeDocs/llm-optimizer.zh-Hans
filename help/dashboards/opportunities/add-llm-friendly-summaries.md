@@ -1,98 +1,94 @@
 ---
-title: 添加LLM友好的摘要
-description: 了解LLM Optimizer如何识别缺少AI代理简洁摘要和关键点的高流量页面，以及如何使用Edge中的优化功能查看和部署这些页面。
+title: 添加 LLM 友好的摘要
+description: 了解 LLM Optimizer 如何识别那些缺少为 AI 代理提供的简洁摘要和关键点的高流量页面，以及如何通过 Optimize at Edge 审阅和部署相关的建议。
 feature: Opportunities
 autotag-review: '2026-05-15T17:27:51.631Z'
 TQID: 'https://experienceleague.adobe.com/QpBdx3B-qg41ZWtPU2R4CNq-POrSs31UIb0kms1H3GU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 793
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 添加LLM友好的摘要
+# 添加 LLM 友好的摘要
 
-添加LLM友好型摘要机会可识别缺少简洁结构化摘要的高流量页面，这会使AI代理更难快速了解页面上的关键信息。 它引入以现有页面内容为基础的清晰摘要和要点。 这有助于代理更高效地解释和捕获重要的品牌声明，并提高将您的内容准确包含在AI响应中的可能性。
+“添加 LLM 友好的摘要”机会可识别那些缺少简洁的结构化摘要的高流量页面，这使 AI 代理难以快速理解页面上的关键信息。 它会引入基于您的现有页面内容的清晰摘要和关键点。 这有助于代理能更有效地解读和获得重要的品牌声明，使您的内容能更准确地包含在 AI 回答中。
 
-对于每个受影响的URL，您可以查看人工智能生成的建议，然后通过[在Edge中优化](/help/dashboards/optimize-at-edge/overview.md)来部署这些建议，这样代理流量会变得更清晰、可扫描的上下文，而无需更改内容管理系统(CMS)。
+对于每一个受影响的 URL，您可以审阅 AI 生成的建议，然后通过 [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md) 部署这些建议，使代理式流量能获得更清晰、可扫描的上下文，且无需更改内容管理系统 (CMS)。
 
 ## 它如何修复问题
 
-使用Edge[&#128279;](/help/dashboards/optimize-at-edge/overview.md)中的优化来应用修复，其中：
+通过 [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md) 修复问题，它能够：
 
-- 向AI代理提供预渲染的HTML快照。
-- 在HTML中通过所检索到的摘要和/或关键点丰富页面。
-- 在CDN层工作（CMS不会发生更改）。
-- 是仅限AI的 — 不会对人类访客或SEO机器人造成影响。
-- 几分钟即可部署，并且可从LLM Optimizer界面&#x200B;**完全还原**。
+- 为 AI 代理提供一个预渲染的 HTML 快照。
+- 在所检索的 HTML 中通过摘要和/或关键点扩充页面。
+- 在内容传递网络层上工作（无需更改 CMS）。
+- 仅限 AI，对人类访客或 SEO 机器人没有任何影响。
+- 几分钟即可部署，并可从 LLM Optimizer 界面将其&#x200B;**完全撤销**。
 
 ## 工作原理
 
-LLM Optimizer标识高流量页面，其中页面或区域级别&#x200B;**摘要**&#x200B;和&#x200B;**关键点**&#x200B;将帮助AI理解。 受影响的URL显示在&#x200B;**当前建议**&#x200B;选项卡上带有建议&#x200B;**的** URL表中，您可以在该表中展开一行来检查每个建议。
+LLM Optimizer 会识别那些在页面或分区层面上添加&#x200B;**摘要**&#x200B;和&#x200B;**关键点**&#x200B;能帮助 AI 理解内容的高流量页面。 受影响的 URL 会显示在&#x200B;**当前建议**&#x200B;选项卡中&#x200B;**包含建议的 URL** 表格中，您可以在此表中展开一行查看每一个建议。
 
-![URL包含有关当前建议的建议，展开的行包含页面和部分摘要建议](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-expand.png)
+![“当前建议”中显示包含建议的 URL、展开的行、页面和分区摘要建议](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-expand.png)
 
-带有建议&#x200B;**表的** URL列出了摘要将有助于代理发现的页面。 建议被整理为&#x200B;**当前建议**、**固定建议**&#x200B;和&#x200B;**忽略的建议**。 对于每个URL，您可以：
+**包含建议的 URL** 表中列出了那些摘要有助于代理发现内容的页面。 所有建议分成&#x200B;**当前建议**、**修复的建议**&#x200B;和&#x200B;**忽略的建议**&#x200B;三类。 对于每一个 URL，您可以：
 
-- **展开行**&#x200B;以查看分析和提议的摘要文本（以及包含的关键点）。
-- **预览**&#x200B;代理流量的比较前和比较后。
-- 如果您在LLM Optimizer外部处理了商机，请&#x200B;**标记为已修复**。
-- **忽略不相关的**&#x200B;建议。
+- **展开此行**，查看分析和建议的摘要文本（以及包含的关键点）。
+- **预览**&#x200B;之前和之后的代理式流量的效果比较。
+- 如果您在 LLM Optimizer 以外解决了这个机会，可将其&#x200B;**标记为已修复**。
+- **忽略**&#x200B;那些不相关的建议。
 
-每个扩展条目显示页面级和节级摘要说明、**AI生成的**&#x200B;副本、编辑控件以及与实时页面关联的上下文。
+每个展开的条目中会显示页面级和分区级的摘要说明、**AI 生成的**&#x200B;文案、编辑控件以及与实时页面关联的上下文。
 
-单击&#x200B;**操作**&#x200B;列中的&#x200B;**预览**&#x200B;以打开优化预览。 它将比较您的页面现在查找代理流量的方式与优化后的视图（例如，插入与建议投放位置对齐的&#x200B;**摘要**&#x200B;和&#x200B;**关键点**&#x200B;内容）。 您可以在部署之前随时打开或取消该预览。
+点击&#x200B;**操作**&#x200B;列中的&#x200B;**预览**，打开优化预览。 它会将您的页面目前的代理式流量效果与优化后的视图进行比较（例如根据所建议的放置环境插入&#x200B;**摘要**&#x200B;和&#x200B;**关键点**&#x200B;内容）。 您可以在部署之前随时打开或忽略此预览。
 
-准备发布时，使用复选框选择摘要和关键点行项目。 页脚显示选择的数量，并提供&#x200B;**标记为已修复**、**忽略建议**&#x200B;和&#x200B;**部署优化**。
+如果您准备好发布，请通过复选框选择摘要和关键点的行。 页脚中会显示选定的数量，并提供&#x200B;**标记为已修复**、**忽略建议**&#x200B;和&#x200B;**部署优化**&#x200B;几个选项。
 
-![当前建议，已选择摘要行项目，并在页脚中部署优化](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-select-url.png)
+![“当前建议”中选定了摘要行，页脚中显示“部署优化”](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-select-url.png)
 
 ### 部署优化
 
-准备在边缘发布时，单击&#x200B;**部署优化**。 **部署到Edge**&#x200B;对话框列出了选定的URL和优化详细信息。 查看列表，然后选择&#x200B;**部署**&#x200B;或&#x200B;**取消**。
+如果您已准备好在边缘发布，点击&#x200B;**部署优化**。 **部署到边缘**&#x200B;对话框中列出了选定的 URL 和优化详细信息。 审阅列表，然后选择&#x200B;**部署**&#x200B;或&#x200B;**取消**。
 
-![部署到Edge对话框](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-deploy-dialog.png)
+![”部署到边缘“对话框](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-deploy-dialog.png)
 
-成功部署后，**部署完成**&#x200B;将确认有多少优化已上线，并指出AI代理可能需要一些时间为更新编制索引。 关闭对话框并打开&#x200B;**修复建议**&#x200B;以验证状态。
+部署成功完成后，**部署完成**&#x200B;会确认有多少优化已上线，并提示 AI 代理可能需要一些时间为更新内容编制索引。 关闭此对话框，然后打开&#x200B;**修复的建议**，验证状态。
 
 ![部署完成确认](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-deploy-confirm.png)
 
 >[!NOTE]
 >
->部署优化需要完成Optimize at Edge载入流程。 如果您尚未载入，单击&#x200B;**部署优化**&#x200B;会将您引导至载入流程。 有关在Edge中优化的工作方式、支持的CDN提供商以及载入流程的完整详细信息，请参阅[在Edge中优化](/help/dashboards/optimize-at-edge/overview.md)页面。
+>部署优化过程需要完成 Optimize at Edge 加入过程。 如果您尚未加入，点击&#x200B;**部署优化**&#x200B;会引导您完成加入过程。 关于 Optimize at Edge 如何工作、受支持的内容传递网络提供程序以及加入过程的完整详细信息，请参阅 [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md) 页面。
 
-### 修复了建议并实时查看
+### 修复的建议和实时查看
 
-在&#x200B;**已修复建议**&#x200B;上，部署的URL在状态列中显示&#x200B;**已优化**。 展开一行可查看已部署的摘要副本和说明。
+在&#x200B;**修复的建议**&#x200B;中，已部署的 URL 会在状态列中显示&#x200B;**已优化**。 展开一行可审阅已部署的摘要文字和说明。
 
-![修复了“建议”选项卡，其状态为“已优化”、已部署的摘要已展开、正在查看、详细信息已上线](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-fixed.png)
+![“修复的建议”选项卡中“已优化”状态、展开的已部署的摘要、实时查看和详细信息](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-fixed.png)
 
-单击行上的&#x200B;**查看实时内容**&#x200B;以打开作为验证服务的&#x200B;**当前页面内容**&#x200B;的只读视图（包括插入的&#x200B;**摘要**&#x200B;和已应用的&#x200B;**关键点**&#x200B;块）。 将&#x200B;**详细信息**&#x200B;用于分析。 当需要批量还原边缘更改时，请使用复选框选择优化的行，然后在标题中使用&#x200B;**Rollback**。
+点击此行上的&#x200B;**实时查看**，打开&#x200B;**当前页面内容**&#x200B;的只读视图进行验证（包括在应用的位置上插入的&#x200B;**摘要**&#x200B;和&#x200B;**关键点**&#x200B;区块）。 使用&#x200B;**详细信息**&#x200B;进行分析。 如果您需要批量还原边缘更改，请使用复选框选择已优化的行，然后使用标题中的&#x200B;**回滚**。
 
-![修复了在回滚之前带有批量选择复选框的建议](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-select-in-fixed.png)
+![“修复的建议”中用于回滚前批量选择的复选框](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-select-in-fixed.png)
 
 ## 回滚
 
-如果您改变主意，可以回退任何已部署的优化。 从&#x200B;**修复建议**&#x200B;视图中，选择要还原的优化行，然后单击标题中的&#x200B;**回滚**。
+如果您改变想法，可以撤消任何已部署的优化。 在&#x200B;**修复的建议**&#x200B;视图中，选择您想撤消的已优化的行，然后点击标题中的&#x200B;**回滚**。
 
-**Rollback**&#x200B;对话框列出了将回滚的建议，并简短地警告将还原已部署的优化。 确认列表，然后单击&#x200B;**回滚**&#x200B;或&#x200B;**取消**。
+**回滚**&#x200B;对话框中会列出将回滚的建议，还有一条将撤消已部署优化的简单警告。 确认此列表，然后点击&#x200B;**回滚**&#x200B;或&#x200B;**取消**。
 
-![回滚对话框列出了还原建议](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-rollback-dialog.png)
+![回滚对话框中列出了要撤消的建议](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-rollback-dialog.png)
 
-操作完成后，将显示&#x200B;**已成功回滚**&#x200B;摘要；关闭它以返回到仪表板。
+操作完成后，会显示&#x200B;**已成功回滚**&#x200B;的摘要消息；关闭消息，返回到仪表板。
 
-![回滚完成 — 已成功回滚](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-rollback-confirm.png)
+![回滚已完成：已成功完成回滚](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-rollback-confirm.png)
 
-## 在演示中尝试
+## 在演示中尝试此操作
 
-在[Frescopa演示](https://play.llmo.now/org/demo-org)中探索添加LLM友好的摘要工作流。
+在 [Frescopa 演示](https://play.llmo.now/org/demo-org)中了解“添加 LLM 友好的摘要”工作流。

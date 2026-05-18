@@ -4,19 +4,13 @@ description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜
 feature: Onboarding
 autotag-review: '2026-05-15T17:54:37.542Z'
 TQID: 'https://experienceleague.adobe.com/5qyk6PCTaT93tz-UUnYRYznylOh4lXHuH1yN98g3wIE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 618
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -69,12 +63,12 @@ LLM 优化的重要性日益提升：
 借助 Adobe LLM Optimizer，您可以：
 
 **衡量品牌可见度**：跟踪品牌在 AI 搜索结果中的出现时间、位置和频率。 通过清晰的可见度分数进行长期对比分析，减少主观判断。 参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
-**为其他公司设定基准** — 了解您的品牌如何与包括创新型引擎中的竞争对手在内的其他公司相抗衡。 识别声音份额差距，发现竞争优势所在。 参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
-**发现可操作的机会** — 查明直接增加提及次数和引文次数的内容机会（如常见问题解答、摘要、架构）和技术机会（可抓取性、索引问题）。 查看[机会信息板](/help/dashboards/opportunities-overview.md)。
-**跟踪来自AI的流量影响** — 监控代理流量（来自AI助理）和引荐流量（来自引文的用户点击量）到您拥有的资产。 将 GEO 可见度与实际用户参与度建立关联。 查看[代理流量仪表板](/help/dashboards/agentic-traffic.md)和[引荐流量仪表板](/help/dashboards/referral-traffic.md)。
-**启用团队Collaboration** — 共享功能板，为提示或类别分配所有者，并确保跨营销、搜索引擎优化(SEO)和通信功能跟踪可见性目标。 请参阅[协作仪表板](/help/dashboards/collaboration.md)。
+**与其他品牌比较**：了解您的品牌在生成式引擎中如何与包括竞争对手的其他品牌进行比较。 识别声音份额差距，发现竞争优势所在。 参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
+**发现可操作机会**：精准识别内容机会（如常见问题、摘要、架构）和技术性机会（可抓取性、索引问题），直接提升品牌提及和引用数。 请参阅[机会仪表板](/help/dashboards/opportunities-overview.md)。
+**跟踪来自 AI 的流量影响**：监控访问您自有资产的（来自 AI 助手的）代理式流量以及（用户点击引用带来的）引荐流量。 将 GEO 可见度与实际用户参与度建立关联。 请参见[代理式流量仪表板](/help/dashboards/agentic-traffic.md)和[引荐流量仪表板](/help/dashboards/referral-traffic.md)。
+**支持团队协作**：共享仪表板，分配提示词或类别的负责人，确保在市场营销、搜索引擎优化（SEO）和传播职能方面持续跟踪可见性目标。 请参阅[协作仪表板](/help/dashboards/collaboration.md)。
 
-## 了解详细信息
+## 了解详情
 
 以下资源可帮助您充分发挥 LLM Optimizer 的价值：
 
