@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 2217
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 99%
    |--------|-------|
    | `x-edgeoptimize-api-key` | 您的 API 密钥 |
    | `x-forwarded-host` | `www.example.com` |
-   | `x-edgeoptimize-fetcher-key` | 您的提取器密钥（仅在列入允许列表时才需要） |
+   | `x-edgeoptimize-fetcher-key` | 您的爬虫程序密钥（只有在列入 WAF 允许列表时才需要） |
 
    将 `www.example.com` 替换为您真实的网站域，将 `Your API key` 替换为您的 Adobe 代表提供的 Edge Optimize API 密钥。
 

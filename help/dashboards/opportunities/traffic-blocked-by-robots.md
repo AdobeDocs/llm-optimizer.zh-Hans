@@ -1,6 +1,6 @@
 ---
-title: robots.txt阻止的流量
-description: 了解LLM Optimizer如何检测您的robots.txt文件何时阻止AI代理访问您的内容以及如何修复它。
+title: robots.txt 阻止流量
+description: 了解 LLM Optimizer 如何识别您的 robots.txt 文件阻止了 AI 代理访问您的内容，以及如何修复这个问题。
 feature: Opportunities
 autotag-review: '2026-05-15T18:00:25.453Z'
 TQID: 'https://experienceleague.adobe.com/9LGbxeIbWYZp-MN5Zww6g-dQ6BZT0IWzlA7XB-2Xlho'
@@ -17,101 +17,101 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 817
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# robots.txt阻止的流量
+# robots.txt 阻止流量
 
-您的`robots.txt`文件控制哪些爬虫可以访问您的网站。 当选择性地阻止AI代理访问普通爬虫原本可以访问的内容时，这些代理无法索引或引用该内容，从而直接降低您的品牌在AI生成的响应中的可见性。
+您的 `robots.txt` 文件控制着哪些爬虫可以访问您的网站。 如果选择性地阻止 AI 代理访问那些一般爬虫可以访问的内容，这些代理就无法为这些内容编制索引或引用它们，这会直接降低您的品牌在 AI 生成的回答中的可见性。
 
-Robots.txt阻止的流量机会将针对您的热门页面分析您的`robots.txt`文件，并识别阻止AI代理访问他们应能够访问的内容的规则。 它在单个`robots.txt`行级别显示查找结果，因此您可以查看和更新特定指令，而不是手动审核整个文件。
+“robots.txt 阻止流量”机会能够针对您的热门页面分析您的 `robots.txt` 文件，识别那些阻止 AI 代理访问它们本应能访问的内容的规则。 它会显示单个 `robots.txt` 在行层面上的发现，这样您就可以审阅和更新特定的指令，而不用手动审核整个文件。
 
-它一眼就反映了两个关键指标：
+它会一目了然地显示出两个关键量度：
 
-- **总URL** — `robots.txt`中受阻止规则影响的URL数。
-- **阻止的代理** — 被阻止访问这些URL的AI代理数。
+- **URL 总数**：受到您的 `robots.txt` 中的阻止规则影响的 URL 数量。
+- **被阻止的代理**：被阻止访问这些 URL 的 AI 代理数量。
 
-![被robots.txt仪表板阻止的流量](/help/dashboards/opportunities/assets/traffic-blocked-by-robots-overview.png)
+![robots.txt 阻止流量的仪表板](/help/dashboards/opportunities/assets/traffic-blocked-by-robots-overview.png)
 
 ## 工作原理
 
-LLM Optimizer将获取您的`robots.txt`文件，并根据六个主要的AI代理用户代理检查您的热门页面：
+LLM Optimizer 会获取您的 `robots.txt` 文件，然后根据六个主要的 AI 代理用户代理检查您的热门页面：
 
-- 克劳德机器人
+- ClaudeBot
 - GPTBot
 - OAI-SearchBot
-- OAI — 用户
+- OAI 用户
 - PerplexityBot
-- Perplexity — 用户
+- Perplexity 用户
 
-仅当通配符(`*`)用户代理允许&#x200B;**而特定AI代理**&#x200B;不允许该URL时，才会标记该URL。 所有的爬虫都受到同等限制的一揽子封堵不会报告。 此次审计专门针对选择性人工智能代理排除，这是GEO最切实可行的发现。
+只有当 URL **允许通配符 (`*`) 用户代理访问，但不允许某个具体的 AI 代理访问的情况下，才会标记这个 URL。** 如果是全部都阻止，即所有爬虫都受到相同的限制，这种情况不会报告。 这一审核专门针对“选择性排除 AI 代理”的问题，这是对于 GEO 最具可操作性的发现。
 
 >[!NOTE]
->这个机会不使用AI来制定或提供建议。 调查结果完全基于对`robots.txt`文件的直接分析。
+>这个机会不使用 AI 来制定或提供建议。 这样的发现完全基于对您的 `robots.txt` 文件的直接分析。
 
-结果显示在两个选项卡中：**robots.txt**&#x200B;和&#x200B;**代理阻止的流量详细信息**。
+结果会显示在两个选项卡中：**robots.txt** 和&#x200B;**各代理的被阻流量详细信息**。
 
 ## robots.txt
 
-此选项卡显示完整的`robots.txt`文件，其中阻止指令以红色突出显示。 每个高亮显示的行表示一条规则，该规则选择性地阻止一个或多个AI代理访问在其他情况下可公开访问的URL。
+这个选项卡完整显示了您的 `robots.txt` 文件，并用红色突出显示其中的阻止指令。 突出显示的每一行都表示一条选择性地阻止一个或多个 AI 代理访问本应能公开访问的 URL 的规则。
 
-![robots.txt视图（带有突出显示的阻止指令）](/help/dashboards/opportunities/assets/traffic-blocked-by-robots-robotstxt.png)
+![robots.txt 视图，其中突出显示了阻止指令](/help/dashboards/opportunities/assets/traffic-blocked-by-robots-robotstxt.png)
 
-单击高亮显示的指令会显示有关其影响和建议修复的更多信息。
+点击突出显示的一个指令，就会显示关于此指令带来的影响和问题修复建议的更多信息。
 
 ## 各代理的被阻流量详细信息
 
-此选项卡提供AI代理组织的已阻止流量的细分。 对于每个被阻止的代理，它显示：
+这个选项卡提供了由 AI 代理组织的被阻止流量的细分分析。 对于每一个被阻止的代理，它显示了：
 
-- **问题描述** — 有关哪个代理被阻止以及它为什么重要的说明。
-- **解决方案** — 有关打开`robots.txt`文件并查看每个受影响的URL旁边列出的特定行号的指导。
-- 每个被阻止页面的受影响URL的表，具有&#x200B;**行**、**排名**&#x200B;和&#x200B;**URL**。
+- **问题描述**：说明哪个代理被阻止以及这为什么很重要。
+- **解决方法**：指导如何打开 `robots.txt` 文件以及审阅每一个受影响的 URL 旁边列出的具体行号。
+- 受影响 URL 的表格，其中包括每一个被阻止页面的&#x200B;**行**、**排名**&#x200B;和 **URL**。
 
-每个代理（例如，OAI-User、GPTBot、OAI-SearchBot）都有自己的子选项卡，因此您可以为每个代理寻址块。
+每个代理（例如 OAI 用户、GPTBot、OAI-SearchBot）都有自己的子选项卡，这样您就可以为每个代理处理阻止问题。
 
 ## 如何修复
 
-若要解决被阻止的代理查找问题，请打开您的`robots.txt`文件，并在“按代理阻止的流量详细信息”选项卡中找到每个受影响的URL旁边显示的行号。 更新或删除相关AI代理的disallow指令，以允许访问受影响的URL。
+如要解决某个发现的被阻止代理，请打开您的 `robots.txt` 文件，然后在“各代理的被阻流量详细信息”选项卡中找到每一个受影响的 URL 旁边显示的行号。 更新或移除不允许相关 AI 代理的指令，以允许此代理访问受影响的 URL。
 
-例如，要从特定页面取消阻止GPTBot，请删除或更新指令：
+例如，要取消阻止 GPTBot 访问某个特定页面，请移除或更新指令：
 
 ```
 User-agent: GPTBot
 Disallow: /blog/cold-brewing-101
 ```
 
-更新并重新发布`robots.txt`文件后，LLM Optimizer将在下次审核运行时检测到更改，并将建议标记为已解决。
+您将 `robots.txt` 文件更新并重新发布后，LLM Optimizer 就会在下次运行审核时检测到这一更改，会将这个建议标记为已解决。
 
-## 在演示中尝试
+## 在演示中尝试此操作
 
-使用Frescopa演示环境查看实际操作中的Robots.txt阻止的流量。
+使用 Frescopa 演示环境了解 “Robots.txt 阻止流量”机会的实际运作。
 
-[在Frescopa演示中查看被robots.txt阻止的流量](https://play.llmo.now/org/demo-org/opportunities/blocked-urls-llm-agents)
+[在 Frescopa 演示中查看 robots.txt 阻止流量](https://play.llmo.now/org/demo-org/opportunities/blocked-urls-llm-agents)
 
 ## 常见问题解答
 
-**为什么阻止AI代理对GEO很重要？**
+**为什么 AI 代理被阻问题对 GEO 很重要？**
 
-生成引擎优化要求AI爬虫可以访问您的网站内容并将其编入索引。 阻止AI代理会直接阻止您的页面出现在AI生成的响应中，从而减少引用次数、品牌提及次数和总体AI可见性。 即使是一个被阻止的高流量页面，也可能意味着AI驱动的品牌曝光度大幅下降。
+生成式引擎优化要求 AI 爬虫可以访问您的网站内容并将其编入索引。 阻止 AI 代理会直接阻止您的页面出现在 AI 生成的回答中，这会减少引用、品牌提及和总体 AI 可见性。 即使只有一个被阻止的高流量页面都可能会导致 AI 驱动的品牌曝光度大幅下降。
 
-**一揽子封锁和选择性封锁之间有何区别？**
+**全部阻止和选择性阻止两者之间有什么区别？**
 
-一揽子阻止意味着所有爬虫（包括常规Web爬虫）都限制在页面上。 选择性阻止意味着常规爬虫可以访问页面，但特定AI代理无法访问。 此机会仅标记选择性阻止，因为它表示人工智能代理有意或意外地从其他方面公开的内容中排除，这是最切实可行的发现。
+全部阻止意味着所有爬虫，包括一般的 Web 爬虫，都不能访问页面。 选择性阻止意味着一般爬虫可以访问这个页面，但一些特定的 AI 代理无法访问。 这个机会只标记选择性阻止，因为这种情况是有意或意外地阻止 AI 代理访问其他爬虫可公开访问的内容，这是最具可操作性的发现。
 
-**LLM Optimizer检查哪些AI代理？**
+**LLM Optimizer 检查哪些 AI 代理？**
 
-LLM Optimizer检查ClaudeBot、GPTBot、OAI-SearchBot、OAI-User、PerplexityBot和Perplexity-User。
+LLM Optimizer 会检查 ClaudeBot、GPTBot、OAI-SearchBot、OAI 用户、PerplexityBot 和 Perplexity 用户。
 
-**如果我有意阻止某些AI代理，该怎么办？**
+**如果我想有意阻止某些 AI 代理，应该怎么做？**
 
-您可以查看每个已标记的指令，并选择有意保留块。 已解除的建议会在审核运行期间保留，除非`robots.txt`文件发生更改并且规则重新显示，否则不会重新显示。
+您可以审阅每一个被标记的指令，然后选择您想保留的阻止规则。 被忽略的建议会在运行审核时保留，但不再重新显示，除非 `robots.txt` 文件发生变化，并且相关规则重新显示。
 
-**LLM Optimizer如何跟踪一段时间内对我的robots.txt所做的更改？**
+**LLM Optimizer 如何跟踪我的 robots.txt 随时间的变化？**
 
-LLM Optimizer使用哈希处理跨运行跟踪您的`robots.txt`内容。 如果先前解析的阻止规则重新出现（例如在更新`robots.txt`后），它将作为新建议重新出现。
+LLM Optimizer 使用哈希处理在每次运行时跟踪您的 `robots.txt` 内容。 如果一个之前已解决的阻止规则又重新出现，例如在某次更新 `robots.txt` 后，它将作为一个新建议重新显示。
 
-**如何确定排名最前的页面？**
+**如何确定热门页面？**
 
-页面来自流量最高的SEO页面、CDN日志中排名最前的AI代理访问的URL以及在站点配置中指定的任何自定义URL的组合。
+页面的来源综合了您流量最高的 SEO 页面、内容传递网络日志中 AI 代理访问量最高的 URL 以及您的网站配置中指定的任何自定义 URL。
