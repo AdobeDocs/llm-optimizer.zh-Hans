@@ -17,9 +17,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:10:07.393Z'
 source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 374
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ CARDS
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer 概述">LLM Optimizer 概述</a>
                     </p>
-                    <p class="is-size-6">了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜索中的可见度。</p>
+                    <p class="is-size-6">了解 Adobe LLM Optimizer 如何提升在 AI 驱动的搜索中的品牌可见度。</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
@@ -155,8 +155,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="类别、主题、提示词及其他品牌跟踪的最佳做法" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="类别、主题、提示词及其他品牌跟踪的最佳做法"
+                    <a href="./overview/best-practices-topics-prompts.md" title="设置类别、主题、提示词及其他品牌跟踪的最佳做法" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="设置类别、主题、提示词及其他品牌跟踪的最佳做法"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,9 +164,9 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="类别、主题、提示词及其他品牌跟踪的最佳做法">类别、主题、提示词及其他品牌跟踪的最佳做法</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="设置类别、主题、提示词及其他品牌跟踪的最佳做法">设置类别、主题、提示词及其他品牌跟踪的最佳做法</a>
                     </p>
-                    <p class="is-size-6">了解如何配置 LLM Optimizer，以实现定制化品牌监测与战略内容分析。</p>
+                    <p class="is-size-6">了解如何配置 LLM Optimizer，以进行定制化品牌监控与策略内容分析。</p>
                 </div>
                 <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
