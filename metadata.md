@@ -1,7 +1,8 @@
 ---
 cloud: Experience Cloud
 solution: LLM Optimizer
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 usetq: true
 type: Documentation
 description: LLM Optimizer文档。
