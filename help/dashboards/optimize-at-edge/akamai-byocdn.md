@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 34837b04c48141b8c3657b8f07cb3c2e4852a9ea
+source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
 workflow-type: tm+mt
-source-wordcount: 809
-ht-degree: 100%
+source-wordcount: 810
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 **先决条件**
 
-在设置 Akamai 属性管理器规则之前，请确保您：
+在设置Akamai属性管理器规则之前，请确保您具有：
 
 * 可以为您的域访问 Akamai 属性管理器。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
