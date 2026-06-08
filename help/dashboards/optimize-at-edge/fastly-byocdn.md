@@ -4,16 +4,13 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Fastly
 feature: Opportunities
 autotag-review: '2026-05-15T17:51:24.924Z'
 TQID: 'https://experienceleague.adobe.com/qXp1pbmZrxahHFOUzIuo-WEawdgNWIIQKDyy0yL2MLA'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 34837b04c48141b8c3657b8f07cb3c2e4852a9ea
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
 workflow-type: tm+mt
-source-wordcount: 349
-ht-degree: 99%
+source-wordcount: 350
+ht-degree: 96%
 
 ---
 
@@ -24,7 +21,7 @@ ht-degree: 99%
 
 **先决条件**
 
-设置 Fastly VCL 规则之前，请确保您：
+在设置Fastly VCL规则之前，请确保您具有：
 
 * 可以为您的域访问 Fastly。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
