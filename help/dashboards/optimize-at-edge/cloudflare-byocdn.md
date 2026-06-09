@@ -4,13 +4,10 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudf
 feature: Opportunities
 autotag-review: '2026-05-15T17:40:49.847Z'
 TQID: 'https://experienceleague.adobe.com/HkaDwdHRGZJnip-1Bp-4Z-ovwcBPxFUSDqeLUVNu0zo'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 3237a5fdff501eaee29b678c8c2698b95469a125
 workflow-type: tm+mt
 source-wordcount: 1916
 ht-degree: 96%
@@ -206,9 +203,10 @@ const AGENTIC_BOTS = [
   'OAI-SearchBot',
   'PerplexityBot',
   'Perplexity-User',
-  // Add additional user agents as needed
   'ClaudeBot',
-  'Anthropic-AI'
+  'Claude-User',
+  'Claude-SearchBot',
+  // Add additional user agents as needed
 ];
 ```
 
