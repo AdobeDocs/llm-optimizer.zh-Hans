@@ -4,16 +4,13 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 CloudF
 feature: Opportunities
 autotag-review: '2026-05-15T17:41:48.977Z'
 TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
 workflow-type: tm+mt
-source-wordcount: 2217
-ht-degree: 100%
+source-wordcount: 2204
+ht-degree: 96%
 
 ---
 
@@ -67,7 +64,7 @@ ht-degree: 100%
    * **名称：**`edgeoptimize-routing`
    * **运行时间：** `cloudfront-js-2.0`
 
-3. 将默认代码替换为 [viewer-request.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/cloudfront-function/viewer-request.js) 中的代码。
+3. 将默认代码替换为 [viewer-request.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/cloudfront-function/viewer-request.js) 中的代码。
 
    在发布之前，请自定义代码中的以下值：
 
@@ -120,7 +117,7 @@ ht-degree: 100%
 
 2. 单击&#x200B;**编辑**。
 
-3. 建议将&#x200B;**最小 TTL** 设置为 `0`。 但是，如果当前的最小 TTL 已经非常短，可能就不需要再更改。
+3. 建议将&#x200B;**最小TTL**&#x200B;设置为`0`。但是，如果当前的最低TTL已经非常短，则可能不需要对其进行更改。
    ![缓存策略 TTL 设置](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. 在&#x200B;**缓存键设置** > **标头**&#x200B;中，除了您现有的包含项以外，再添加 `x-edgeoptimize-config` 和 `x-edgeoptimize-url`。
@@ -195,7 +192,7 @@ ht-degree: 100%
 
 4. 点击&#x200B;**创建函数**。
 
-5. 在代码编辑器中，将默认代码替换为 [origin-request-response.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/origin-request-response.js) 中的代码。
+5. 在代码编辑器中，将默认代码替换为 [origin-request-response.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/origin-request-response.js) 中的代码。
 
 6. 点击&#x200B;**部署**，保存代码。
 
@@ -209,7 +206,7 @@ ht-degree: 100%
 
 1. 点击&#x200B;**编辑信任策略**。
 
-2. 将策略替换为 [trust-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/trust-policy.json) 中的内容。
+2. 将策略替换为 [trust-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/trust-policy.json) 中的内容。
 
 3. 点击&#x200B;**更新策略**。
 
@@ -224,7 +221,7 @@ ht-degree: 100%
 
 1. 单击&#x200B;**编辑**。
 
-2. 将策略替换为 [cloudwatch-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/cloudwatch-policy.json) 中的内容。
+2. 将策略替换为 [cloudwatch-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/cloudwatch-policy.json) 中的内容。
 
    在 JSON 中，将 `ACCOUNT_ID` 替换为您的真实 AWS 帐户 ID（可在 AWS 控制台的右上角找到），将 `FUNCTION_NAME` 替换为 Lambda 函数的名称（例如 `edgeoptimize-origin`）。
 

@@ -4,15 +4,12 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudf
 feature: Opportunities
 autotag-review: '2026-05-15T17:40:49.847Z'
 TQID: 'https://experienceleague.adobe.com/HkaDwdHRGZJnip-1Bp-4Z-ovwcBPxFUSDqeLUVNu0zo'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 3237a5fdff501eaee29b678c8c2698b95469a125
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
 workflow-type: tm+mt
-source-wordcount: 1916
+source-wordcount: 1919
 ht-degree: 96%
 
 ---
@@ -117,7 +114,7 @@ Worker 部署完成后，继续[添加指向您的域名的路由](#add-a-route-
 
 **步骤 2：添加 Worker 代码**
 
-创建辅助进程后，单击&#x200B;**编辑代码**，并将默认代码替换为[worker.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudflare/worker.js)中的代码。 如果您已经拥有现有的Cloudflare Worker，请将该代码与现有工作程序代码合并，而不是完全替换。
+创建辅助进程后，单击&#x200B;**编辑代码**，并将默认代码替换为[worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js)中的代码。 如果您已经拥有现有的Cloudflare Worker，请将该代码与现有工作程序代码合并，而不是完全替换。
 
 点击&#x200B;**保存并部署**，发布 Worker。
 
