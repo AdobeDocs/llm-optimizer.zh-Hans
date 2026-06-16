@@ -12,10 +12,10 @@ subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
+source-git-commit: 76d1b915d41771580544d3d87732092cfecda6d5
 workflow-type: tm+mt
 source-wordcount: 612
-ht-degree: 81%
+ht-degree: 78%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 81%
 
 ## 第 3 步：选择数据参数 {#step-3}
 
-创建数据流后，在 Akamai 控制面板中点击“下一步”，进入&#x200B;**数据集**&#x200B;选项卡。 按照 Akamai 官方文档步骤选择[数据参数](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters)。 需要使用以下来自 LLM Optimizer 配置页面的字段：
+创建流后，在Akamai控制面板上，单击&#x200B;**下一步**&#x200B;以继续&#x200B;**数据集**&#x200B;选项卡。 按照 Akamai 官方文档步骤选择[数据参数](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters)。 需要使用以下来自 LLM Optimizer 配置页面的字段：
 
 ![LLMO 配置字段](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 
