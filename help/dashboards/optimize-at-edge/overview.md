@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: 559e77adedb1a93215090441c93c2aa6dc664e5f
 workflow-type: tm+mt
-source-wordcount: 3108
-ht-degree: 100%
+source-wordcount: 2931
+ht-degree: 98%
 
 ---
 
@@ -87,6 +87,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 | Akamai (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
 | CloudFront (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
+| Azure前门(BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
 
 >[!NOTE]
 >
@@ -120,8 +121,8 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 ### 恢复内容可见性
 
-此优化机会会标记因客户端渲染导致关键内容对 AI 代理不可见的页面。 对于每个识别出的页面，它会明确指出 AI 代理视图中缺失的内容，突出显示可见性缺口，并支持您直接应用更改以恢复隐藏内容。 当您通过 Optimize at Edge 部署该优化机会时，将向 LLM 用户代理提供预渲染、针对 AI 优化的页面版本，使其无需执行 JavaScript 即可访问完整上下文。
-这可确保页面对 AI 代理实现完整可见。 在该预渲染 HTML 的基础上，还会叠加其他增强优化。
+此机会标记因客户端渲染而为AI代理隐藏关键内容的页面。对于每个标识的页面，它都会精确显示AI代理视图中缺少哪些内容，突出显示可见性差距，并允许您直接应用更改以恢复隐藏的内容。当您使用Edge中的优化来部署此机会时，为LLM用户代理提供预呈现的、AI优化的页面版本，以便他们无需执行Javascript即可访问整个上下文。
+这可确保该页面首先对AI代理完全可见。在该预呈现的HTML之上应用了其他增强功能。
 
 >[!IMPORTANT]
 >当通过 Optimize at Edge 部署下述所有优化机会时，预渲染功能将自动生效，以确保页面对 AI 代理完全可见。
@@ -230,7 +231,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要底层源页面未发生变化，我们会从缓存中提供对页面的优化版本。 但是如果用于&#x200B;**恢复内容可见性**&#x200B;的来源发生变化，我们的系统就会自动刷新，以确保 AI 代理始终获得最新内容。 这是因为我们采用较低的缓存生存时间（TTL，通常为分钟级），以便在该时间窗口内，网站内容更新会触发新的优化。 对于&#x200B;**添加对 LLM 友好的摘要**这样的内容机会，LLM Optimizer 会监控源页面是否发生变化。 如检测到变更，系统会暂停优化并标记为需人工审核，以防止代理可见页面与用户可见页面之间出现内容偏差。
+只要基础源页面未发生更改，我们就会从缓存中提供页面的优化版本。但是，当&#x200B;**恢复内容可见度**&#x200B;的源发生更改时，我们的系统会自动刷新，以便AI代理始终接收最新的内容。这是因为我们使用低缓存生存时间(TTL)设置（以分钟为单位），因此您网站上的任何内容更新都会触发该窗口内的新优化。对于诸如&#x200B;**添加LLM友好型摘要**&#x200B;等内容机会，LLM Optimizer会监控源页面是否有更改。如果检测到更改，我们会暂停优化并将其标记为人工审核，以防止代理可见页面和人类可见页面之间的内容漂移。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？
