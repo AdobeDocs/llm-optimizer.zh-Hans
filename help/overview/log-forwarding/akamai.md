@@ -12,10 +12,10 @@ subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 83%
+source-wordcount: 612
+ht-degree: 81%
 
 ---
 
@@ -71,7 +71,7 @@ reqTimeSec ->请求时间
 * **邮件交换数据**
 reqHost ->请求主机
 reqPath ->请求路径
-queryStr ->查询字符串
+queryStr ->查询字符串（可选）
 reqMethod -> Request方法
 ua ->用户代理
 statusCode -> HTTP状态代码
@@ -81,13 +81,17 @@ referer -> Referer
 * **网络性能数据**
 timeToFirstByte ->到第一个字节的时间
 
+>[!NOTE]
+>
+>`queryStr`参数是可选的。 如果查询字符串包含PII信息，则可以忽略该参数。
+
 Akamai 数据集字段（包含 ID）如下：
 
 1100， # reqTimeSec ->请求时间
 2012，#国家/地区 — >国家/地区
 1011， # reqHost ->请求主机
 1013， # reqPath ->请求路径
-2009， # queryStr ->查询字符串
+2009，# queryStr ->查询字符串（可选）
 1012，# reqMethod -> Request method
 1017， # ua -> User-Agent
 1008， # statusCode -> HTTP状态代码
