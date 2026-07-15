@@ -24,7 +24,7 @@ ht-degree: 97%
 
 # LLM Optimizer 概述
 
->[!VIDEO](https://video.tv.adobe.com/v/3492471/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492479/?captions=chi_hans&learn=on){transcript=true}
 
 本页概述在开始使用此工具之前需要了解的有关Adobe LLM Optimizer的所有信息：
 
