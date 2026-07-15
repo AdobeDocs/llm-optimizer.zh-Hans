@@ -2,9 +2,15 @@
 title: Google Analytics集成
 description: 了解如何将Google Analytics 4与LLM Optimizer连接起来，以在引荐流量仪表板中衡量人工智能驱动的发现、网站参与和业务成果。
 feature: Referral Traffic
-source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
+autotag-review: '2026-07-15T17:51:53.586Z'
+TQID: 'https://experienceleague.adobe.com/SvWn3W6hpVsWNzfWdJFvPs94lwlKX4ufjjcXKM-6xIc'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: f5a6cbd1-8a9a-4c79-a6db-ba46537f516e
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: 1169
 ht-degree: 17%
 
 ---
