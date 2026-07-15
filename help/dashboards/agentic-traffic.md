@@ -4,30 +4,25 @@ description: 了解如何使用“代理式流量”仪表板，以查看 AI 代
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:33:15.711Z'
 TQID: 'https://experienceleague.adobe.com/3dWNUxcquDVip4Gg1WMYfwv8MUSbZYWqJYnkQ3aZkmc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e06fae5f-830b-4222-a469-b5e148d36465
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a5bfae0a2fecc48f8deb80394817002cfb7c1a32
 workflow-type: tm+mt
-source-wordcount: 1407
-ht-degree: 100%
+source-wordcount: 1254
+ht-degree: 97%
 
 ---
 
 
 # 代理式流量 {#agentic-traffic}
 
-“代理式流量”仪表板展示 AI 代理（爬虫和聊天机器人）与您的站点交互的情况。 使用此视图，您可以跟踪请求总数以及常规的与性能相关的量度。 您还可以查看流量在市场、类别、页面和代理之间的分布情况。 此仪表板使用的数据来自内容传递网络日志，因此您需要配置&#x200B;**内容传递网络日志转发**，仪表板才会显示相关量度。 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。
+“代理式流量”仪表板展示 AI 代理（爬虫和聊天机器人）与您的站点交互的情况。 使用此视图，您可以跟踪请求总数以及常规的与性能相关的量度。 您还可以查看流量在市场、类别、页面和代理之间的分布情况。 此仪表板使用的数据来自内容传递网络日志，因此您需要配置&#x200B;**内容传递网络日志转发**，仪表板才会显示相关量度。 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。 导航到&#x200B;**代理流量**&#x200B;并选择要查看代理流量分析的网站。
 
-![流量分布](/help/dashboards/assets/ag-main.png)
+![代理式流量——网站选择器（品牌中心体验）](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
+<!-- ![Traffic Distribution](/help/dashboards/assets/ag-main.png)-->
 
 本页面包含以下内容：
 
@@ -38,44 +33,15 @@ ht-degree: 100%
 * [涨跌幅最大页面](#top-bottom-movers)
 * [用户代理与 URL 性能分析](#user-url-performance)
 
-如果您使用的是[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)，请导航到&#x200B;**代理式流量**，然后选择要查看代理式流量洞察的网站。
-
-![代理式流量——网站选择器（品牌中心体验）](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
-
 ## 内容传递网络日志转发 {#cdn-setup}
 
 未配置&#x200B;**内容传递网络日志转发**&#x200B;时，“代理式流量”仪表板不会显示任何内容。 要查看代理交互数据，您需要配置&#x200B;**内容传递网络日志转发**。
 
-### 客户配置（经典导航）
-
-首次登录时，您会看到如下图所示的提示信息。
-
-![内容传递网络设置](/help/dashboards/assets/ag-log-forward1.png)
-
-选择&#x200B;**前往配置**&#x200B;后，系统会自动跳转到[客户配置仪表板](/help/dashboards/customer-configuration.md)的&#x200B;**内容传递网络配置**&#x200B;选项卡。
-
-![内容传递网络设置：加入](/help/dashboards/assets/ag-log-forward2.png)
-
-在该选项卡中，选择&#x200B;**加入内容传递网络**。 随后会显示内容传递网络提供商窗口。
-
-<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在**加入内容传递网络提供商**&#x200B;窗口中：
-
-1. 选择您的内容传递网络提供商（例如 Akamai、Adobe 管理的 Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare 或“其他”）。
-2. 单击&#x200B;**加入**&#x200B;以启用日志转发。
-
-如果您选择&#x200B;**其他**，则需要联系 llmo-now@adobe.com 以获取支持。
-
->[!NOTE]
->有关使用客户自管内容传递网络（BYOCDN）进行日志转发的详细信息，请参阅 [BYOCDN 日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
-
-启用后，系统会开始摄取日志，仪表板将显示总代理交互次数、成功率、按市场划分的点击数、用户代理分析以及 URL 级别性能等量度。
-
-### 品牌中心体验
-
-如果您使用的是[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)，则可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**内容传递网络**&#x200B;标签来添加内容传递网络日志转发信息。
+您可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**CDN**&#x200B;标签来添加CDN日志转发信息。
 
 ![品牌管理——内容传递网络日志转发](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+有关使用客户自管内容传递网络（BYOCDN）进行日志转发的详细信息，请参阅 [BYOCDN 日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 LLM Optimizer 会处理内容传递网络日志中的一部分字段。 不同内容传递网络提供商的原始日志字段名称可能不同，但系统会将其规范化并以以下形式呈现：
 
