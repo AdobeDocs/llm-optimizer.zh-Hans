@@ -10,10 +10,10 @@ feature_v2:
   - id: c0713b97-4af8-4c41-b742-5afcc6ced468
 subfeature_v2:
   - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: a5bfae0a2fecc48f8deb80394817002cfb7c1a32
 workflow-type: tm+mt
-source-wordcount: 1472
-ht-degree: 96%
+source-wordcount: 1201
+ht-degree: 87%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 ## 品牌中心体验 {#brand-centric-experience}
 
-默认情况下，新客户会先进入一个有重点、品牌优先的界面，并进行加入引导式设置。 在此新界面中，每个组织初始将有一个活跃品牌，并提供其他建议品牌供选择。 现有 LLM Optimizer 客户将逐步过渡到此品牌中心体验。
+默认情况下，客户一开始会使用具有载入驱动设置的重点突出、品牌优先的界面。 在此界面中，每个组织都从一个活跃品牌和其他建议品牌开始，以供选择。<!--Existing LLM Optimizer customers will shift to this Brand Centric experience gradually.-->
 
 ## 加入概述
 
@@ -115,30 +115,9 @@ ht-degree: 96%
 
 在您的网站完成加入后，您可以基于加入阶段自动生成的一小组提示词查看品牌存在感分析。 接下来，您可以为您的品牌自定义类别、主题和提示词。
 
-### 客户配置（经典导航）
-
-如果您使用的是经典导航（而非品牌中心体验），您可以通过[客户配置仪表板](/help/dashboards/customer-configuration.md)自定义品牌的类别、主题和提示词。
-
-![客户配置仪表板](/help/overview/assets/prompt-creation.png)
-
-从客户配置仪表板，您可以：
-
-* 添加与您的业务重点相匹配的&#x200B;**新类别**。 类别可以是与您的域名相关的广泛内容领域。
-* 输入您希望跟踪的&#x200B;**自定义主题**&#x200B;或子主题。 主题可以是与您的域名相关的高搜索量非品牌关键词所对应的具体主题。
-* 创建&#x200B;**您的提示词**，以监测特定查询中的可见度。 提示词是用于提供基准可见度的查询（包括品牌和非品牌）。 系统仅会根据您提供的类别和主题自动生成数量有限的提示词。
-* 定义提及&#x200B;**别名**，以确保捕获并统计品牌的所有不同提及形式。
-* 定义&#x200B;**其他别名**，以准确跟踪其他品牌。
-
->[!NOTE]
->您向 LLM 提出的具体提示词不会公开，因为 LLM 不会披露这些内容。
-
->[!NOTE]
->
-> 有关如何设置类别、主题和提示词的更多信息，请参阅[配置类别、主题和提示词的最佳做法](/help/overview/best-practices-topics-prompts.md)页面。
-
 ### 品牌中心体验的类别、主题和提示词
 
-对于使用品牌中心体验的客户，您可以按照以下方式添加类别、主题和提示词：
+您可以按如下方式添加类别、主题和提示：
 
 * **类别**——导航到&#x200B;**品牌管理**，然后单击&#x200B;**类别**。 类别是在全局层面定义的，并适用于品牌管理下的所有品牌。
 
@@ -148,48 +127,40 @@ ht-degree: 96%
 
   ![提示词管理](/help/assets/brand-centric-experience/prompts-management.png)
 
+>[!NOTE]
+>您向 LLM 提出的具体提示词不会公开，因为 LLM 不会披露这些内容。
+
+>[!NOTE]
+>
+> 有关如何设置类别、主题和提示词的更多信息，请参阅[配置类别、主题和提示词的最佳做法](/help/overview/best-practices-topics-prompts.md)页面。
+
 ## 步骤 3：品牌存在感洞察
 
 在您的域名完成加入后，您将在品牌存在感视图中看到基于加入阶段自动生成提示词的初始洞察。 当您自定义类别、主题和提示词后，LLM Optimizer 将自动对您提供的提示词触发品牌存在感分析，并在 24 小时内提供结果。
 
->[!NOTE]
->
-> 对于使用品牌中心体验的客户，请导航到&#x200B;**品牌存在感**，并通过品牌下拉菜单选择您要查看其品牌存在感的品牌。 您还可以通过此体验在&#x200B;**所有品牌**&#x200B;级别查看品牌可见度。
+导航到&#x200B;**品牌存在感**，然后使用该品牌下拉列表选择要查看其品牌存在感的品牌。 您还可以通过此体验在&#x200B;**所有品牌**&#x200B;级别查看品牌可见度。
 
 ## 步骤 4：提供内容传递网络日志转发信息 {#step-4}
 
 要解锁代理式流量和引荐流量洞察，请注册内容传递网络日志转发，以便 LLM Optimizer 能够读取您的访问日志。
 
-### 客户配置（经典导航）
+### 内容传递网络日志转发
 
-如果您使用的是经典导航，则可以从[客户配置仪表板](/help/dashboards/customer-configuration.md#cdn-configuration)添加内容传递网络日志转发信息。 打开&#x200B;**内容传递网络配置**&#x200B;选项卡，然后选择&#x200B;**加入内容传递网络**。
+您可以从&#x200B;**品牌管理**&#x200B;添加CDN日志转发信息，如下所示：打开&#x200B;**品牌管理**，然后单击&#x200B;**CDN**&#x200B;标签。
 
-![客户配置内容传递网络](/help/overview/assets/cc-cdn.png)
-
-或者，如果此前尚未添加内容传递网络提供商（如上所述），则在首次访问代理式和引荐流量仪表板时，系统会提示您添加内容传递网络日志转发。 有关更多详细信息，请参阅：
-
-* [代理式流量](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [引荐流量](/help/dashboards/referral-traffic.md#setup)
+![品牌管理——内容传递网络日志转发](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 >[!NOTE]
 >有关使用客户自管内容传递网络（BYOCDN）进行日志转发的详细信息，请参阅 [BYOCDN 日志转发概述](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### 品牌中心体验内容传递网络日志转发
-
-对于使用品牌中心体验的客户，您可以从&#x200B;**品牌管理**&#x200B;添加内容传递网络日志转发信息，如下所示：打开&#x200B;**品牌管理**，然后单击&#x200B;**内容传递网络**&#x200B;标签。
-
-![品牌管理——内容传递网络日志转发](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 ## 步骤 5：探索仪表板并采取行动
 
-在您提供内容传递网络日志转发信息后，您可以：
+提供CDN日志转发的信息后，您可以从导航部分的左侧访问所需的仪表板。
 
 * 查看[品牌存在感](/help/dashboards/brand-presence.md)仪表板，查看您的可见度分数，并跟踪您相对于其他品牌的表现。
 * 完成内容传递网络日志转发配置后，您可以查看[代理式流量](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。
 * 使用[机会](/help/dashboards/opportunities-overview.md)识别内容和技术优化改进点。
 * 导出数据，与您的团队协作，或邀请同事使用该产品。
-
->[!NOTE]
-> 在品牌中心体验中，请通过左侧导航栏访问所需的视图。
 
 最后，为了全面了解 LLM Optimizer 的功能，您应探索所有可用的[仪表板](/help/dashboards/dashboards-overview.md)。

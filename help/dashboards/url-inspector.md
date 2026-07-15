@@ -13,21 +13,19 @@ subfeature_v2:
   - id: aedaee53-dfb4-4ab4-9d23-fa6188148769
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 718
-ht-degree: 100%
+source-wordcount: 710
+ht-degree: 97%
 
 ---
 
 
 # URL 检查器
 
-URL 检查器可帮助您分析域名下特定页面在 AI 搜索中的表现。 它在 URL 层级整合可见度、代理式流量和引荐数据，为您提供精细化视图，展示哪些 URL 得到引用以及它们在回答中出现的频率。
+URL 检查器可帮助您分析域名下特定页面在 AI 搜索中的表现。 它在 URL 层级整合可见度、代理式流量和引荐数据，为您提供精细化视图，展示哪些 URL 得到引用以及它们在回答中出现的频率。 导航到&#x200B;**URL检查器**&#x200B;并选择要查看其分析的网站。
 
 ![URL 检查器](/help/dashboards/assets/url-insp.png)
-
-如果您使用的是[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)，请导航到&#x200B;**URL 检查器**，然后选择要查看其洞察的网站。
 
 ![URL 检查器——网站选择器（品牌中心体验）](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 

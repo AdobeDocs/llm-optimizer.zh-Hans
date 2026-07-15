@@ -14,9 +14,9 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1290
+source-wordcount: 1225
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 这些优化包括页面内容修正（如添加结构化内容、规范链接或摘要）、技术调整（如解除对 AI 爬虫的限制或修复错误），以及优化第三方权威网站上的相关内容。 落实这些优化机会，有助于确保品牌准确呈现，并提升在生成式回答中得到引用的可能性。
 
-![优化机会](/help/dashboards/assets/oport.png)
+<!--![Optimization opportunities](/help/dashboards/assets/oport.png)-->
 
 ## 机会仪表板
 

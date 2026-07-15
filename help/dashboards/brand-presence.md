@@ -14,10 +14,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1346
-ht-degree: 100%
+source-wordcount: 1335
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,11 @@ ht-degree: 100%
 
 “品牌存在感”仪表板详细展示您的品牌在 AI 生成回答层面的感知情况。 它展示您的品牌在何处、以何种频率以及在何种语境下被提及。 您可以使用该仪表板衡量可见度、跟踪引用情况，并分析情绪趋势。 该仪表板分为多个板块，每个板块提供不同的洞察。 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。
 
-![品牌存在感概述](/help/dashboards/assets/brand-main.png)
+导航到&#x200B;**品牌存在感**。 在品牌下拉列表中，您可以选择要分析的品牌，或选择&#x200B;**所有品牌**&#x200B;以查看整个品牌集的可见性。
+
+使用品牌存在感选择器![带品牌选择器的品牌存在感（品牌中心体验）](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
+<!-- ![Brand Presence overview](/help/dashboards/assets/brand-main.png)-->
 
 本页面包含以下内容：
 
@@ -35,10 +39,6 @@ ht-degree: 100%
 * [其他品牌比较](##others-comparison)
 * [情绪趋势](#sentiment-trend)
 * [数据洞察](#data-insights)
-
-如果您使用的是[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)，请导航到&#x200B;**品牌存在感**。 在品牌下拉列表中，您可以选择要分析的品牌，或选择&#x200B;**所有品牌**&#x200B;以查看整个品牌集的可见性。
-
-使用品牌存在感选择器![带品牌选择器的品牌存在感（品牌中心体验）](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## 筛选条件 {#filters}
 
