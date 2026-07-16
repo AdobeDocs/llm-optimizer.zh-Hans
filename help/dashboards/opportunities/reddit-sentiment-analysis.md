@@ -2,16 +2,19 @@
 title: Reddit 情绪分析
 description: 了解 LLM Optimizer 如何分析 Reddit 会话并提供一些建议，来提高您的品牌感知以及在 AI 搜索结果中的可见度。
 feature: Opportunities
-autotag-review: '2026-05-15T17:56:59.489Z'
-TQID: 'https://experienceleague.adobe.com/LRC3nhHrAZoODy4gfsZiR7gc0i8n-IYqvZFj1TAUxsQ'
+autotag-review: '2026-07-15T18:05:47.495Z'
+TQID: 'https://experienceleague.adobe.com/trt7J6hxXtRdGat8Ohhd32JkwwIAJ26G8M98pBrN1CY'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+subfeature_v2:
+  - id: fe92ae96-fc87-4fea-96a0-adc06310d4f4
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 1163
 ht-degree: 100%
