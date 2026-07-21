@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
 workflow-type: tm+mt
-source-wordcount: 810
-ht-degree: 98%
+source-wordcount: 795
+ht-degree: 76%
 
 ---
 
@@ -119,58 +119,44 @@ ht-degree: 98%
 
 **9. 网站故障转移**
 
-网站故障转移配置包含两个部分：故障转移行为（在 optimize-at-edge 主路由规则中配置）和一个单独的故障转移测试头规则。
+“站点故障转移”配置包含两个部分：主“在Edge中优化”路由规则内的故障转移行为以及在发生回退时添加响应标头的同级规则。
 
-**9a。 网站故障转移行为（在 optimize-at-edge 主路由规则中）**
+**9a。 配置站点故障转移行为**
 
-在主路由规则中，按如下方式配置网站故障转移行为和高级 XML 代码片段：
+在主Optimize at Edge路由规则内，创建一个名为&#x200B;**站点故障转移行为**&#x200B;的子规则。 将其设置为&#x200B;**匹配任意**&#x200B;并添加这些条件：
 
->[!IMPORTANT]
->
->此步骤中的 XML 代码片段需要&#x200B;**高级**&#x200B;行为。 在某些 Akamai 环境中，此行为不可用于自助编辑。 如果您看不到&#x200B;**高级**&#x200B;选项，请联系您的 Akamai 帐户团队或 Akamai 支持部门，以启用所需的配置。
+* **响应状态代码**&#x200B;在`400`到`599`的范围内。
+* **源超时**&#x200B;为`Yes`。
 
 ![网站故障转移](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-通过高级 XML 添加值为 `fo` 的请求头 `x-edgeoptimize-request`：
+![配置站点故障转移行为](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-```
-<forward:availability.fail-action2>
-<add-header>
-<status>on</status>
-<name>x-edgeoptimize-request</name>
-<value>fo</value>
-</add-header>
-</forward:availability.fail-action2>
-```
-
-![故障转移行为](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
-
-**9b。 故障转移测试头规则（同级规则）**
+**9b。 配置故障转移响应标头规则**
 
 >[!IMPORTANT]
 >
 >将 **EdgeOptimize 故障转移测试头**&#x200B;规则作为路由规则的&#x200B;**同级**（在同一级别）创建——**而不是**&#x200B;嵌套在路由规则中。 在 Akamai 属性管理器规则树中，层级结构应如下所示：
 >
 >```
->▼ Parent Rule
->   ▶ Optimize at Edge Routing     ← routing rule
->       EdgeOptimize Failover - Test Header       ← sibling, same level
+>▼ Optimize at Edge                         ← parent rule group
+>   ▼ Optimize at Edge Routing               ← routing child
+>       Site Failover Behavior                 ← nested child
+>   EdgeOptimize Failover - Test Header      ← sibling of routing child
 >```
 >
->这可确保故障转移测试头规则会评估&#x200B;**所有**&#x200B;路由规则，而不仅仅评估一个。
+>当Akamai为原始主机名重新创建失败的请求时，将评估同级规则。 路由规则的API密钥条件可防止将该请求再次发送到Edge Optimize。
 >
 >此外，应确保 **Optimize at Edge 路由**&#x200B;规则不会被任何后来匹配的，会更改源站、缓存行为或相同请求的缓存 ID 的规则所覆盖。 如果其他匹配规则重置了这些行为，Optimize at Edge 路由或缓存可能就无法按预期工作。
 
-如果请求头的 `x-edgeoptimize-request` 值为 `fo`，传出响应头 `x-edgeoptimize-fo` 就应设置为 `true`。
+![配置故障转移响应标头规则](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
 
-![故障转移规则](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
-
-网站故障转移可确保在 Edge Optimize 返回 `4XX` 或 `5XX` 错误的情况下，请求会自动路由回到您的默认源站，从而确保最终用户仍会收到响应。
+站点故障转移可确保当Edge Optimize返回错误或超时时，Akamai会为原始主机名重新创建请求，以便访客仍可收到站点的正常响应。
 
 | 场景 | 行为 |
 | --- | --- |
-| Edge Optimize 返回 `2XX` | 优化后的响应返回给客户端。 |
-| Edge Optimize 返回 `4XX` 或 `5XX` | 请求被路由回到默认源站。 |
+| Edge Optimize 返回 `2XX` 或 `3XX` | 提供优化的响应。 `x-edgeoptimize-request-id`存在。 |
+| Edge Optimize返回`4XX`-`5XX`，或源超时 | 将为原始主机名重新创建请求。 响应包括`x-edgeoptimize-fo: true`。 |
 
 **验证设置**
 
@@ -208,7 +194,7 @@ curl -svo /dev/null https://www.example.com/page.html \
 | 页眉 | 机器人流量（已优化） | 人类流量（不受影响） |
 |---|---|---|
 | `x-edgeoptimize-request-id` | 存在——包含唯一的请求 ID | 不存在 |
-| `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`1`） | 不存在 |
+| `x-edgeoptimize-fo` | 仅在发生故障转移的情况下存在（值：`true`） | 不存在 |
 
 {{verify-routing-status-in-ui}}
 
