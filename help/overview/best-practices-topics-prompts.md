@@ -26,36 +26,32 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 74484901cba1f054070673f2d706b26b6360aacb
 workflow-type: tm+mt
-source-wordcount: 1537
-ht-degree: 100%
+source-wordcount: 1482
+ht-degree: 77%
 
 ---
 
-# 配置类别、主题、提示及其他品牌跟踪的最佳做法
+# 配置要跟踪的类别、主题、提示和其他品牌的最佳实践
 
-本节介绍如何设置类别、主题、提示及其他品牌跟踪的最佳做法。 此外，本节还包含行业提示库的信息，该提示库由 Adobe 基于与行业专家的广泛研究开发。
+本节将介绍有关如何设置要跟踪的类别、主题、提示和其他品牌的最佳实践。 此外，本节还包含行业提示库的信息，该提示库由 Adobe 基于与行业专家的广泛研究开发。
 
-这是至关重要的第一步。 您当前的设置决定了信息如何根据您的业务场景进行定制。 未来对类别所做的任何更改都会重置历史数据。
+此配置是重要的第一步。 您当前的设置决定了信息如何根据您的业务场景进行定制。 未来对类别所做的任何更改都会重置历史数据。
 
-在[[!UICONTROL 客户配置]](/help/dashboards/customer-configuration.md)仪表板中，您可以定义在 LLM Optimizer 平台中监测与分析您的品牌的方式。 有关如何使用该仪表板的信息，请参阅[[!UICONTROL 客户配置]](/help/dashboards/customer-configuration.md)。
+在[[!UICONTROL 品牌管理]](/help/dashboards/customer-configuration.md)仪表板中，您可以定义如何在LLM优化器平台中监视和分析品牌。
 
-![客户配置窗口](/help/assets/best-practices/customer-configuration-best-practices.png)
+在这里，您可以自定义类别（如业务部门或产品线）、跟踪其他品牌并添加品牌提及别名以捕获品牌在各种提示之间的所有变体。 此设置可确保平台根据您的业务情境定制洞察，从而实现对可见度、流量和机会的准确分析。
 
-在[!UICONTROL 客户配置]仪表板中，您可以自定义类别（例如业务单元或产品线）、跟踪其他品牌，并添加品牌提及别名，以捕获提示中品牌名称的所有变体。 此设置可确保平台根据您的业务情境定制洞察，从而实现对可见度、流量和机会的准确分析。
+默认情况下，每个组织最初都有一个活跃品牌和其他建议品牌可供选择。
 
-## 品牌中心体验
+![品牌管理 — 应用程序导航（以品牌为中心的体验）](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-默认情况下，新客户会先进入一个有重点、品牌优先的界面，并进行加入引导式设置。 在此新界面中，每个组织初始将有一个活跃品牌，并提供其他建议品牌供选择。 现有 LLM Optimizer 客户将逐步过渡到此品牌中心体验。
+![品牌管理 — 配置概述](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-如果您使用的是品牌中心体验，则可以在&#x200B;**品牌管理**&#x200B;中定义品牌的监控和分析方式。
+要设置特定品牌的主题和提示，请使用&#x200B;**提示库**&#x200B;仪表板。
 
-![品牌管理——应用程序导航（品牌中心体验）](/help/assets/brand-centric-experience/llmo-app-shell.png)
-
-![品牌管理——配置概述](/help/assets/brand-centric-experience/brands-management-configuration.png)
-
-要设置特定品牌的主题和提示词，请使用&#x200B;**提示词管理**。
+<!-- Add link to Prompt Library page when available-->
 
 ![提示词管理](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -65,12 +61,13 @@ ht-degree: 100%
 
 要使用行业提示库：
 
-1. 导航到&#x200B;**客户配置**&#x200B;仪表板。
-1. 选择&#x200B;**下载提示库**，从 LLM Optimizer 下载提示库文件。
-   ![行业提示库下载](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. 导航到&#x200B;**提示库**&#x200B;仪表板。
+1. 选择&#x200B;**下载提示库**&#x200B;可从LLM Optimizer下载库文件。
 1. 在相应选项卡中查看适用于您的品牌所在行业的建议&#x200B;**主题**&#x200B;和&#x200B;**提示**，并选择最相关的选项。
 1. 查看&#x200B;**客户历程阶段列**，了解覆盖客户生命周期（例如，从发现到转化再到留存）的提示选项。 早期阶段/漏斗顶部的提示应优先考虑，同时也应关注后期阶段选项，以促进留存、支持客户服务等。
 1. 在将主题和提示上传至 Adobe LLM Optimizer 之前，根据需要修改主题或提示，以更好地支持您的目标（例如，添加品牌/产品名称或品牌术语）。 您可以手动添加提示到 LLM Optimizer，或使用提供的 *.csv* 模板进行批量上传。
+
+<!--![Industry prompt library download](/help/assets/best-practices/download-prompts.png) - add screenshot to steps-->
 
 >[!TIP]
 >
@@ -86,11 +83,11 @@ ht-degree: 100%
 
 各行业客户搜索的热门主题：
 
-* **汽车：**&#x200B;车辆故障排查、车型对比以及融资/租赁
+* **汽车：**&#x200B;排除汽车故障，比较汽车和融资/租赁
 * **金融服务：**&#x200B;金融产品研究
-* **医疗健康：**&#x200B;查询症状或健康问题、对比治疗方案、理解检验结果或医学术语
-* **通信：**&#x200B;套餐对比、合同条款和促销信息、本地服务覆盖查询
-* **旅游：**&#x200B;出行准备、行程研究与预订
+* **医疗保健：**&#x200B;查找症状或健康问题，比较治疗方案，并了解实验室结果或医学术语
+* **电信：**&#x200B;比较计划、合同条款和促销活动，并检查本地服务
+* **AirlineTravel：**&#x200B;准备旅行、调查和预订旅行
 
 客户在 LLM 工具中使用 AI 搜索和提示行为的趋势：
 
@@ -122,12 +119,15 @@ ht-degree: 100%
 * 如果您是&#x200B;*网站或内容负责人*，请选择 **URL_DIR** 方法。
 * 如果您是&#x200B;*促销或产品建议负责人*，请选择&#x200B;**产品/服务类别**&#x200B;方法。
 
-![在 LLM Optimizer 中添加类别](/help/assets/best-practices/add-category.png)
+<!--How do you pick a region? Or is that handled differently?-->
+
+![在 LLM Optimizer 中添加类别](/help/assets/best-practices/create-category1.png)
 
 >[!IMPORTANT]
 >
 > * 选择一种方法并坚持使用。
 > * 每个账户/品牌只能使用&#x200B;**一种**&#x200B;类别模型。 请勿同时混用 **SBU** 和 **URL_DIR** 方法。
+
 <!--Can you mix Product/Service with these?-->
 
 示例：
@@ -158,13 +158,14 @@ ht-degree: 100%
 * 支持联系方式
 * 企业/新闻（如确有需要）
 
-![在 LLM Optimizer 中添加主题](/help/assets/best-practices/add-topic.png)
+![在 LLM Optimizer 中添加主题](/help/assets/best-practices/add-new-topic1.png)
 
 在创建主题列表时，请考虑以下几点：
 
-* 编辑人员是否能在 5 秒内根据提示文本理解该主题？ 如果不能，请重命名或简化。
+* 有人能在5秒内从提示文本理解该主题吗？ 如果不能，请重命名或简化。
 * 不同主题是否由不同团队负责优化？ 如果是，则说明您选择的主题具有实际意义。
-  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
+
+<!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 其他有助于设置主题的建议：
 
@@ -174,7 +175,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 > * 主题应基于用户意图，而非组织结构。
-> * 请勿为品牌/非品牌/地理位置单独设置类别或筛选条件，这些可以在&#x200B;**[!UICONTROL 品牌]**&#x200B;选项卡中单独筛选。
+> * 请勿添加品牌/非品牌/地理位置的类别/过滤器，因为您可以在&#x200B;**[!UICONTROL 品牌存在感]**&#x200B;仪表板中专门针对此内容进行过滤。
 > * 主题会分布在多个类别中。 **无法**&#x200B;为每个类别单独定义唯一主题。
 > * 单个提示&#x200B;**可以**&#x200B;存在于多个主题或类别中。
 
@@ -197,11 +198,11 @@ ht-degree: 100%
 
 ## 跟踪其他品牌的最佳做法
 
-“其他品牌跟踪”功能可帮助您监测在 LLM 回答中，与业务相关的提示和主题上的可见度及提及情况。
+通过跟踪其他品牌，您可以监控LLM响应中对于您的业务很重要的提示和主题的可见度和提及次数。
 
-[!UICONTROL **其他品牌跟踪**]&#x200B;选项卡允许您添加其他品牌（包括竞争对手），以跟踪其在特定提示和主题下的可见度。
+[!UICONTROL **要跟踪的其他品牌**]&#x200B;可在&#x200B;**品牌管理** > **市场跟踪**&#x200B;中找到，并允许您添加包括竞争对手在内的其他品牌来跟踪其特定提示和主题的可见性。
 
-通过其他品牌跟踪，您可以查看在不同区域和类别中，其他品牌与您的品牌同时被提及的频率，并对比可见度。
+通过跟踪其他品牌，您可以了解在不同的地区和类别中，与您的品牌一起提及其他品牌的频率，并将它们与您自己的可见度进行比较。
 
 >[!TIP]
 >
@@ -209,6 +210,7 @@ ht-degree: 100%
 
 ## 了解详细信息
 
-* [客户配置仪表板](/help/dashboards/customer-configuration.md)用于配置类别、主题、提示及其他品牌跟踪。
+* [品牌管理](/help/dashboards/customer-configuration.md)是配置要跟踪的类别和其他品牌的位置。
+* [提示库](/help/dashboards/customer-configuration.md)是配置主题和提示的位置。
 * [LLM Optimizer 最佳做法](/help/tutorials/best-practices.md)介绍 LLM 优化的相关最佳做法
 
