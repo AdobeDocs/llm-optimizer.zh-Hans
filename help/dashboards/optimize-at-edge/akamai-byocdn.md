@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
+source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 76%
+ht-degree: 70%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 76%
 
 以下 Akamai 属性管理器规则可将代理式 HTML 页面流量路由至 Edge Optimize。 该配置包括以下步骤：
 
-**1. 设置路由条件（用户-代理和 HTML 流量匹配）**
+## &#x200B;1. 设置路由条件（User-Agent和HTML流量匹配）
 
 为以下用户代理设置路由：
 
@@ -64,7 +64,7 @@ ht-degree: 76%
 
 ![设置路由条件](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-**2. 设置源站和 SSL 行为**
+## &#x200B;2. 设置来源和SSL行为
 
 将源站设置为 `live.edgeoptimize.net`，将 SAN 与 `*.edgeoptimize.net` 匹配
 
@@ -74,17 +74,17 @@ ht-degree: 76%
 
 ![设置源站和 SSL 行为](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
-**3. 设置缓存键变量**
+## &#x200B;3. 设置缓存键变量
 
 将缓存键变量 `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` 设置为 `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![设置缓存键变量](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
-**4. 缓存规则**
+## &#x200B;4. 缓存规则
 
 ![缓存规则](/help/assets/optimize-at-edge/akamai-step4-rules.png)
 
-**5. 修改传入请求标头**
+## &#x200B;5. 修改传入请求标头
 
 将以下传入请求标头：
 `x-edgeoptimize-api-key` 设置为从 LLMO 检索到的 API 密钥
@@ -93,7 +93,7 @@ ht-degree: 76%
 
 ![修改传入请求标头](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**允许 Optimize at Edge 通过防火墙规则（可选）**
+## 允许通过防火墙规则在Edge中优化（可选）
 
 {{waf-allowlist-setup}}
 
@@ -103,25 +103,25 @@ ht-degree: 76%
 >
 >另外，在 Akamai Bot Manager 中将`*AdobeEdgeOptimize/1.0*`用户代理和 `x-edgeoptimize-fetcher-key` 标头列入允许列表。
 
-**6. 修改传入响应标头**
+## &#x200B;6. 修改传入响应标头
 
 ![修改传入响应标头](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-**7. 缓存 ID 修改**
+## &#x200B;7. 缓存标识修改
 
 ![缓存 ID 修改](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. 更改传出请求头**
+## &#x200B;8. 修改传出请求标头
 
 将 `x-forwarded-host` 头部设置为 `{{builtin.AK_HOST}}`
 
 ![更改传出请求头](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-**9. 网站故障转移**
+## &#x200B;9. 站点故障切换
 
 “站点故障转移”配置包含两个部分：主“在Edge中优化”路由规则内的故障转移行为以及在发生回退时添加响应标头的同级规则。
 
-**9a。 配置站点故障转移行为**
+### 9a. 配置站点故障转移行为
 
 在主Optimize at Edge路由规则内，创建一个名为&#x200B;**站点故障转移行为**&#x200B;的子规则。 将其设置为&#x200B;**匹配任意**&#x200B;并添加这些条件：
 
@@ -132,7 +132,7 @@ ht-degree: 76%
 
 ![配置站点故障转移行为](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-**9b。 配置故障转移响应标头规则**
+### 9b. 配置故障转移响应标头规则
 
 >[!IMPORTANT]
 >
@@ -158,7 +158,7 @@ ht-degree: 76%
 | Edge Optimize 返回 `2XX` 或 `3XX` | 提供优化的响应。 `x-edgeoptimize-request-id`存在。 |
 | Edge Optimize返回`4XX`-`5XX`，或源超时 | 将为原始主机名重新创建请求。 响应包括`x-edgeoptimize-fo: true`。 |
 
-**验证设置**
+## 验证设置
 
 完成设置后，验证机器人流量是否被路由到 Edge Optimize，以及人类流量是否不受影响。
 
