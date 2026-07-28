@@ -4,29 +4,22 @@ description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜
 feature: Onboarding
 autotag-review: '2026-07-15T18:10:25.350Z'
 TQID: 'https://experienceleague.adobe.com/C-54mDBaDgmIWPOrLhkeUHlK1cXMbX0kRNrJZTC--4c'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
 source-wordcount: 485
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
 
 # LLM Optimizer 概述
 
->[!VIDEO](https://video.tv.adobe.com/v/3492479/?captions=chi_hans&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492471/?learn=on){transcript=true}
 
-本页概述在开始使用此工具之前需要了解的有关Adobe LLM Optimizer的所有信息：
+本页面概述您在开始使用 Adobe LLM Optimizer 前需要了解的全部信息：
 
 * [什么是 Adobe LLM Optimizer？](#what-is-adobe-llm-optimizer)
 * [LLM Optimizer 提供哪些功能？](#what-are-llm-optimizer-capabilities)
@@ -69,11 +62,11 @@ LLM 优化的重要性日益提升：
 
 借助 Adobe LLM Optimizer，您可以：
 
-**衡量品牌可见度** — 跟踪在AI支持的搜索结果中何时提及您的品牌、在何处提及您的品牌以及提及的频率。通过清晰的可见度分数超越猜测，您可以设定一段时间内的基准。查看[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
-**为其他公司设定基准** — 了解您的品牌如何与包括创新型引擎竞争对手在内的其他公司相抗衡。发现声音份额差距并发现竞争优势。查看[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
-**发现可操作的机会** — 精确定位直接增加提及次数和引文量的内容机会（如常见问题解答、摘要、架构）和技术机会（可抓取性、索引问题）。查看[机会信息板](/help/dashboards/opportunities-overview.md)。
-**跟踪来自AI的流量影响** — 监控代理流量（来自AI助手）和引荐流量（来自引文的用户点击量）到您拥有的资产。将GEO可见性与实际参与度联系起来。查看[代理流量仪表板](/help/dashboards/agentic-traffic.md)和[引荐流量仪表板](/help/dashboards/referral-traffic.md)。
-**启用团队Collaboration** — 共享功能板，为提示或类别分配所有者，并确保跨营销、搜索引擎优化(SEO)和通信功能跟踪可见性目标。查看[Collaboration功能板](/help/dashboards/collaboration.md)。
+**衡量品牌可见度** — 跟踪您的品牌在 AI 驱动的搜索结果中何时、何地以及被提及的频率。通过清晰的可见性评分摆脱主观判断，并可持续进行基准比较。请参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
+**品牌对标** — 了解您的品牌在生成式 AI 引擎中与其他品牌（包括竞争对手）的表现对比。识别品牌声量差距，并发掘竞争优势。请参阅[品牌存在感仪表板](/help/dashboards/brand-presence.md)。
+**发现可执行的优化机会** — 精准识别内容优化机会（例如 FAQ、摘要、架构）以及技术优化机会（例如可抓取性、索引问题），从而直接提升品牌提及率和引用率。请参阅[优化机会仪表板](/help/dashboards/opportunities-overview.md)。
+**跟踪 AI 带来的流量影响** — 监控流向您自有数字资产的代理式流量（来自 AI 助手）和引荐流量（用户通过引用链接产生的点击）。将 GEO 可见性与实际用户互动关联起来。请参阅[代理式流量仪表板](/help/dashboards/agentic-traffic.md)和[引荐流量仪表板](/help/dashboards/referral-traffic.md)。
+**支持团队协作** — 共享仪表板，为提示或类别指定负责人，并确保营销、搜索引擎优化（SEO）和传播团队共同跟踪品牌可见度目标。请参阅[协作仪表板](/help/dashboards/collaboration.md)。
 
 ## 了解详情
 

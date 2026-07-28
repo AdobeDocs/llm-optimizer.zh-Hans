@@ -4,26 +4,15 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudf
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:02.378Z'
 TQID: 'https://experienceleague.adobe.com/ZgOX0yC8qyb13Y7YNCg3Y1A6Q3TSk9-mUQ8gthzQvLM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 1919
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -34,7 +23,7 @@ ht-degree: 93%
 
 **先决条件**
 
-在设置Cloudflare Worker路由规则之前，请确保您具有：
+在配置 Cloudflare Worker 路由规则之前，请确保您已具备以下条件：
 
 * 具有 Cloudflare 帐户，并且在您的域中启用了 Workers。
 * 可以在 Cloudflare 中访问您的域的 DNS 设置。
@@ -127,7 +116,7 @@ Worker 部署完成后，继续[添加指向您的域名的路由](#add-a-route-
 
 ### 第2步：添加工作人员代码
 
-创建辅助进程后，单击&#x200B;**编辑代码**，并将默认代码替换为[worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js)中的代码。 如果您已经拥有现有的Cloudflare Worker，请将该代码与现有工作程序代码合并，而不是完全替换。
+创建 Worker 后，点击&#x200B;**编辑代码**，然后使用 [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js) 中的代码替换默认代码。 如果您已经有一个 Cloudflare Worker，请将该代码与现有 Worker 代码合并，而不要完全替换现有代码。
 
 点击&#x200B;**保存并部署**，发布 Worker。
 
@@ -280,7 +269,7 @@ const FAILOVER_ON_5XX = false;
 | 因主机无效，请求失败 | `EDGE_OPTIMIZE_TARGET_HOST` 包含协议（例如 `https://`）。 | 仅使用不带协议的域名（例如 `example.com`，而不是 `https://example.com`）。 |
 | 故障转移过程中出现 530 错误 | Cloudflare 无法连接到源站，或者故障转移请求的头部无效。 | 确保故障转移功能会移除 Edge Optimize 头部。 验证您的源站可访问并且 DNS 配置正确。 |
 
-## 允许通过防火墙规则在Edge中优化（可选）
+## 允许 Optimize at Edge 通过防火墙规则（可选）
 
 {{waf-allowlist-setup}}
 

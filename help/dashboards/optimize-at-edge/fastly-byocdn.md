@@ -4,24 +4,15 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Fastly
 feature: Opportunities
 autotag-review: '2026-07-15T17:50:43.991Z'
 TQID: 'https://experienceleague.adobe.com/Ueis3UcuGZz19FUJavq44dF3q3Irz2Ri4s7JTCB-H80'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 350
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -32,7 +23,7 @@ ht-degree: 92%
 
 **先决条件**
 
-在设置Fastly VCL规则之前，请确保您具有：
+在配置 Fastly VCL 规则之前，请确保您已具备以下条件：
 
 * 可以为您的域访问 Fastly。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
@@ -42,7 +33,7 @@ ht-degree: 92%
 
 将以下三个 VCL 代码片段添加到您的 Fastly 服务。 这些代码片段用于处理将代理式请求路由到 Edge Optimize、缓存键分离以及故障转移到您的默认源站。
 
-![Fastly后端配置](/help/assets/optimize-at-edge/fastly-backend-config.png)
+![Fastly 后端配置](/help/assets/optimize-at-edge/fastly-backend-config.png)
 
 ![添加 VCL 代码片段](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
@@ -102,7 +93,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 | Edge Optimize 返回 `4XX` 或 `5XX` | 请求会重新启动，并从默认源站提供响应。 |
 | 故障转移响应 | 包含头部 `x-edgeoptimize-fo: 1`。 |
 
-## 允许通过防火墙规则在Edge中优化（可选）
+## 允许 Optimize at Edge 通过防火墙规则（可选）
 
 {{waf-allowlist-setup}}
 

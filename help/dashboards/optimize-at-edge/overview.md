@@ -4,30 +4,15 @@ description: 了解如何在无需进行任何内容创作更改的情况下，�
 feature: Opportunities
 autotag-review: '2026-07-15T18:10:00.249Z'
 TQID: 'https://experienceleague.adobe.com/nRq5punuSnNb4XXIJzkO1NGF66tsyN1rdt-O9dd8tmU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
-  - id: a6256a78-8814-462c-9627-86699b39cee1
-  - id: e0ec491f-fe51-42b6-801c-1c0dfcc0e64f
-  - id: fe92ae96-fc87-4fea-96a0-adc06310d4f4
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021id: a6256a78-8814-462c-9627-86699b39cee1id: e0ec491f-fe51-42b6-801c-1c0dfcc0e64fid: fe92ae96-fc87-4fea-96a0-adc06310d4f4
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: e9001ce2-5245-4a8e-8601-dd958009072fid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 7df9f2722df2f532efe7f05e84c49e9f5a63b58b
 workflow-type: tm+mt
 source-wordcount: 2941
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +81,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 | Akamai (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
 | CloudFront (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
-| Azure前门(BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
+| Azure Front Door (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
 | Apache HTTP 服务器 | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/apache-http-server.md) |
 
 >[!NOTE]
@@ -123,7 +108,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 [AI 内容可见度检查器](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)扩展会显示 LLM 可以访问多少网页内容以及哪些内容仍然隐藏。 该工具为免费、独立的诊断工具，无需产品许可证或额外设置。
 
-只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/cn/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
+只需单击一次，即可评估任意网站的机器可读性。 您可以并排查看 AI 代理与真人用户所见内容的差异，并估算通过使用 LLM Optimizer 可恢复的内容量。 请参阅 [AI 能读取您的网站吗？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 页面以了解更多信息。
 
 ## 优化机会详解
 
@@ -131,8 +116,8 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 ### 恢复内容可见性
 
-此机会标记因客户端渲染而为AI代理隐藏关键内容的页面。对于每个标识的页面，它都会精确显示AI代理视图中缺少哪些内容，突出显示可见性差距，并允许您直接应用更改以恢复隐藏的内容。当您使用Edge中的优化来部署此机会时，为LLM用户代理提供预呈现的、AI优化的页面版本，以便他们无需执行Javascript即可访问整个上下文。
-这可确保该页面首先对AI代理完全可见。在该预呈现的HTML之上应用了其他增强功能。
+此优化机会会标记因客户端渲染而导致关键内容对 AI 代理不可见的页面。对于每个识别出的页面，它会准确显示 AI 代理无法看到的内容，突出显示内容可见性缺口，并支持您直接应用更改，以恢复这些隐藏内容。当您通过 Optimize at Edge 部署此优化机会时，系统会向 LLM 用户代理提供页面的预渲染、面向 AI 优化的版本，使其无需执行 JavaScript 即可获取完整页面内容。
+这样可确保页面内容首先能够完整呈现给 AI 代理，并在预渲染 HTML 的基础上进一步应用其他优化。
 
 >[!IMPORTANT]
 >当通过 Optimize at Edge 部署下述所有优化机会时，预渲染功能将自动生效，以确保页面对 AI 代理完全可见。
@@ -179,7 +164,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 针对每个优化机会，您可以在边缘层进行预览、编辑、部署、实时查看和回滚操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477994/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 预览
 
@@ -241,7 +226,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要基础源页面未发生更改，我们就会从缓存中提供页面的优化版本。但是，当&#x200B;**恢复内容可见度**&#x200B;的源发生更改时，我们的系统会自动刷新，以便AI代理始终接收最新的内容。这是因为我们使用低缓存生存时间(TTL)设置（以分钟为单位），因此您网站上的任何内容更新都会触发该窗口内的新优化。对于诸如&#x200B;**添加LLM友好型摘要**&#x200B;等内容机会，LLM Optimizer会监控源页面是否有更改。如果检测到更改，我们会暂停优化并将其标记为人工审核，以防止代理可见页面和人类可见页面之间的内容漂移。
+只要底层源页面未发生变化，我们就会持续从缓存中提供页面的优化版本。但是，对于&#x200B;**恢复内容可见度**&#x200B;功能，当源页面发生变化时，系统会自动刷新，以确保 AI 代理始终获取最新内容。这是因为我们采用较短的缓存生存时间（TTL，通常为几分钟），因此网站内容一旦更新，系统便会在该时间窗口内重新执行优化。对于添加 **LLM 友好型摘要**等内容优化机会，LLM Optimizer 会持续监控源页面是否发生变化。如果检测到页面发生变化，系统会暂停该项优化，并将其标记为需要人工审核，以防止 AI 代理看到的内容与用户看到的内容出现偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？
