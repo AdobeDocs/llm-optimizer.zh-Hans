@@ -4,23 +4,15 @@ description: 了解如何将 Adobe Analytics 与 LLM Optimizer 连接，以在�
 feature: Referral Traffic
 autotag-review: '2026-07-15T16:46:49.693Z'
 TQID: 'https://experienceleague.adobe.com/H0p8HV2bf1KuKYqF1ByAF2BpGlb4YScsWDQU5mMkTRY'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 950
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -93,13 +85,13 @@ Adobe Analytics 集成可将 LLM Optimizer 与您组织的 Adobe Analytics 数�
 >
 >回填过程可能需要数小时完成。
 
-## 请参阅实际操作中的业务影响
+## 查看实际业务影响
 
-人工智能的可见性只是故事的一部分。 要了解您的优化工作是否正在推动业务结果，您需要了解访客到达您的网站后会出现什么情况。
+AI 可见度只是整体情况的一部分。要了解您的优化工作是否真正带来了业务成效，您需要了解访客进入网站后发生了什么。
 
-此视频介绍&#x200B;**业务影响**&#x200B;视图，该视图将LLM Optimizer与Adobe Analytics相结合，以显示AI引用的流量如何转化为参与度、转化率和收入 — 帮助您衡量AI存在的真正价值。
+本视频介绍了&#x200B;**业务影响**&#x200B;视图。该视图将 LLM Optimizer 与 Adobe Analytics 相结合，展示 AI 引荐流量如何转化为用户互动、转化和收入，帮助您衡量 AI 可见度的真实业务价值。
 
->[!VIDEO](https://video.tv.adobe.com/v/3492513/?captions=chi_hans&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492503/?learn=on){transcript=true}
 
 ## 工作原理 {#how-it-works}
 

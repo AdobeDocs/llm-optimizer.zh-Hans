@@ -4,21 +4,14 @@ description: 了解 LLM Optimizer 如何识别那些具有 AI 代理难以解读
 feature: Opportunities
 autotag-review: '2026-07-15T18:04:55.581Z'
 TQID: 'https://experienceleague.adobe.com/uMK9qeAGMNrtvR0TYbeg8SIOKlwKf4L5NIE9ZgsJaUw'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
-source-wordcount: 785
+workflow-type: ht
+source-wordcount: 776
 ht-degree: 100%
 
 ---
@@ -44,8 +37,8 @@ ht-degree: 100%
 
 LLM Optimizer 会识别那些获得了很高的代理式流量，但其中的内容分数低于可读性阈值的页面，然后建议重写文本。 对于每个页面您都能获得：
 
-**改进的文本**：基于页面上已有的内容进行了简化。
-**预览**：之前和之后的代理式流量的效果比较。
+**优化后的文本** —— 基于页面现有内容生成的简化文本。
+**预览** — 展示面向代理式流量优化前后的对比效果。
 
 受影响的 URL 会显示在&#x200B;**当前建议**&#x200B;选项卡中&#x200B;**包含建议的 URL** 表格中，您可以在此表中展开一行查看每一个建议。
 

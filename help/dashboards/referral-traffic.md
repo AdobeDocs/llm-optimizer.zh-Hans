@@ -4,22 +4,15 @@ description: 了解如何使用“引荐流量”仪表板，查看访客通过�
 feature: Referral Traffic
 autotag-review: '2026-07-15T18:05:26.973Z'
 TQID: 'https://experienceleague.adobe.com/L1Aqqdbs-aPaX0Qj0ekHaQHjx0713gZfY740wIwAtRY'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e3c08d81-9e25-4503-9df5-8dd1f489aa99
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e3c08d81-9e25-4503-9df5-8dd1f489aa99
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 716
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +21,12 @@ ht-degree: 86%
 
 “引荐流量”展示访客通过外部平台、AI 引用和引荐链接访问您网站的路径。 该仪表板跟踪并分析来自外部网站和平台的流量来源、引荐模式及转化量度。 通过这些数据，您可以了解哪些来源、区域和页面带来更高参与度的流量。<!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。
 
-导航到&#x200B;**引荐流量**&#x200B;并选择要查看其LLM引荐流量分析的网站。
+导航至&#x200B;**引荐流量**，然后选择要查看 LLM 引荐流量洞察的网站。
 
 ![引荐流量——网站选择器（品牌中心体验）](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
 >[!NOTE]
->默认情况下，此仪表板基于&#x200B;**内容传递网络日志**&#x200B;构建流量洞察。 如果您的组织使用付费选件，则可以连接&#x200B;**Adobe Analytics**&#x200B;或&#x200B;**Google Analytics 4**(GA4)以添加用于测量AI驱动的发现和网站参与度的数据。 这些数据将在&#x200B;**业务影响**&#x200B;选项卡中显示。 请注意，如果不与Adobe Analytics或GA4集成，则不会填充选项卡。 因此，有关更多详细信息，请参阅[Adobe Analytics集成](/help/dashboards/adobe-analytics-integration.md)或[Google Analytics集成](/help/dashboards/google-analytics-integration.md)。
+>默认情况下，此仪表板基于&#x200B;**内容传递网络日志**&#x200B;构建流量洞察。 如果您的组织使用的是付费版本，则可以连接 **Adobe Analytics** 或 **Google Analytics 4**（GA4），以添加用于衡量 AI 驱动发现和网站互动的数据。 这些数据将在&#x200B;**业务影响**&#x200B;选项卡中显示。 请注意，如果未集成 Adobe Analytics 或 GA4，此选项卡将不会显示任何数据。因此，请参阅 [Adobe Analytics 集成](/help/dashboards/adobe-analytics-integration.md)或 [Google Analytics 集成](/help/dashboards/google-analytics-integration.md)了解更多详细信息。
 
 <!-- ![Referral Page](/help/dashboards/assets/referral-traffic.png)-->
 
@@ -49,7 +42,7 @@ ht-degree: 86%
 
 首次登录时，“引荐流量”仪表板可能显示为空。 要查看数据，您需要配置内容传递网络日志转发。
 
-您可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**CDN**&#x200B;标签来添加CDN日志转发信息。
+您可以导航至&#x200B;**品牌管理**，然后点击 **CDN** 标签，以添加内容传递网络日志转发信息。
 
 <!-- **Customer Configuration (classic experience):** Configure [CDN log forwarding](/help/dashboards/customer-configuration.md#cdn-configuration) by selecting **Go To Configuration**.-->
 

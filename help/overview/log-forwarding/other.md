@@ -4,24 +4,13 @@ description: 了解在使用不受支持的内容传递网络提供商时，如�
 feature: Agentic Traffic
 autotag-review: '2026-07-15T18:08:55.588Z'
 TQID: 'https://experienceleague.adobe.com/tuB95AJnFbB4O0o2BYHiRP-W0RTxzMeMLNg-5OjF-8s'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: dd952468-5202-43af-a365-6e0d2e67a703
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: dd952468-5202-43af-a365-6e0d2e67a703id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 670
 ht-degree: 100%
 
@@ -102,10 +91,10 @@ ht-degree: 100%
 
 - 字段名称必须&#x200B;**完全**&#x200B;匹配（包括大小写和拼写）。
 - 数据类型必须正确，具体如下：
-   - **时间戳**&#x200B;必须为符合 **ISO 8601** 格式的字符串。 类 UNIX 时间戳可能无法正常解析。
-   - **response_status** 必须为整数。
-   - **time_to_first_byte** 必须为整数，单位为毫秒。
-   - 字符串必须为有效的 JSON 字符串。
+  - **时间戳**&#x200B;必须为符合 **ISO 8601** 格式的字符串。 类 UNIX 时间戳可能无法正常解析。
+  - **response_status** 必须为整数。
+  - **time_to_first_byte** 必须为整数，单位为毫秒。
+  - 字符串必须为有效的 JSON 字符串。
 - 格式错误的 JSON 或缺失/错误字段可能导致日志被跳过或解析失败，从而造成报告数据缺失。
 
 ### 上传位置与处理周期 {#upload-location}

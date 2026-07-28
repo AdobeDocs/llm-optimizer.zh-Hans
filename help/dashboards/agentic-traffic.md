@@ -4,28 +4,22 @@ description: 了解如何使用“代理式流量”仪表板，以查看 AI 代
 feature: Agentic Traffic
 autotag-review: '2026-07-15T17:38:14.233Z'
 TQID: 'https://experienceleague.adobe.com/4pvsCwqZXkX7xOJWqKge6rkJYaAq27cSjLeTxaA4ysM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1254
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # 代理式流量 {#agentic-traffic}
 
-“代理式流量”仪表板展示 AI 代理（爬虫和聊天机器人）与您的站点交互的情况。 使用此视图，您可以跟踪请求总数以及常规的与性能相关的量度。 您还可以查看流量在市场、类别、页面和代理之间的分布情况。 此仪表板使用的数据来自内容传递网络日志，因此您需要配置&#x200B;**内容传递网络日志转发**，仪表板才会显示相关量度。 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。 导航到&#x200B;**代理流量**&#x200B;并选择要查看代理流量分析的网站。
+“代理式流量”仪表板展示 AI 代理（爬虫和聊天机器人）与您的站点交互的情况。 使用此视图，您可以跟踪请求总数以及常规的与性能相关的量度。 您还可以查看流量在市场、类别、页面和代理之间的分布情况。 此仪表板使用的数据来自内容传递网络日志，因此您需要配置&#x200B;**内容传递网络日志转发**，仪表板才会显示相关量度。 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。 导航至&#x200B;**代理式流量**，然后选择要查看代理式流量洞察的网站。
 
 ![代理式流量——网站选择器（品牌中心体验）](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
@@ -44,7 +38,7 @@ ht-degree: 97%
 
 未配置&#x200B;**内容传递网络日志转发**&#x200B;时，“代理式流量”仪表板不会显示任何内容。 要查看代理交互数据，您需要配置&#x200B;**内容传递网络日志转发**。
 
-您可以通过导航到&#x200B;**品牌管理**&#x200B;并单击&#x200B;**CDN**&#x200B;标签来添加CDN日志转发信息。
+您可以导航至&#x200B;**品牌管理**，然后点击 **CDN** 标签，以添加 CDN 日志转发信息。
 
 ![品牌管理——内容传递网络日志转发](/help/assets/brand-centric-experience/brands-management-cdn.png)
 

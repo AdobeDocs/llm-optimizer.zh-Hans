@@ -1,130 +1,121 @@
 ---
-title: 在Edge中优化 — Azure前门(BYOCDN)
-description: 了解如何在LLM Optimizer中为Edge中的优化配置Azure前门BYOCDN。
+title: Optimize at Edge - Azure Front Door (BYOCDN)
+description: 了解如何在 LLM Optimizer 中为 Azure Front Door BYOCDN 配置 Optimize at Edge。
 feature: Opportunities
 autotag-review: '2026-07-15T17:40:54.797Z'
 TQID: 'https://experienceleague.adobe.com/fe-kultqzWQdRdcUjzfNs21UpL6m5zcoAmaQyMMv5kk'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 768
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
 
-# Azure前门(BYOCDN)
+# Azure Front Door (BYOCDN)
 
 此配置将代理式流量（来自 AI 机器人和 LLM 用户代理的请求）路由到 Edge Optimize 后端服务（`live.edgeoptimize.net`）。 人类访客和 SEO 机器人仍将照常从您的源站获得响应。 完成设置后，可在响应中查找头部 `x-edgeoptimize-request-id` 以测试配置是否成功。
 
-Azure Front Door不会在边缘运行自定义代码。 路由是使用&#x200B;**规则集**&#x200B;以及专用的&#x200B;**原始组**&#x200B;为Edge优化配置的。 故障转移由Azure Front Door基于优先级的原始组运行状况探测器处理。
+Azure Front Door 不支持在边缘节点运行自定义代码。路由通过&#x200B;**规则集**&#x200B;和专用于 Edge Optimize 的&#x200B;**源站组**&#x200B;共同进行配置。故障切换由 Azure Front Door 基于优先级的源站组健康探测机制负责处理。
 
 **先决条件**
 
-在设置Azure前门路由规则之前，请确保您具有：
+在配置 Azure Front Door 路由规则之前，请确保您已具备以下条件：
 
-* 访问您的Azure前门配置文件。
+* 拥有 Azure Front Door 配置文件的访问权限。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
 * （可选）要测试暂存路由，请参阅[暂存 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
-## 步骤1：为Edge优化创建源组
+## 步骤 1：为 Edge Optimize 创建源站组
 
-您的Azure前门配置文件已有一个指向您的源的默认源组。 为Edge优化创建一个&#x200B;**新**&#x200B;原始组：
+您的 Azure Front Door 配置文件中已包含一个指向源站的默认源站组。请为 Edge Optimize 创建一个&#x200B;**新**&#x200B;的源站组：
 
 * **名称：**`edge-optimize-origin-group`
-* **源（基于优先级的故障转移）：**
-   * **优先级1** — `live.edgeoptimize.net` （原始主机标头： `live.edgeoptimize.net`）
-   * **优先级2** — 您的域终结点（例如，`www.example.com`）。 这是用于故障转移：如果Edge Optimize不正常，则请求路由到您的域，该域将重新进入Azure前门并从您的默认来源提供服务。
-* **运行状况探测器：** **已启用**
-   * 路径： `/health/<your-domain>` （例如，`/health/www.example.com`）
-   * 协议：HTTPS
-   * 间隔：225秒
-* **会话关联性：** **已禁用**
-* **证书使用者名称验证：** **已启用**
+* **源站（基于优先级的故障切换）：**
+  * **优先级 1** — `live.edgeoptimize.net`（源站主机标头：`live.edgeoptimize.net`）
+  * **优先级 2** — 您的域名终结点（例如 `www.example.com`）。 此配置用于故障切换：如果 Edge Optimize 不可用，请求将路由到您的域名，然后重新进入 Azure Front Door，并由默认源站提供服务。
+* **健康探测：****已启用**
+  * 路径：`/health/<your-domain>`（例如，`/health/www.example.com`）
+  * 协议：HTTPS
+  * 间隔：225 秒
+* **会话关联：****已禁用**
+* **证书主题名称验证：****已启用**
 
-![Edge优化具有两个基于优先级的源和运行状况探测的原始组](/help/assets/optimize-at-edge/azure-front-door-origin-group.png)
+![包含两个基于优先级的源站及健康探测的 Edge Optimize 源站组](/help/assets/optimize-at-edge/azure-front-door-origin-group.png)
 
 >[!NOTE]
 >
->`edge-optimize-origin-group`源组在门户中显示&#x200B;**“未关联”**&#x200B;警告。 这是预期的 — 它通过规则集路由覆盖引用，而不是直接通过路由引用。
+>在 Azure 门户中，`edge-optimize-origin-group` 源站组会显示 **&quot;Unassociated&quot;**（未关联）警告。这是预期行为，因为该源站组是通过规则集的路由覆盖进行引用，而不是直接由路由引用。
 
-## 步骤2：配置路由
+## 步骤 2：配置路由
 
-默认路由通常使用您的Azure前门配置文件创建。 规则集（步骤3）会覆盖代理流量的源组，因此Edge Optimize不需要单独的路由。
+通常，在创建 Azure Front Door 配置文件时会自动创建一条默认路由。规则集（步骤 3）会针对代理式流量覆盖源站组配置，因此无需为 Edge Optimize 单独创建路由。
 
-## 第3步：创建规则集
+## 步骤 3：创建规则集
 
-转到&#x200B;**规则集** > **添加规则集**&#x200B;并将其命名为`EORouting`。 按此顺序添加三个规则。
+依次进入&#x200B;**规则集** > **添加规则集**，并将其命名为 `EORouting`。 按照以下顺序添加三个规则。
 
-![EORouting规则集显示标头剥离和机器人路由规则](/help/assets/optimize-at-edge/azure-front-door-ruleset-routing.png)
+![显示请求头清理和机器人路由规则的 EORouting 规则集](/help/assets/optimize-at-edge/azure-front-door-ruleset-routing.png)
 
-### 规则1： StripIncomingEOHeaders01
+### 规则 1：StripIncomingEOHeaders01
 
-剥离传入的Edge Optimize标头以防止欺骗。 无条件 — 适用于所有请求。 停止评估： **关**。
+删除传入请求中的 Edge Optimize 请求头，以防止伪造请求。无需设置条件，适用于所有请求。停止继续评估：**关**。
 
-**操作** — 删除每个的请求标头：
+**操作**，删除以下每个请求头：
 
 * `x-edgeoptimize-url`
 * `x-edgeoptimize-config`
 * `x-edgeoptimize-api-key`
 * `x-edgeoptimize-fetcher-key`
 
-### 规则2：EOGPTBotRootGET03
+### 规则 2：EOGPTBotRootGET03
 
-在HTML页面路径上将机器人请求路由到Edge Optimize。 停止评估：**于**。
+将访问 HTML 页面路径的机器人请求路由至 Edge Optimize。停止继续评估：**开启**。
 
-**条件** （所有条件都必须匹配）：
+**条件**（必须全部满足）：
 
-* 请求方法： **等于** `GET`
-* 请求路径： **RegEx** `(^$|^.*/$|(^|.*/)[^./]+$|^.*\.html$)` （与站点根、以`/`结尾的路径、无扩展名的页面路径和`.html`个路径匹配）
-* 用户代理： **包含任何** `chatgpt-user`、`gptbot`、`oai-searchbot`、`adobeedgeoptimize-ai`、`perplexitybot`、`perplexity-user`、`claudebot`、`claude-user`、`claude-searchbot`。 将字符串转换设置为&#x200B;**小写**。
-* `x-edgeoptimize-monitor`： **不包含** `1`
-* `x-edgeoptimize-request`： **不包含任何** `failover`，`1`
-
-**操作**：
-
-* 请求标头覆盖`x-edgeoptimize-url` = `/{url_path}?{query_string}`
-* 请求标头覆盖`x-edgeoptimize-config` = `LLMCLIENT=TRUE;`
-* 请求标头覆盖`x-edgeoptimize-api-key` = `YOUR_API_KEY`
-* 请求标头覆盖`x-edgeoptimize-monitor` = `1`
-* 路由配置覆盖：源组→ `edge-optimize-origin-group`，转发协议→匹配传入请求，缓存→ **已禁用**
-
-### 规则3： HealthProbeRewrite03
-
-重写了Azure Front Door运行状况探测请求，以便它们以`/`而不是`/health/<domain>`的形式到达您的来源。 这使得Azure前门能够监控Edge优化可用性，而无需您的来源具有专门的运行状况端点。 停止评估：**于**。
-
-![运行状况探测重写规则](/help/assets/optimize-at-edge/azure-front-door-ruleset-healthprobe.png)
-
-**条件** （所有条件都必须匹配）：
-
-* 请求URL路径： **以**&#x200B;开头`/health/`
-* `x-fd-healthprobe`： **包含** `1`
+* 请求方法：**等于** `GET`
+* 请求路径：**正则表达式**`(^$|^.*/$|(^|.*/)[^./]+$|^.*\.html$)`（匹配网站根路径、以 `/` 结尾的路径、无扩展名的页面路径以及 `.html` 路径）
+* User-Agent：**包含以下任意值：** `chatgpt-user`、`gptbot`、`oai-searchbot`、`adobeedgeoptimize-ai`、`perplexitybot`、`perplexity-user`、`claudebot`、`claude-user`、`claude-searchbot`。 将字符串转换设置为&#x200B;**转换为小写**。
+* `x-edgeoptimize-monitor`：**不包含** `1`
+* `x-edgeoptimize-request`：**不包含** `failover`或 `1`
 
 **操作**：
 
-* URL重写 — Source模式： `/health/`，目标： `/`
-* 覆盖了`custom-origin-health` = `routed`的响应标头（诊断 — 可在验证后删除）
-* 请求标头附加`user-agent` = ` AdobeEdgeOptimize/1.0`（添加前导空格 — Azure Front Door按原样附加值）
-* 路由配置覆盖：源组→ `default-origin-group`，转发协议→匹配传入请求，缓存→ **已禁用**
+* 覆盖请求头 `x-edgeoptimize-url` = `/{url_path}?{query_string}`
+* 覆盖请求头 `x-edgeoptimize-config` = `LLMCLIENT=TRUE;`
+* 覆盖请求头 `x-edgeoptimize-api-key` = `YOUR_API_KEY`
+* 覆盖请求头 `x-edgeoptimize-monitor` = `1`
+* 覆盖路由配置：源站组 → `edge-optimize-origin-group`，转发协议 → 与传入请求保持一致，缓存 → **禁用**
 
-## 步骤4：将规则集与路由关联
+### 规则 3：HealthProbeRewrite03
 
-打开您的路由，滚动到底部的&#x200B;**规则**&#x200B;部分，然后从下拉列表中选择`EORouting`规则集。 如果您有现有的规则集，请使用&#x200B;**移至顶部**&#x200B;以在&#x200B;**#1**&#x200B;处放置`EORouting`。 在Edge中优化规则仅拦截代理流量，Edge优化环回请求 — 所有其他流量在不影响您的其他规则的情况下通过。 保存并等待传播（大约20分钟）。
+重写 Azure Front Door 的健康探测请求，使其访问您的源站时使用 `/`，而不是 `/health/<domain>`。这样，Azure Front Door 无需在您的源站配置专用健康检查端点，即可监控 Edge Optimize 的可用性。停止继续评估：**开启**。
 
-## 允许通过防火墙规则在Edge中优化（可选）
+![健康探测重写规则](/help/assets/optimize-at-edge/azure-front-door-ruleset-healthprobe.png)
+
+**条件**（必须全部满足）：
+
+* 请求 URL 路径：**以** `/health/`开头
+* `x-fd-healthprobe`：**包含** `1`
+
+**操作**：
+
+* URL 重写，源路径：`/health/`；目标路径：`/`
+* 覆盖响应头 `custom-origin-health` = `routed`（用于诊断，验证完成后可移除）
+* 向请求头 `user-agent` 追加 ` AdobeEdgeOptimize/1.0`（注意前面保留一个空格，Azure Front Door 会按原样追加该值）
+* 覆盖路由配置：源站组 → `default-origin-group`，转发协议 → 与传入请求保持一致，缓存 → **禁用**
+
+## 步骤 4：将规则集关联到路由
+
+打开您的路由，滚动到页面底部的&#x200B;**规则**&#x200B;部分，然后从下拉列表中选择 `EORouting` 规则集。如果您已有其他规则集，请使用&#x200B;**移至顶部**&#x200B;将 `EORouting` 调整到 **#1** 的位置。Optimize at Edge 规则仅会拦截代理式流量和 Edge Optimize 回环请求，其他所有流量都会不受影响地继续经过您的其他规则进行处理。 保存配置，并等待其生效（约需 20 分钟）。
+
+## 允许 Optimize at Edge 通过防火墙规则（可选）
 
 {{waf-allowlist-setup}}
 

@@ -4,24 +4,15 @@ description: 了解如何将 Fastly 的内容传递网络日志转发到 Adobe �
 feature: Agentic Traffic
 autotag-review: '2026-07-15T17:51:11.580Z'
 TQID: 'https://experienceleague.adobe.com/HPUxzfbvA4DtdNmjgTMvVVv-WqtjPcAUeZmg8JdvL-s'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 381
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -65,10 +56,10 @@ ht-degree: 88%
 | **位置** | 默认 |
 | **日志格式** | 使用下方&#x200B;**日志格式字符串**&#x200B;部分提供的格式。 |
 | **时间戳格式** | `%Y-%m-%dT%H:%M:%S.000` |
-| **存储桶名称** | 从LLM Optimizer配置页面复制&#x200B;**存储段名称**。 ![存储桶名称](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **域** | 从LLM Optimizer配置页面复制&#x200B;**域名**。 ![域名](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **存储桶名称** | 从 LLM Optimizer 配置页面复制&#x200B;**存储桶名称**。. ![存储桶名称](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **域** | 从 LLM Optimizer 配置页面复制&#x200B;**域名**。![域名](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **访问方法** | **用户凭据** |
-| **用户凭据** | 从LLM Optimizer配置页面复制&#x200B;**访问密钥**&#x200B;和&#x200B;**密钥**。 ![访问密钥](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **用户凭据** | 从 LLM Optimizer 配置页面复制&#x200B;**访问密钥**&#x200B;和&#x200B;**秘密密钥**。![访问密钥](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **句点** | `300` |
 
 **日志格式字符串：**
@@ -85,7 +76,7 @@ ht-degree: 88%
 
 | 字段 | 描述 |
 | --- | --- |
-| **路径** | 从LLM Optimizer配置页面复制&#x200B;**路径**。 ![路径](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
+| **路径** | 从 LLM Optimizer 配置页面复制&#x200B;**路径**。![路径](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
 | **选择日志行格式** | 空白 |
 | **压缩** | Gzip |
 | **冗余级别** | 标准 |

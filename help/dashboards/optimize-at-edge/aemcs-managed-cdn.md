@@ -4,26 +4,14 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 AEM �
 feature: Opportunities
 autotag-review: '2026-07-15T16:49:32.275Z'
 TQID: 'https://experienceleague.adobe.com/2-IzfF1iTEzW-gpqPA-t3mffRuhMxaKi1Dp0A62IZ9U'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
-source-wordcount: 836
+workflow-type: ht
+source-wordcount: 815
 ht-degree: 100%
 
 ---
@@ -37,9 +25,9 @@ ht-degree: 100%
 
 要访问此功能：
 
-- 付费客户必须有权访问 **Adobe LLM Optimizer 用户** IMS 产品配置文件。 请联系您组织的管理员，请求获取访问权限。
+- 付费客户必须具有 **Adobe LLM Optimizer Users** IMS 产品轮廓的访问权限。请联系您组织的管理员申请访问权限。
   ![将用户添加到一个产品配置文件](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
-- 试用版客户必须属于 **LLMO 管理员** IMS 组。 如果这个组不存在，您组织的管理员可以创建该组，然后将您添加进去。
+- 试用客户必须属于 **LLMO 管理员** IMS 用户组。如果该用户组尚不存在，您组织的管理员可以创建该用户组并将您添加到其中。
   ![创建 LLMO 管理员 IMS 组](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
 
 >[!NOTE]

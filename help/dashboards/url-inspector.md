@@ -4,28 +4,22 @@ description: 了解如何使用 URL 检查器，以分析您域名下特定页�
 feature: URL Inspector
 autotag-review: '2026-07-15T18:01:06.691Z'
 TQID: 'https://experienceleague.adobe.com/fD1LpXh53O8SCV-c1VHXr1CxX8UWdUt9rIVk0OA2dro'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: aedaee53-dfb4-4ab4-9d23-fa6188148769
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: aedaee53-dfb4-4ab4-9d23-fa6188148769
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 710
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # URL 检查器
 
-URL 检查器可帮助您分析域名下特定页面在 AI 搜索中的表现。 它在 URL 层级整合可见度、代理式流量和引荐数据，为您提供精细化视图，展示哪些 URL 得到引用以及它们在回答中出现的频率。 导航到&#x200B;**URL检查器**&#x200B;并选择要查看其分析的网站。
+URL 检查器可帮助您分析域名下特定页面在 AI 搜索中的表现。 它在 URL 层级整合可见度、代理式流量和引荐数据，为您提供精细化视图，展示哪些 URL 得到引用以及它们在回答中出现的频率。 导航至 **URL 检查器**，然后选择要查看洞察信息的网站。
 
 ![URL 检查器](/help/dashboards/assets/url-insp.png)
 

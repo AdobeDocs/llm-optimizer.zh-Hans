@@ -4,22 +4,15 @@ description: 了解如何使用“品牌存在感”仪表板，理解您的品�
 feature: Brand Presence
 autotag-review: '2026-07-15T17:44:10.254Z'
 TQID: 'https://experienceleague.adobe.com/XBRLNcs-1flf9qdYI93NAwqusTP8i8-1ulTfz-iLD-4'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
-subfeature_v2:
-  - id: f718ad75-b1df-4dc1-89bf-0c3167e83b33
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
+subfeature_v2: id: f718ad75-b1df-4dc1-89bf-0c3167e83b33
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1335
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +21,7 @@ ht-degree: 99%
 
 “品牌存在感”仪表板详细展示您的品牌在 AI 生成回答层面的感知情况。 它展示您的品牌在何处、以何种频率以及在何种语境下被提及。 您可以使用该仪表板衡量可见度、跟踪引用情况，并分析情绪趋势。 该仪表板分为多个板块，每个板块提供不同的洞察。 此外还提供可自定义的筛选条件，帮助您细化要显示的数据。
 
-导航到&#x200B;**品牌存在感**。 在品牌下拉列表中，您可以选择要分析的品牌，或选择&#x200B;**所有品牌**&#x200B;以查看整个品牌集的可见性。
+导航至&#x200B;**品牌存在感**。 在品牌下拉列表中，您可以选择要分析的品牌，或选择&#x200B;**所有品牌**&#x200B;以查看整个品牌集的可见性。
 
 使用品牌存在感选择器![带品牌选择器的品牌存在感（品牌中心体验）](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
@@ -115,7 +108,7 @@ ht-degree: 99%
 * **提及次数**：在该主题或主题/提示词组合下，AI 回答中提及您的品牌的次数。
 * **情绪**：在 AI 回答中与该主题相关的品牌感知情况，按所有周的平均值计算。 仅在您的品牌实际被提及时才会显示数据。
 * **位置**：您的品牌在 AI 回答中的相对突出程度，按所有周的平均值计算。
-* **全部引用**：在该主题或主题/提示词组合下，AI 回答中引用的独特来源数量（包括自有品牌引用）。
+* **全部引用**：在该主题或主题/提示组合下，AI 回答中引用的独特来源数量（包括自有品牌引用）。
 * **自有品牌引用**：在该关键词或关键词/问题组合下，AI 回答中引用您的品牌的次数。
   <!--* **Executions**-->
 

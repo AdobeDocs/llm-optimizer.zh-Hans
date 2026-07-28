@@ -4,24 +4,15 @@ description: 了解如何完成品牌名称和域名的加入，从 Experience H
 feature: Quickstart, Onboarding
 autotag-review: '2026-07-15T18:07:16.514Z'
 TQID: 'https://experienceleague.adobe.com/Hp5j1st4fkfiBVKTTL-eHQX6Ovmw61-2hX2g1T8Ui8Y'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9aid: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1201
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +25,7 @@ ht-degree: 87%
 
 ## 品牌中心体验 {#brand-centric-experience}
 
-默认情况下，客户一开始会使用具有载入驱动设置的重点突出、品牌优先的界面。 在此界面中，每个组织都从一个活跃品牌和其他建议品牌开始，以供选择。<!--Existing LLM Optimizer customers will shift to this Brand Centric experience gradually.-->
+默认情况下，客户将从以品牌为中心的专注界面开始使用，并通过引导式流程完成初始设置。在此界面中，每个组织默认包含一个已启用的品牌，并提供其他建议品牌供您选择。<!--Existing LLM Optimizer customers will shift to this Brand Centric experience gradually.-->
 
 ## 加入概述
 
@@ -68,9 +59,9 @@ ht-degree: 87%
 
 ![LLM Optimizer 试用版](/help/overview/assets/llm-trial.png)
 
-#### Adobe Analytics和Adobe Customer Journey Analytics
+#### Adobe Analytics 和 Adobe Customer Journey Analytics
 
-对于Adobe Analytics和Adobe Customer Journey Analytics客户，您将在Experience Cloud主页上看到一条横幅。
+如果您是 Adobe Analytics 或 Adobe Customer Journey Analytics 用户，您将在 Experience Cloud 首页看到一条横幅通知。
 
 ![Experience Cloud 主页显示“开始试用 Adobe LLM Optimizer”横幅](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -83,7 +74,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
-> * **免费试用版：** AEM Cloud和Adobe Analytics/Customer Journey Analytics客户可以使用LLM Optimizer的免费试用版。
+> * **免费试用：** AEM Cloud 以及 Adobe Analytics/Customer Journey Analytics 客户可使用 LLM Optimizer 免费试用版。
 > * **在 2026 年 4 月 1 日及之后激活试用版的客户**，最多可使用 100 个提示、1 个域，并可针对单一机会类型在最多 10 个 URL 上部署优化。
 > * **在 2026 年 4 月 1 日之前激活试用版的客户**，可根据现有条款继续使用最多 200 个提示。
 >
@@ -125,7 +116,7 @@ ht-degree: 87%
 
 ### 品牌中心体验的类别、主题和提示词
 
-您可以按如下方式添加类别、主题和提示：
+您可以按以下方式添加类别、主题和提示：
 
 * **类别**——导航到&#x200B;**品牌管理**，然后单击&#x200B;**类别**。 类别是在全局层面定义的，并适用于品牌管理下的所有品牌。
 
@@ -146,7 +137,7 @@ ht-degree: 87%
 
 在您的域名完成加入后，您将在品牌存在感视图中看到基于加入阶段自动生成提示词的初始洞察。 当您自定义类别、主题和提示词后，LLM Optimizer 将自动对您提供的提示词触发品牌存在感分析，并在 24 小时内提供结果。
 
-导航到&#x200B;**品牌存在感**，然后使用该品牌下拉列表选择要查看其品牌存在感的品牌。 您还可以通过此体验在&#x200B;**所有品牌**&#x200B;级别查看品牌可见度。
+导航至&#x200B;**品牌存在感**，然后使用品牌下拉菜单选择要查看品牌存在感情况的品牌。您还可以通过此体验在&#x200B;**所有品牌**&#x200B;级别查看品牌可见度。
 
 ## 步骤 4：提供内容传递网络日志转发信息 {#step-4}
 
@@ -154,7 +145,7 @@ ht-degree: 87%
 
 ### 内容传递网络日志转发
 
-您可以从&#x200B;**品牌管理**&#x200B;添加CDN日志转发信息，如下所示：打开&#x200B;**品牌管理**，然后单击&#x200B;**CDN**&#x200B;标签。
+您可以通过&#x200B;**品牌管理**&#x200B;添加内容传递网络日志转发信息：打开&#x200B;**品牌管理**，然后点击&#x200B;**内容传递网络**&#x200B;标签。
 
 ![品牌管理——内容传递网络日志转发](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
@@ -164,7 +155,7 @@ ht-degree: 87%
 
 ## 步骤 5：探索仪表板并采取行动
 
-提供CDN日志转发的信息后，您可以从导航部分的左侧访问所需的仪表板。
+完成内容传递网络日志转发配置后，您可以从左侧导航栏进入所需的仪表板。
 
 * 查看[品牌存在感](/help/dashboards/brand-presence.md)仪表板，查看您的可见度分数，并跟踪您相对于其他品牌的表现。
 * 完成内容传递网络日志转发配置后，您可以查看[代理式流量](/help/dashboards/agentic-traffic.md)和[引荐流量](/help/dashboards/referral-traffic.md)仪表板。

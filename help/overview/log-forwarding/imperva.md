@@ -4,26 +4,15 @@ description: 了解如何将 Imperva 的内容传递网络日志转发到 Adobe 
 feature: Agentic Traffic
 autotag-review: '2026-07-15T17:57:30.264Z'
 TQID: 'https://experienceleague.adobe.com/l-DYz7pXzFDqZn1rnZWUOG9PpRqosq00LmGrlsOMqNk'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: dd952468-5202-43af-a365-6e0d2e67a703
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: dd952468-5202-43af-a365-6e0d2e67a703id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 352
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +60,7 @@ ht-degree: 93%
    | 字段 | 描述 | 注意 |
    |---|---|---|
    | **连接名称** | 为连接设置一个描述性名称（例如：生产 S3 日志）。 您可以重命名默认名称。 | |
-   | **路径** | 日志文件存储的文件夹位置。 使用格式 `<Amazon S3 bucket name>/<log folder>`。 例如：`MyBucket/MyImpervaLogFolder`。 | `Amazon S3 bucket name`是LLM Optimizer配置页面中的&#x200B;**存储段名称**。 ![存储段名称](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png)从LLM Optimizer配置页面中，日志文件夹为&#x200B;**路径**。 ![路径](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
+   | **路径** | 日志文件存储的文件夹位置。 使用格式 `<Amazon S3 bucket name>/<log folder>`。 例如：`MyBucket/MyImpervaLogFolder`。 |  `Amazon S3 bucket name`为 LLM Optimizer 配置页面中的&#x200B;**存储桶名称**。. ![存储桶名称](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png)日志文件夹为 LLM Optimizer 配置页面中的&#x200B;**路径**。![路径](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
 
 5. 单击&#x200B;**测试连接**。 Imperva 会执行完整测试：向指定文件夹发送一个测试文件（不包含真实数据），并在传递完成后将其删除。
 
