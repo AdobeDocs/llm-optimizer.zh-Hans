@@ -99,7 +99,7 @@ AI 可见度只是整体情况的一部分。要了解您的优化工作是否�
 
 本视频介绍了&#x200B;**业务影响**&#x200B;视图。该视图将 LLM Optimizer 与 Adobe Analytics 相结合，展示 AI 引荐流量如何转化为用户互动、转化和收入，帮助您衡量 AI 可见度的真实业务价值。
 
->[!VIDEO](https://video.tv.adobe.com/v/3492503/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492513/?captions=chi_hans&learn=on){transcript=true}
 
 ## 工作原理 {#how-it-works}
 
