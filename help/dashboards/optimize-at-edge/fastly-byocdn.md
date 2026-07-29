@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 350
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 92%
 
 **先决条件**
 
-在设置Fastly VCL规则之前，请确保您具有：
+在配置 Fastly VCL 规则之前，请确保您已具备以下条件：
 
 * 可以为您的域访问 Fastly。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
@@ -42,7 +42,7 @@ ht-degree: 92%
 
 将以下三个 VCL 代码片段添加到您的 Fastly 服务。 这些代码片段用于处理将代理式请求路由到 Edge Optimize、缓存键分离以及故障转移到您的默认源站。
 
-![Fastly后端配置](/help/assets/optimize-at-edge/fastly-backend-config.png)
+![Fastly 后端配置](/help/assets/optimize-at-edge/fastly-backend-config.png)
 
 ![添加 VCL 代码片段](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
@@ -102,7 +102,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 | Edge Optimize 返回 `4XX` 或 `5XX` | 请求会重新启动，并从默认源站提供响应。 |
 | 故障转移响应 | 包含头部 `x-edgeoptimize-fo: 1`。 |
 
-## 允许通过防火墙规则在Edge中优化（可选）
+## 允许 Optimize at Edge 通过防火墙规则（可选）
 
 {{waf-allowlist-setup}}
 

@@ -18,8 +18,8 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
-source-wordcount: 775
+workflow-type: ht
+source-wordcount: 769
 ht-degree: 100%
 
 ---
@@ -51,8 +51,8 @@ LLM Optimizer 会根据您的配置和页面结构，标记那些使用嵌入媒
 
 对于每个页面您都能获得：
 
-**多媒体摘要**：从视频内容派生的结构化摘要。
-**预览**：之前和之后的页面效果比较。
+**多媒体摘要** —— 根据视频内容生成的结构化摘要。
+**预览** —— 页面优化前后的对比。
 
 ![“当前建议”中包含建议的 URL，展开的行中包含内容补丁、实施详细信息和原因](/help/dashboards/opportunities/assets/add-multimedia-transcript-summaries-expand.png)
 

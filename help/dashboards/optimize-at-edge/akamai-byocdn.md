@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 70%
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 70%
 
 **先决条件**
 
-在设置Akamai属性管理器规则之前，请确保您具有：
+在配置 Akamai 属性管理器规则之前，请确保您已具备以下条件：
 
 * 可以为您的域访问 Akamai 属性管理器。
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
@@ -93,7 +93,7 @@ ht-degree: 70%
 
 ![修改传入请求标头](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-## 允许通过防火墙规则在Edge中优化（可选）
+## 允许 Optimize at Edge 通过防火墙规则（可选）
 
 {{waf-allowlist-setup}}
 
@@ -119,18 +119,18 @@ ht-degree: 70%
 
 ## &#x200B;9. 站点故障切换
 
-“站点故障转移”配置包含两个部分：主“在Edge中优化”路由规则内的故障转移行为以及在发生回退时添加响应标头的同级规则。
+站点故障切换配置包含两部分：一是在 Optimize at Edge 主路由规则中配置故障切换行为；二是配置一个同级规则，在发生回退时添加响应头。
 
 ### 9a. 配置站点故障转移行为
 
-在主Optimize at Edge路由规则内，创建一个名为&#x200B;**站点故障转移行为**&#x200B;的子规则。 将其设置为&#x200B;**匹配任意**&#x200B;并添加这些条件：
+在 Optimize at Edge 主路由规则中，创建一个名为&#x200B;**站点故障切换行为**&#x200B;的子规则。 将其设置为&#x200B;**匹配任意条件**，并添加以下条件：
 
-* **响应状态代码**&#x200B;在`400`到`599`的范围内。
-* **源超时**&#x200B;为`Yes`。
+* **响应状态代码**&#x200B;位于 `400` 到 `599` 范围内。
+* **源站超时**&#x200B;为 `Yes`。
 
-![网站故障转移](/help/assets/optimize-at-edge/akamai-step9-failover.png)
+![站点故障切换](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-![配置站点故障转移行为](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
+![配置站点故障切换行为](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
 ### 9b. 配置故障转移响应标头规则
 
@@ -145,18 +145,18 @@ ht-degree: 70%
 >   EdgeOptimize Failover - Test Header      ← sibling of routing child
 >```
 >
->当Akamai为原始主机名重新创建失败的请求时，将评估同级规则。 路由规则的API密钥条件可防止将该请求再次发送到Edge Optimize。
+>当 Akamai 为原始主机名重新创建失败的请求时，会评估此同级规则。 路由规则中的 API-key 条件可防止该请求再次被发送至 Edge Optimize。
 >
 >此外，应确保 **Optimize at Edge 路由**&#x200B;规则不会被任何后来匹配的，会更改源站、缓存行为或相同请求的缓存 ID 的规则所覆盖。 如果其他匹配规则重置了这些行为，Optimize at Edge 路由或缓存可能就无法按预期工作。
 
-![配置故障转移响应标头规则](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
+![配置故障切换响应头规则](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
 
-站点故障转移可确保当Edge Optimize返回错误或超时时，Akamai会为原始主机名重新创建请求，以便访客仍可收到站点的正常响应。
+网站故障转移可确保当 Edge Optimize 返回错误或发生超时时，Akamai 会为您的原始主机名重新创建请求，从而使访客仍能收到网站的正常响应。
 
 | 场景 | 行为 |
 | --- | --- |
-| Edge Optimize 返回 `2XX` 或 `3XX` | 提供优化的响应。 `x-edgeoptimize-request-id`存在。 |
-| Edge Optimize返回`4XX`-`5XX`，或源超时 | 将为原始主机名重新创建请求。 响应包括`x-edgeoptimize-fo: true`。 |
+| Edge Optimize 返回 `2XX` 或 `3XX` | 返回经过优化的响应。 响应中会包含 `x-edgeoptimize-request-id`。 |
+| Edge Optimize 返回 `4XX`-`5XX`，或源站发生超时 | 系统会针对原始主机名重新创建该请求。 响应中会包含 `x-edgeoptimize-fo: true`。 |
 
 ## 验证设置
 

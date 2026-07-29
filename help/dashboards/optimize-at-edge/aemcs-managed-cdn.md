@@ -22,8 +22,8 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
-source-wordcount: 836
+workflow-type: ht
+source-wordcount: 815
 ht-degree: 100%
 
 ---
@@ -37,9 +37,9 @@ ht-degree: 100%
 
 要访问此功能：
 
-- 付费客户必须有权访问 **Adobe LLM Optimizer 用户** IMS 产品配置文件。 请联系您组织的管理员，请求获取访问权限。
+- 付费客户必须具有 **Adobe LLM Optimizer Users** IMS 产品轮廓的访问权限。请联系您组织的管理员申请访问权限。
   ![将用户添加到一个产品配置文件](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
-- 试用版客户必须属于 **LLMO 管理员** IMS 组。 如果这个组不存在，您组织的管理员可以创建该组，然后将您添加进去。
+- 试用客户必须属于 **LLMO 管理员** IMS 用户组。如果该用户组尚不存在，您组织的管理员可以创建该用户组并将您添加到其中。
   ![创建 LLMO 管理员 IMS 组](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
 
 >[!NOTE]

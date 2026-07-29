@@ -16,16 +16,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 710
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # URL 检查器
 
-URL 检查器可帮助您分析域名下特定页面在 AI 搜索中的表现。 它在 URL 层级整合可见度、代理式流量和引荐数据，为您提供精细化视图，展示哪些 URL 得到引用以及它们在回答中出现的频率。 导航到&#x200B;**URL检查器**&#x200B;并选择要查看其分析的网站。
+URL 检查器可帮助您分析域名下特定页面在 AI 搜索中的表现。 它在 URL 层级整合可见度、代理式流量和引荐数据，为您提供精细化视图，展示哪些 URL 得到引用以及它们在回答中出现的频率。 导航至 **URL 检查器**，然后选择要查看洞察信息的网站。
 
 ![URL 检查器](/help/dashboards/assets/url-insp.png)
 

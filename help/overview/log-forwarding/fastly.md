@@ -19,9 +19,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 381
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -65,10 +65,10 @@ ht-degree: 88%
 | **位置** | 默认 |
 | **日志格式** | 使用下方&#x200B;**日志格式字符串**&#x200B;部分提供的格式。 |
 | **时间戳格式** | `%Y-%m-%dT%H:%M:%S.000` |
-| **存储桶名称** | 从LLM Optimizer配置页面复制&#x200B;**存储段名称**。 ![存储桶名称](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **域** | 从LLM Optimizer配置页面复制&#x200B;**域名**。 ![域名](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **存储桶名称** | 从 LLM Optimizer 配置页面复制&#x200B;**存储桶名称**。. ![存储桶名称](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **域** | 从 LLM Optimizer 配置页面复制&#x200B;**域名**。![域名](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **访问方法** | **用户凭据** |
-| **用户凭据** | 从LLM Optimizer配置页面复制&#x200B;**访问密钥**&#x200B;和&#x200B;**密钥**。 ![访问密钥](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **用户凭据** | 从 LLM Optimizer 配置页面复制&#x200B;**访问密钥**&#x200B;和&#x200B;**秘密密钥**。![访问密钥](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **句点** | `300` |
 
 **日志格式字符串：**
@@ -85,7 +85,7 @@ ht-degree: 88%
 
 | 字段 | 描述 |
 | --- | --- |
-| **路径** | 从LLM Optimizer配置页面复制&#x200B;**路径**。 ![路径](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
+| **路径** | 从 LLM Optimizer 配置页面复制&#x200B;**路径**。![路径](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
 | **选择日志行格式** | 空白 |
 | **压缩** | Gzip |
 | **冗余级别** | 标准 |

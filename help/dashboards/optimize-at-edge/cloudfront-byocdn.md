@@ -22,7 +22,7 @@ topic_v2:
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 2343
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 86%
 
 2. 单击&#x200B;**编辑**。
 
-3. 建议将&#x200B;**最小TTL**&#x200B;设置为`0`。但是，如果当前的最低TTL已经非常短，则可能不需要对其进行更改。
+3. 建议将&#x200B;**最小 TTL** 设置为 `0`。不过，如果您当前的最小 TTL 已经很短，则可能无需进行调整。
    ![缓存策略 TTL 设置](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. 在&#x200B;**缓存键设置** > **标头**&#x200B;中，除了您现有的包含项以外，再添加 `x-edgeoptimize-config` 和 `x-edgeoptimize-url`。
@@ -244,24 +244,24 @@ ht-degree: 86%
 
 ### 修复CloudWatch日志链接
 
-默认情况下，Lambda控制台中的&#x200B;**查看CloudWatch日志**&#x200B;快捷方式链接到`us-east-1`中的`/aws/lambda/FUNCTION_NAME` — Lambda@Edge的错误日志组。 配置自定义日志组，使链接指向正确的路径。
+默认情况下，Lambda 控制台中的&#x200B;**查看 CloudWatch 日志**&#x200B;快捷链接会指向 `us-east-1` 区域中的 `/aws/lambda/FUNCTION_NAME`，而这并不是 Lambda@Edge 对应的日志组。 请配置一个自定义日志组，使该链接指向正确的日志路径。
 
-**导航：** AWS Console > Lambda > [您的函数] >配置>监视和操作工具
+**导航路径：** AWS Console > Lambda > [您的函数] >配置>监视和运维工具
 
 1. 单击&#x200B;**编辑**。
 
-2. 在&#x200B;**CloudWatch日志组**&#x200B;下，选择&#x200B;**自定义**。
+2. 在 **CloudWatch 日志组**&#x200B;下，选择&#x200B;**自定义**。
 
-3. 将自定义日志组名称设置为`/aws/lambda/us-east-1.edgeoptimize-origin`。
+3. 将自定义日志组名称设置为 `/aws/lambda/us-east-1.edgeoptimize-origin`。
 
-4. 在&#x200B;**权限**&#x200B;下，保留&#x200B;**添加所需权限**&#x200B;复选框&#x200B;**取消选中**。
+4. 在&#x200B;**权限**&#x200B;下，保持&#x200B;**添加所需权限**&#x200B;复选框处于&#x200B;**未选中状态**。
 
-   ![Lambda自定义日志组配置](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
+   ![Lambda 自定义日志组配置](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
 
 5. 单击&#x200B;**保存**。
 
 >[!NOTE]
->即使进行了此修复，**查看CloudWatch日志**&#x200B;链接也会打开正确的日志组名称，但如果您在错误的区域中，则可能不会显示任何数据。 Lambda@Edge日志写入的是为请求提供服务的边缘区域（例如，`eu-west-1`， `ap-south-1`），而不是`us-east-1`。 您仍需要切换到CloudWatch中的正确区域以查看日志。
+>即使完成上述配置，**查看 CloudWatch 日志**&#x200B;链接虽然会打开正确的日志组，但如果您当前位于错误的 AWS 区域，仍可能看不到任何日志数据。 Lambda@Edge 日志会写入实际处理请求的边缘区域（例如 `eu-west-1`、`ap-south-1`），而不是 `us-east-1`。 因此，您仍需要在 CloudWatch 中切换到正确的区域，才能查看相应日志。
 
 ### 发布版本
 
@@ -294,7 +294,7 @@ ht-degree: 86%
 
 4. 点击&#x200B;**保存更改**。
 
-## 允许通过防火墙规则在Edge中优化（可选）
+## 允许 Optimize at Edge 通过防火墙规则（可选）
 
 {{waf-allowlist-setup}}
 

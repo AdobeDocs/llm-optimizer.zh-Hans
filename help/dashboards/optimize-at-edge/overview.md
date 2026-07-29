@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 7df9f2722df2f532efe7f05e84c49e9f5a63b58b
 workflow-type: tm+mt
 source-wordcount: 2941
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 | Akamai (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
 | CloudFront (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
-| Azure前门(BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
+| Azure Front Door (BYOCDN) | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
 | Apache HTTP 服务器 | 自带内容传递网络 | [查看设置指南](/help/dashboards/optimize-at-edge/apache-http-server.md) |
 
 >[!NOTE]
@@ -131,8 +131,8 @@ Optimize at Edge 专为营销、SEO、内容和数字战略团队中的业务用
 
 ### 恢复内容可见性
 
-此机会标记因客户端渲染而为AI代理隐藏关键内容的页面。对于每个标识的页面，它都会精确显示AI代理视图中缺少哪些内容，突出显示可见性差距，并允许您直接应用更改以恢复隐藏的内容。当您使用Edge中的优化来部署此机会时，为LLM用户代理提供预呈现的、AI优化的页面版本，以便他们无需执行Javascript即可访问整个上下文。
-这可确保该页面首先对AI代理完全可见。在该预呈现的HTML之上应用了其他增强功能。
+此优化机会会标记因客户端渲染而导致关键内容对 AI 代理不可见的页面。对于每个识别出的页面，它会准确显示 AI 代理无法看到的内容，突出显示内容可见性缺口，并支持您直接应用更改，以恢复这些隐藏内容。当您通过 Optimize at Edge 部署此优化机会时，系统会向 LLM 用户代理提供页面的预渲染、面向 AI 优化的版本，使其无需执行 JavaScript 即可获取完整页面内容。
+这样可确保页面内容首先能够完整呈现给 AI 代理，并在预渲染 HTML 的基础上进一步应用其他优化。
 
 >[!IMPORTANT]
 >当通过 Optimize at Edge 部署下述所有优化机会时，预渲染功能将自动生效，以确保页面对 AI 代理完全可见。
@@ -241,7 +241,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 问：当源站内容更新时会发生什么？
 
-只要基础源页面未发生更改，我们就会从缓存中提供页面的优化版本。但是，当&#x200B;**恢复内容可见度**&#x200B;的源发生更改时，我们的系统会自动刷新，以便AI代理始终接收最新的内容。这是因为我们使用低缓存生存时间(TTL)设置（以分钟为单位），因此您网站上的任何内容更新都会触发该窗口内的新优化。对于诸如&#x200B;**添加LLM友好型摘要**&#x200B;等内容机会，LLM Optimizer会监控源页面是否有更改。如果检测到更改，我们会暂停优化并将其标记为人工审核，以防止代理可见页面和人类可见页面之间的内容漂移。
+只要底层源页面未发生变化，我们就会持续从缓存中提供页面的优化版本。但是，对于&#x200B;**恢复内容可见度**&#x200B;功能，当源页面发生变化时，系统会自动刷新，以确保 AI 代理始终获取最新内容。这是因为我们采用较短的缓存生存时间（TTL，通常为几分钟），因此网站内容一旦更新，系统便会在该时间窗口内重新执行优化。对于添加 **LLM 友好型摘要**等内容优化机会，LLM Optimizer 会持续监控源页面是否发生变化。如果检测到页面发生变化，系统会暂停该项优化，并将其标记为需要人工审核，以防止 AI 代理看到的内容与用户看到的内容出现偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 问：Optimize at Edge 是否仅适用于使用 Adobe Edge Delivery Service（EDS）的网站？

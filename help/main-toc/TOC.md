@@ -5,7 +5,7 @@ user-guide-description: 使用 Adobe LLM Optimizer 提升品牌影响力。 追�
 source-git-commit: d7e723161836027dcdde931378f5d0f776a1ecfc
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,8 +60,8 @@ ht-degree: 95%
     + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge/akamai-byocdn.md)
     + [Cloudflare (BYOCDN)](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md)
     + [CloudFront (BYOCDN)](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md)
-    + [Azure前门(BYOCDN)](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md)
+    + [Azure Front Door (BYOCDN)](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md)
     + [Apache HTTP 服务器](/help/dashboards/optimize-at-edge/apache-http-server.md)
   + [访问控制](/help/dashboards/access-control.md)
   + [Adobe Analytics 集成](/help/dashboards/adobe-analytics-integration.md)
-  + [Google Analytics集成](/help/dashboards/google-analytics-integration.md)
+  + [Google Analytics 集成](/help/dashboards/google-analytics-integration.md)

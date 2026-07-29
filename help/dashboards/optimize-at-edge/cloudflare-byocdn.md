@@ -23,7 +23,7 @@ topic_v2:
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 1919
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 93%
 
 **先决条件**
 
-在设置Cloudflare Worker路由规则之前，请确保您具有：
+在配置 Cloudflare Worker 路由规则之前，请确保您已具备以下条件：
 
 * 具有 Cloudflare 帐户，并且在您的域中启用了 Workers。
 * 可以在 Cloudflare 中访问您的域的 DNS 设置。
@@ -127,7 +127,7 @@ Worker 部署完成后，继续[添加指向您的域名的路由](#add-a-route-
 
 ### 第2步：添加工作人员代码
 
-创建辅助进程后，单击&#x200B;**编辑代码**，并将默认代码替换为[worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js)中的代码。 如果您已经拥有现有的Cloudflare Worker，请将该代码与现有工作程序代码合并，而不是完全替换。
+创建 Worker 后，点击&#x200B;**编辑代码**，然后使用 [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js) 中的代码替换默认代码。 如果您已经有一个 Cloudflare Worker，请将该代码与现有 Worker 代码合并，而不要完全替换现有代码。
 
 点击&#x200B;**保存并部署**，发布 Worker。
 
@@ -280,7 +280,7 @@ const FAILOVER_ON_5XX = false;
 | 因主机无效，请求失败 | `EDGE_OPTIMIZE_TARGET_HOST` 包含协议（例如 `https://`）。 | 仅使用不带协议的域名（例如 `example.com`，而不是 `https://example.com`）。 |
 | 故障转移过程中出现 530 错误 | Cloudflare 无法连接到源站，或者故障转移请求的头部无效。 | 确保故障转移功能会移除 Edge Optimize 头部。 验证您的源站可访问并且 DNS 配置正确。 |
 
-## 允许通过防火墙规则在Edge中优化（可选）
+## 允许 Optimize at Edge 通过防火墙规则（可选）
 
 {{waf-allowlist-setup}}
 

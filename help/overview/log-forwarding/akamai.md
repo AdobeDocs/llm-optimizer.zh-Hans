@@ -19,9 +19,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 612
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -64,46 +64,46 @@ ht-degree: 78%
 
 ## 第 3 步：选择数据参数 {#step-3}
 
-创建流后，在Akamai控制面板上，单击&#x200B;**下一步**&#x200B;以继续&#x200B;**数据集**&#x200B;选项卡。 按照 Akamai 官方文档步骤选择[数据参数](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters)。 需要使用以下来自 LLM Optimizer 配置页面的字段：
+创建数据流后，在 Akamai 控制面板中点击&#x200B;**下一步**，进入&#x200B;**数据集**&#x200B;选项卡。 按照 Akamai 官方文档步骤选择[数据参数](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters)。 需要使用以下来自 LLM Optimizer 配置页面的字段：
 
 ![LLMO 配置字段](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 
 字段映射应如下：
 
 * **日志信息**
-reqTimeSec ->请求时间
+reqTimeSec -> 请求时间
 * **地理数据**
-国家/地区 — >国家/地区
-* **邮件交换数据**
+country -> 国家/地区
+* **消息交换数据**
 reqHost ->请求主机
-reqPath ->请求路径
+reqPath -> 请求路径
 queryStr ->查询字符串（可选）
-reqMethod -> Request方法
-ua ->用户代理
-statusCode -> HTTP状态代码
-rspContentType ->响应内容类型
+reqMethod -> 请求方法
+ua -> User-Agent
+statusCode -> HTTP 状态码
+rspContentType -> 响应 Content-Type
 * **请求标头数据**
-referer -> Referer
+referer -> 反向链接
 * **网络性能数据**
-timeToFirstByte ->到第一个字节的时间
+timeToFirstByte -> 首字节时间
 
 >[!NOTE]
 >
->`queryStr`参数是可选的。 如果查询字符串包含PII信息，则可以忽略该参数。
+>`queryStr` 参数为可选项。如果查询字符串包含 PII（个人身份信息），可以省略该参数。
 
 Akamai 数据集字段（包含 ID）如下：
 
-1100， # reqTimeSec ->请求时间
-2012，#国家/地区 — >国家/地区
-1011， # reqHost ->请求主机
-1013， # reqPath ->请求路径
-2009，# queryStr ->查询字符串（可选）
-1012，# reqMethod -> Request method
-1017， # ua -> User-Agent
-1008， # statusCode -> HTTP状态代码
-1032， #引用者 — >引用者
-1016， # rspContentType ->响应内容类型
-2025 # timeToFirstByte -> Time to first byte
+1100, # reqTimeSec -> 请求时间
+2012, # country -> 国家/地区
+1011, # reqHost -> 请求主机
+1013, # reqPath -> 请求路径
+2009, # queryStr -> 查询字符串（可选）
+1012, # reqMethod -> 请求方法
+1017, # ua -> User-Agent
+1008, # statusCode -> HTTP 状态码
+1032, # referer -> 反向链接
+1016, # rspContentType -> 响应 Content-Type
+2025  # timeToFirstByte -> 首字节时间
 
 ## 第 4 步：配置目标 {#step-4}
 

@@ -21,7 +21,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 670
 ht-degree: 100%
 
@@ -102,10 +102,10 @@ ht-degree: 100%
 
 - 字段名称必须&#x200B;**完全**&#x200B;匹配（包括大小写和拼写）。
 - 数据类型必须正确，具体如下：
-   - **时间戳**&#x200B;必须为符合 **ISO 8601** 格式的字符串。 类 UNIX 时间戳可能无法正常解析。
-   - **response_status** 必须为整数。
-   - **time_to_first_byte** 必须为整数，单位为毫秒。
-   - 字符串必须为有效的 JSON 字符串。
+  - **时间戳**&#x200B;必须为符合 **ISO 8601** 格式的字符串。 类 UNIX 时间戳可能无法正常解析。
+  - **response_status** 必须为整数。
+  - **time_to_first_byte** 必须为整数，单位为毫秒。
+  - 字符串必须为有效的 JSON 字符串。
 - 格式错误的 JSON 或缺失/错误字段可能导致日志被跳过或解析失败，从而造成报告数据缺失。
 
 ### 上传位置与处理周期 {#upload-location}

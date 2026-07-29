@@ -18,9 +18,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 950
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -93,11 +93,11 @@ Adobe Analytics 集成可将 LLM Optimizer 与您组织的 Adobe Analytics 数�
 >
 >回填过程可能需要数小时完成。
 
-## 请参阅实际操作中的业务影响
+## 查看实际业务影响
 
-人工智能的可见性只是故事的一部分。 要了解您的优化工作是否正在推动业务结果，您需要了解访客到达您的网站后会出现什么情况。
+AI 可见度只是整体情况的一部分。要了解您的优化工作是否真正带来了业务成效，您需要了解访客进入网站后发生了什么。
 
-此视频介绍&#x200B;**业务影响**&#x200B;视图，该视图将LLM Optimizer与Adobe Analytics相结合，以显示AI引用的流量如何转化为参与度、转化率和收入 — 帮助您衡量AI存在的真正价值。
+本视频介绍了&#x200B;**业务影响**&#x200B;视图。该视图将 LLM Optimizer 与 Adobe Analytics 相结合，展示 AI 引荐流量如何转化为用户互动、转化和收入，帮助您衡量 AI 可见度的真实业务价值。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3492513/?captions=chi_hans&learn=on){transcript=true}
 

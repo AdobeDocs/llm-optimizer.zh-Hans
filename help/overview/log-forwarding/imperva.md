@@ -21,9 +21,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 352
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 93%
    | 字段 | 描述 | 注意 |
    |---|---|---|
    | **连接名称** | 为连接设置一个描述性名称（例如：生产 S3 日志）。 您可以重命名默认名称。 | |
-   | **路径** | 日志文件存储的文件夹位置。 使用格式 `<Amazon S3 bucket name>/<log folder>`。 例如：`MyBucket/MyImpervaLogFolder`。 | `Amazon S3 bucket name`是LLM Optimizer配置页面中的&#x200B;**存储段名称**。 ![存储段名称](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png)从LLM Optimizer配置页面中，日志文件夹为&#x200B;**路径**。 ![路径](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
+   | **路径** | 日志文件存储的文件夹位置。 使用格式 `<Amazon S3 bucket name>/<log folder>`。 例如：`MyBucket/MyImpervaLogFolder`。 |  `Amazon S3 bucket name`为 LLM Optimizer 配置页面中的&#x200B;**存储桶名称**。. ![存储桶名称](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png)日志文件夹为 LLM Optimizer 配置页面中的&#x200B;**路径**。![路径](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
 
 5. 单击&#x200B;**测试连接**。 Imperva 会执行完整测试：向指定文件夹发送一个测试文件（不包含真实数据），并在传递完成后将其删除。
 

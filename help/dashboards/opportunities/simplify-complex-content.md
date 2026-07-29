@@ -17,8 +17,8 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
-source-wordcount: 785
+workflow-type: ht
+source-wordcount: 776
 ht-degree: 100%
 
 ---
@@ -44,8 +44,8 @@ ht-degree: 100%
 
 LLM Optimizer 会识别那些获得了很高的代理式流量，但其中的内容分数低于可读性阈值的页面，然后建议重写文本。 对于每个页面您都能获得：
 
-**改进的文本**：基于页面上已有的内容进行了简化。
-**预览**：之前和之后的代理式流量的效果比较。
+**优化后的文本** —— 基于页面现有内容生成的简化文本。
+**预览** — 展示面向代理式流量优化前后的对比效果。
 
 受影响的 URL 会显示在&#x200B;**当前建议**&#x200B;选项卡中&#x200B;**包含建议的 URL** 表格中，您可以在此表中展开一行查看每一个建议。
 
