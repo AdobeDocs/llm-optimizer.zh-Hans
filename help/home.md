@@ -19,9 +19,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 364
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ CARDS
                     <p class="is-size-6">了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜索中的可见度。</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -96,7 +96,7 @@ CARDS
                     <p class="is-size-6">了解如何快速部署并开始使用 LLM Optimizer。</p>
                 </div>
                 <a href="./overview/quick-start.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -119,7 +119,7 @@ CARDS
                     <p class="is-size-6">了解如何通过仪表板获取网站洞察与优化建议。</p>
                 </div>
                 <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -157,8 +157,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="设置类别、主题、提示和跟踪其他品牌的最佳实践" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/best-practices/add-new-topic1.png" alt="设置类别、主题、提示和跟踪其他品牌的最佳实践"
+                    <a href="./overview/best-practices-topics-prompts.md" title="设置类别、主题、提示词及其他品牌跟踪的最佳做法" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/best-practices/add-new-topic1.png" alt="设置类别、主题、提示词及其他品牌跟踪的最佳做法"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -166,12 +166,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="设置类别、主题、提示和跟踪其他品牌的最佳实践">设置类别、主题、提示和跟踪其他品牌的最佳实践</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="设置类别、主题、提示词及其他品牌跟踪的最佳做法">设置类别、主题、提示词及其他品牌跟踪的最佳做法</a>
                     </p>
                     <p class="is-size-6">了解如何配置 LLM Optimizer，以实现定制化品牌监测与战略内容分析。</p>
                 </div>
                 <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -194,7 +194,7 @@ CARDS
                     <p class="is-size-6">了解 LLM Optimizer 如何帮助您在 AI 搜索与发现中建立品牌权威。</p>
                 </div>
                 <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -217,7 +217,7 @@ CARDS
                     <p class="is-size-6">通过 Adobe LLM Optimizer 塑造品牌在 AI 搜索结果中的呈现方式。 获取 GEO 洞察，在各类 LLM 平台中提升可见度，并推动可衡量的流量增长。</p>
                 </div>
                 <a href="https://business.adobe.com/cn/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -258,7 +258,7 @@ CARDS
                     <p class="is-size-6">了解如何在无需修改内容创作流程的情况下，通过 LLM Optimizer 实施优化。</p>
                 </div>
                 <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>

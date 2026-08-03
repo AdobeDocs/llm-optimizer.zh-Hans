@@ -20,9 +20,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2343
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 95%
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
 * （可选）要测试暂存路由，请参阅[暂存 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
-## 步骤1：创建Edge优化源
+## 步骤 1：创建 Edge Optimize 源站
 
 **导航：** AWS 控制台 > CloudFront > 分发 > [您的分发] > 源站选项卡
 
@@ -66,7 +66,7 @@ ht-degree: 95%
 
 ![Cloudfront 源站创建](/help/assets/optimize-at-edge/cloudfront-origin-creation.png)
 
-## 步骤2：创建查看器请求功能
+## 步骤 2：创建查看器请求函数
 
 **导航：** AWS 控制台 > CloudFront > 函数
 
@@ -88,7 +88,7 @@ ht-degree: 95%
 ![Cloudfront 函数创建](/help/assets/optimize-at-edge/cloudfront-function-creation.png)
 
 
-## 步骤3：配置缓存策略
+## 步骤 3：配置缓存策略
 
 **导航：** AWS 控制台 > CloudFront > 分发 > [您的分发] > 行为
 
@@ -98,7 +98,7 @@ ht-degree: 95%
 * **场景 B（自定义策略）：**&#x200B;您会看到所选的&#x200B;**缓存策略**&#x200B;带有您或您的团队创建的策略名称（不是 AWS 提供的策略）。
 * **场景 C（托管策略）：**&#x200B;您会看到所选的&#x200B;**缓存策略**&#x200B;带有一个 AWS 提供的名称，如 `CachingOptimized`、`CachingDisabled` 或 `CachingOptimizedForUncompressedObjects`，这些都无法编辑。
 
-### 场景A：旧版缓存设置
+### 场景 A：旧版缓存设置
 
 如果您的行为使用旧版缓存设置：
 
@@ -119,7 +119,7 @@ ht-degree: 95%
 
 4. 点击&#x200B;**保存更改**。
 
-### 场景B：具有自定义缓存策略的非旧版
+### 场景 B：带有自定义缓存策略的非旧版
 
 如果您的行为已使用一个自定义缓存策略（您创建的策略，而不是 AWS 托管策略）：
 
@@ -137,7 +137,7 @@ ht-degree: 95%
 
 5. 点击&#x200B;**保存更改**。
 
-### 场景C：具有托管(AWS)缓存策略的非旧版
+### 场景 C：带有托管 (AWS) 缓存策略的非旧版
 
 如果您的行为使用 AWS 托管缓存策略（例如 `CachingOptimized`），您就无法进行编辑。 您需要创建一个新的自定义缓存策略，此策略复制现有的托管策略设置，并添加在 Edge Optimize 标头的最上面。
 
@@ -185,12 +185,12 @@ ht-degree: 95%
    3. 从下拉列表中选择 `edgeoptimize-cache`。
    4. 点击&#x200B;**保存更改**。
 
-## 步骤4：创建Lambda@Edge函数（原始请求和响应）
+## 步骤 4：创建 Lambda@Edge 函数（源站请求和响应）
 
 >[!IMPORTANT]
 >**必须在`us-east-1`（弗吉尼亚北部）区域**&#x200B;中创建 Lambda@Edge 函数。 这是 AWS 的要求。 即使函数是在 `us-east-1` 中创建，AWS 仍会自动将其复制到全球所有 CloudFront 边缘位置，因此它会在距离查看器最近的边缘位置执行。 在继续操作之前，请确保您位于 AWS 控制台的 `us-east-1` 区域中。
 
-### 创建Lambda函数
+### 创建 Lambda 函数
 
 **导航：** AWS 控制台 > Lambda
 
@@ -225,7 +225,7 @@ ht-degree: 95%
 >[!WARNING]
 >Lambda@Edge 的`edgelambda.amazonaws.com`服务主体是&#x200B;**必填项**。 否则，CloudFront 就无法在边缘位置调用您的函数。
 
-### 修复CloudWatch日志权限策略
+### 修复 CloudWatch 日志权限策略
 
 自动创建的角色带有为常规 Lambda 配置的 `AWSLambdaBasicExecutionRole` 策略，具有错误的 Lambda@Edge 区域和日志组名称。 您需要将其更新。
 
@@ -242,7 +242,7 @@ ht-degree: 95%
 >[!WARNING]
 >ARN 中的区域必须为 `*` — Lambda@Edge 在距离查看器最近的边缘位置执行，因此日志将写入边缘位置区域的 CloudWatch（例如 `ap-south-1`，`eu-west-1`），不一定是 `us-east-1`。 日志组使用一个区域前缀名：`/aws/lambda/us-east-1.FUNCTION_NAME`，其中 `us-east-1` 总是函数的主区域。
 
-### 修复CloudWatch日志链接
+### 修复 CloudWatch 日志链接
 
 默认情况下，Lambda 控制台中的&#x200B;**查看 CloudWatch 日志**&#x200B;快捷链接会指向 `us-east-1` 区域中的 `/aws/lambda/FUNCTION_NAME`，而这并不是 Lambda@Edge 对应的日志组。 请配置一个自定义日志组，使该链接指向正确的日志路径。
 
@@ -275,7 +275,7 @@ ht-degree: 95%
 4. 复制或记下&#x200B;**函数 ARN** — 您在下一步中需要它。
    ![Lambda ARN](/help/assets/optimize-at-edge/cloudfront-lambda-arn.png)
 
-## 步骤5：将函数和缓存策略与行为关联
+## 步骤 5：将函数和缓存策略与行为关联起来
 
 **导航：** AWS 控制台 > CloudFront > 分发 > [您的分发] > 行为
 
@@ -298,7 +298,7 @@ ht-degree: 95%
 
 {{waf-allowlist-setup}}
 
-## 步骤6：测试配置
+## 步骤 6：测试配置
 
 **1. 测试机器人流量（应被优化）**
 
@@ -382,16 +382,16 @@ curl -svo /dev/null https://www.example.com/page.html \
 | 缓存未履行 `cache-control: no-store` | 最小 TTL 可能过高 | 将缓存策略中的最小 TTL 设置为 `0`（步骤 3）。 如果最小 TTL 已经很短，这可能不是问题。 |
 | 设置后常规（非代理式）流量中断 | 缓存策略配置错误 | 如果创建了一个新的缓存策略（场景 C），请确保您复制了原始托管策略的所有设置。 |
 
-## 在Edge中禁用并重新启用优化
+## 禁用并重新启用 Optimize at Edge
 
 Lambda@Edge 函数 (`edgeoptimize-origin`) 与您的 CloudFront 行为的源站请求和源站响应事件相关联。 由于它会在每个通过此行为的请求上内联运行——无论是人类还是代理式请求，因此 Lambda@Edge 中断会影响所有实时流量，而不仅仅是代理式请求。 如果您检测到 Lambda@Edge 中断，请立即移除函数关联，将正常通信流恢复到您的默认源站。
 
-### 如何检测Lambda@Edge中断
+### 如何检测 Lambda@Edge 中断
 
 * **AWS 服务运行状况仪表板**——检查 [AWS 服务运行状况仪表板](https://health.aws.amazon.com/health/status)，了解会影响 **Amazon CloudFront** 或 **AWS Lambda** 的任何活跃事件。 此处报告的全球或区域性中断是确认问题出现在 AWS 基础设施端而不是在您的配置中的最快方法。
 * **Lambda@Edge 错误**——导航到 **AWS 控制台 > CloudFront > 监控 > [您的分发]**。 打开 **Lambda@Edge 错误**&#x200B;选项卡，检查&#x200B;**执行错误**&#x200B;图形中的执行错误。 如果错误很多，Lambda@Edge 可能不可用。
 
-### 分离Lambda@Edge函数
+### 分离 Lambda@Edge 函数
 
 **导航：** AWS 控制台 > CloudFront > 分发 > [您的分发] > 行为
 
@@ -415,7 +415,7 @@ Lambda@Edge 函数 (`edgeoptimize-origin`) 与您的 CloudFront 行为的源站�
 
 部署后，所有流量都会直接路由到您的默认源站。 不删除任何配置；可以随时恢复 Lambda 函数及其关联。
 
-### 重新附加Lambda@Edge函数
+### 重新附加 Lambda@Edge 函数
 
 **导航：** AWS 控制台 > CloudFront > 分发 > [您的分发] > 行为
 

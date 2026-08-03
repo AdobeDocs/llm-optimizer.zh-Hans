@@ -19,9 +19,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 350
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 98%
 
 ![添加 VCL 代码片段](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
-### vcl_recv代码片段
+### vcl_recv 代码片段
 
 ```
 unset req.http.x-edgeoptimize-url;
@@ -66,7 +66,7 @@ if (!req.http.x-edgeoptimize-request
 }
 ```
 
-### vcl_hash代码片段
+### vcl_hash 代码片段
 
 ```
 if (req.http.x-edgeoptimize-config) {
@@ -75,7 +75,7 @@ if (req.http.x-edgeoptimize-config) {
 }
 ```
 
-### vcl_deliver代码片段
+### vcl_deliver 代码片段
 
 ```
 if (req.http.x-edgeoptimize-config && resp.status >= 400) {

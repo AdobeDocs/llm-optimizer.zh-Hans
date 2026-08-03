@@ -19,9 +19,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 795
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 93%
 
 以下 Akamai 属性管理器规则可将代理式 HTML 页面流量路由至 Edge Optimize。 该配置包括以下步骤：
 
-## &#x200B;1. 设置路由条件（User-Agent和HTML流量匹配）
+## &#x200B;1. 设置路由条件（用户代理和 HTML 流量匹配）
 
 为以下用户代理设置路由：
 
@@ -64,7 +64,7 @@ ht-degree: 93%
 
 ![设置路由条件](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-## &#x200B;2. 设置来源和SSL行为
+## &#x200B;2. 设置源站和 SSL 行为
 
 将源站设置为 `live.edgeoptimize.net`，将 SAN 与 `*.edgeoptimize.net` 匹配
 
@@ -107,19 +107,19 @@ ht-degree: 93%
 
 ![修改传入响应标头](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-## &#x200B;7. 缓存标识修改
+## &#x200B;7. 缓存 ID 修改
 
 ![缓存 ID 修改](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-## &#x200B;8. 修改传出请求标头
+## &#x200B;8. 更改传出请求头
 
 将 `x-forwarded-host` 头部设置为 `{{builtin.AK_HOST}}`
 
 ![更改传出请求头](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-## &#x200B;9. 站点故障切换
+## &#x200B;9. 站点故障转移
 
-站点故障切换配置包含两部分：一是在 Optimize at Edge 主路由规则中配置故障切换行为；二是配置一个同级规则，在发生回退时添加响应头。
+站点故障转移配置包含两个部分：一是在 Optimize at Edge 主路由规则中配置故障转移行为；二是配置一个同级规则，在发生回退时添加响应头。
 
 ### 9a. 配置站点故障转移行为
 
