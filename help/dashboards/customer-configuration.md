@@ -4,26 +4,15 @@ description: 使用客户配置来定义 LLM Optimizer 平台将如何监测并�
 feature: Customer Configuration
 autotag-review: '2026-07-15T17:48:20.742Z'
 TQID: 'https://experienceleague.adobe.com/BvaFF-pMzojy1TNZvCQQRbcT5c5AQ75OqjclmDi14Z0'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 72cc645997dbd5ae0442fefad73fe6a4e7ffe050
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 3923
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +37,9 @@ ht-degree: 99%
 
 如果您使用的是[品牌中心体验](/help/overview/quick-start.md#brand-centric-experience)，请导航到&#x200B;**品牌管理**&#x200B;页面，以设置和配置品牌、品牌别名，并定义需要跟踪的竞争对手。 **品牌管理**&#x200B;还用于配置与品牌关联的 URL 相关的集成，例如 Google Search Console、Adobe Analytics 以及内容传递网络日志转发。 您可以通过单击相应的选项卡（GSC、内容传递网络等）来执行此操作。
 
-![品牌管理 — 应用程序导航（以品牌为中心的体验）](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![品牌管理 ‑ 应用程序导航（品牌中心体验）](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![品牌管理 — 配置概述（以品牌为中心的体验）](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![品牌管理 ‑ 配置概述（品牌中心体验）](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -225,7 +214,7 @@ Adobe LLM Optimizer 允许您集成自己的 Google Search Console 帐户，将�
 1. 在 Google Search Console 选项卡中，审阅来自 Search Console 的主题和提示词列表。
    ![提示词列表](/help/dashboards/assets/prompts-list.png)
 1. 点击所需的主题/提示词类别，展开列表。
-1. 使用&#x200B;**添加**&#x200B;按钮从列表中添加提示。您也可以使用&#x200B;**全部添加**&#x200B;批量添加提示和类别。
+1. 使用&#x200B;**添加**&#x200B;按钮从列表中添加提示。您也可以使用&#x200B;**全部添加**批量添加提示和类别。
    ![添加提示词](/help/dashboards/assets/add-prompts.png)
 1. 如果您对选择满意，点击通知消息上的&#x200B;**保存**。
 

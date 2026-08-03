@@ -4,24 +4,15 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Akamai
 feature: Opportunities
 autotag-review: '2026-07-15T17:40:02.356Z'
 TQID: 'https://experienceleague.adobe.com/XlHpXbtxqPl-XQQKWeQc3rbsizCT7U0TF1bQkyv0iM8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 795
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +33,7 @@ ht-degree: 93%
 
 以下 Akamai 属性管理器规则可将代理式 HTML 页面流量路由至 Edge Optimize。 该配置包括以下步骤：
 
-## &#x200B;1. 设置路由条件（User-Agent和HTML流量匹配）
+## &#x200B;1. 设置路由条件（用户代理和 HTML 流量匹配）
 
 为以下用户代理设置路由：
 
@@ -64,7 +55,7 @@ ht-degree: 93%
 
 ![设置路由条件](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-## &#x200B;2. 设置来源和SSL行为
+## &#x200B;2. 设置源站和 SSL 行为
 
 将源站设置为 `live.edgeoptimize.net`，将 SAN 与 `*.edgeoptimize.net` 匹配
 
@@ -107,19 +98,19 @@ ht-degree: 93%
 
 ![修改传入响应标头](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-## &#x200B;7. 缓存标识修改
+## &#x200B;7. 缓存 ID 修改
 
 ![缓存 ID 修改](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-## &#x200B;8. 修改传出请求标头
+## &#x200B;8. 更改传出请求头
 
 将 `x-forwarded-host` 头部设置为 `{{builtin.AK_HOST}}`
 
 ![更改传出请求头](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-## &#x200B;9. 站点故障切换
+## &#x200B;9. 站点故障转移
 
-站点故障切换配置包含两部分：一是在 Optimize at Edge 主路由规则中配置故障切换行为；二是配置一个同级规则，在发生回退时添加响应头。
+站点故障转移配置包含两个部分：一是在 Optimize at Edge 主路由规则中配置故障转移行为；二是配置一个同级规则，在发生回退时添加响应头。
 
 ### 9a. 配置站点故障转移行为
 

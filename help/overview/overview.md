@@ -4,27 +4,20 @@ description: 了解 Adobe LLM Optimizer 如何提升品牌在由 AI 驱动的搜
 feature: Onboarding
 autotag-review: '2026-07-15T18:10:25.350Z'
 TQID: 'https://experienceleague.adobe.com/C-54mDBaDgmIWPOrLhkeUHlK1cXMbX0kRNrJZTC--4c'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 485
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # LLM Optimizer 概述
 
->[!VIDEO](https://video.tv.adobe.com/v/3492479/?captions=chi_hans&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492471/?learn=on){transcript=true}
 
 本页面概述您在开始使用 Adobe LLM Optimizer 前需要了解的全部信息：
 
@@ -81,7 +74,7 @@ LLM 优化的重要性日益提升：
 
 * [快速入门](/help/overview/quick-start.md)帮助您快速开始使用
 * [仪表板概述](/help/dashboards/dashboards-overview.md)介绍 LLM Optimizer 中的所有仪表板。
-* [配置类别、主题、提示和其他品牌以便跟踪的最佳实践](/help/overview/best-practices-topics-prompts.md)包含设置LLM Optimizer的基本信息。
+* [对类别、主题、提示词及其他待跟踪品牌进行配置的最佳做法](/help/overview/best-practices-topics-prompts.md)提供了设置 LLM Optimizer 的重要信息。
 * [最佳做法](/help/tutorials/best-practices.md)帮助您了解 LLM 优化的最佳做法，从而提升品牌在 AI 搜索中的可见度。
 
 

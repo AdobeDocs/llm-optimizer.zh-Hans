@@ -1,31 +1,24 @@
 ---
 title: 仪表板概述
-description: 本文介绍了LLM Optimizer中的每个功能板。 单击每个链接以了解有关LLM Optimizer功能的更多信息。
+description: 本文介绍了 LLM Optimizer 中的每一个仪表板。点击每个链接，了解有关 LLM Optimizer 功能的更多信息。
 feature: Onboarding
 autotag-review: '2026-07-15T17:49:14.691Z'
 TQID: 'https://experienceleague.adobe.com/tF7WvqcuYsu--kShNo215zbbVg1fFQg-TXLH-YHQw0c'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 281
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 
 # 仪表板概述
 
-欢迎查看仪表板概述。 LLM Optimizer中的功能板可帮助营销人员跨AI 搜索平台跟踪品牌可见度和情绪，识别优化机会，并实施规范性更改以提高引用次数和性能。
+欢迎查看仪表板概述。 LLM Optimizer 中的各类仪表板可帮助市场营销人员跟踪各 AI 搜索平台上的品牌可见度和情绪，识别优化机会，并实施可执行的改进措施，以提升引用率和整体表现。
 
 关键视图包括：概述、品牌存在感、代理式流量和引荐流量、URL 检查器、机会、协作以及客户配置。
 
@@ -101,7 +94,7 @@ CARDS
                     <p class="is-size-6">跟踪您的品牌在各类 LLM 搜索平台中的呈现方式，包括情绪分析以及与其他品牌的对标。</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -124,7 +117,7 @@ CARDS
                     <p class="is-size-6">呈现传统分析工具可能遗漏的来自 LLM 的流量，帮助您将 AI 辅助发现与互动和收入关联起来。</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -147,7 +140,7 @@ CARDS
                     <p class="is-size-6">衡量源自 AI 生成引用的人类访问量，帮助您发现真实的 AI 用户互动情况。</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -170,7 +163,7 @@ CARDS
                     <p class="is-size-6">通过邀请同事加入共享工作区，支持跨职能团队协作。</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -193,7 +186,7 @@ CARDS
                     <p class="is-size-6">呈现并优先排序可执行的洞察，提升品牌在 AI 驱动搜索平台中的可见度和引用表现。</p>
                 </div>
                 <a href="./opportunities-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -216,7 +209,7 @@ CARDS
                     <p class="is-size-6">让您了解自有 URL 在 AI 驱动搜索环境中的表现情况。</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -225,8 +218,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./customer-configuration.md" title="品牌管理功能板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/dashboards/assets/brands-management-card.png" alt="品牌管理功能板"
+                    <a href="./customer-configuration.md" title="品牌管理仪表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/dashboards/assets/brands-management-card.png" alt="品牌管理仪表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -234,12 +227,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="品牌管理功能板">品牌管理仪表板</a>
+                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="品牌管理仪表板">品牌管理仪表板</a>
                     </p>
-                    <p class="is-size-6">允许组织在LLM Optimizer中管理品牌。</p>
+                    <p class="is-size-6">允许组织在 LLM Optimizer 中管理品牌。</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>
@@ -248,8 +241,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./customer-configuration.md" title="提示库仪表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/best-practices/download-prompts1.png" alt="提示库仪表板"
+                    <a href="./customer-configuration.md" title="提示词库仪表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/best-practices/download-prompts1.png" alt="提示词库仪表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,12 +250,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="提示库仪表板">提示库仪表板</a>
+                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="提示词库仪表板">提示词库仪表板</a>
                     </p>
                     <p class="is-size-6">支持组织根据自身需求控制 Adobe LLM Optimizer 的运行方式。</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详细信息</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解详情</span>
                 </a>
             </div>
         </div>

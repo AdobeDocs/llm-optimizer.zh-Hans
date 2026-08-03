@@ -4,26 +4,15 @@ description: 了解如何在 LLM Optimizer 中为 Optimize at Edge 配置 Cloudf
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:02.378Z'
 TQID: 'https://experienceleague.adobe.com/ZgOX0yC8qyb13Y7YNCg3Y1A6Q3TSk9-mUQ8gthzQvLM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1919
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +30,7 @@ ht-degree: 96%
 * 具有从 LLM Optimizer UI 检索到的 Edge Optimize API 密钥。 有关步骤，请参阅[检索您的 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
 * （可选）要测试暂存路由，请参阅[暂存 API 密钥](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
-## 路由的工作方式
+## 如何进行路由
 
 正确配置后，Cloudflare Worker 会截获代理式用户代理对您的域（例如 `www.example.com/page.html`）的请求，并将其路由到 Edge Optimize 后端。 后端请求包含必需的头部。
 
@@ -57,7 +46,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
   -H 'x-edgeoptimize-config: LLMCLIENT=TRUE;'
 ```
 
-### 必需标题
+### 必需的头部
 
 对 Edge Optimize 后端发出的请求中必须设置以下头部：
 
@@ -85,13 +74,13 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 >
 >只有在您的域中当前&#x200B;**没有** Cloudflare Worker 的情况下才使用此选项。 如果您已经有一个 Worker，请使用[选项 2：手动设置](#option-2-manual-setup)将 Edge Optimize 路由逻辑添加到您现有的 Worker。
 
-### 步骤1：部署工作程序
+### 步骤 1：部署 Worker
 
 点击下面的按钮，将 Edge Optimize worker 部署到您的 Cloudflare 帐户：
 
 [![部署到 Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
 
-### 第2步：填写部署表单
+### 步骤 2：填写部署表单
 
 点击按钮，打开 Worker 设置页面。 按照下述方法填写表单：
 
@@ -115,7 +104,7 @@ Worker 部署完成后，继续[添加指向您的域名的路由](#add-a-route-
 
 按照这些步骤手动创建和配置 Worker。
 
-### 步骤1：创建Cloudflare工作器
+### 步骤 1：创建 Cloudflare Worker
 
 1. 登录您的 Cloudflare 仪表板。
 2. 在侧边栏中导航到 **Workers 和页面**。
@@ -125,13 +114,13 @@ Worker 部署完成后，继续[添加指向您的域名的路由](#add-a-route-
 
 ![Cloudflare Workers 仪表板](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-### 第2步：添加工作人员代码
+### 步骤 2：添加 Worker 代码
 
 创建 Worker 后，点击&#x200B;**编辑代码**，然后使用 [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js) 中的代码替换默认代码。 如果您已经有一个 Cloudflare Worker，请将该代码与现有 Worker 代码合并，而不要完全替换现有代码。
 
 点击&#x200B;**保存并部署**，发布 Worker。
 
-### 步骤3：配置环境变量和密钥
+### 步骤 3：配置环境变量和密码
 
 环境变量可以安全地存储敏感配置，例如您的 API 密钥。
 
@@ -178,7 +167,7 @@ Worker 部署完成后，继续[添加指向您的域名的路由](#add-a-route-
 
 您可以在 Cloudflare Worker 日志中监控故障转移事件，以解决问题。
 
-### 了解工作程序逻辑
+### 了解 Worker 逻辑
 
 Cloudflare Worker 会实施以下逻辑：
 
@@ -204,7 +193,7 @@ Cloudflare Worker 会实施以下逻辑：
 
 您可以通过更改代码顶部的配置常量来自定义 Worker 行为：
 
-### 代理机器人列表
+### 代理式机器人列表
 
 更改 `AGENTIC_BOTS` 数组，以添加或移除用户代理：
 
